@@ -1,0 +1,17 @@
+.woocommerce ul.products {
+  padding-top: 14px;
+  margin-right: -100px !important;
+  border-color: #ffffff;
+  border-width: 16px;
+  border-style: none;
+  list-style-type: decimal;
+  list-style-position: inside;
+}
+.woocommerce ul.products li.product {
+  border-style: solid;
+  border-color: #34495e;
+  border-width: 1 px;
+}
+.woocommerce {
+  border-style: none;
+}

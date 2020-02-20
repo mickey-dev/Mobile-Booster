@@ -1,0 +1,198 @@
+nav.navbar-primary {
+  min-height: 50px;
+
+  .features {
+    background-color: $main-color;
+    border: none;
+    height: 50px;
+    color: white;
+
+    .mb-icon, a {
+      color: white;
+    }
+  }
+
+  .main-header {
+    border-bottom: 1px solid $border-gray;
+    background-color: white;
+    margin-left: -1px;
+    position: fixed;
+    height: 100px;
+    width: 100%;
+    z-index: 6;
+    top: 50px;
+
+    @media screen and (max-width: 767px) {
+      top: 0;
+    }
+
+    > .container {
+      @include align-items(center);
+      @include display-flex();
+
+      #menu-right-menu {
+        @include align-items(center);
+        @include display-flex();
+      }
+    }
+
+    a.navbar-brand {
+      @include align-items(center);
+      @include display-flex();
+      padding: 0;
+
+      svg {
+        width: 300px;
+        height: 46px;
+
+        @media screen and (max-width: 767px) {
+          width: 200px;
+          height: 30px;
+        }
+      }
+    }
+
+    #right-menu {
+      @media screen and (max-width: 767px) {
+        overflow: scroll;
+      }
+    }
+
+    ul.navbar-nav {
+      margin: 0;
+
+      @media screen and (max-width: 767px) {
+        // overflow: scroll;
+      }
+
+      li {
+        @include transition(all .5s ease);
+
+        a {
+          font-weight: normal;
+          text-align: center;
+          color: $main-color;
+          font-size: 16px;
+        }
+      }
+
+      > li {
+        &:hover {
+          a {
+            &::after {
+              @include transition(all .5s ease);
+              width: calc(100% - 30px);
+            }
+          }
+        }
+
+        &.menu-item-has-children {
+          @media screen and (min-width: 992px) {
+            &:hover {
+              ul.dropdown-menu {
+                @media screen and (min-width: 768px) {
+                  display: block;
+                }
+              }
+            }
+          }
+
+          @media screen and (max-width: 767px) {
+            a::after { display: none; }
+
+            ul.dropdown-menu {
+              border-bottom: 3px solid #04A2D1 !important;
+              transform: translateX(-50%);
+              background-color: #f7f7f7;
+              position: relative;
+              border-radius: 0;
+              box-shadow: none;
+              padding: 10px 0;
+              border: none;
+              left: 50%;
+
+              li {
+                a {
+                  padding: 5px 10px;
+                }
+              }
+            }
+          }
+        }
+
+        &.active {
+          a {
+            &::after {
+              @include transition(all .5s ease);
+              width: calc(100% - 30px);
+            }
+          }
+        }
+
+        > a {
+          border: none !important;
+
+          &::after {
+            @include transition(all .5s ease);
+            border-bottom: 2px solid $link-blue;
+            position: absolute;
+            margin-left: 15px;
+            content: "";
+            bottom: 0;
+            width: 0;
+            left: 0;
+          }
+        }
+
+        &:nth-last-child(1) {
+          > a {
+            &::after {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .mobile-trigger {
+    top: calc(50% - 13px);
+    position: absolute;
+    right: 0;
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    .bar:nth-child(1),
+    .bar:nth-child(2),
+    .bar:nth-child(3) {
+      background-color: $main-color;
+      transition: 0.4s;
+      display: flex;
+      margin: 5px 0;
+      width: 25px;
+      height: 2px;
+    }
+
+    &.change .bar:nth-child(1) {
+      -webkit-transform: rotate(-45deg) translate(-5px, 5px) ;
+      transform: rotate(-45deg) translate(-5px, 5px) ;
+    }
+
+    &.change .bar:nth-child(2) {opacity: 0;}
+
+    &.change .bar:nth-child(3) {
+        -webkit-transform: rotate(45deg) translate(-5px, -5px) ;
+        transform: rotate(45deg) translate(-5px, -5px) ;
+    }
+  }
+
+  &.sticky-top {
+    .main-header {
+      @include transition(all .5s ease);
+      @include box-shadow2();
+      height: 75px;
+    }
+  }
+}

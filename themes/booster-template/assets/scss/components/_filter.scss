@@ -1,0 +1,113 @@
+.filter {
+  text-align: center;
+  //background-color: $brand-secondary;
+  background: #fff;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  .filter-step {
+    //padding-top: 2em;
+    //padding-bottom: 2em;
+    .step-title {
+      margin-bottom: 1em;
+      .step-number {
+        display: inline-block;
+        background-color: transparentize(#ffffff, .7);
+        @include border-radius(50%);
+        font-size: 1.3em;
+        padding: .6em 1em;
+        margin-bottom: 1em;
+        border: 2px solid $products-list-border-color;
+      }
+      .step_description {
+
+      }
+    }
+    .step-body{
+      .choice{
+        display: inline-block;
+        label{
+          margin: 0;
+          @include user-select(none);
+
+          .choice-details{
+            display: block;
+            padding: 1em;
+            margin: 1em;
+            cursor: pointer;
+            .choice-name{
+              width: 100%;
+              display: inline-block;
+              color: $filter-passive;
+            }
+            .choice-icon{
+              position: relative;
+              display: inline-block;
+              font-size: 3em;
+              border: 2px solid $filter-passive;
+              color: $filter-passive;
+              width: 85px;
+              height: 85px;
+              padding-top: 15px;
+              margin-bottom: 15px;
+              @include border-radius(50%);
+              .mb-icon-vodafone-text{
+                font-size: 1.1em;
+                display: block;
+              }
+            }
+            .checkbox {
+              position: absolute;
+              top: 0;
+              right: 0;
+              max-height: 17px;
+              &:before{
+                //border: 2px solid $info-color;
+                content: $mb-icon-check;
+                font-family: booster;
+                color: #fff8e5;
+                font-size: 15px;
+                position: absolute;
+                display: inline-block;
+                left: 0;
+                right: 0;
+                top: 0;
+                bottom: 0;
+                margin: auto;
+              }
+              &:after {
+                @include border-radius(50%);
+                content: '';
+                width: 20px;
+                height: 20px;
+                display: block;
+                background-color: $filter-passive;
+              }
+            }
+          }
+          input[type="checkbox"],input[type="radio"]{
+            display: none;
+            &:checked {
+              & + .choice-details {
+                color: $filter-active;
+                .choice-icon{
+                  border-color: $filter-active;
+                  color: $filter-active;
+                }
+                .choice-name{
+                  color: $filter-active;
+                }
+                .checkbox{
+                  &:before{
+                  }
+                  &:after{
+                    background-color: $filter-active;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

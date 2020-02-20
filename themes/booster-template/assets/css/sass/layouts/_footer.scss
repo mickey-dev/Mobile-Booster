@@ -1,0 +1,159 @@
+footer.site-footer {
+  color: white;
+  border: none;
+  padding: 50px;
+  margin-top: 0;
+  padding-bottom: 0;
+  background-color: #042D3F;
+
+  @media screen and (max-width: 767px) {
+    padding: 50px 15px;
+  }
+
+  ul {
+    padding-left: 0;
+
+    li {
+      list-style-type: none;
+      margin-bottom: 20px;
+
+      a {
+        display: block;
+        color: #fff;
+      }
+    }
+  }
+
+  .title {
+    margin-bottom: 40px;
+
+    @media screen and (max-width: 767px) {
+      margin-bottom: 20px;
+    }
+
+    h4 {
+      text-align: left;
+      color: #fff;
+
+      &:after {
+        margin-top: 10px;
+        margin-left: 0;
+      }
+    }
+  }
+
+  .first {
+    @media screen and (max-width: 767px) {
+      margin-bottom: 30px;
+    }
+
+    .bottom-logo {
+      margin-bottom: 40px;
+
+      img {
+        width: 300px;
+      }
+    }
+
+    .contact {
+      position: relative;
+      padding-left: 30px;
+
+      .fa {
+        position: absolute;
+        left: 0;
+      }
+    }
+  }
+
+  .second, .third {
+    margin-bottom: 30px;
+
+    ul {
+      li {
+        a {
+          transition: all .5s ease;
+
+          &:hover {
+            transition: all .5s ease;
+            margin-left: 10px;
+            color: $yellow;
+          }
+        }
+      }
+    }
+  }
+
+  .fourth {
+    margin-bottom: 30px;
+
+    .title {
+      margin-bottom: 20px;
+      color: #ffffff;
+
+      h4 {
+        margin-bottom: 0;
+
+        &:after {
+          display: none;
+        }
+      }
+    }
+
+    .newsletter {
+      .tnp-email, .tnp-submit {
+        height: 42px;
+      }
+
+      .tnp-submit {
+        @include transition(all .5s ease);
+        background-color: $yellow;
+        font-weight: normal;
+        margin-top: 1px;
+
+        @media screen and (max-width: 768px) {
+          padding: 0;
+        }
+
+        &:hover {
+          @include transition(all .5s ease);
+          background-color: $main-color;
+        }
+      }
+    }
+
+    .social {
+      margin-top: 30px;
+
+      h4 {
+        color: #ffffff;
+      }
+
+      a {
+        &:hover {
+          svg {
+            transition: all .5s ease;
+            transform: scale(0.9);
+          }
+        }
+
+        svg {
+          transition: all .5s ease;
+          margin-right: 10px;
+          height: 40px;
+          width: 40px;
+        }
+      }
+    }
+  }
+
+  .copyright {
+    border-top: 1px solid #505050;
+    color: #a9a9a9;
+    padding: 20px;
+  }
+
+  .spacing {
+    margin-bottom: 30px;
+  }
+}

@@ -1,0 +1,258 @@
+@media screen and (max-width: 991px) {
+  .navbar-primary {
+    min-height: 75px !important;
+
+    .main-header {
+      height: 75px !important;
+
+      > .container {
+        padding: 0 20px;
+        width: 100%;
+        margin: 0;
+      }
+
+      .mobile-trigger {
+        position: absolute;
+        width: 30px;
+        right: 30px;
+        padding: 0;
+      }
+
+      .right-menu {
+        -webkit-box-shadow: 0px 3px 30px -10px #949494;
+        -moz-box-shadow: 0px 3px 30px -10px #949494;
+        box-shadow: 0px 3px 30px -10px #949494;
+
+        @include transition(all .5s ease);
+        background-color: white;
+        position: absolute;
+        visibility: hidden;
+        padding: 0 20px;
+        min-height: 0;
+        opacity: 0;
+        top: 75px;
+        right: 0;
+        left: 0;
+
+        #right-menu {
+          visibility: hidden;
+          padding: 15px 20px;
+          opacity: 0;
+          width: 100%;
+          margin: 0;
+
+          ul#menu-right-menu {
+            @include justify-content(center);
+            @include display-flex();
+            float: none;
+
+            li {
+              a {
+                color: $main-color;
+              }
+
+              &:hover {
+                ul.dropdown-menu { display: none; }
+              }
+            }
+          }
+        }
+      }
+
+      &.active {
+        .right-menu {
+          @include transition(all 1s ease);
+          visibility: visible;
+          min-height: 75px;
+          opacity: 1;
+
+          #right-menu {
+            visibility: visible;
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+
+  #home-slider {
+    .rslides_container {
+      .rslides {
+        li {
+          @include justify-content(center);
+          @include align-items(center);
+          display: -webkit-flex !important;
+          display: -webkit-box !important;
+          display: -ms-flexbox !important;
+          display: flex !important;
+
+          .caption {
+            max-width: 642px;
+            transform: none;
+            bottom: auto;
+            right: auto;
+            left: auto;
+            top: auto;
+          }
+        }
+      }
+    }
+  }
+
+  #testimony .container .owl-carousel {
+    .item {
+      img {
+        height: 100px;
+        width: 100px;
+      }
+    }
+
+    .owl-nav {
+      position: relative;
+      margin-top: 20px;
+
+      .owl-prev, .owl-next {
+        float: none;
+        margin: 0 10px;
+      }
+    }
+  }
+
+  #tm-extra-product-options-fields .58b81f0f79a649 {
+    h3 { width: 40% !important; }
+    .cpf-type-checkbox { height: 60% !important; }
+  }
+
+  .woocommerce-cart .woocommerce .table-responsive .cart_item .product-name .variation {
+    .tc-name, .tc-value {
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .woocommerce-page {
+    .navbar-primary {
+      margin-bottom: 0 !important;
+    }
+  }
+  .navbar-primary {
+    margin-bottom: 0;
+
+    .features {
+      display: none;
+    }
+
+    .main-header {
+      top: 0 !important;
+
+      .mobile-trigger {
+        right: 15px;
+      }
+
+      &.active {
+        .right-menu {
+          @include transition(all .5s ease);
+          height: calc(100vh - 75px);
+          padding: 30px 15px;
+
+          #right-menu {
+            display: block;
+            height: 100%;
+
+            ul#menu-right-menu {
+              flex-direction: column;
+
+              li {
+                a {
+                  text-transform: uppercase;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  #home-slider {
+    .rslides_container {
+      .rslides {
+        li {
+          .caption {
+            padding: 20px;
+            bottom: 20px;
+            right: 20px;
+            left: 20px;
+
+            a {
+              &.button {
+                margin-bottom: 0;
+                margin-top: 20px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .container, .container-fluid {
+    padding: 0 20px;
+  }
+
+  .woocommerce-cart .woocommerce .table-responsive .cart_item .product-name .variation {
+    margin-left: 0;
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  #how-it-works a.button { font-size: 15px; }
+
+  #filter.filter-custom2 .filter-step {
+    &.coverages {
+      .step-title { width: 90%; }
+
+      .coverage {
+        margin-bottom: 20px;
+        margin-top: 0;
+        width: 100%;
+
+        .choice-details {
+          @include flex-direction(column);
+          padding: 0 20px;
+          width: 100%;
+
+          .choice-icon {
+            height: auto;
+          }
+        }
+      }
+
+      .trigger {
+        ul {
+          li {
+            width: 72px;
+
+            .text {
+              font-size: 16px;
+              bottom: -45px;
+              right: -5px;
+
+              span { font-size: 16px; }
+            }
+          }
+        }
+      }
+    }
+
+    &.providers {
+      .step-title { width: 90%; }
+    }
+
+    &.submits {
+      button[type="submit"] { font-size: 16px; }
+    }
+  }
+}

@@ -1,0 +1,231 @@
+.banner{
+  padding: 10px;
+  &.top-banner{
+    background-color: $brand-primary;
+    color: #fff ;
+    font-size: 1.3em;
+    code{
+      background-color: lighten($brand-primary,20);
+      color: inherit;
+    }
+  }
+}
+
+.navbar-primary{
+  background-color: $navbar-primary-bg;
+  min-height: 95px;
+  .navbar-brand{
+    padding: 20px 13px;
+  }
+  .navbar-toggle{
+    .icon-bar{
+      background-color: $brand-primary;
+    }
+  }
+  .icon-menu-favorites{
+    a{
+      font-size: 0;
+      line-height: 0;
+      &:before {
+        font-size: $font-size-large;
+        line-height: $line-height-computed;
+        content: $mb-icon-favorite_border;
+      }
+      &:hover{
+        &:before{
+          content: $mb-icon-favorite;
+        }
+      }
+    }
+  }
+  .icon-menu-cart{
+    a{
+      font-size: 0;
+      line-height: 0;
+      &:before {
+        font-size: $font-size-large;
+        line-height: $line-height-computed;
+        content: $mb-icon-shopping_cart;
+      }
+    }
+  }
+  .menu-item-phone-number{
+    a{
+      color: $action-color;
+      &:hover,&:active,&:focus{
+        border-bottom-color: transparent;
+      }
+    }
+  }
+}
+
+.mobile-action-button{
+  text-align: center;
+  margin: 15px auto;
+
+  a{
+    font-size: 1.3em;
+  }
+}
+
+.navbar-nav{
+  margin-top: 25px;
+  &>li>a{
+    font-size: 1.2em;
+    font-weight: bold;
+    color: inherit;
+    border-bottom: 2px solid transparent;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    transition: all 500ms;
+    -webkit-transitionition: all 500ms;
+    -moz-transitionition: all 500ms;
+    -o-transitionition: all 500ms;
+    &:focus,
+    &:hover{
+      border-bottom-color: $brand-primary;
+    }
+  }
+  ul{
+    &.dropdown-menu{
+      padding: 0;
+      li {
+        a {
+          padding-top: 10px;
+          padding-bottom: 10px;
+        }
+      }
+    }
+  }
+}
+.mb-top-menu-minicart{
+  a{
+    border: none!important;
+    &:hover,&:active,&:focus{
+      .minicart{
+        background-color: lighten($action-color,20);
+      }
+    }
+  }
+}
+.features{
+  border-top: 1px solid $brand-primary;
+  .feature {
+    padding: 5px 0;
+    @media all and (max-width: $screen-xs-max){
+      padding: 10px 0;
+    }
+
+    .mb-icon {
+      color: $brand-success;
+      font-size: 1.2em;
+      margin-right: 10px;
+      vertical-align: middle;
+      &.mb-icon-free-delivery {
+        line-height: 0;
+        font-size: 1.7em;
+      }
+    }
+    a{
+      color: $brand-success;
+    }
+
+    @media all and(max-width: $screen-xs-max) {
+      border-bottom: 1px solid $brand-primary;
+    }
+  }
+}
+.minicart-wrapper{
+  position: relative;
+  .minicart,.minicart_notice .notice{
+    background-color: $action-color;
+    color: #fff;
+    padding: 6px 6px 4px;
+    @include border-radius(3px);
+    border: none;
+    &.error{
+      background-color: red;
+    }
+  }
+  .minicart_notice{
+    display: none;
+    position: absolute;
+    z-index: 10;
+    right: 0;
+    top: 100%;
+    margin-top: 15px;
+    width: 320px;
+    text-align: center;
+    .notice {
+      &:before {
+        content: '';
+        width: 0;
+        height: 0;
+        position: absolute;
+        z-index: 10;
+        top: -10px;
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-bottom: 10px solid $action-color;
+        display: inline-block;
+        margin: 0 auto;
+        right: 15px;
+      }
+      &.error:before{
+        border-bottom: 10px solid red;
+      }
+      li{
+        line-height: 2;
+        border-top: 1px solid;
+        &:first-child{
+          border-top: none;
+        }
+      }
+    }
+    @media all and (max-width: $screen-xs-max){
+      position: relative;
+      width: 100%;
+      display: inline-block;
+      .notice {
+        &:before {
+          right: 0;
+          left: 0;
+        }
+      }
+    }
+  }
+}
+.woocommerce-cart,.single-product{
+  .minicart_notice{
+    display: block;
+  }
+}
+
+.top-menu-fixed-issues {
+  a {
+    transition: all 0ms;
+    -webkit-transitionition: all 0ms;
+    -moz-transitionition: all 0ms;
+    -o-transitionition: all 0ms;
+    &:hover {
+      border-bottom: 0;
+    }
+  }
+}
+.out-of-menu{
+  .visible-xs{
+    &>div{
+      padding-top: 5px;
+      padding-bottom: 5px;
+    }
+  }
+}
+
+.top-menu-paypal{
+  max-width: 80px;
+  margin-top: 7px;
+  img{
+    max-width: 100%;
+    height: auto;
+  }
+}

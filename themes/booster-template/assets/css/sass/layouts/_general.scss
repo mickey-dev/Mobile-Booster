@@ -1,0 +1,393 @@
+/* ==============
+  Style Custom
+  by. Al-Firdaus
+============== */
+
+body {
+  background-color: transparent !important;
+
+  &.home {
+    .page-header-bg {
+      display: none !important;
+
+      h1, h2 {
+        color: transparent !important;
+        font-size: 0 !important;
+      }
+    }
+
+    .contactOnPage {
+      display: none !important;
+    }
+  }
+
+  &.single-product {
+    .page-header-bg {
+      display: none !important;
+    }
+  }
+}
+* {
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+}
+
+#loading-page {
+  background-color: white;
+  position: fixed;
+  z-index: 999;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  top: 0;
+
+  svg {
+    height: 50px;
+    width: 50px;
+  }
+}
+
+a {
+  box-shadow: none !important;
+
+  &:hover {
+    text-decoration: none !important;
+    box-shadow: none !important;
+  }
+}
+
+b {
+    font-size: inherit;
+}
+
+h1 {
+  font-size: 54px;
+
+  @media screen and (max-width: 767px) {
+    font-size: 48px;
+  }
+}
+
+h2 {
+  font-size: 36px !important;
+
+  @media screen and (max-width: 767px) {
+    font-size: 26px !important;
+  }
+
+  &.widget-title {
+    font-size: 15px;
+  }
+}
+
+h3 {
+  font-size: 33px;
+  padding: 0;
+
+  @media screen and (max-width: 767px) {
+    font-size: 27px;
+  }
+}
+
+h4 {
+  font-size: 20px !important;
+  font-weight: bold;
+}
+
+
+/* ==============
+  Color
+============== */
+
+$main-color: #083D54;
+$yellow: #FFBB00;
+$orange: #F6A43A;
+$light-grey: #F8F8F8;
+$dark-grey: #757575;
+$border-gray: #dddddd;
+$link-blue: #05A3D1;
+
+
+/* ==============
+  Buttons
+============== */
+.button {
+  border: 2px solid $main-color;
+  max-width: max-content;
+  width: auto !important;
+  display: inline-block;
+  position: relative;
+  padding: 10px 20px;
+  border-radius: 0;
+  font-size: 15px;
+  z-index: 1;
+
+  &.angle-right {
+    &::after {
+      @include right-arrow();
+    }
+  }
+
+  &.angle-left {
+    &::before {
+      @include left-arrow();
+    }
+  }
+}
+
+.button-outline {
+  transition: all .5s ease;
+  background: transparent;
+  color: $main-color;
+
+  &:hover {
+    transition: all .5s ease;
+    background: $main-color;
+    color: #ffffff;
+  }
+}
+
+.button-filled {
+  transition: all .5s ease;
+  background: $main-color;
+  color: #ffffff;
+
+  &:hover {
+    transition: all .5s ease;
+    background: transparent;
+    color: $main-color;
+
+    .fa {
+      color: $main-color;
+    }
+  }
+
+  .fa {
+    font-weight: bold;
+    margin-left: 10px;
+    color: $yellow;
+  }
+}
+
+.button-filled-orange {
+  background-color: $orange;
+  border: 1px solid $orange;
+  transition: all .5s ease;
+  color: #ffffff;
+
+  &:hover {
+    background-color: transparent;
+    transition: all .5s ease;
+    color: $orange;
+
+    .fa {
+      color: $orange;
+    }
+  }
+}
+
+/* ==============
+  Public Class
+============== */
+
+.text-center { text-align: center; }
+
+.v-center {
+  @include align-items(center);
+  @include display-flex();
+}
+
+.full-center {
+  @include justify-content(center);
+  @include align-items(center);
+  @include display-flex();
+}
+
+.center {
+  text-align: center;
+}
+
+.title {
+  h1, h2, h3, h4 {
+    text-align: center;
+    color: $main-color;
+    font-weight: bold;
+
+    &:after {
+      transition: all 0.5s ease;
+      -moz-transition: all 0.5s ease;
+      -webkit-transition: all 0.5s ease;
+      -ms-transition: all 0.5s ease;
+      -o-transition: all 0.5s ease;
+      margin-left: calc(50% - 25px);
+      border: 1px solid $yellow;
+      display: block;
+      content: ' ';
+      width: 50px;
+    }
+  }
+}
+
+.full-background {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+.overlay {
+  background-color: rgba(8, 61, 84, 0.9);
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  top: 0;
+}
+
+.text-orange {
+    color: #FFBB00 !important;
+}
+
+.text-white {
+    color: #ffffff !important;
+}
+
+.text-blue {
+    color: #083D54 !important;
+}
+
+.term-description { padding: 15px 0 !important; }
+
+.custom-sidebar {
+  ul {
+    padding-left: 20px;
+  }
+
+  .term-description {
+    padding-left: 20px !important;
+  }
+}
+
+.fa {
+  &::before {
+    font-family: FontAwesome;
+  }
+}
+
+.default-padding {
+  padding: 70px 0;
+}
+
+.page-header-bg {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  margin-top: 98px;
+  height: 200px;
+
+  @media screen and (max-width: 991px) {
+    margin-top: 0;
+    height: 150px;
+  }
+
+  .overlay {
+    opacity: 0.7;
+  }
+
+  .row {
+    z-index: 1;
+
+    h1, h2 {
+      text-transform: uppercase;
+      color: white !important;
+
+      &::after {
+        @include transition(all .5s ease);
+        margin-left: calc(50% - 25px);
+        border: 1px solid $yellow;
+        margin-top: 10px;
+        display: block;
+        content: ' ';
+        width: 50px;
+      }
+    }
+  }
+}
+
+
+/* Providers Custom Icon */
+@font-face {
+  font-family: 'icomoon';
+  src:  url('assets/fonts/providers/icomoon.eot?ciwwaw');
+  src:  url('assets/fonts/providers/icomoon.eot?ciwwaw#iefix') format('embedded-opentype'),
+    url('assets/fonts/providers/icomoon.ttf?ciwwaw') format('truetype'),
+    url('assets/fonts/providers/icomoon.woff?ciwwaw') format('woff'),
+    url('assets/fonts/providers/icomoon.svg?ciwwaw#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-G2:before {
+  content: "\e900";
+  color: #0b4f6c;
+}
+.icon-G:before {
+  content: "\e901";
+  color: #0b4f6c;
+}
+.icon-02:before {
+  content: "\e902";
+  color: #294993;
+}
+.icon-ee:before {
+  content: "\e903";
+  color: #01b5b4;
+}
+.icon-orange:before {
+  content: "\e904";
+  color: #f60;
+}
+.icon-t-mobile .path1:before {
+  content: "\e905";
+  color: rgb(202, 0, 136);
+}
+.icon-t-mobile .path2:before {
+  content: "\e906";
+  margin-left: -0.76171875em;
+  color: rgb(152, 154, 156);
+}
+.icon-t-mobile .path3:before {
+  content: "\e907";
+  margin-left: -0.76171875em;
+  color: rgb(152, 154, 156);
+}
+.icon-three:before {
+  content: "\e908";
+}
+.icon-vodafone:before {
+  content: "\e909";
+  color: #cc2131;
+}
+
+.icon-id:after {
+  content: url('assets/id.svg');
+  height: 26px;
+  width: 26px;
+}
+

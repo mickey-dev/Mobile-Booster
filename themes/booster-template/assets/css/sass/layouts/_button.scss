@@ -1,0 +1,95 @@
+#home-slider .rslides_container ul.rslides .caption a.button:hover {
+	background-color: transparent !important;
+	color: $yellow;
+
+	&:after {
+		color: $yellow;
+	}
+}
+
+#how-it-works .row a.button {
+	background-color: $yellow;
+	border-color: $yellow;
+	border-radius: 30px;
+
+	&:hover {
+		background-color: transparent;
+		color: $yellow;
+
+		&:after { color: $yellow; }
+	}
+}
+
+#filter.filter-custom2 .filter-step.submits button[type="submit"] {
+	background-color: $yellow;
+	border-color: $yellow;
+	border-radius: 30px;
+
+	&:hover {
+		background-color: #f8f8f8;
+		color: $yellow;
+
+		&:after { color: $yellow; }
+	}	
+}
+
+.archive ul.products li {
+	.product-action a.button:nth-child(1) {
+		background-color: $yellow;
+		border-color: $yellow;	
+
+		&:after { color: white; }
+		&:hover {
+			background-color: transparent;
+			color: $yellow;
+
+			&:after { color: $yellow; }
+		}
+	}
+
+	&.list.accessory .product-price .col-xs-12:nth-child(2) .button {
+		border-radius: 30px;		
+
+		&:nth-child(1) {
+			background-color: $yellow;
+			border-color: $yellow;
+
+			&:after { color: white; }
+
+			&:hover {
+				background-color: transparent;
+				color: $yellow;
+
+				&:after { color: $yellow; }
+			}
+		}
+	}
+}
+
+.woocommerce-cart .woocommerce .cart-collaterals .checkout-button,
+.woocommerce-checkout .woocommerce .kanan #order_review #payment .place-order input[type="submit"] {
+	@include transition(all .5s ease);
+	background-color: $yellow;
+	border: 2px solid $yellow;
+	color: white;
+
+	&:hover {
+		@include transition(all .5s ease);
+		background-color: transparent;
+		border-color: $yellow;
+		color: $yellow;
+	}
+}
+
+
+.single-product .product .main-content .right .summary .single_add_to_cart_button.primary-button {
+	background-color: $yellow;
+	border-color: $yellow;
+	&:hover {
+		color: $yellow;
+
+		&:after { color: $yellow; }
+	}
+}
+
+

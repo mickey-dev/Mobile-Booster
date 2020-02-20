@@ -1,0 +1,489 @@
+# Copyright (C) 2019 Gordon Böhme, Antonio Leutsch, Marcel Deutschel, Rene Reimann
+# This file is distributed under the same license as the Structured Content plugin.
+msgid ""
+msgstr ""
+"Project-Id-Version: Structured Content 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/structured-"
+"content\n"
+"POT-Creation-Date: 2019-11-09T10:26:56+00:00\n"
+"PO-Revision-Date: 2019-11-10 09:12+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: de_DE\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.2.4\n"
+"X-Domain: structured-content\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#. Plugin Name of the plugin
+#: includes/class-structuredcontent-register-tinymce.php:98
+msgid "Structured Content"
+msgstr "Strukturierte Inhalte"
+
+#. Plugin URI of the plugin
+msgid "https://gitlab.com/webwirtschaft/structured-content"
+msgstr "https://gitlab.com/webwirtschaft/structured-content"
+
+#. Description of the plugin
+msgid ""
+"Pimp your content with some feature boxes, which labels the output with "
+"micro formats http://schema.org/"
+msgstr ""
+"Füge Inhaltsboxen mit JSON-LD-Mikrodatenausgabe gemäß schema.org hinzu."
+
+#. Author of the plugin
+msgid "Gordon Böhme, Antonio Leutsch"
+msgstr "Gordon Böhme, Antonio Leutsch"
+
+#. Author URI of the plugin
+msgid "https://gorbo.de/structured-content/"
+msgstr "https://gorbo.de/structured-content/"
+
+#: includes/class-structuredcontent-block-settings.php:88
+msgid "Enable or disable blocks"
+msgstr "Blöcke aktivieren oder deaktivieren"
+
+#: class-structuredcontent.php:79 class-structuredcontent.php:91
+msgid "Ahh not so funny Dude?"
+msgstr "Aaah, nicht lustig!"
+
+#: shortcodes/event.php:40 dist/blocks.build.js:1
+msgid "Event Meta"
+msgstr "Zusatzinfo"
+
+#: shortcodes/event.php:46 shortcodes/event.php:137 shortcodes/person.php:27
+#: shortcodes/job.php:35 dist/blocks.build.js:1
+msgid "Name"
+msgstr "Name"
+
+#: shortcodes/event.php:54 dist/blocks.build.js:1
+msgid "Start Date"
+msgstr "Veranstaltungsbeginn"
+
+#: shortcodes/event.php:62 dist/blocks.build.js:1
+msgid "End Date"
+msgstr "Veranstaltungsende"
+
+#: shortcodes/event.php:73
+msgid "EVENT Location"
+msgstr "Veranstaltungsort"
+
+#: shortcodes/event.php:77 shortcodes/person.php:100 shortcodes/job.php:77
+#: dist/blocks.build.js:1
+msgid "Street"
+msgstr "Straße"
+
+#: shortcodes/event.php:86 shortcodes/person.php:109 shortcodes/job.php:86
+#: dist/blocks.build.js:1
+msgid "Postal Code"
+msgstr "Postleitzahl"
+
+#: shortcodes/event.php:94 shortcodes/person.php:117 shortcodes/job.php:94
+#: dist/blocks.build.js:1
+msgid "Locality"
+msgstr "Ort"
+
+#: shortcodes/event.php:104 shortcodes/person.php:127 shortcodes/job.php:104
+#: dist/blocks.build.js:1
+msgid "Country ISO Code"
+msgstr "Land (ISO Code)"
+
+#: shortcodes/event.php:112 shortcodes/person.php:135 shortcodes/job.php:112
+#: dist/blocks.build.js:1
+msgid "Region ISO Code"
+msgstr "Region (ISO Code)"
+
+#: shortcodes/event.php:125
+msgid "PERFORMER"
+msgstr "Interpret"
+
+#: shortcodes/event.php:129 dist/blocks.build.js:1
+msgid "Type"
+msgstr "Typ"
+
+#: shortcodes/event.php:148 dist/blocks.build.js:1
+msgid "Offer"
+msgstr "Angebot"
+
+#: shortcodes/event.php:153 dist/blocks.build.js:1
+msgid "Availability"
+msgstr "Verfügbarkeit"
+
+#: shortcodes/event.php:161 dist/blocks.build.js:1
+msgid "Ticket Website"
+msgstr "Ticket Website"
+
+#: shortcodes/event.php:172 shortcodes/job.php:155 dist/blocks.build.js:1
+msgid "Currency ISO Code"
+msgstr "Währung (ISO Code)"
+
+#: shortcodes/event.php:180 dist/blocks.build.js:1
+msgid "Price"
+msgstr "Preis"
+
+#: shortcodes/event.php:189 dist/blocks.build.js:1
+msgid "Valid From"
+msgstr "Gültig ab"
+
+#: shortcodes/person.php:21 dist/blocks.build.js:1
+msgid "Personal"
+msgstr "Personenangaben"
+
+#: shortcodes/person.php:35 dist/blocks.build.js:1
+msgid "Job Title"
+msgstr "Berufsangaben"
+
+#: shortcodes/person.php:46 dist/blocks.build.js:1
+msgid "Image"
+msgstr "Bild hinzufügen"
+
+#: shortcodes/person.php:65 dist/blocks.build.js:1
+msgid "Contact"
+msgstr "Kontakt"
+
+#: shortcodes/person.php:69 dist/blocks.build.js:1
+msgid "E-Mail"
+msgstr "E-Mail"
+
+#: shortcodes/person.php:77 shortcodes/person.php:149 dist/blocks.build.js:1
+msgid "URL"
+msgstr "URL"
+
+#: shortcodes/person.php:85 dist/blocks.build.js:1
+msgid "Telephone"
+msgstr "Telefon"
+
+#: shortcodes/person.php:96 dist/blocks.build.js:1
+msgid "Address"
+msgstr "Adresse"
+
+#: shortcodes/person.php:145 dist/blocks.build.js:1
+msgid "Colleague"
+msgstr "Mitarbeiter"
+
+#: shortcodes/course.php:27 dist/blocks.build.js:1
+msgid "Provider Information"
+msgstr "Anbieterinformationen"
+
+#: shortcodes/course.php:32 dist/blocks.build.js:1
+msgid "Provider Name"
+msgstr "Anbietername"
+
+#: shortcodes/course.php:40 shortcodes/job.php:43 dist/blocks.build.js:1
+msgid "Same as (Website / Social Media)"
+msgstr "Same as (URL d. Website/Social Media)"
+
+#: shortcodes/job.php:29 dist/blocks.build.js:1
+msgid "Company"
+msgstr "Firma"
+
+#: shortcodes/job.php:54 dist/blocks.build.js:1
+msgid "Logo"
+msgstr "Logo"
+
+#: shortcodes/job.php:73 dist/blocks.build.js:1
+msgid "Job Location"
+msgstr "Arbeitsort"
+
+#: shortcodes/job.php:124 dist/blocks.build.js:1
+msgid "Salary"
+msgstr "Gehalt"
+
+#: shortcodes/job.php:128 dist/blocks.build.js:1
+msgid "Unit"
+msgstr "Einheit"
+
+#: shortcodes/job.php:134 dist/blocks.build.js:1
+msgid "Hourly"
+msgstr "Stündlich"
+
+#: shortcodes/job.php:137 dist/blocks.build.js:1
+msgid "Daily"
+msgstr "Täglich"
+
+#: shortcodes/job.php:140 dist/blocks.build.js:1
+msgid "Weekly"
+msgstr "Wöchentlich"
+
+#: shortcodes/job.php:143 dist/blocks.build.js:1
+msgid "Monthly"
+msgstr "Monatlich"
+
+#: shortcodes/job.php:146 dist/blocks.build.js:1
+msgid "Yearly"
+msgstr "Jährlich"
+
+#: shortcodes/job.php:163 dist/blocks.build.js:1
+msgid "Value"
+msgstr "Wert"
+
+#: shortcodes/job.php:173 dist/blocks.build.js:1
+msgid "Job Meta"
+msgstr "Job-Details"
+
+#: shortcodes/job.php:177 dist/blocks.build.js:1
+msgid "Employment Type"
+msgstr "Beschäftigungsart"
+
+#: shortcodes/job.php:183 dist/blocks.build.js:1
+msgid "Full Time"
+msgstr "Vollzeit"
+
+#: shortcodes/job.php:186 dist/blocks.build.js:1
+msgid "Part Time"
+msgstr "Teilzeit"
+
+#: shortcodes/job.php:189 dist/blocks.build.js:1
+msgid "Contractor"
+msgstr "Auftragnehmer"
+
+#: shortcodes/job.php:192 dist/blocks.build.js:1
+msgid "Temporary"
+msgstr "Befristet"
+
+#: shortcodes/job.php:195 dist/blocks.build.js:1
+msgid "Intern"
+msgstr "Praktikant"
+
+#: shortcodes/job.php:198 dist/blocks.build.js:1
+msgid "Volunteer"
+msgstr "Volontär"
+
+#: shortcodes/job.php:201 dist/blocks.build.js:1
+msgid "Per Diem"
+msgstr "Tageweise"
+
+#: shortcodes/job.php:204 dist/blocks.build.js:1
+msgid "Other"
+msgstr "Andere"
+
+#: shortcodes/job.php:212 dist/blocks.build.js:1
+msgid "Valid Through"
+msgstr "Gültig bis"
+
+#: dist/blocks.build.js:1
+msgid "FAQ"
+msgstr "FAQ"
+
+#: dist/blocks.build.js:1
+msgid "faq question"
+msgstr "FAQ Frage"
+
+#: dist/blocks.build.js:1
+msgid "faq answer"
+msgstr "FAQ Antwort"
+
+#: dist/blocks.build.js:1
+msgid "structured-content"
+msgstr "structured content"
+
+#: dist/blocks.build.js:1
+msgid "Enter Your Question here..."
+msgstr "Frage hier eingeben ..."
+
+#: dist/blocks.build.js:1
+msgid "Add Image"
+msgstr "Bild hinzufügen"
+
+#: dist/blocks.build.js:1
+msgid "Enter your answer here..."
+msgstr "Antwort hier eingeben."
+
+#: dist/blocks.build.js:1
+msgid "Question tag"
+msgstr "Fragen-Tag"
+
+#: dist/blocks.build.js:1
+msgid "CSS class"
+msgstr "CSS Klasse"
+
+#: dist/blocks.build.js:1
+msgid "additional css classes ..."
+msgstr "Zusätzliche CSS-Klasse."
+
+#: dist/blocks.build.js:1
+msgid "Add One"
+msgstr "Hinzufügen"
+
+#: dist/blocks.build.js:1
+msgid "Job"
+msgstr "Job"
+
+#: dist/blocks.build.js:1
+msgid "job search"
+msgstr "Jobsuche"
+
+#: dist/blocks.build.js:1
+msgid "job offer"
+msgstr "Stellenangebot"
+
+#: dist/blocks.build.js:1
+msgid "Select a Type"
+msgstr "Bitte auswählen"
+
+#: dist/blocks.build.js:1
+msgid "Title tag"
+msgstr "Titel tag"
+
+#: dist/blocks.build.js:1
+msgid "Enter Your job title here..."
+msgstr "Hier Stellenbezeichnung eingeben."
+
+#: dist/blocks.build.js:1
+msgid "Enter your job description here..."
+msgstr "Hier Stellenbeschreibung eingeben."
+
+#: dist/blocks.build.js:1
+msgid "https://your-website.com"
+msgstr "https://website.de"
+
+#: dist/blocks.build.js:1
+msgid "Remove Image"
+msgstr "Bild entfernen"
+
+#: dist/blocks.build.js:1
+msgid "Any Street 3A"
+msgstr "Beispielstrasse 3A"
+
+#: dist/blocks.build.js:1
+msgid "Any Postal Code"
+msgstr "12345"
+
+#: dist/blocks.build.js:1
+msgid "Any City"
+msgstr "Musterstadt"
+
+#: dist/blocks.build.js:1
+msgid "US"
+msgstr "DE"
+
+#: dist/blocks.build.js:1
+msgid "CA"
+msgstr "ST"
+
+#: dist/blocks.build.js:1
+msgid "USD"
+msgstr "EUR"
+
+#: dist/blocks.build.js:1
+msgid "Event"
+msgstr "Veranstaltung"
+
+#: dist/blocks.build.js:1
+msgid "event"
+msgstr "Veranstaltung"
+
+#: dist/blocks.build.js:1
+msgid "Performing Group"
+msgstr "Künstlergruppe"
+
+#: dist/blocks.build.js:1
+msgid "Person"
+msgstr "Person"
+
+#: dist/blocks.build.js:1
+msgid "In Stock"
+msgstr "Auf Lager"
+
+#: dist/blocks.build.js:1
+msgid "Sold Out"
+msgstr "Ausverkauft"
+
+#: dist/blocks.build.js:1
+msgid "Pre Order"
+msgstr "Vorbestellung"
+
+#: dist/blocks.build.js:1
+msgid "Enter Your Event Title..."
+msgstr "Hier Veranstaltungsbezeichnung eingeben."
+
+#: dist/blocks.build.js:1
+msgid "Enter your Event Description here..."
+msgstr "Hier Veranstaltungsbeschreibung eingeben."
+
+#: dist/blocks.build.js:1
+msgid "Event Location Name"
+msgstr "Name des Veranstaltungsortes"
+
+#: dist/blocks.build.js:1
+msgid "Event Location"
+msgstr "Veranstaltungsort"
+
+#: dist/blocks.build.js:1
+msgid "Performer"
+msgstr "Interpret"
+
+#: dist/blocks.build.js:1
+msgid "John Doe"
+msgstr "Max Mustermann"
+
+#: dist/blocks.build.js:1
+msgid "person search"
+msgstr "Jobsuche"
+
+#: dist/blocks.build.js:1
+msgid "person offer"
+msgstr "Stellenangebot"
+
+#: dist/blocks.build.js:1
+msgid "http://www.xyz.edu/students/alicejones.html"
+msgstr "http://uni.de/mitarbeiter/otto-normal.html"
+
+#: dist/blocks.build.js:1
+msgid "Person Name"
+msgstr "Max Mustermann"
+
+#: dist/blocks.build.js:1
+msgid "Professor"
+msgstr "Professor"
+
+#: dist/blocks.build.js:1
+msgid "jane-doe@xyz.edu"
+msgstr "max@mustermann.de"
+
+#: dist/blocks.build.js:1
+msgid "http://www.janedoe.com"
+msgstr "http://www.website.de"
+
+#: dist/blocks.build.js:1
+msgid "(425) 123-4567"
+msgstr "(030) 12345-67"
+
+#: dist/blocks.build.js:1
+msgid "Course"
+msgstr "Kurse"
+
+#: dist/blocks.build.js:1
+msgid "course"
+msgstr "Kurs"
+
+#: dist/blocks.build.js:1
+msgid "Enter Your Course Name here..."
+msgstr "Hier Kursname eingeben."
+
+#: dist/blocks.build.js:1
+msgid "Enter your description here..."
+msgstr "Hier Kursbeschreibung eingeben."
+
+#~ msgid "Cheating huh?"
+#~ msgstr "Schummeln gilt nicht!?"
+
+#~ msgid "Image Settings"
+#~ msgstr "Bildeinstellungen"
+
+#~ msgid "Image description"
+#~ msgstr "Bildbeschreibung"
+
+#~ msgid "Enter an image description here ..."
+#~ msgstr "Geben Sie hier eine Bildbeschreibung ein...."
+
+#~ msgid "Render HTML"
+#~ msgstr "HTML ausgeben"
+
+#~ msgid "Adds a FAQ block to the page."
+#~ msgstr "Fügt einen FAQ-Block auf der Seite ein."
+
+#~ msgid "Adds a JobPosting block to the page."
+#~ msgstr "Fügt ein JobPosting-Block auf der Seite ein."

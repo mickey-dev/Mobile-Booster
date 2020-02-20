@@ -1,0 +1,222 @@
+body{
+  font-family: 'Akkurat', arial, sans-serif;
+}
+.no-padding{
+  padding: 0;
+}
+.no-padding-left{
+  padding-left: 0;
+}
+.no-padding-right{
+  padding-right: 0;
+}
+.img-responsive{
+  width: 100%;
+}
+.mb-icon-vodafone-text, .mb-icon-vodacom-text {
+  font-size: 1.6em;
+  vertical-align: sub;
+}
+.white-bg{
+  background-color: #fff;
+}
+.primary-color{
+  color: $brand-primary;
+}
+.success-color{
+  color: $brand-success;
+}
+.action-color{
+  color: $action-color;
+}
+.info-color{
+  color: $info-color;
+}
+.secondary-color{
+  color: $brand-secondary;
+}
+.light-bg{
+  background-color: #f9f9f9;
+}
+.button{
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 15px;
+  text-align: center;
+  text-decoration: none!important;
+}
+.highlight{
+  position: relative;
+  .highlight-text{
+    display: none;
+    position: absolute;
+    top: 30px;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid $info-color;
+    color: $info-color;
+    background: #fff;
+    @include border-radius(5px);
+    &:after{
+      content: '';
+      width: 0;
+      height: 0;
+      position: absolute;
+      top: -5px;
+      border-left: 15px solid transparent;
+      border-right: 15px solid transparent;
+      border-bottom: 5px solid $info-color;
+      display: inline-block;
+      margin: 0 auto;
+      left: 0;
+      right: 0;
+    }
+    i{
+      font-size: 2em;
+    }
+  }
+  &:hover{
+    & .highlight-text{
+      display: inline-block;
+    }
+  }
+}
+
+.more-content{
+  display: none;
+  &.open{
+    display: inherit;
+  }
+}
+
+.front-page-content{
+  padding-top: 2em;
+  padding-bottom: 2em;
+  h3{
+    font-size: 2.5em;
+    font-weight: 900;
+    margin-bottom: 30px;
+  }
+  .content{
+    line-height: 1.8;
+    font-size: 1.1em;
+    font-weight: bold;
+    margin-bottom: 30px;
+  }
+  .content-image{
+    position: relative;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 25px;
+    &:before,&:after{
+      content: '';
+      position: absolute;
+      height: 100px;
+      width: 100px;
+      display: inline-block;
+    }
+
+    &:before{
+      top: 0;
+      left: 0;
+      border-top: 2px solid $brand-primary;
+      border-left: 2px solid $brand-primary;
+    }
+    &:after{
+      bottom: 0;
+      right: 0;
+      border-bottom: 2px solid $brand-primary;
+      border-right: 2px solid $brand-primary;
+    }
+    img{
+      max-width: 100%;
+      height: auto;
+    }
+  }
+}
+
+.testimonials{
+  padding: 20px 0;
+  background: #fff;
+  .container{
+    max-width: 800px;
+  }
+  .carousel{
+    padding-top: 20px;
+    padding-bottom: 50px;
+    min-height: 120px;
+    .carousel-indicators{
+      bottom: 0;
+      li {
+        background: $products-list-border-color;
+        &.active{
+          background: $brand-primary;
+        }
+      }
+    }
+    .testimonial-image{
+      max-width: 150px;
+      max-height: 150px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 30px;
+      @include border-radius(50%);
+      border: 2px solid $products-list-border-color;
+      img{
+        width: 100%;
+        height: auto;
+      }
+    }
+    .testimonial-name{
+      color: $brand-primary;
+      font-weight: bolder;
+      font-size: 1.2em;
+      &:before{
+        content: '';
+        display: block;
+        width: 30px;
+        margin: 15px auto;
+        border-top: 2px solid $brand-primary ;
+      }
+    }
+    .testimonial-role{
+      font-weight: bold;
+    }
+  }
+}
+.certificates{
+  padding: 30px 0;
+  h2{
+    margin-bottom: 20px;
+  }
+  .col-sm-offset-1{
+    margin-top: 15px;
+  }
+}
+section.why-choose-us{
+  padding: 30px 0 50px 0;
+  background-color: $info-color;
+  color: #fff;
+  h3{
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  .iconic-step{
+    margin-bottom: 15px;
+    .icon{
+      font-size: 6em;
+      color: $brand-primary;
+    }
+    .title{
+      font-weight: bolder;
+      font-size: 1.7em;
+      margin-bottom: 10px;
+    }
+    &:nth-child(2n+1){
+      .icon{
+        color: $brand-success;
+      }
+    }
+  }
+}

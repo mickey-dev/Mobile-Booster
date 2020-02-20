@@ -1,0 +1,14 @@
+{
+  "name": "mobile-booster",
+  "version": "1.0.0",
+  "description": "mobilebooster.co.uk",
+  "main": "index.js",
+  "scripts": {
+    "test": "command test"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp-sass": "^3.1.0"
+  }
+}

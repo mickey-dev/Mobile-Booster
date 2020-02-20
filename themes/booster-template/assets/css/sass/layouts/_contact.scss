@@ -1,0 +1,84 @@
+.page-contact {
+  .left {
+    .atas {
+      padding-left: 24px;
+
+      ul {
+        padding-left: 0;
+
+        li {
+          list-style-type: none;
+          margin-bottom: 20px;
+
+          a {
+            color: $main-color;
+            display: block;
+
+            i {
+              position: absolute;
+              left: 0;
+            }
+          }
+        }
+      }
+    }
+
+    .social {
+      margin-top: 30px;
+      padding: 0;
+
+      h4 {
+        color: $main-color;
+      }
+
+      a {
+        &:hover {
+          svg {
+            transition: all .5s ease;
+            transform: scale(0.9);
+          }
+        }
+
+        svg {
+          transition: all .5s ease;
+          margin-right: 10px;
+          height: 40px;
+          width: 40px;
+        }
+      }
+    }
+  }
+
+  .right {
+    form {
+      label, input[type=text], input[type=email], textarea {
+        font-weight: normal;
+        color: $main-color;
+        padding: 0 10px;
+        width: 100%;
+      }
+
+      input[type=text], input[type=email] {
+        height: 40px;
+      }
+
+      input[type=submit] {
+        @include transition(all .5s ease);
+        background-color: $yellow;
+        border: 2px solid $yellow;
+        border-radius: 30px;
+        padding: 10px 20px;
+        margin-left: 10px;
+        font-size: 18px;
+        color: white;
+        width: 120px;
+
+        &:hover {
+          @include transition(all .5s ease);
+          background-color: transparent;
+          color: $yellow;
+        }
+      }
+    }
+  }
+}

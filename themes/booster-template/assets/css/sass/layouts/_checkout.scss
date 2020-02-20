@@ -1,0 +1,116 @@
+.woocommerce-checkout {
+  .woocommerce {
+    width: 100%;
+
+    .kiri {
+      h3 {
+        color: $main-color;
+        font-weight: bold;
+      }
+
+      input, textarea {
+        font-size: 16px !important;
+      }
+    }
+
+    .kanan {
+      h3 {
+        color: $main-color;
+        font-weight: bold;
+      }
+
+      #order_review {
+        .cart_item {
+          margin-bottom: 20px;
+
+          .product-thumbnail {
+            @media screen and (max-width: 767px) {
+              @include box-shadow2();
+              margin-bottom: 30px;
+            }
+          }
+
+          .product-name {
+            text-align: left;
+          }
+
+          .product-total {
+            color: $main-color;
+            font-weight: bold;
+            text-align: right;
+          }
+        }
+
+        .cart-subtotal, .shipping, .order-total {
+          background-color: #efefef;
+          margin-bottom: 5px;
+          border-radius: 5px;
+          padding: 10px;
+
+          .text-left {
+            color: $main-color;
+            text-align: right;
+            padding: 0;
+          }
+        }
+
+        .shipping {
+          text-align: right;
+        }
+
+        .order-total {
+          .text-left {
+            span {
+              font-size: 18px;
+              color: $orange;
+            }
+          }
+        }
+
+        #payment {
+          .wc_payment_methods {
+            li.wc_payment_method {
+              border-radius: 5px;
+
+              input[type=radio]:checked+label {
+                font-weight: normal;
+                text-align: center;
+
+                &::before {
+                  background-color: $orange;
+                  left: 3px;
+                  top: 3px;
+                }
+
+                img {
+                  width: 100%;
+                }
+              }
+            }
+          }
+
+          .place-order {
+            .wc-terms-and-conditions {
+              .checkbox {
+                font-weight: normal;
+                color: $main-color;
+              }
+            }
+
+            input[type="submit"] {
+              max-width: none;
+              font-size: 20px;
+              padding: 3px;
+              color: white;
+
+              &:hover {
+                opacity: 0.8;
+              }
+            }
+          }
+        }
+
+      }
+    }
+  }
+}

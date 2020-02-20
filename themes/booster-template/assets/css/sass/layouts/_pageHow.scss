@@ -1,0 +1,31 @@
+#page-how {
+	#area-covered {
+		background-color: #F8F8F8;
+		padding: 50px;
+
+		.title h2 {
+			margin-bottom: 50px;
+			text-align: center;
+		}
+
+		.content {
+		    -webkit-align-items: center;
+		    align-items: center;
+		    display: -webkit-box;
+		    display: -webkit-flex;
+		    display: -ms-flexbox;
+		    display: flex;		
+
+			.item { 
+				text-align: center;
+
+				.image {
+					margin-bottom: 30px;
+					height: 290px;
+				}
+				.title { margin-bottom: 10px; }
+				.desc { padding: 0 50px; }
+			}
+		}		
+	}
+}
