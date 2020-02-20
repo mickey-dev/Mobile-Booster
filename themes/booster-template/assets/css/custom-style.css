@@ -3338,7 +3338,7 @@ nav.navbar-primary .main-header ul.navbar-nav ul.dropdown-menu {
     -webkit-transition: all .2s ease;
     -ms-transition: all .2s ease;
     -o-transition: all .2s ease;
-    border-color: #083d54;
+    border-color: #fb0;
     cursor: auto
 }
 
@@ -3351,7 +3351,7 @@ nav.navbar-primary .main-header ul.navbar-nav ul.dropdown-menu {
 }
 
 #filter.filter-custom2 .filter-step.coverages .coverage .choice-details.choosen {
-    border-color: #083d54
+    border-color: #fb0
 }
 
 #filter.filter-custom2 .filter-step.coverages .coverage .choice-details.choosen .choice-icon i, #filter.filter-custom2 .filter-step.coverages .coverage .choice-details.choosen .choice-name {
@@ -3360,7 +3360,7 @@ nav.navbar-primary .main-header ul.navbar-nav ul.dropdown-menu {
     -webkit-transition: all .2s ease;
     -ms-transition: all .2s ease;
     -o-transition: all .2s ease;
-    color: #083d54
+    color: #fb0
 }
 
 #filter.filter-custom2 .filter-step.coverages .coverage .choice-details .choice-icon {
@@ -3370,7 +3370,7 @@ nav.navbar-primary .main-header ul.navbar-nav ul.dropdown-menu {
 
 #filter.filter-custom2 .filter-step.coverages .coverage .choice-details .choice-icon i {
     font-size: 100px;
-    color: #083d54
+    color: #fb0
 }
 
 #filter.filter-custom2 .filter-step.coverages .coverage .choice-details .choice-name {
@@ -3471,10 +3471,6 @@ nav.navbar-primary .main-header ul.navbar-nav ul.dropdown-menu {
     color: #fb0
 }
 
-#filter.filter-custom2 .filter-step.coverages .trigger ul li:nth-child(2) .bulet.hover svg rect:nth-last-child(1), #filter.filter-custom2 .filter-step.coverages .trigger ul li:nth-child(3) .bulet.hover svg rect:nth-last-child(1), #filter.filter-custom2 .filter-step.coverages .trigger ul li:nth-child(4) .bulet.hover svg rect:nth-last-child(1), #filter.filter-custom2 .filter-step.coverages .trigger ul li:nth-child(5)  {
-    fill: #083d54
-}
-
 #filter.filter-custom2 .filter-step.coverages .trigger ul li:nth-child(2) .bulet.hover svg rect:nth-last-child(1), #filter.filter-custom2 .filter-step.coverages .trigger ul li:nth-child(3) .bulet.hover svg rect:nth-last-child(1), #filter.filter-custom2 .filter-step.coverages .trigger ul li:nth-child(4) .bulet.hover svg rect:nth-last-child(1), #filter.filter-custom2 .filter-step.coverages .trigger ul li:nth-child(5) .bulet.hover svg rect:nth-last-child(1) {
     fill: #fb0
 }
@@ -3482,16 +3478,13 @@ nav.navbar-primary .main-header ul.navbar-nav ul.dropdown-menu {
 #filter.filter-custom2 .filter-step.coverages .trigger ul li:nth-child(3) .text {
     right: -11px
 }
-#filter.filter-custom2 .filter-step.coverages .trigger ul li.active #5 .bulet {
+
+#filter.filter-custom2 .filter-step.coverages .trigger ul li.active .bulet {
     color: #fb0
 }
 
-#filter.filter-custom2 .filter-step.coverages .trigger ul li.active .bulet {
-    color: #083d54
-}
-
 #filter.filter-custom2 .filter-step.coverages .trigger ul li.active .bulet svg g rect:nth-last-child(2) {
-    stroke: #083d54
+    stroke: #fb0
 }
 
 #filter.filter-custom2 .filter-step.coverages .trigger ul li.active .bulet svg g rect:nth-last-child(1) {
@@ -3508,7 +3501,7 @@ nav.navbar-primary .main-header ul.navbar-nav ul.dropdown-menu {
 }
 
 #filter.filter-custom2 .filter-step.coverages .trigger ul li.active .text {
-    color: #083d54
+    color: #fb0
 }
 
 #filter.filter-custom2 .filter-step.coverages .trigger ul li .bulet {
@@ -3557,13 +3550,9 @@ nav.navbar-primary .main-header ul.navbar-nav ul.dropdown-menu {
     bottom: -60px;
     right: -15px
 }
-#filter.filter-custom2 .filter-step.coverages .trigger ul li#5 .text:hover {
-    color: #083d54;
-    cursor: pointer
-}
 
 #filter.filter-custom2 .filter-step.coverages .trigger ul li .text:hover {
-    color: #083d54;
+    color: #fb0;
     cursor: pointer
 }
 
@@ -3623,7 +3612,7 @@ nav.navbar-primary .main-header ul.navbar-nav ul.dropdown-menu {
 }
 
 #filter.filter-custom2 .filter-step.providers .choice-icon.choosen, #filter.filter-custom2 .filter-step.providers .choice-icon:hover {
-    border-color: #083d54 !important
+    border-color: #fb0 !important
 }
 
 #filter.filter-custom2 .filter-step.providers .choice-icon i.icon-id:after {
@@ -4418,46 +4407,46 @@ footer.site-footer .fourth .payment-icon img {
 
 #home-slider .rslides_container ul.rslides .caption a.button:hover {
     background-color: transparent !important;
-    color: #073e54
+    color: #fb0
 }
 
 #home-slider .rslides_container ul.rslides .caption a.button:hover:after {
-    color: #073e54
+    color: #fb0
 }
 
 #how-it-works .row a.button {
-    background-color: #073e54;
-    border-color: #073e54;
+    background-color: #fb0;
+    border-color: #fb0;
     border-radius: 30px
 }
 
 #how-it-works .row a.button:hover {
     background-color: transparent;
-    color: #073e54
+    color: #fb0
 }
 
 #how-it-works .row a.button:hover:after {
-    color: #073e54
+    color: #fb0
 }
 
 #filter.filter-custom2 .filter-step.submits button[type=submit] {
-    background-color: #073e54;
-    border-color: #073e54;
+    background-color: #fb0;
+    border-color: #fb0;
     border-radius: 30px
 }
 
 #filter.filter-custom2 .filter-step.submits button[type=submit]:hover {
     background-color: #f8f8f8;
-    color: #073e54
+    color: #fb0
 }
 
 #filter.filter-custom2 .filter-step.submits button[type=submit]:hover:after {
-    color: #073e54
+    color: #fb0
 }
 
 .archive ul.products li .product-action a.button:nth-child(1) {
-    background-color: #073e54;
-    border-color: #073e54
+    background-color: #fb0;
+    border-color: #fb0
 }
 
 .archive ul.products li .product-action a.button:nth-child(1):after {
@@ -4466,11 +4455,11 @@ footer.site-footer .fourth .payment-icon img {
 
 .archive ul.products li .product-action a.button:nth-child(1):hover {
     background-color: transparent;
-    color: #073e54
+    color: #fb0
 }
 
 .archive ul.products li .product-action a.button:nth-child(1):hover:after {
-    color: #073e54
+    color: #fb0
 }
 
 .archive ul.products li.list.accessory .product-price .col-xs-12:nth-child(2) .button {
@@ -4478,8 +4467,8 @@ footer.site-footer .fourth .payment-icon img {
 }
 
 .archive ul.products li.list.accessory .product-price .col-xs-12:nth-child(2) .button:nth-child(1) {
-    background-color: #073e54;
-    border-color: #073e54
+    background-color: #fb0;
+    border-color: #fb0
 }
 
 .archive ul.products li.list.accessory .product-price .col-xs-12:nth-child(2) .button:nth-child(1):after {
@@ -4488,11 +4477,11 @@ footer.site-footer .fourth .payment-icon img {
 
 .archive ul.products li.list.accessory .product-price .col-xs-12:nth-child(2) .button:nth-child(1):hover {
     background-color: transparent;
-    color: #073e54
+    color: #fb0
 }
 
 .archive ul.products li.list.accessory .product-price .col-xs-12:nth-child(2) .button:nth-child(1):hover:after {
-    color: #073e54
+    color: #fb0
 }
 
 .woocommerce-cart .woocommerce .cart-collaterals .checkout-button, .woocommerce-checkout .woocommerce .kanan #order_review #payment .place-order input[type=submit] {
@@ -5007,23 +4996,23 @@ p.desc {
 }
 
 #filter.filter-custom2 .filter-step.coverages .trigger ul li .bulet svg g rect:nth-last-child(1):hover {
-    stroke: #073e54;
+    fill: #fb0
 }
 
 #filter.filter-custom2 .filter-step.coverages .trigger ul li .bulet svg g rect:nth-last-child(2):hover {
-    stroke: #073e54;
+    stroke: #fb0
 }
 
 #filter.filter-custom2 .filter-step.coverages .trigger ul li .bulet.hover svg g rect:nth-last-child(2) {
-    stroke: #073e54;
+    stroke: #fb0
 }
 
 #filter.filter-custom2 .filter-step.coverages .trigger ul li .bulet:hover svg g rect:nth-last-child(2) {
-    stroke: #073e54;
+    stroke: #fb0
 }
 
 #filter.filter-custom2 .filter-step.coverages .trigger ul li .bulet:hover svg g rect:nth-last-child(1) {
-    stroke: #073e54;
+    fill: #fb0
 }
 
 .mb-block-row {
