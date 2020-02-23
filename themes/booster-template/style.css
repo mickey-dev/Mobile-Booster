@@ -8,3 +8,161 @@ License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: booster, responsive, bootstrap
 Text Domain: Best Mobile Signal Booster in UK */
+
+.container{
+    max-width: 1148px;
+    padding: 0;
+}
+nav.navbar-primary .main-header{
+    top: 0 !important;
+}
+nav.navbar-primary.sticky-top .main-header{
+    height: 100px;
+    top: 0;
+}
+nav.navbar-primary .main-header > .container{
+    max-width: 1149px;
+    padding: 0;
+}
+nav.navbar-primary .main-header a.navbar-brand svg{
+    width: 199px;
+    height: 30px;
+}
+
+.navbar-header{
+    display: flex;
+    margin: 24px 0 22px 0;
+    align-items: center;
+    width: 100%;
+}
+.header-search{
+    position: relative;
+    margin-left: 179px;
+    margin-right: 152px;
+    display: flex;
+
+}
+.header-search input{
+    color: #1e3c55;
+    font-family: Montserrat;
+    font-size: 13px;
+    font-weight: 600;
+    padding: 13px 0 12px 21px;
+    letter-spacing: 0.33px;
+    width: 400px;
+    border-radius: 5px;
+    border: 1px solid #a9b4bd;
+
+}
+.input-group-append button{
+    position: absolute;
+    right: 0;
+    width: 50px;
+    height: 45px;
+    background-color: #f4b12e;
+    color: white;
+
+}
+::-webkit-input-placeholder { /* Edge */
+    color: #1e3c55;
+}
+
+:-ms-input-placeholder { /* Internet Explorer */
+    color: #1e3c55;
+}
+
+::placeholder {
+    color: #1e3c55;
+}
+.header-next{
+    background-color: #1b3d56;
+    height: 53px;
+}
+nav.navbar-primary .main-header ul.navbar-nav li{
+    margin-right: 74px;
+
+}
+nav.navbar-primary .main-header ul.navbar-nav li:last-child{
+    margin: 0;
+    padding-left: 70px;
+}
+
+nav.navbar-primary .main-header ul.navbar-nav li a{
+    color: #ffffff;
+    font-size: 12px;
+    font-family: Montserrat;
+    font-weight: 700;
+    line-height: 50px;
+    text-transform: uppercase;
+    /* Text style for "Shop" */
+    letter-spacing: 0.94px;
+    padding: 0;
+}
+.cart-0{
+    color: #ffffff;
+    font-family: Montserrat;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 50px;
+    text-transform: uppercase;
+    /* Text style for "Cart (0)" */
+    letter-spacing: 0.94px;
+}
+.minicart-wrapper{
+    padding: 16px 24px 19px 21px;
+    background-color: #f4b12e;
+
+}
+.mb-icon-shopping_cart{
+    padding-left:15px;
+}
+
+/*.header-right> img,*/
+/*.header-right > p {*/
+/*    display: inline-block;*/
+/*}*/
+.header-right{
+    display: flex;
+    align-items: center;
+}
+.call-img{
+    margin-right: 10px;
+}
+.call-number{
+    width: 175px;
+}
+.right-text1{
+    color: #1b3d56;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 700;
+     text-transform: uppercase;
+    /* Text style for "24/7 Suppo" */
+    letter-spacing: 1.4px;
+    margin: 0;
+}
+.right-text2 a{
+    color: #1b3d56;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: -0.6px;
+
+}
+.minicart-wrapper .minicart, .minicart-wrapper .minicart_notice .notice{
+    padding: 0;
+}
+.minicart-wrapper .minicart .mb-icon-shopping_cart, .minicart-wrapper .minicart_notice .notice .mb-icon-shopping_cart{
+    font-size: 17px;
+}
+/*slider*/
+.slider2{
+    letter-spacing: 2.25px;
+}
+@media (max-width: 1200px){
+    .container{
+        max-width: 1148px;
+        padding: 0;
+    }
+}

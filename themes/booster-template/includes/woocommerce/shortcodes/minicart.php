@@ -12,7 +12,7 @@ function minicart_shortcode($atts,$content=null)
     $html .= '<span class="minicart-wrapper">';
         $html .= '<span class="minicart">';
 
-        $html .= '<i class="mb-icon-shopping_cart"></i>';
+        $html .= '<span class="cart-0">Cart (0)</span><i class="mb-icon-shopping_cart"></i>';
 
         if ($count = count(WC()->cart->get_cart())) {
 
