@@ -332,6 +332,17 @@ nav.navbar-primary .main-header ul.navbar-nav li a{
     margin-top: -75px;
     margin-bottom: 42px;
 }
+/*product*/
+.title h1, .title h2, .title h3, .title h4{
+    text-transform: unset;
+}
+.home_featured li h3{
+    color: #1b3d56;
+    font-family: "Montserrat";
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 24px;
+}
 
 @media (max-width: 1200px){
     .container{
