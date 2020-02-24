@@ -66,11 +66,11 @@ get_header();
 
         <li class="product type-product status-publish has-post-thumbnail provider-vodafone provider-o2-mobile provider-id provider-ee provider-3g provider-4g provider-three coverage-up-to-1000-sqm frequency-90018002100mhz tm-has-options last instock sale featured shipping-taxable purchasable product-type-simple"> 
 
-            <a href="<?php echo get_permalink( $loop->post->ID ) ?>" title="<?php echo esc_attr($loop->post->post_title ? $loop->post->post_title : $loop->post->ID); ?>" class="woocommerce-LoopProduct-link">
+<!--            <a href="--><?php //echo get_permalink( $loop->post->ID ) ?><!--" title="--><?php //echo esc_attr($loop->post->post_title ? $loop->post->post_title : $loop->post->ID); ?><!--" class="woocommerce-LoopProduct-link">-->
 
-              <span class="onsale1">
-                <?php woocommerce_show_product_sale_flash( $post, $product ); ?>
-              </span>
+<!--              <span class="onsale1">-->
+<!--                --><?php //woocommerce_show_product_sale_flash( $post, $product ); ?>
+<!--              </span>-->
 
               <?php if (has_post_thumbnail( $loop->post->ID )) echo get_the_post_thumbnail($loop->post->ID, 'shop_catalog'); else echo '<img src="'.woocommerce_placeholder_img_src().'" alt="Placeholder" width="300px" height="300px" class="attachment-shop_catalog size-shop_catalog wp-post-image" />'; ?>
 

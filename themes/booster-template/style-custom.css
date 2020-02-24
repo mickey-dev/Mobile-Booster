@@ -1,1 +1,611 @@
-div.wpcf7-mail-sent-ok{border-color:#ffbb01}span.wpcf7-not-valid-tip{color:#dd5347}div.wpcf7-validation-errors{border-color:#dd5347}.woocommerce .customer_details td,.woocommerce .customer_details th,.woocommerce .order_details td,.woocommerce .order_details th{padding:5px 0}.woocommerce .order_details>tfoot>tr:nth-last-child(1)>td{background-color:#f1f1f1}.woocommerce .order_details>tfoot>tr:nth-last-child(1)>td .woocommerce-Price-amount{font-size:20px;padding-right:20px}.woocommerce .order_details>tfoot>tr:nth-last-child(1)>td .woocommerce-Price-amount .woocommerce-Price-currencySymbol{font-size:20px}.woocommerce .addresses{margin-top:30px;width:100%;float:left}.woocommerce .addresses>div{background:#f1f1f1;padding:0 20px;float:left;width:50%}.woocommerce .addresses>div:nth-child(1){margin-right:20px;width:calc(50% - 20px)}.woocommerce .addresses>div .title{margin-bottom:30px}.woocommerce .addresses>div .title h3{text-align:left}.woocommerce .addresses>div .title h3:after{margin-left:0}#home_featured{padding:70px 0;background:#f8f8f8}.home_featured h2{margin-bottom:50px}#how-it-works .row .gambar img{width:65%;margin:0 auto;display:block}.home_featured li{float:left;width:23%;margin:0 1%;padding:10px 20px;position:relative;border:1px solid #ccc;border-radius:15px}.home_featured li .button{border:1px solid #083d54;padding:5px 9px;font-size:15px;margin-top:20px}.home_featured li .button:first-child{margin-right:4px}#home_featured .view_boosters a{background-color:#fb0;border:2px solid #fb0;border-radius:30px;padding:10px 30px;font-size:20px;color:#fff;margin-top:50px;display:inline-block}#home_featured .view_boosters a:hover{background-color:#fff;border-color:#fb0;color:#fb0}.home_featured li img{max-width:100%;height:auto}.home_featured li .price{text-align:center;display:block}.meta_prodtitle{font-size:12px;font-weight:700}.home_featured .coverages,.home_featured .providers{padding:10px 5px;background:#dbdbdb;margin:5px 0 10px 0;border-radius:7px}.home_featured .coverages .name{float:right}.home_featured .provider_container{float:right;width:75%}.home_featured li h3{font-size:20px}.home_featured .providers .provider{height:15px;float:right}.home_featured .providers .provider i{margin:0 2.5px 10px 2.5px}.home_featured .providers .provider .icon-id{display:none}.payment_method_stripe label{display:inline-block!important;text-align:left;clear:both}.payment_method_stripe label img{float:left;clear:none;width:32%;margin:.5%}.product{position:relative;list-style:none}.product .onsale{position:absolute;z-index:5;background-color:#f9a235;padding:0;margin:0;min-height:inherit;min-width:inherit;line-height:1.7;font-size:1em;-webkit-border-radius:0;-moz-border-radius:0;border-radius:0;background-clip:padding-box;color:#fff;transform:rotate(45deg);-webkit-transform:rotate(-45deg);-moz-transform:rotate(-45deg);-o-transform:rotate(-45deg);-ms-transform:rotate(-45deg);top:7px;left:-19px;height:0;border-bottom:20px solid #f9a235;border-left:20px solid transparent;border-right:20px solid transparent}.archive .custom-sidebar{width:100%;float:left}.archive .custom-sidebar ul li{float:left;width:23%;margin-left:2%}.custom-sidebar #text-5{width:25%;float:left;margin-left:0}#text-5>h4{background:0 0!important;color:#083d54!important;font-size:18px!important}.archive .custom-sidebar .sgr-custom-taxonomies-menu>ul>li ul{position:absolute;z-index:99;width:100%;display:block;float:left}.archive .custom-sidebar .sgr-custom-taxonomies-menu>ul>li{position:relative;float:left;clear:both;display:block;width:100%;border-bottom:1px dotted #fff}.archive .custom-sidebar .sgr-custom-taxonomies-menu>ul>li:last-child{border-bottom:0}.archive .custom-sidebar .sgr-custom-taxonomies-menu ul{float:left;display:none;width:100%;margin-top:-7px;padding:20px 30px 20px 20px!important}.posted_in{display:none}.archive .custom-sidebar .sgr-custom-taxonomies-menu h4{border-radius:9px!important;background-image:url(/wp-content/uploads/2018/10/chevron-down-filled.png);background-repeat:no-repeat;background-position:92% center;background-size:18px}.archive .custom-sidebar .sgr-custom-taxonomies-menu h4:hover{cursor:pointer}.archive ul.products li{width:calc(100%/4 - 10px)}.archive ul.products{float:left;width:100%}.sidebar-guarantee{display:none}.single .tmcp-field-wrap .tc-price,.single-product .product .main-content .right .summary .cart #tm-extra-product-options-fields .cpf-type-checkbox .tm-element-ul-checkbox li span{display:block!important}.slide_contain{width:50%;margin:0 auto}.boost_popup{margin:50px auto 30px auto;width:80%}.boost_popup input{padding:8px 15px;font-size:16px;width:70%}.boost_popup input[type=submit]{padding:7px;background:#fb0;color:#fff;width:30%}.wc_payment_method:nth-child(2)>label:nth-child(2){position:relative;min-height:150px;width:100%}.payment_method_paypal label{position:relative}.payment_method_stripe label img{position:absolute}.woocommerce-checkout .woocommerce .kanan #order_review #payment .wc_payment_methods li.wc_payment_method input[type=radio]:checked+label{text-align:left}.woocommerce-checkout .woocommerce .kanan #order_review #payment .wc_payment_methods li.payment_method_stripe input[type=radio]:checked+label img{width:31%!important}.container>.woocommerce .woocommerce-checkout #order_review .woocommerce-checkout-payment .wc_payment_methods .wc_payment_method input[type=radio]+label::before,.woocommerce-checkout .woocommerce .kanan #order_review #payment .wc_payment_methods li.wc_payment_method input[type=radio]:checked+label::before{left:-18px!important;top:-18px!important}.payment_method_stripe label img:nth-child(1){left:0;top:35px}.payment_method_stripe label img:nth-child(2){left:33%;top:35px}.payment_method_stripe label img:nth-child(3){left:66%;top:35px}.home .featured a,.home .product .button{text-align:center;display:block!important;width:100%!important;float:left}.home .button-filled{border:1px solid #fb0!important;border-radius:20px;background:#fb0;font-size:18px;margin:20px auto!important;padding:4px 20px!important}ul.products li.product{text-align:center}.button.angle-right::after{color:#fff!important}#filter .filter{padding:70px 0 0 0}.single .tmcp-field-wrap .tc-price,.single-product .product .main-content .right .summary .cart #tm-extra-product-options-fields .cpf-type-checkbox .tm-element-ul-checkbox li span,.single-product .product .main-content .right .summary form.cart ul#tm-extra-product-options-fields .cpf-type-checkbox .tm-element-ul-checkbox li .price{display:none!important}@media screen and (max-width:1024px){.archive ul.products li{width:100%}.n2-ss-layer{background:0 0!important}}@media screen and (max-width:768px){.single-product .product .main-content .right .summary form.cart ul#tm-extra-product-options-fields .cpf-type-checkbox .tm-element-ul-checkbox li .tcfa-question-circle{right:-10px!important}.single-product .product .main-content .right .summary form.cart ul#tm-extra-product-options-fields .cpf-type-checkbox .tm-element-ul-checkbox li .tcfa-question-circle{left:auto!important}.boost_popup input{font-size:10px}.single-product .product .main-content .right .summary form.cart ul#tm-extra-product-options-fields .cpf-type-checkbox .tm-element-ul-checkbox li label{padding:0 12px 10px!important}#home_featured{padding:50px 0 0 0}.single-product .product .main-content .right .summary form.cart ul#tm-extra-product-options-fields .cpf-type-checkbox .tm-element-ul-checkbox li label .tm-epo-style-wrapper.round{left:25px!important;right:auto!important}#home_featured .view_boosters a{font-size:16px}#how-it-works .row .gambar img{width:100%}.home_featured li{width:100%;margin:15px 0}.home_featured li .button{border:1px solid #083d54;padding:5px 9px;font-size:10px;margin-top:20px}.single-product .product .main-content .right .summary form.cart ul#tm-extra-product-options-fields .cpf_hide_element,.single-product .product .main-content .right .summary form.cart ul#tm-extra-product-options-fields .tm-section-label{width:100%}.single-product .product .main-content .right .summary form.cart ul#tm-extra-product-options-fields .cpf-type-checkbox .tm-element-ul-checkbox{padding-right:10px}.single-product .product .main-content .right .summary form.cart ul#tm-extra-product-options-fields .cpf-type-checkbox .tm-element-ul-checkbox li .price{left:10px}.single-product .product .main-content .right .summary form.cart ul#tm-extra-product-options-fields .cpf_hide_element,.single-product .product .main-content .right .summary form.cart ul#tm-extra-product-options-fields .tm-section-label{margin-bottom:15px}#filter .filter{padding:140px 0 50px 0;margin-top:-70px}#why-choose{padding:50px 0}.featured a,.product .button{text-align:center;display:block!important;float:left;width:100%!important}}#regForm{background-color:#fff;margin:100px auto;font-family:Raleway;padding:40px;width:70%;min-width:300px}.tab{display:none}#filter.filter-custom2 .filter-step.providers{margin-bottom:72px}#frm_submit_Btn:hover,#nextBtn:hover,#prevBtn:hover{background-color:#f8f8f8;color:#fb0}#frm_submit_Btn,#nextBtn,#prevBtn{font-size:20px;color:#fff;background-color:#fb0;border-color:#fb0;border-radius:30px;border:1px solid #fb0!important;padding:4px 20px!important}#frm_submit_Btn:after,#nextBtn:after{font-family:FontAwesome;display:inline-block;margin-left:10px;content:"\f105"}#prevBtn:before{font-family:FontAwesome;display:inline-block;margin-right:10px;content:"\f104"}.combine1{object-fit:none;transition:all .2s ease}.sprite-3G{width:47px;height:30px;object-position:-5px -5px}.sprite-4G{width:48px;height:30px;object-position:-62px -5px}.sprite-CE{width:50px;height:36px;object-position:-120px -5px}.sprite-EE{width:30px;height:50px;object-position:-180px -5px}.sprite-ISO{width:60px;height:48px;object-position:-220px -5px}.sprite-O2{width:37px;height:39px;object-position:-290px -5px}.sprite-RoHS{width:84px;height:39px;object-position:-337px -5px}.sprite-Three{width:31px;height:40px;object-position:-431px -5px}.sprite-Vodafone{width:33px;height:32px;object-position:-472px -5px}.sprite-guarantee{width:21px;height:25px;object-position:-515px -5px}.sprite-id{width:40px;height:40px;object-position:-546px -5px}.sprite-logo-visa{width:50px;height:34px;object-position:-596px -5px}.sprite-signal{width:82px;height:70px;object-position:-656px -5px}.sprite-thropy{width:80px;height:76px;object-position:-748px -5px}
+div.wpcf7-mail-sent-ok {
+    border-color: #ffbb01
+}
+
+span.wpcf7-not-valid-tip {
+    color: #dd5347
+}
+
+div.wpcf7-validation-errors {
+    border-color: #dd5347
+}
+
+.woocommerce .customer_details td, .woocommerce .customer_details th, .woocommerce .order_details td, .woocommerce .order_details th {
+    padding: 5px 0
+}
+
+.woocommerce .order_details > tfoot > tr:nth-last-child(1) > td {
+    background-color: #f1f1f1
+}
+
+.woocommerce .order_details > tfoot > tr:nth-last-child(1) > td .woocommerce-Price-amount {
+    font-size: 20px;
+    padding-right: 20px
+}
+
+.woocommerce .order_details > tfoot > tr:nth-last-child(1) > td .woocommerce-Price-amount .woocommerce-Price-currencySymbol {
+    font-size: 20px
+}
+
+.woocommerce .addresses {
+    margin-top: 30px;
+    width: 100%;
+    float: left
+}
+
+.woocommerce .addresses > div {
+    background: #f1f1f1;
+    padding: 0 20px;
+    float: left;
+    width: 50%
+}
+
+.woocommerce .addresses > div:nth-child(1) {
+    margin-right: 20px;
+    width: calc(50% - 20px)
+}
+
+.woocommerce .addresses > div .title {
+    margin-bottom: 30px
+}
+
+.woocommerce .addresses > div .title h3 {
+    text-align: left
+}
+
+.woocommerce .addresses > div .title h3:after {
+    margin-left: 0
+}
+
+#home_featured {
+    padding: 70px 0;
+    background: #f8f8f8
+}
+
+.home_featured h2 {
+    margin-bottom: 50px
+}
+
+#how-it-works .row .gambar img {
+    width: 65%;
+    margin: 0 auto;
+    display: block
+}
+
+.home_featured li {
+    float: left;
+    width: 23%;
+    margin: 0 1%;
+    padding: 10px 20px;
+    position: relative;
+    border: 1px solid #ccc;
+    border-radius: 15px
+}
+
+.home_featured li .button {
+    border: 1px solid #083d54;
+    padding: 5px 9px;
+    font-size: 15px;
+    margin-top: 20px
+}
+
+.home_featured li .button:first-child {
+    margin-right: 4px
+}
+
+#home_featured .view_boosters a {
+    background-color: #fb0;
+    border: 2px solid #fb0;
+    border-radius: 30px;
+    padding: 10px 30px;
+    font-size: 20px;
+    color: #fff;
+    margin-top: 50px;
+    display: inline-block
+}
+
+#home_featured .view_boosters a:hover {
+    background-color: #fff;
+    border-color: #fb0;
+    color: #fb0
+}
+
+.home_featured li img {
+    max-width: 100%;
+    height: auto
+}
+
+.home_featured li .price {
+    text-align: center;
+    display: block
+}
+
+.meta_prodtitle {
+    font-size: 12px;
+    font-weight: 700
+}
+
+.home_featured .coverages, .home_featured .providers {
+    padding: 10px 5px;
+    background: #dbdbdb;
+    margin: 5px 0 10px 0;
+    border-radius: 7px
+}
+
+.home_featured .coverages .name {
+    float: right
+}
+
+.home_featured .provider_container {
+    float: right;
+    width: 75%
+}
+
+.home_featured li h3 {
+    font-size: 20px
+}
+
+.home_featured .providers .provider {
+    height: 15px;
+    float: right
+}
+
+.home_featured .providers .provider i {
+    margin: 0 2.5px 10px 2.5px
+}
+
+.home_featured .providers .provider .icon-id {
+    display: none
+}
+
+.payment_method_stripe label {
+    display: inline-block !important;
+    text-align: left;
+    clear: both
+}
+
+.payment_method_stripe label img {
+    float: left;
+    clear: none;
+    width: 32%;
+    margin: .5%
+}
+
+.product {
+    position: relative;
+    list-style: none
+}
+
+.product .onsale {
+    position: absolute;
+    z-index: 5;
+    background-color: #f9a235;
+    padding: 0;
+    margin: 0;
+    min-height: inherit;
+    min-width: inherit;
+    line-height: 1.7;
+    font-size: 1em;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    background-clip: padding-box;
+    color: #fff;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    top: 7px;
+    left: -19px;
+    height: 0;
+    border-bottom: 20px solid #f9a235;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent
+}
+
+.archive .custom-sidebar {
+    width: 100%;
+    float: left
+}
+
+.archive .custom-sidebar ul li {
+    float: left;
+    width: 23%;
+    margin-left: 2%
+}
+
+.custom-sidebar #text-5 {
+    width: 25%;
+    float: left;
+    margin-left: 0
+}
+
+#text-5 > h4 {
+    background: 0 0 !important;
+    color: #083d54 !important;
+    font-size: 18px !important
+}
+
+.archive .custom-sidebar .sgr-custom-taxonomies-menu > ul > li ul {
+    position: absolute;
+    z-index: 99;
+    width: 100%;
+    display: block;
+    float: left
+}
+
+.archive .custom-sidebar .sgr-custom-taxonomies-menu > ul > li {
+    position: relative;
+    float: left;
+    clear: both;
+    display: block;
+    width: 100%;
+    border-bottom: 1px dotted #fff
+}
+
+.archive .custom-sidebar .sgr-custom-taxonomies-menu > ul > li:last-child {
+    border-bottom: 0
+}
+
+.archive .custom-sidebar .sgr-custom-taxonomies-menu ul {
+    float: left;
+    display: none;
+    width: 100%;
+    margin-top: -7px;
+    padding: 20px 30px 20px 20px !important
+}
+
+.posted_in {
+    display: none
+}
+
+.archive .custom-sidebar .sgr-custom-taxonomies-menu h4 {
+    border-radius: 9px !important;
+    background-image: url(/wp-content/uploads/2018/10/chevron-down-filled.png);
+    background-repeat: no-repeat;
+    background-position: 92% center;
+    background-size: 18px
+}
+
+.archive .custom-sidebar .sgr-custom-taxonomies-menu h4:hover {
+    cursor: pointer
+}
+
+.archive ul.products li {
+    width: calc(100% / 4 - 10px)
+}
+
+.archive ul.products {
+    float: left;
+    width: 100%
+}
+
+.sidebar-guarantee {
+    display: none
+}
+
+.single .tmcp-field-wrap .tc-price, .single-product .product .main-content .right .summary .cart #tm-extra-product-options-fields .cpf-type-checkbox .tm-element-ul-checkbox li span {
+    display: block !important
+}
+
+.slide_contain {
+    width: 50%;
+    margin: 0 auto
+}
+
+.boost_popup {
+    margin: 50px auto 30px auto;
+    width: 80%
+}
+
+.boost_popup input {
+    padding: 8px 15px;
+    font-size: 16px;
+    width: 70%
+}
+
+.boost_popup input[type=submit] {
+    padding: 7px;
+    background: #fb0;
+    color: #fff;
+    width: 30%
+}
+
+.wc_payment_method:nth-child(2) > label:nth-child(2) {
+    position: relative;
+    min-height: 150px;
+    width: 100%
+}
+
+.payment_method_paypal label {
+    position: relative
+}
+
+.payment_method_stripe label img {
+    position: absolute
+}
+
+.woocommerce-checkout .woocommerce .kanan #order_review #payment .wc_payment_methods li.wc_payment_method input[type=radio]:checked + label {
+    text-align: left
+}
+
+.woocommerce-checkout .woocommerce .kanan #order_review #payment .wc_payment_methods li.payment_method_stripe input[type=radio]:checked + label img {
+    width: 31% !important
+}
+
+.container > .woocommerce .woocommerce-checkout #order_review .woocommerce-checkout-payment .wc_payment_methods .wc_payment_method input[type=radio] + label::before, .woocommerce-checkout .woocommerce .kanan #order_review #payment .wc_payment_methods li.wc_payment_method input[type=radio]:checked + label::before {
+    left: -18px !important;
+    top: -18px !important
+}
+
+.payment_method_stripe label img:nth-child(1) {
+    left: 0;
+    top: 35px
+}
+
+.payment_method_stripe label img:nth-child(2) {
+    left: 33%;
+    top: 35px
+}
+
+.payment_method_stripe label img:nth-child(3) {
+    left: 66%;
+    top: 35px
+}
+
+.home .featured a, .home .product .button {
+    text-align: center;
+    display: block !important;
+    width: 100% !important;
+    float: left
+}
+
+.home .button-filled {
+    border: 1px solid #fb0 !important;
+    border-radius: 20px;
+    background: #fb0;
+    font-size: 18px;
+    margin: 20px auto !important;
+    padding: 4px 20px !important
+}
+
+ul.products li.product {
+    text-align: center
+}
+
+.button.angle-right::after {
+    color: #fff !important
+}
+
+#filter .filter {
+    padding: 70px 0 0 0
+}
+
+.single .tmcp-field-wrap .tc-price, .single-product .product .main-content .right .summary .cart #tm-extra-product-options-fields .cpf-type-checkbox .tm-element-ul-checkbox li span, .single-product .product .main-content .right .summary form.cart ul#tm-extra-product-options-fields .cpf-type-checkbox .tm-element-ul-checkbox li .price {
+    display: none !important
+}
+
+@media screen and (max-width: 1024px) {
+    .archive ul.products li {
+        width: 100%
+    }
+
+    .n2-ss-layer {
+        background: 0 0 !important
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .single-product .product .main-content .right .summary form.cart ul#tm-extra-product-options-fields .cpf-type-checkbox .tm-element-ul-checkbox li .tcfa-question-circle {
+        right: -10px !important
+    }
+
+    .single-product .product .main-content .right .summary form.cart ul#tm-extra-product-options-fields .cpf-type-checkbox .tm-element-ul-checkbox li .tcfa-question-circle {
+        left: auto !important
+    }
+
+    .boost_popup input {
+        font-size: 10px
+    }
+
+    .single-product .product .main-content .right .summary form.cart ul#tm-extra-product-options-fields .cpf-type-checkbox .tm-element-ul-checkbox li label {
+        padding: 0 12px 10px !important
+    }
+
+    #home_featured {
+        padding: 50px 0 0 0
+    }
+
+    .single-product .product .main-content .right .summary form.cart ul#tm-extra-product-options-fields .cpf-type-checkbox .tm-element-ul-checkbox li label .tm-epo-style-wrapper.round {
+        left: 25px !important;
+        right: auto !important
+    }
+
+    #home_featured .view_boosters a {
+        font-size: 16px
+    }
+
+    #how-it-works .row .gambar img {
+        width: 100%
+    }
+
+    .home_featured li {
+        width: 100%;
+        margin: 15px 0
+    }
+
+    .home_featured li .button {
+        border: 1px solid #083d54;
+        padding: 5px 9px;
+        font-size: 10px;
+        margin-top: 20px
+    }
+
+    .single-product .product .main-content .right .summary form.cart ul#tm-extra-product-options-fields .cpf_hide_element, .single-product .product .main-content .right .summary form.cart ul#tm-extra-product-options-fields .tm-section-label {
+        width: 100%
+    }
+
+    .single-product .product .main-content .right .summary form.cart ul#tm-extra-product-options-fields .cpf-type-checkbox .tm-element-ul-checkbox {
+        padding-right: 10px
+    }
+
+    .single-product .product .main-content .right .summary form.cart ul#tm-extra-product-options-fields .cpf-type-checkbox .tm-element-ul-checkbox li .price {
+        left: 10px
+    }
+
+    .single-product .product .main-content .right .summary form.cart ul#tm-extra-product-options-fields .cpf_hide_element, .single-product .product .main-content .right .summary form.cart ul#tm-extra-product-options-fields .tm-section-label {
+        margin-bottom: 15px
+    }
+
+    #filter .filter {
+        padding: 140px 0 50px 0;
+        margin-top: -70px
+    }
+
+    #why-choose {
+        padding: 50px 0
+    }
+
+    .featured a, .product .button {
+        text-align: center;
+        display: block !important;
+        float: left;
+        width: 100% !important
+    }
+}
+
+#regForm {
+    background-color: #fff;
+    margin: 100px auto;
+    font-family: Raleway;
+    padding: 40px;
+    width: 70%;
+    min-width: 300px
+}
+
+.tab {
+    display: none
+}
+
+#filter.filter-custom2 .filter-step.providers {
+    margin-bottom: 72px
+}
+
+#frm_submit_Btn:hover, #nextBtn:hover, #prevBtn:hover {
+    background-color: #f8f8f8;
+    color: #fb0
+}
+
+#frm_submit_Btn, #nextBtn, #prevBtn {
+    font-size: 20px;
+    color: #fff;
+    background-color: #fb0;
+    border-color: #fb0;
+    border-radius: 30px;
+    border: 1px solid #fb0 !important;
+    padding: 4px 20px !important
+}
+
+#frm_submit_Btn:after, #nextBtn:after {
+    font-family: FontAwesome;
+    display: inline-block;
+    margin-left: 10px;
+    content: "\f105"
+}
+
+#prevBtn:before {
+    font-family: FontAwesome;
+    display: inline-block;
+    margin-right: 10px;
+    content: "\f104"
+}
+
+.combine1 {
+    object-fit: none;
+    transition: all .2s ease
+}
+
+.sprite-3G {
+    width: 47px;
+    height: 30px;
+    object-position: -5px -5px
+}
+
+.sprite-4G {
+    width: 48px;
+    height: 30px;
+    object-position: -62px -5px
+}
+
+.sprite-CE {
+    width: 50px;
+    height: 36px;
+    object-position: -120px -5px
+}
+
+.sprite-EE {
+    width: 30px;
+    height: 50px;
+    object-position: -180px -5px
+}
+
+.sprite-ISO {
+    width: 60px;
+    height: 48px;
+    object-position: -220px -5px
+}
+
+.sprite-O2 {
+    width: 37px;
+    height: 39px;
+    object-position: -290px -5px
+}
+
+.sprite-RoHS {
+    width: 84px;
+    height: 39px;
+    object-position: -337px -5px
+}
+
+.sprite-Three {
+    width: 31px;
+    height: 40px;
+    object-position: -431px -5px
+}
+
+.sprite-Vodafone {
+    width: 33px;
+    height: 32px;
+    object-position: -472px -5px
+}
+
+.sprite-guarantee {
+    width: 21px;
+    height: 25px;
+    object-position: -515px -5px
+}
+
+.sprite-id {
+    width: 40px;
+    height: 40px;
+    object-position: -546px -5px
+}
+
+.sprite-logo-visa {
+    width: 50px;
+    height: 34px;
+    object-position: -596px -5px
+}
+
+.sprite-signal {
+    width: 82px;
+    height: 70px;
+    object-position: -656px -5px
+}
+
+.sprite-thropy {
+    width: 80px;
+    height: 76px;
+    object-position: -748px -5px
+}
