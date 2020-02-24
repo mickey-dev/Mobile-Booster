@@ -11,24 +11,35 @@ get_header();
         echo do_shortcode('[smartslider3 slider=2]');
       ?>
       
-      <div class="col-xs-12 col-sm-12 carrier">
-        <div class="col-xs-12 col-sm-12 title">Works on every network, for any carrier. <br></div> <br>
-        <div class="col-xs-12 col-sm-12 carrier-icon">
-          <a href="/provider/vodafone-mobile-signal-booster/"><img class="combine1 sprite-Vodafone" src="<?php echo get_template_directory_uri() ?>/assets/img/combine1.png" alt="Vodafone Mobile Signal Booster"></a>
-          <a href="/provider/o2-mobile-signal-booster/"><img class="combine1 sprite-O2" src="<?php echo get_template_directory_uri() ?>/assets/img/combine1.png" alt="O2 Mobile Signal Booster"></a>
-          <a href="/provider/id-mobile-signal-booster/"><img class="combine1 sprite-id" src="<?php echo get_template_directory_uri() ?>/assets/img/combine1.png" alt="iD Mobile Signal Booster"></a>
-          <a href="/provider/ee-mobile-signal-booster/"><img class="combine1 sprite-EE" src="<?php echo get_template_directory_uri() ?>/assets/img/combine1.png" alt="EE Mobile Signal Booster"></a>
-          <!-- <img src="<?php echo get_template_directory_uri() ?>/assets/img/carrier/T-Mobile.png" alt="Mobile Booster"> -->
-          <a href="/provider/three-mobile-signal-booster/"><img class="combine1 sprite-Three" src="<?php echo get_template_directory_uri() ?>/assets/img/combine1.png" alt="Three Mobile Signal Booster"></a>
-			<a href="/provider/3g-mobile-signal-booster/"><img class="combine1 sprite-3G" src="<?php echo get_template_directory_uri() ?>/assets/img/combine1.png" alt="3G Mobile Signal Booster"></a>
-          <a href="/provider/4g-mobile-signal-booster/"><img class="combine1 sprite-4G" src="<?php echo get_template_directory_uri() ?>/assets/img/combine1.png" alt="4G Mobile Signal Booster"></a>
-            <a href="/provider/5g-mobile-signal-booster/"><img class="sprite-5G" src="<?php echo get_template_directory_uri() ?>/assets/img/5g.png" alt="5G Mobile Signal Booster"></a>
-        </div>
-      </div>
+
 
       <div class="col-xs-12 col-sm-12 guarantee">
-        <img class="combine1 sprite-guarantee" src="<?php echo get_template_directory_uri() ?>/assets/img/combine1.png" alt="Mobile Booster Guarantee">
-        100% GUARANTEE — 2 Year Warranty. 30-Day Money Back Guarantee. Customer Support 6 days a Week.
+        <div class="container header-bottom">
+            <div class="header-bottom-icons">
+                <img class="combine1 sprite-guarantee" src="<?php echo get_template_directory_uri() ?>/assets/img/1.png" alt="Mobile Booster Guarantee">
+                <div class="header-icons-span">
+                    <span>Free Delivery</span> <br> <span>in the UK</span>
+                </div>
+            </div>
+            <div class="header-bottom-icons">
+                <img class="combine1 sprite-guarantee" src="<?php echo get_template_directory_uri() ?>/assets/img/1.png" alt="Mobile Booster Guarantee">
+                <div class="header-icons-span">
+                    <span>30 Day Money-Back</span> <br> <span>Guarantee</span>
+                </div>
+            </div>
+            <div class="header-bottom-icons">
+                <img class="combine1 sprite-guarantee" src="<?php echo get_template_directory_uri() ?>/assets/img/1.png" alt="Mobile Booster Guarantee">
+                <div class="header-icons-span">
+                    <span>Five Bar Signal</span> <br> <span>Guarantee</span>
+                </div>
+            </div>
+            <div class="header-bottom-icons">
+                <img class="combine1 sprite-guarantee" src="<?php echo get_template_directory_uri() ?>/assets/img/1.png" alt="Mobile Booster Guarantee">
+                <div class="header-icons-span">
+                    <span>Works On Every </span> <br> <span>Network & Carrier</span>
+                </div>
+            </div>
+        </div>
       </div>
     </div>
   </div>
@@ -41,7 +52,7 @@ get_header();
   <div class="container">
     <div class="row">
       <div class="col-xs-12 col-sm-12 home_featured title">
-        <h2 class="text-center">Best Selling Mobile Signal Boosters in UK</h2>
+        <h2 class="text-center">Our Best Sellers</h2>
         <?php //echo do_shortcode('[featured_products per_page="4" columns="4"]'); ?>
 
         <?php //if(is_user_logged_in()): ?>

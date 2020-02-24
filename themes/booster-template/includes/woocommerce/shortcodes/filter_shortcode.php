@@ -9,7 +9,7 @@ function filter_shortcode($atts,$content=null)
     $html = '<div class="filter" id=""><div class="container">';
 
     $html .= $atts['title'] ? "<h2 class='title'>".$atts['title']."</h2>":'';
-    $html .= "<p id='filter-form' class='desc'>We offer innovative mobile signal solutions in form of the best mobile signal boosters to ensure that you are always connected. Our mobile signal boosters will serve you anywhere in the UK. At MobileBooster, we understand your situation and have a solution to your problem.</p>";
+    $html .= "<p id='filter-form' class='desc'>We offer innovative mobile signal solutions in form of the best mobile signal boosters to ensure that you are always connected. Our mobile signal boosters will serve you anywhere in the UK. At MobileBoster, we understand your situation and have a solution to your problem.</p>";
     $html .= '<form action="filter" method="post" id="filter-mobile">
   <!-- One "tab" for each step in the form: -->
   <div class="tab row">';
@@ -34,7 +34,7 @@ function filter_shortcode($atts,$content=null)
                       <div class="bulet"><svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><title>Slider button Copy</title><defs><rect id="a" width="20" height="20" rx="10"/></defs><g transform="translate(2 2)" fill="none" fill-rule="evenodd"><use fill="#F6F6F6" xlink:href="#a"/><rect stroke="#BCBBBB" stroke-width="2" x="-1" y="-1" width="22" height="22" rx="11"/><rect fill="#BCBBBB" x="4" y="4" width="12" height="12" rx="6"/></g></svg></div>
 
 
-                      <div class="text">300 <span>sqm</span></div>
+                      <div class="text">300 <span class="text-sqm">SQM</span></div>
                     </li>
                   ';
 
@@ -44,7 +44,7 @@ function filter_shortcode($atts,$content=null)
                       <div class="bulet"><svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><title>Slider button Copy</title><defs><rect id="a" width="20" height="20" rx="10"/></defs><g transform="translate(2 2)" fill="none" fill-rule="evenodd"><use fill="#F6F6F6" xlink:href="#a"/><rect stroke="#BCBBBB" stroke-width="2" x="-1" y="-1" width="22" height="22" rx="11"/><rect fill="#BCBBBB" x="4" y="4" width="12" height="12" rx="6"/></g></svg></div>
 
 
-                      <div class="text">500 <span>sqm</span></div>
+                      <div class="text">500 <span class="text-sqm">SQM</span></div>
                     </li>';
 
         $html .= '<li id="4">
@@ -53,7 +53,7 @@ function filter_shortcode($atts,$content=null)
                       <div class="bulet"><svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><title>Slider button Copy</title><defs><rect id="a" width="20" height="20" rx="10"/></defs><g transform="translate(2 2)" fill="none" fill-rule="evenodd"><use fill="#F6F6F6" xlink:href="#a"/><rect stroke="#BCBBBB" stroke-width="2" x="-1" y="-1" width="22" height="22" rx="11"/><rect fill="#BCBBBB" x="4" y="4" width="12" height="12" rx="6"/></g></svg></div>
 
 
-                      <div class="text">1000 <span>sqm</span></div>
+                      <div class="text">1000 <span class="text-sqm">SQM</span></div>
                     </li>';
 
         $html .= '<li id="5">
@@ -62,7 +62,7 @@ function filter_shortcode($atts,$content=null)
                       <div class="bulet"><svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><title>Slider button Copy</title><defs><rect id="a" width="20" height="20" rx="10"/></defs><g transform="translate(2 2)" fill="none" fill-rule="evenodd"><use fill="#F6F6F6" xlink:href="#a"/><rect stroke="#BCBBBB" stroke-width="2" x="-1" y="-1" width="22" height="22" rx="11"/><rect fill="#BCBBBB" x="4" y="4" width="12" height="12" rx="6"/></g></svg></div>
 
 
-                      <div class="text">5000 <span>sqm</span></div>
+                      <div class="text">5000 <span class="text-sqm">SQM</span></div>
                     </li>';
         $html .= '</ul>';
         $html .= '</div>';

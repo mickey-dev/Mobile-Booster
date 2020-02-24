@@ -14,7 +14,7 @@
     <meta name="p:domain_verify" content="065a32652b8c6057027528228f0f58b5"/>
 
     <link rel="shortcut icon" href="<?php echo get_template_directory_uri() ?>/favicon.png" />
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap&subset=latin-ext" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/assets/css/font-awesome.min.css">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/assets/css/owl.carousel.css">
