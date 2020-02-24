@@ -274,6 +274,21 @@ nav.navbar-primary .main-header ul.navbar-nav li a{
     top: 45px;
     font-family: "montserrat semibold";
 }
+#frm_submit_Btn, #nextBtn, #prevBtn{
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.12);
+    color: #ffffff;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 42px;
+    text-transform: uppercase;
+// Text style for "Next Step"
+letter-spacing: 0.7px;
+}
+#frm_submit_Btn, #nextBtn, #prevBtn{
+    background:  #f4b12e;
+    padding:22px 55px 23px 57px!important;
+}
 @media (max-width: 1200px){
     .container{
         max-width: 1148px;
