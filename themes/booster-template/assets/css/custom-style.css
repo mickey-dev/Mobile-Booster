@@ -783,13 +783,26 @@ nav.navbar-primary.sticky-top .main-header {
 }
 
 #how-it-works .row .title {
-    margin-bottom: 50px
+    margin-bottom: 46px;
 }
 
 #how-it-works .row .title h2 {
-    margin-top: 0
+    margin-top: 0;
+    color: #1b3d56;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
 }
-
+#how-it-works .row .htw-desc{
+    margin-bottom: 63px;
+}
+#how-it-works .row .htw-desc p{
+    text-align: center;
+    line-height: 28px;
+    color: #333333;
+    font-size: 14px;
+    margin: 0;
+}
 #how-it-works .row .gambar {
     margin-bottom: 50px
 }
@@ -3247,10 +3260,6 @@ nav.navbar-primary .main-header ul.navbar-nav ul.dropdown-menu {
     #home-slider .carrier .carrier-icon img {
         margin: 10px 15px
     }
-}
-
-#how-it-works .row .title h2 {
-    text-transform: uppercase
 }
 
 #how-it-works .row a.button {

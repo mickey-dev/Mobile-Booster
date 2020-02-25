@@ -58,10 +58,13 @@ div.wpcf7-validation-errors {
 }
 
 #home_featured {
-    padding: 70px 0;
-    background: #f8f8f8
+    padding-bottom: 81px;
+    background: #edf1f5;
 }
-
+#home_featured .container{
+    padding-right: 0;
+    padding-left: 0;
+}
 .home_featured h2 {
     margin-bottom: 50px
 }
@@ -136,11 +139,6 @@ div.wpcf7-validation-errors {
 .home_featured li .price ins{
     text-decoration: none;
 }
-.meta_prodtitle {
-    font-size: 12px;
-    font-weight: 700
-}
-
 .home_featured .coverages, .home_featured .providers {
     /*padding: 10px 5px;*/
     margin: 0 0 21px 0;

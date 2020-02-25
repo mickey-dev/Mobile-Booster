@@ -388,7 +388,6 @@ nav.navbar-primary .main-header ul.navbar-nav li a{
 }
 .featured-details .meta_prodtitle{
     margin-right: 11px;
-    font-weight: 600;
 }
 .home_featured .providers{
     flex-direction: column;
@@ -401,11 +400,10 @@ nav.navbar-primary .main-header ul.navbar-nav li a{
     font-family: Montserrat;
     font-size: 15px;
     margin-bottom: 20px;
-    font-weight: 600;
 }
 .featured-details .meta-name span{
     margin-right: 11px;
-    font-weight: 800;
+    font-weight: 700;
 }
 
 .featured-actions{

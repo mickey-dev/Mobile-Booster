@@ -102,43 +102,52 @@ Mobile Phone Signal Boosters will help any property that is suffering from poor 
 
 
 function how_it_works() { ?>
-  <section id="how-it-works">
-    <div class="container">
-      <div class="row">
-        <div class="col-xs-12-col-sm-12 title center"><h2>How it works</h2></div>
-        <div class="col-xs-12 col-sm-12 gambar"><img src="<?php echo get_template_directory_uri() ?>/assets/img/how-it-works.svg" alt="How it works"></div>
+    <section id="how-it-works">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12-col-sm-12 title center"><h2>How it works</h2></div>
+                <div class="htw-desc">
+                    <p>
+                        We all know how nauseating it can be if you wake up, check your mobile phone to catch up on the latest news, only to get a poor signal reply. It even gets worse when you cannot communicate with your friends, family, employees and business contacts because your calls are dropped.
+                    </p>
+                </div>
+                <div class="col-xs-12 col-sm-12 gambar"><img
+                            src="<?php echo get_template_directory_uri() ?>/assets/img/how-it-works.svg"
+                            alt="How it works"></div>
 
-        <div class="col-xs-12 col-sm-4 how satu">
-          <div class="text siji">
-            <span class="numb">1</span> <b><?php echo theme_option('1st_title'); ?></b><br>
+                <div class="col-xs-12 col-sm-4 how satu">
+                    <div class="text siji">
+                        <span class="numb">1</span> <b><?php echo theme_option('1st_title'); ?></b><br>
 
-            <p><?php echo theme_option('1st_description') ?></p>
-          </div>
+                        <p><?php echo theme_option('1st_description') ?></p>
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-sm-4 how dua">
+                    <div class="text loro">
+                        <span class="numb">2</span> <b><?php echo theme_option('2nd_title'); ?></b> <br>
+
+                        <p> <?php echo theme_option('2nd_description'); ?> </p>
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-sm-4 how tiga">
+                    <div class="text telu">
+                        <span class="numb">3</span> <b><?php echo theme_option('3rd_title'); ?></b> <br>
+
+                        <p> <?php echo theme_option('3rd_description'); ?> </p>
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-sm-12 go-shop center">
+                    <a href="<?php echo home_url(); ?>/how-it-works" class="button button-filled angle-right btn-see">SEE
+                        HOW OUR BOOSTERS WORKS</a>
+                    <a href="<?php echo home_url(); ?>/shop" class="button button-filled angle-right btn-shop"
+                       style="display: none; max-width: 300px; margin: 0 auto;">SHOP OUR BOOSTER</a>
+                </div>
+            </div>
         </div>
-
-        <div class="col-xs-12 col-sm-4 how dua">
-          <div class="text loro">
-            <span class="numb">2</span> <b><?php echo theme_option('2nd_title'); ?></b> <br>
-
-            <p> <?php echo theme_option('2nd_description'); ?> </p>
-          </div>
-        </div>
-
-        <div class="col-xs-12 col-sm-4 how tiga">
-          <div class="text telu">
-            <span class="numb">3</span> <b><?php echo theme_option('3rd_title'); ?></b> <br>
-
-            <p> <?php echo theme_option('3rd_description'); ?> </p>
-          </div>
-        </div>
-
-        <div class="col-xs-12 col-sm-12 go-shop center">
-          <a href="<?php echo home_url(); ?>/how-it-works" class="button button-filled angle-right btn-see">SEE HOW OUR BOOSTERS WORKS</a>
-          <a href="<?php echo home_url(); ?>/shop" class="button button-filled angle-right btn-shop" style="display: none; max-width: 300px; margin: 0 auto;">SHOP OUR BOOSTER</a>
-        </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
   <?php
 }
