@@ -9,7 +9,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: booster, responsive, bootstrap
 Text Domain: Best Mobile Signal Booster in UK */
 body{
-    font-family: 'Montserrat';
+    font-family: 'Montserrat'!important;
 }
 .container{
     max-width: 1148px;
@@ -493,10 +493,14 @@ nav.navbar-primary .main-header ul.navbar-nav li a{
 }
 .tax-info-all{
     padding: 15px 0px 11px 31px ;
+    border: 1px solid #d5d5d5!important;
 }
 .tax-info-text{
     color: #1b3d56;
     font-size: 15px;
     font-weight: 700;
     line-height: 0.9;
+}
+.single-product .product .main-content .right .tax-info{
+    margin: 0;
 }
