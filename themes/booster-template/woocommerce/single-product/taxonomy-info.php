@@ -45,12 +45,9 @@ $frequencies = get_the_terms($product->id,'frequency');
         </div>
 
         <div class="tex-home-left">
-            <p>Ideal for:</p>
+            <div class="tex-ideal">Ideal for:</div>
             <span>Smaller offices, studios, and homes</span>
         </div>
-
     </div>
-
-
 
 </div>

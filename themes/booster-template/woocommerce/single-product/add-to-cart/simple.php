@@ -56,10 +56,12 @@ if ( ! $product->is_purchasable() ) {
 	 	?>
         <input type="hidden" step="1" min="1" max="" name="quantity" value="1" title="Qty" class="input-text qty text" size="4" pattern="[0-9]*" inputmode="numeric">
 
-
         <input type="hidden" name="add-to-cart" value="<?php echo esc_attr( $product->id ); ?>" />
-
-        <div class="tax-info">
+        <div class="tax-info-all">
+            <div class="tax-info-text">
+                Providers Available:
+            </div>
+            <div class="tax-info">
             <?php if ($providers):?>
                 <div class="providers tax">
                     <div class="slug">
@@ -87,19 +89,21 @@ if ( ! $product->is_purchasable() ) {
                     ?>
                 </div>
         </div>
+        </div>
 
 	 	<button type="submit" class="single_add_to_cart_button button primary-button alt"><?php echo esc_html( $product->single_add_to_cart_text() ); ?> <?php echo $product->get_price_html(); ?></button>
 
         <button type="submit" name="to_checkout" value="1" class="single_add_to_cart_button action-button to_checkout_button button alt">Proceed to checkout</button>
 
 		<?php do_action( 'woocommerce_after_add_to_cart_button' ); ?>
+
 	</form>
 
 	<?php do_action( 'woocommerce_after_add_to_cart_form' ); ?>
     <div class="shipping-text">
         <div class="col-sm-12 col-xs-12">
             <i class="mb-icon-free-delivery primary-color hidden"></i>
-						<p><img src="<?php echo get_template_directory_uri() ?>/assets/img/truck icon.jpg" alt=""> Fast, Free Shipping. Arrives in 3-5 Working Days</p>
+                <p><img src="<?php echo get_template_directory_uri() ?>/assets/img/truck icon.jpg" alt=""> Fast, Free Shipping. Arrives in 3-5 Working Days</p>
         </div>
     </div>
 <?php endif; ?>
