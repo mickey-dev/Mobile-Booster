@@ -68,13 +68,6 @@ div.wpcf7-validation-errors {
 .home_featured h2 {
     margin-bottom: 50px
 }
-
-#how-it-works .row .gambar img {
-    width: 65%;
-    margin: 0 auto;
-    display: block
-}
-
 .home_featured li {
     float: left;
     width: 23%;
@@ -441,11 +434,6 @@ ul.products li.product {
     #home_featured .view_boosters a {
         font-size: 16px
     }
-
-    #how-it-works .row .gambar img {
-        width: 100%
-    }
-
     .home_featured li {
         width: 100%;
         margin: 15px 0

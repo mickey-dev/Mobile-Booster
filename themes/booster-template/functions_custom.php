@@ -111,37 +111,36 @@ function how_it_works() { ?>
                         We all know how nauseating it can be if you wake up, check your mobile phone to catch up on the latest news, only to get a poor signal reply. It even gets worse when you cannot communicate with your friends, family, employees and business contacts because your calls are dropped.
                     </p>
                 </div>
-                <div class="col-xs-12 col-sm-12 gambar"><img
-                            src="<?php echo get_template_directory_uri() ?>/assets/img/how-it-works.svg"
-                            alt="How it works"></div>
-
-                <div class="col-xs-12 col-sm-4 how satu">
-                    <div class="text siji">
-                        <span class="numb">1</span> <b><?php echo theme_option('1st_title'); ?></b><br>
-
-                        <p><?php echo theme_option('1st_description') ?></p>
+                <div class="htw-main">
+                    <div class="col-xs-12 col-sm-4 how-items">
+                        <div class="how satu">
+                            <div class="numb siji"><span>1</span></div>
+                            <div class="text siji">
+                                <h3><?php echo theme_option('1st_title'); ?></h3>
+                                <p><?php echo theme_option('1st_description') ?></p>
+                            </div>
+                        </div>
+                        <div class="how dua">
+                            <div class="numb loro"><span>2</span></div>
+                            <div class="text loro">
+                                <h3><?php echo theme_option('2nd_title'); ?></h3>
+                                <p> <?php echo theme_option('2nd_description'); ?> </p>
+                            </div>
+                        </div>
+                        <div class="how tiga">
+                            <div class="numb telu"><span>3</span></div>
+                            <div class="text telu">
+                                <h3><?php echo theme_option('3rd_title'); ?></h3>
+                                <p> <?php echo theme_option('3rd_description'); ?> </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-8 gambar">
+                        <img src="<?php echo get_template_directory_uri() ?>/assets/img/how-it-works.svg" alt="How it works">
                     </div>
                 </div>
-
-                <div class="col-xs-12 col-sm-4 how dua">
-                    <div class="text loro">
-                        <span class="numb">2</span> <b><?php echo theme_option('2nd_title'); ?></b> <br>
-
-                        <p> <?php echo theme_option('2nd_description'); ?> </p>
-                    </div>
-                </div>
-
-                <div class="col-xs-12 col-sm-4 how tiga">
-                    <div class="text telu">
-                        <span class="numb">3</span> <b><?php echo theme_option('3rd_title'); ?></b> <br>
-
-                        <p> <?php echo theme_option('3rd_description'); ?> </p>
-                    </div>
-                </div>
-
                 <div class="col-xs-12 col-sm-12 go-shop center">
-                    <a href="<?php echo home_url(); ?>/how-it-works" class="button button-filled angle-right btn-see">SEE
-                        HOW OUR BOOSTERS WORKS</a>
+                    <a href="<?php echo home_url(); ?>/how-it-works" class="button btn-see">See How Our Boosters Work</a>
                     <a href="<?php echo home_url(); ?>/shop" class="button button-filled angle-right btn-shop"
                        style="display: none; max-width: 300px; margin: 0 auto;">SHOP OUR BOOSTER</a>
                 </div>
