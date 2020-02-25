@@ -21,12 +21,14 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 global $product;
-
+$providers = get_the_terms($product->id,'provider');
 if ( ! $product->is_purchasable() ) {
 	return;
 }
 
 ?>
+
+
 
 <?php
 	// Availability
@@ -57,7 +59,36 @@ if ( ! $product->is_purchasable() ) {
 
         <input type="hidden" name="add-to-cart" value="<?php echo esc_attr( $product->id ); ?>" />
 
-	 	<button type="submit" class="single_add_to_cart_button button primary-button alt"><?php echo esc_html( $product->single_add_to_cart_text() ); ?></button>
+        <div class="tax-info">
+            <?php if ($providers):?>
+                <div class="providers tax">
+                    <div class="slug">
+                        <?php
+                        $xx = '';
+                        foreach ( $providers as $provider ) {
+                            $xx .= ucwords($provider->slug) .' / ';
+                        }
+
+                        echo rtrim($xx,' /');
+
+                        ?>
+                    </div>
+                </div>
+            <?php endif; ?>
+                <div class="tax-items">
+                    <?php
+
+                    foreach ($providers as $provider){
+                        $icon_class = get_term_meta($provider->term_id, 'icon',true);
+                        if ($icon_class){
+                            echo '<i class="'.$icon_class.'" title="'. $provider->name .'"></i>';
+                        }
+                    }
+                    ?>
+                </div>
+        </div>
+
+	 	<button type="submit" class="single_add_to_cart_button button primary-button alt"><?php echo esc_html( $product->single_add_to_cart_text() ); ?> <?php echo $product->get_price_html(); ?></button>
 
         <button type="submit" name="to_checkout" value="1" class="single_add_to_cart_button action-button to_checkout_button button alt">Proceed to checkout</button>
 
@@ -68,7 +99,7 @@ if ( ! $product->is_purchasable() ) {
     <div class="shipping-text">
         <div class="col-sm-12 col-xs-12">
             <i class="mb-icon-free-delivery primary-color hidden"></i>
-						<p><img src="<?php echo get_template_directory_uri() ?>/assets/img/free-delivery.png" alt=""> Fast, Free Shipping. Arrives in 3-5 Working Days</p>
+						<p><img src="<?php echo get_template_directory_uri() ?>/assets/img/truck icon.jpg" alt=""> Fast, Free Shipping. Arrives in 3-5 Working Days</p>
         </div>
     </div>
 <?php endif; ?>

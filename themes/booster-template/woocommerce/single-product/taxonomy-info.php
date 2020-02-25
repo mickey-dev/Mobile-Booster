@@ -12,36 +12,8 @@ $frequencies = get_the_terms($product->id,'frequency');
 
 ?>
 <div class="tax-info">
-    <?php if ($providers):?>
-        <div class="providers tax">
-            <div class="slug">
-              <?php
-              $xx = '';
-              foreach ( $providers as $provider ) {
-                $xx .= ucwords($provider->slug) .' / ';
-              }
 
-              echo rtrim($xx,' /');
-
-              ?>
-            </div>       
-        </div>
-    <?php endif; ?>
-
-    <?php if ( $providers ): ?>
-      <div class="tax-items">
-        <?php
-
-        foreach ($providers as $provider){
-            $icon_class = get_term_meta($provider->term_id, 'icon',true);
-            if ($icon_class){
-                echo '<i class="'.$icon_class.'" title="'. $provider->name .'"></i>';
-            }
-        }
-        ?>
-      </div>
-    <?php endif; ?>    
-
+    <div class="tex-inline">
     <?php if ($frequencies): ?>
       <div class="frequencies">
         <?php
@@ -64,6 +36,21 @@ $frequencies = get_the_terms($product->id,'frequency');
 
         ?>
       </div>
-    <?php endif; ?>     
+    <?php endif; ?>
+</div>
+
+    <div class="tex-home">
+        <div class="tex-home-right">
+            <img src="<?php echo get_template_directory_uri() ?>/assets/img/tax-home-icon.jpg" alt=""">
+        </div>
+
+        <div class="tex-home-left">
+            <p>Ideal for:</p>
+            <span>Smaller offices, studios, and homes</span>
+        </div>
+
+    </div>
+
+
 
 </div>

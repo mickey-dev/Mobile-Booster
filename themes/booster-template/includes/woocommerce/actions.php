@@ -5,7 +5,7 @@ add_action('woocommerce_before_single_product_summary','woocommerce_template_sin
 
 
 remove_action('woocommerce_single_product_summary','woocommerce_template_single_price',10);
-add_action('woocommerce_before_add_to_cart_button','woocommerce_template_single_price',60);
+//add_action('woocommerce_before_add_to_cart_button','woocommerce_template_single_price',60);
 
 
 
@@ -38,7 +38,7 @@ function link_to_installation_guide(){
     echo '</div>';
 }
 
-add_action('woocommerce_after_add_to_cart_form','link_to_installation_guide',30);
+//add_action('woocommerce_after_add_to_cart_form','link_to_installation_guide',30);
 //remove_action('woocommerce_single_product_summary','woocommerce_template_single_excerpt',20);
 
 remove_action('woocommerce_before_single_product_summary','woocommerce_show_product_sale_flash',10);
