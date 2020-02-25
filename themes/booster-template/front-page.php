@@ -133,7 +133,7 @@ get_header();
             </div>
             <div class="featured-actions">
                 <span class="price"><?php echo $product->get_price_html(); ?></span>
-                <a href="<?php echo get_permalink( $loop->post->ID ) ?>" class="button button-filled angle-right">VIEW PRODUCT</a>
+                <a href="<?php echo get_permalink( $loop->post->ID ) ?>" class="button button-filled">Product Details</a>
             </div>
 
         </li>
@@ -144,10 +144,6 @@ get_header();
 
 
         <?php //endif; ?>
-
-        <div class="col-xs-12 col-sm-12 go-shop center view_boosters">
-          <a href="/shop/" class="button-filled angle-right btn-see">VIEW PRODUCTS</a>
-        </div>
       </div>
     </div>
   </div>

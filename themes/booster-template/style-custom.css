@@ -122,7 +122,7 @@ div.wpcf7-validation-errors {
     display: block;
     margin-top: 29px;
 }
-.home_featured li .price .amount{
+.home_featured li .price span{
     font-size: 23px;
     color: #1b3d56;
     font-style: normal;
@@ -381,10 +381,10 @@ div.wpcf7-validation-errors {
 
 .home .button-filled {
     border: 1px solid #fb0 !important;
-    border-radius: 20px;
+    border-radius: 25px;
     background: #fb0;
     font-size: 18px;
-    margin: 20px auto !important;
+    margin: 19px auto !important;
     padding: 4px 20px !important
 }
 

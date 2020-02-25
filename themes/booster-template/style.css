@@ -386,7 +386,7 @@ nav.navbar-primary .main-header ul.navbar-nav li a{
 }
 .featured-details .meta_prodtitle{
     margin-right: 11px;
-    font-weight: 400;
+    font-weight: 600;
 }
 .home_featured .providers{
     flex-direction: column;
@@ -399,10 +399,11 @@ nav.navbar-primary .main-header ul.navbar-nav li a{
     font-family: Montserrat;
     font-size: 15px;
     margin-bottom: 20px;
+    font-weight: 600;
 }
-.featured-details .meta-name{
+.featured-details .meta-name span{
     margin-right: 11px;
-    font-weight: 700;
+    font-weight: 800;
 }
 
 .featured-actions{
@@ -411,8 +412,17 @@ nav.navbar-primary .main-header ul.navbar-nav li a{
     flex-direction: column;
 }
 
-.featured-actions button{
-
+.home_featured .featured-actions .button{
+    margin-top: 24px !important;
+    margin-bottom: 31px !important;
+    padding: 16px 42px !important;
+    font-size: 14px;
+    color: #ffffff;
+    letter-spacing: 0.35px;
+    line-height: 14px;
+    font-weight: 600;
+    font-style: normal;
+    text-transform: uppercase;
 }
 
 /*home edit product*/

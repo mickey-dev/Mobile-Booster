@@ -778,7 +778,8 @@ nav.navbar-primary.sticky-top .main-header {
 }
 
 #how-it-works .row {
-    padding: 70px 0
+    padding-top: 89px;
+    padding-bottom: 93px;
 }
 
 #how-it-works .row .title {
