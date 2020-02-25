@@ -332,7 +332,8 @@ nav.navbar-primary .main-header ul.navbar-nav li a{
     margin-top: -75px;
     margin-bottom: 42px;
 }
-/*product*/
+
+/*featured products*/
 .title h1, .title h2, .title h3, .title h4{
     text-transform: unset;
 }
@@ -342,7 +343,78 @@ nav.navbar-primary .main-header ul.navbar-nav li a{
     font-size: 21px;
     font-weight: 700;
     line-height: 24px;
+    margin-top: 27px;
+    margin-bottom: 31px;
+    padding-left: 12px;
+    padding-right: 12px;
 }
+.home_featured .featured-details{
+    padding-left: 12px;
+    padding-right: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-bottom: 9px;
+    border-bottom: 1px solid #9babb7;
+
+}
+.featured-details .meta-icon{
+    color: #1b3d56;
+    margin-right: 11px;
+    height: 20px;
+    font-size: 20px;
+}
+.featured-details .icon-wifi-img{
+    background-image: url("assets/img/icons/wifi-img.png");
+    width: 20px;
+    height: 18px;
+    background-size: contain;
+}
+
+.featured-details .mb-icon-home-img{
+    background-image: url("assets/img/icons/home-img.png");
+    width: 19px;
+    height: 17px;
+    background-size: contain;
+}
+
+.featured-details .meta_prodtitle, .featured-details .meta-name{
+    color: #1b3d56;
+    font-family: Montserrat;
+    font-size: 15px;
+}
+.featured-details .meta_prodtitle{
+    margin-right: 11px;
+    font-weight: 400;
+}
+.home_featured .providers{
+    flex-direction: column;
+}
+.providers .providers_wrapper{
+    flex-wrap: wrap;
+}
+.featured-details .meta-prov-title{
+    color: #1b3d56;
+    font-family: Montserrat;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+.featured-details .meta-name{
+    margin-right: 11px;
+    font-weight: 700;
+}
+
+.featured-actions{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.featured-actions button{
+
+}
+
 /*home edit product*/
 .single-product .product .main-content .right .product-title h1.product_title{
     color: #1b3d56;

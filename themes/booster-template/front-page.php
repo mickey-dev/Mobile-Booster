@@ -66,7 +66,7 @@ get_header();
 
         <li class="product type-product status-publish has-post-thumbnail provider-vodafone provider-o2-mobile provider-id provider-ee provider-3g provider-4g provider-three coverage-up-to-1000-sqm frequency-90018002100mhz tm-has-options last instock sale featured shipping-taxable purchasable product-type-simple"> 
 
-<!--            <a href="--><?php //echo get_permalink( $loop->post->ID ) ?><!--" title="--><?php //echo esc_attr($loop->post->post_title ? $loop->post->post_title : $loop->post->ID); ?><!--" class="woocommerce-LoopProduct-link">-->
+            <a href="<?php echo get_permalink( $loop->post->ID ) ?>" title="<?php echo esc_attr($loop->post->post_title ? $loop->post->post_title : $loop->post->ID); ?>" class="woocommerce-LoopProduct-link">
 
 <!--              <span class="onsale1">-->
 <!--                --><?php //woocommerce_show_product_sale_flash( $post, $product ); ?>
@@ -76,8 +76,6 @@ get_header();
 
               <h3><?php the_title(); ?></h3><br />
 
-              <span class="price"><?php echo $product->get_price_html(); ?></span><br />
-
             </a>
 
             <?php
@@ -86,55 +84,57 @@ get_header();
             $coverages = get_the_terms($product->id,'coverage');
             $frequencies = get_the_terms($product->id,'frequency');
             ?>
+            <div class="featured-details">
+                <div class="coverages col-xs-12 no-padding">
+                    <i class="icon-wifi-img meta-icon"></i>
+                    <span class="meta_prodtitle">Coverage:</span>
+                    <?php
 
-            <div class="coverages col-xs-12 no-padding">
-              <span class="meta_prodtitle">Coverage</span>
-                <?php
-                echo '<span>';
-                foreach ($coverages as $coverage){
-                    echo '<i class="mb-icon-connection" title="'. get_term_meta($coverage->term_id, 'additional_info',true) .'"></i>';
-                    echo '<div class="name">';
-                    echo $coverage->name;
-                    echo '</span>';
-                    echo '</div>';
-                }
-                ?>
-            </div>
-
-            <div class="coverages col-xs-12 no-padding">
-              <span class="meta_prodtitle">Ideal for</span>
-                <?php
-                echo '<span>';
-                foreach ($coverages as $coverage){
-                    $icon_class = get_term_meta($coverage->term_id, 'icon',true);
-                    if ($icon_class){
-                        echo '<i class="'.$icon_class.'" title="'. get_term_meta($coverage->term_id, 'additional_info',true) .'"></i>';
+                    foreach ($coverages as $coverage){
+                        echo '<div class="meta-name">';
+                        echo '<span>';
+                        echo $coverage->name;
+                        echo '</span>';
+                        echo '</div>';
                     }
-                    echo '<div class="name">';
-                    echo get_term_meta($coverage->term_id, 'alt_name',true);
-                    echo '</span>';
-                    echo '</div>';
-                }
-                ?>
-            </div>
+                    ?>
+                </div>
 
-            <div class="providers col-xs-12 no-padding">
-              <span class="meta_prodtitle">Providers</span>
-                <?php
-                echo '<span class="provider_container">';
-                foreach ( $providers as $provider ){
-                    echo '<div class="provider">';
+                <div class="coverages col-xs-12 no-padding">
+                    <?php
+                    foreach ($coverages as $coverage){
+                        $icon_class = get_term_meta($coverage->term_id, 'icon',true);
+                        echo '<i class="'.$icon_class.' meta-icon"></i>';
+                        echo '<span class="meta_prodtitle">Ideal for:</span>';
+                        echo '<div class="meta-name">';
+                        echo '<span>';
+                        echo get_term_meta($coverage->term_id, 'alt_name',true);
+                        echo '</span>';
+                        echo '</div>';
+                    }
+                    ?>
+                </div>
+
+                <div class="providers col-xs-12 no-padding">
+                    <div class="meta-prov-title">Providers:</div>
+                    <?php
+                    echo '<div class="providers_wrapper">';
+                    foreach ( $providers as $provider ){
+                        echo '<span class="provider">';
                         $icon_class = get_term_meta($provider->term_id, 'icon',true);
                         if ($icon_class){
                             echo '<i class="'.$icon_class.'" title="'. $provider->name .'"></i>';
                         }
-                    echo '</span>';
+                        echo '</span>';
+                    }
                     echo '</div>';
-                }
-                ?>
+                    ?>
+                </div>
             </div>
-
-            <a href="<?php echo get_permalink( $loop->post->ID ) ?>" class="button button-filled angle-right">VIEW PRODUCT</a>
+            <div class="featured-actions">
+                <span class="price"><?php echo $product->get_price_html(); ?></span>
+                <a href="<?php echo get_permalink( $loop->post->ID ) ?>" class="button button-filled angle-right">VIEW PRODUCT</a>
+            </div>
 
         </li>
     <?php

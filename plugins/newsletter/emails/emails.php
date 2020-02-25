@@ -110,6 +110,7 @@ class NewsletterEmails extends NewsletterModule {
         $controls->init();
         echo '<input type="hidden" name="action" value="tnpc_render">';
         echo '<input type="hidden" name="b" value="' . esc_attr($_REQUEST['id']) . '">';
+	    echo '<input type="hidden" name="options[inline_edits]" value="' . esc_attr( serialize( $controls->data['inline_edits'] ) ) . '">';
 
         ob_start();
         include $block['dir'] . '/options.php';
@@ -181,13 +182,23 @@ class NewsletterEmails extends NewsletterModule {
      * The last run parameter can instruct the block to generate content conditioned to
      * the passed timestamp (for example limiting the content to new posts from the last
      * run timestamp).
+     * 
+     * $email can actually be even a string containing the full newsletter HTML code.
      *
-     * @param string $theme (Rinominare)
+     * @param TNP_Email $email (Rinominare)
      * @return string
      */
-    function regenerate($theme, $context = array()) {
-        $this->logger->debug('Starting email regeneration');
-        $this->logger->debug($context);
+    function regenerate($email, $context = array()) {
+        
+        // Cannot be removed due to compatibility issues with old Automated versions
+        if (is_object($email)) {
+            $theme = $email->message;
+        } else {
+            $theme = $email;
+        }
+        
+        //$this->logger->debug('Starting email regeneration');
+        //$this->logger->debug($context);
 
         if (empty($theme)) {
             $this->logger->debug('The email was empty');
@@ -234,6 +245,12 @@ class NewsletterEmails extends NewsletterModule {
         if (!empty($context['last_run']) && $has_dynamic_blocks && $all_empty) {
             return '';
         }
+        
+        // We need to keep the CSS/HEAD part, the regenearion is only about blocks
+        
+        if (is_object($email)) {
+            $result = TNP_Composer::get_main_wrapper_open($email) . $result . TNP_Composer::get_main_wrapper_close($email);
+        }
 
         $x = strpos($theme, '<body');
         if ($x !== false) {
@@ -242,6 +259,13 @@ class NewsletterEmails extends NewsletterModule {
         } else {
             
         }
+        
+        if (is_object($email)) {
+            $email->message = $result;
+            $email->subject = $subject;
+        }
+        
+        // Kept for compatibility
         return array('body' => $result, 'subject' => $subject);
     }
 
@@ -386,17 +410,14 @@ class NewsletterEmails extends NewsletterModule {
      * @param type $block_id
      * @param type $wrapper
      */
-    function tnpc_render_callback() {
-        $block_id = $_POST['b'];
-        $wrapper = isset($_POST['full']);
-        if (isset($_POST['options']) && is_array($_POST['options'])) {
-            $options = stripslashes_deep($_POST['options']);
-        } else {
-            $options = array();
-        }
-        $this->render_block($block_id, $wrapper, $options);
-        wp_die();
-    }
+	function tnpc_render_callback() {
+		$block_id = $_POST['b'];
+		$wrapper  = isset( $_POST['full'] );
+		$options  = $this->restore_options_from_request();
+		
+		$this->render_block( $block_id, $wrapper, $options );
+		wp_die();
+	}
 
     function tnpc_preview_callback() {
         $email = Newsletter::instance()->get_email($_REQUEST['id'], ARRAY_A);
@@ -941,6 +962,51 @@ class NewsletterEmails extends NewsletterModule {
             }
         }
     }
+
+	function restore_options_from_request() {
+
+		if ( isset( $_POST['options'] ) && is_array( $_POST['options'] ) ) {
+			// Get all block options
+			$options = stripslashes_deep( $_POST['options'] );
+
+			// Deserialize inline edits when
+			// render is preformed on saving block options
+			if ( isset( $options['inline_edits'] ) && is_serialized( $options['inline_edits'] ) ) {
+				$options['inline_edits'] = unserialize( $options['inline_edits'] );
+			}
+
+			// Restore inline edits from data-json
+			// coming from inline editing 
+			// and merge with current inline edit
+			if ( isset( $_POST['encoded_options'] ) ) {
+				$decoded_options = $this->options_decode( $_POST['encoded_options'] );
+
+				$to_merge_inline_edits = [];
+
+				if ( isset( $decoded_options['inline_edits'] ) ) {
+					foreach ( $decoded_options['inline_edits'] as $decoded_inline_edit ) {
+						$to_merge_inline_edits[ $decoded_inline_edit['post_id'] . $decoded_inline_edit['type'] ] = $decoded_inline_edit;
+					}
+				}
+
+				//Overwrite with new edited content
+				if ( isset( $options['inline_edits'] ) ) {
+					foreach ( $options['inline_edits'] as $inline_edit ) {
+						$to_merge_inline_edits[ $inline_edit['post_id'] . $inline_edit['type'] ] = $inline_edit;
+					}
+				}
+
+				$options['inline_edits'] = array_values( $to_merge_inline_edits );
+				$options                 = array_merge( $decoded_options, $options );
+			}
+
+			return $options;
+
+		}
+
+		return array();
+
+	}
 
 }
 

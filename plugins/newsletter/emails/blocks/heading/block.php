@@ -5,7 +5,6 @@
  * Description: Section title
  */
 
-
 $default_options = array(
     'text' => 'An Awesome Title',
     'align' => 'center',
@@ -23,21 +22,18 @@ $options = array_merge($default_options, $options);
 ?>
 
 <style>
-    .heading-text {
+    .heading-text-inline {
         padding: 10px; 
         text-align: <?php echo $options['align'] ?>; 
         font-size: <?php echo $options['font_size'] ?>px; 
         font-family: <?php echo $options['font_family'] ?>; 
         font-weight: <?php echo $options['font_weight'] ?>; 
         color: <?php echo $options['font_color'] ?>;
+        line-height: normal!important;
+        letter-spacing: normal;
     }
 </style>
-<table border="0" cellpadding="0" cellspacing="0" width="100%" >
-    <tr>
-        <td align="center" class="heading-text">
 
-            <?php echo $options['text'] ?>
-
-        </td>
-    </tr>
-</table>
+<div inline-class="heading-text-inline">
+    <?php echo $options['text'] ?>
+</div>

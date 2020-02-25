@@ -23,10 +23,10 @@ $defaults = array(
     'layout' => 'full',
     'button_url' => '',
     'button_label' => 'Click Here',
-    'button_color' => '#ffffff',
+    'button_font_color' => '#ffffff',
+    'button_font_weight' => 'normal',
     'button_font_size' => 20,
     'button_background' => '#256F9C',
-    'layout' => 'full',
     'block_padding_top'=>20,
     'block_padding_bottom'=>20
 );
@@ -58,12 +58,13 @@ $layout = $options['layout'];
 
 if (!empty($options['image']['id'])) {
     if ($layout == 'full') {
-        $image = tnp_media_resize($options['image']['id'], array(600, 0));
+        $media = tnp_resize($options['image']['id'], array(600, 0));
     } else {
-        $image = tnp_media_resize($options['image']['id'], array(300, 200, true));
+        $media = tnp_resize($options['image']['id'], array(300, 200, true));
     }
+    $media->alt = $options['title'];
 } else {
-    $image = false;
+    $media = false;
 }
 ?>
 
@@ -94,11 +95,11 @@ if (!empty($options['image']['id'])) {
 
     <!-- HERO IMAGE -->
     <table width="100%" border="0" cellspacing="0" cellpadding="0">
-        <?php if ($image) { ?>
+        <?php if ($media) { ?>
         <tr>
             <td class="padding-copy tnpc-row-edit">
                 <a href="<?php echo $url ?>" target="_blank" rel="noopener nofollow">
-                    <img src="<?php echo $image ?>" border="0" alt="Image" inline-class="hero-image">
+                    <img src="<?php echo $media->url ?>" border="0" alt="<?php echo esc_attr($media->alt) ?>" width="<?php echo $media->width ?>" height="<?php echo $media->height ?>" inline-class="hero-image">
                 </a>
             </td>
         </tr>
@@ -120,6 +121,7 @@ if (!empty($options['image']['id'])) {
 
                     <tr>
                         <td align="center">
+                            <br>
                             <?php echo tnpc_button($options)?>
                         </td>
                     </tr>
@@ -153,7 +155,7 @@ if (!empty($options['image']['id'])) {
     <table width="290" align="left" class="hero-table">
         <tr>
             <td align="center" valign="top">
-                <img src="<?php echo $image ?>" border="0" alt="" style="max-width: 100%!important; height: auto!important; display: block;" class="img-max">                
+                <img src="<?php echo $media->url ?>" border="0" alt="<?php echo esc_attr($media->alt) ?>" width="<?php echo $media->width ?>" height="<?php echo $media->height ?>" style="max-width: 100%!important; height: auto!important; display: block;" class="img-max">                
             </td>
         </tr>
     </table>
@@ -177,6 +179,7 @@ if (!empty($options['image']['id'])) {
                <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top;" width="100%">
                   <tr>
                     <td align="center" vertical-align="middle" style="font-size:0px;padding:10px 25px;word-break:break-word;">
+                        
                             <?php echo tnpc_button($options)?>
                     </td>
                   </tr>

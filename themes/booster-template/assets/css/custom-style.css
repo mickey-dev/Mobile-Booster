@@ -80,8 +80,8 @@ body.single-product .page-header-bg {
 }
 
 * {
-    font-family: Roboto, sans-serif;
-    font-size: 15px
+    font-family: Montserrat;
+    font-size: 14px
 }
 
 #loading-page {
@@ -428,12 +428,6 @@ h4 {
 .icon-vodafone:before {
     content: "\e909";
     color: #cc2131
-}
-
-.icon-id:after {
-    content: url(assets/id.svg);
-    height: 26px;
-    width: 26px
 }
 
 nav.navbar-primary {

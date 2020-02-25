@@ -76,10 +76,10 @@ div.wpcf7-validation-errors {
     float: left;
     width: 23%;
     margin: 0 1%;
-    padding: 10px 20px;
+    /*padding: 10px 20px;*/
     position: relative;
-    border: 1px solid #ccc;
-    border-radius: 15px
+    border: 1px solid rgba(27, 61, 86, 0.4);
+    /*border-radius: 15px*/
 }
 
 .home_featured li .button {
@@ -111,29 +111,42 @@ div.wpcf7-validation-errors {
 }
 
 .home_featured li img {
-    max-width: 100%;
-    height: auto
+    object-fit: cover;
+    font-family: 'object-fit: cover;';
+    height: 161px;
+    width: 100%;
 }
 
 .home_featured li .price {
     text-align: center;
-    display: block
+    display: block;
+    margin-top: 29px;
 }
-
+.home_featured li .price .amount{
+    font-size: 23px;
+    color: #1b3d56;
+    font-style: normal;
+    font-weight: 600;
+    font-family: "Montserrat";
+    line-height: 24px;
+}
+.home_featured li .price del{
+    display: none;
+}
+.home_featured li .price ins{
+    text-decoration: none;
+}
 .meta_prodtitle {
     font-size: 12px;
     font-weight: 700
 }
 
 .home_featured .coverages, .home_featured .providers {
-    padding: 10px 5px;
-    background: #dbdbdb;
-    margin: 5px 0 10px 0;
-    border-radius: 7px
-}
-
-.home_featured .coverages .name {
-    float: right
+    /*padding: 10px 5px;*/
+    margin: 0 0 21px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .home_featured .provider_container {
@@ -146,16 +159,21 @@ div.wpcf7-validation-errors {
 }
 
 .home_featured .providers .provider {
-    height: 15px;
-    float: right
+    height: 20px;
+    /*float: right*/
+    margin-right: 13px;
 }
 
 .home_featured .providers .provider i {
-    margin: 0 2.5px 10px 2.5px
+    font-size: 20px;
 }
 
 .home_featured .providers .provider .icon-id {
-    display: none
+    height: 26px;
+    width: 26px;
+    background-image: url(assets/css/assets/id.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 .payment_method_stripe label {

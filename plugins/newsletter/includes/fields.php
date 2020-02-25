@@ -58,22 +58,45 @@ class NewsletterFields {
         $this->_close();
     }
 
-    public function text($name, $label = '', $attrs = array()) {
+    /** General Input field with default type = text */
+    public function input($name, $label = '', $attrs = array()) {
         $attrs = $this->_merge_base_attrs($attrs);
-        $attrs = array_merge(array('description' => '', 'placeholder' => '', 'size' => 0, 'label_after' => ''), $attrs);
+        $attrs = array_merge(array('description' => '', 'placeholder' => '', 'size' => 0, 'label_after' => '', 'type' => 'text'), $attrs);
         $this->_open();
         $this->_label($label);
         $value = $this->controls->get_value($name);
-        echo '<input id="', $this->_id($name), '" placeholder="', esc_attr($attrs['placeholder']), '" name="options[' . $name . ']" type="text"';
+
+        echo '<input id="', $this->_id($name), '" placeholder="', esc_attr($attrs['placeholder']), '" name="options[', $name, ']" type="', $attrs['type'], '"';
+
         if (!empty($attrs['size'])) {
             echo ' style="width: ', $attrs['size'], 'px"';
         }
+
+        if (isset($attrs['min'])) {
+            echo ' min="' . (int) $attrs['min'] . '"';
+        }
+
+        if (isset($attrs['max'])) {
+            echo ' max="' . (int) $attrs['max'] . '"';
+        }
+
         echo ' value="', esc_attr($value), '">';
+
         if (!empty($attrs['label_after']))
             echo $attrs['label_after'];
         //$this->controls->text($name, $attrs['size'], $attrs['placeholder']);
         $this->_description($attrs);
         $this->_close();
+    }
+
+    public function text($name, $label = '', $attrs = array()) {
+        $attrs = array_merge(array('type' => 'text'), $attrs);
+        $this->input($name, $label, $attrs);
+    }
+
+    public function number($name, $label = '', $attrs = array()) {
+        $attrs = array_merge(array('type' => 'number'), $attrs);
+        $this->input($name, $label, $attrs);
     }
 
     public function multitext($name, $label = '', $count = 10, $attrs = array()) {
@@ -118,7 +141,7 @@ class NewsletterFields {
         }
         if (version_compare($wp_version, '4.8', '<')) {
             echo '<p><strong>Rich editor available only with WP 4.8+</strong></p>';
-        } 
+        }
         echo '<textarea id="options-' . esc_attr($name) . '" name="options[' . esc_attr($name) . ']" style="width: 100%;height:250px">';
         echo esc_html($value);
         echo '</textarea>';
@@ -177,10 +200,10 @@ class NewsletterFields {
 
     /** Collects a color in RGB format (#RRGGBB) with a picker. */
     public function color($name, $label, $attrs = array()) {
-        $attrs = array_merge(array('description' => '', 'placeholder' => ''), $attrs);
+        $attrs = array_merge(array('description' => '', 'placeholder' => '', 'default' => '#000000'), $attrs);
         $this->_open('tnp-color');
         $this->_label($label);
-        $this->controls->color($name);
+        $this->controls->color($name, $attrs['default']);
         $this->_description($attrs);
         $this->_close();
     }
@@ -272,8 +295,8 @@ class NewsletterFields {
                 'author_name' => '',
                 'post_status' => 'publish',
                 'suppress_filters' => true),
-                'last_post_option'=>false
-            ), $args);
+            'last_post_option' => false
+                ), $args);
         $args['filters']['posts_per_page'] = $count;
 
         $posts = get_posts($args['filters']);
@@ -307,7 +330,7 @@ class NewsletterFields {
      * @param type $attrs
      */
     public function media($name, $label = '', $attrs = array()) {
-        $attrs = $this->_merge_attrs($attrs, array('alt'=>false));
+        $attrs = $this->_merge_attrs($attrs, array('alt' => false));
         $this->_open();
         $this->_label($label);
         $this->controls->media($name);

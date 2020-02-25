@@ -27,9 +27,11 @@ class SmartBoosters
 
     }
 
-    public static function scripts(){
+    public static function scripts() {
         wp_deregister_script('jquery');
         wp_deregister_script('wp-embed');
+        wp_register_script('object-fit', get_template_directory_uri() . '/assets/js/plugins/ofi.min.js', null, null, true);
+        wp_enqueue_script('object-fit');
         if (is_woocommerce() || is_cart() || is_checkout()) {
             wp_register_script('jquery', get_template_directory_uri() . '/assets/js/plugins/jquery.min.js', array(), null, true);
             wp_enqueue_script('jquery');
@@ -41,7 +43,6 @@ class SmartBoosters
             wp_enqueue_script('main');
             wp_localize_script( 'main', 'ajax_object', array( 'ajax_url' => admin_url( 'admin-ajax.php' ) ) );
         } else {
-
             wp_deregister_script('jquery');
             wp_deregister_script('wp-embed');
             wp_deregister_script('jquery-blockui');
@@ -52,14 +53,7 @@ class SmartBoosters
             wp_register_script('site-scripts', get_template_directory_uri() . '/assets/js/scripts.min.js',array(),null,true);
             wp_enqueue_script('site-scripts');
             wp_localize_script( 'site-scripts', 'ajax_object', array( 'ajax_url' => admin_url( 'admin-ajax.php' ) ) );
-
         }
-
-
-
-
-
-
     }
 
     public static function best_selling_products( $atts ){

@@ -43,7 +43,8 @@ $options = array_merge($default_options, $options);
         display: inline-block;
     }
 </style>
-<a href="<?php echo $options['url'] ?>" target="_blank" rel="noopener" class="cta-button"><?php echo $options['text'] ?></a>
+
+<a href="<?php echo $options['url'] ?>" target="_blank" rel="noopener" inline-class="cta-button"><?php echo $options['text'] ?></a>
 
 <div itemscope="" itemtype="http://schema.org/EmailMessage">
     <div itemprop="potentialAction" itemscope="" itemtype="http://schema.org/ViewAction">
