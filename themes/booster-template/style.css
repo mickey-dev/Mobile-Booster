@@ -643,3 +643,78 @@ nav.navbar-primary .main-header ul.navbar-nav li a{
     margin: 19px auto !important;
     padding: 4px 20px !important;
 }
+/*footer*/
+
+footer.site-footer{
+    padding: 0;
+    background:  #10293b;
+}
+#colophon .guarantee{
+    padding: 7px 0;
+    border-bottom: 1px solid #28475b;
+}
+#colophon .header-icons-span{
+    color: white!important;
+}
+#colophon .footer-title{
+    margin-top: 41px;
+    margin-bottom: 30px;
+    color: #ffffff;
+    font-family: "Open Sans";
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 18px;
+    text-transform: uppercase;
+    /* Text style for "Contact Us" */
+    letter-spacing: 0.7px;
+}
+footer.site-footer ul li a{
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 400!important;
+    line-height: 24px;
+    /* Text style for "About Us ," */
+    letter-spacing: 0.3px;
+}
+footer.site-footer ul li{
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 400!important;
+    line-height: 24px;
+    /* Text style for "About Us ," */
+    letter-spacing: 0.3px;
+}
+#colophon b, optgroup, strong{
+    font-weight: 400;
+}
+footer.site-footer .fourth .social h4{
+    font-family: "Open Sans";
+    font-size: 14px!important;
+    font-weight: bold;
+    line-height: 18px;
+    text-transform: uppercase;
+    /* Text style for "Follow Us" */
+    letter-spacing: 0.7px;
+    padding-bottom: 16px;
+}
+footer.site-footer .first .contact{
+    padding: 0;
+}
+#colophon .third{
+    padding-left: 50px;
+}
+#colophon .first{
+    padding-left: 70px;
+}
+#colophon .fourth{
+    padding-left: 70px;
+}
+#colophon .footer-bottom{
+    border-top: 1px solid #28475b!important;
+}
+footer.site-footer .copyright{
+    border: unset;
+}
+#colophon .text-center{
+    display: flex;
+}
