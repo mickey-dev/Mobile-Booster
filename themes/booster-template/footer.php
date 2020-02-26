@@ -160,43 +160,44 @@ $ins= theme_option( 'ins' );
 	</div>
 
     <div class="footer-bottom container-fluid">
-        <?php
+        <div class="container">
+            <?php
 
-        if ( theme_option( 'copyright_text' ) ) { ?>
+            if ( theme_option( 'copyright_text' ) ) { ?>
 
-            <div class="container col-xs-12 col-sm-12 copyright text-center">
-                <?php echo theme_option( 'copyright_text' ) ?>
-                <div class="payment-icon">
-                    <a href="https://https://www.paypal.com" target="_blank" rel="nofollow">
-                        <img src="<?php echo get_template_directory_uri() ?>/assets/img/mc.png" alt="Mc">
-                    </a>
+                <div class="col-xs-12 col-sm-12 copyright text-center">
+                    <?php echo theme_option( 'copyright_text' ) ?>
+                    <div class="payment-icon">
+                        <a href="https://https://www.paypal.com" target="_blank" rel="nofollow">
+                            <img src="<?php echo get_template_directory_uri() ?>/assets/img/mc.png" alt="Mc">
+                        </a>
 
-                    <a href="https://www.visaeurope.com/" target="_blank" rel="nofollow">
-                        <img class="combine1 sprite-logo-visa" src="<?php echo get_template_directory_uri() ?>/assets/img/combine1.png" alt="Credit Card">
-                    </a>
+                        <a href="https://www.visaeurope.com/" target="_blank" rel="nofollow">
+                            <img class="combine1 sprite-logo-visa" src="<?php echo get_template_directory_uri() ?>/assets/img/combine1.png" alt="Credit Card">
+                        </a>
 
-                    <a href="https://www.paypal.com" target="_blank" rel="nofollow">
-                        <img src="<?php echo get_template_directory_uri() ?>/assets/img/maestro.png" alt="PayPal">
-                    </a>
+                        <a href="https://www.paypal.com" target="_blank" rel="nofollow">
+                            <img src="<?php echo get_template_directory_uri() ?>/assets/img/maestro.png" alt="PayPal">
+                        </a>
 
-                    <a href="https://www.paypal.com" target="_blank" rel="nofollow">
-                        <img src="<?php echo get_template_directory_uri() ?>/assets/img/am.png" alt="PayPal">
-                    </a>
+                        <a href="https://www.paypal.com" target="_blank" rel="nofollow">
+                            <img src="<?php echo get_template_directory_uri() ?>/assets/img/am.png" alt="PayPal">
+                        </a>
 
-                    <a href="https://www.paypal.com" target="_blank" rel="nofollow">
-                        <img src="<?php echo get_template_directory_uri() ?>/assets/img/cus.png" alt="PayPal">
-                    </a>
+                        <a href="https://www.paypal.com" target="_blank" rel="nofollow">
+                            <img src="<?php echo get_template_directory_uri() ?>/assets/img/cus.png" alt="PayPal">
+                        </a>
 
-                    <a href="https://www.paypal.com" target="_blank" rel="nofollow">
-                        <img src="<?php echo get_template_directory_uri() ?>/assets/img/logo-paypal.png" alt="PayPal">
-                    </a>
+                        <a href="https://www.paypal.com" target="_blank" rel="nofollow">
+                            <img src="<?php echo get_template_directory_uri() ?>/assets/img/logo-paypal.png" alt="PayPal">
+                        </a>
+                    </div>
                 </div>
-            </div>
 
+            <?php }
 
-        <?php }
-
-        ?>
+            ?>
+        </div>
     </div>
 </footer>
 

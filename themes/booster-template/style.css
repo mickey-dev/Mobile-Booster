@@ -717,4 +717,5 @@ footer.site-footer .copyright{
 }
 #colophon .text-center{
     display: flex;
+    padding: 0;
 }

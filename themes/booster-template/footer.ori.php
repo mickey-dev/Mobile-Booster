@@ -7,7 +7,7 @@
 
     <div class="container">
         <div class="col-xs-12 col-sm-4 copyright-text  text-center">
-            Copyright © <?= date('Y')?>. <?= theme_option('copyright_text') ?>
+            Copyright © <?= date('Y')?>.<?= theme_option('copyright_text') ?>
         </div>
         <div class="col-xs-12 col-sm-3 footer-socials text-center">
             <?php
