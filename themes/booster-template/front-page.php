@@ -15,25 +15,25 @@ get_header();
 
       <div class="col-xs-12 col-sm-12 guarantee">
         <div class="container header-bottom">
-            <div class="header-bottom-icons">
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12 header-bottom-icons">
                 <img class="combine1 sprite-guarantee" src="<?php echo get_template_directory_uri() ?>/assets/img/1.png" alt="Mobile Booster Guarantee">
                 <div class="header-icons-span">
                     <span>Free Delivery</span> <br> <span>in the UK</span>
                 </div>
             </div>
-            <div class="header-bottom-icons">
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12 header-bottom-icons">
                 <img class="combine1 sprite-guarantee" src="<?php echo get_template_directory_uri() ?>/assets/img/1.png" alt="Mobile Booster Guarantee">
                 <div class="header-icons-span">
                     <span>30 Day Money-Back</span> <br> <span>Guarantee</span>
                 </div>
             </div>
-            <div class="header-bottom-icons">
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12 header-bottom-icons">
                 <img class="combine1 sprite-guarantee" src="<?php echo get_template_directory_uri() ?>/assets/img/1.png" alt="Mobile Booster Guarantee">
                 <div class="header-icons-span">
                     <span>Five Bar Signal</span> <br> <span>Guarantee</span>
                 </div>
             </div>
-            <div class="header-bottom-icons">
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12 header-bottom-icons">
                 <img class="combine1 sprite-guarantee" src="<?php echo get_template_directory_uri() ?>/assets/img/1.png" alt="Mobile Booster Guarantee">
                 <div class="header-icons-span">
                     <span>Works On Every </span> <br> <span>Network & Carrier</span>

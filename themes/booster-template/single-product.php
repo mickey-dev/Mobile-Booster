@@ -1,7 +1,7 @@
 <?php get_header();?>
-<div class="container white-bg single-post-container" style="margin-top: 48px; margin-bottom: 64px;">
+<div class="white-bg single-post-container product-full" style="margin-top: 48px; margin-bottom: 64px;">
     <?php if (have_posts()): ?>
-        <div class="col-xs-12 col-md-12 col-sm-12">
+        <div class="product-page col-xs-12 col-md-12 col-sm-12">
             <?php if (have_posts()): ?>
                 <?php while (have_posts()): the_post() ?>
                     <article>

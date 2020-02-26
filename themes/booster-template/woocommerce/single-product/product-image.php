@@ -22,7 +22,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 global $post, $product;
 ?>
-<div class="col-xs-12 col-sm-6 col-md-7 left">
+<div class="product-left col-xs-12 col-sm-6 col-md-7 left">
     <div class="images">
         <?php
 					echo '<div class="main-image full-center">';

@@ -91,7 +91,7 @@ if ( ! $product->is_purchasable() ) {
         </div>
         </div>
 
-	 	<button type="submit" class="single_add_to_cart_button button primary-button alt"><?php echo esc_html( $product->single_add_to_cart_text() ); ?> <?php echo $product->get_price_html(); ?></button>
+	 	<button type="submit" class="single_add_to_cart_button button primary-button alt"><?php echo esc_html( $product->single_add_to_cart_text() ); ?>&nbsp;| &nbsp; <?php echo $product->get_price_html(); ?></button>
 
         <button type="submit" name="to_checkout" value="1" class="single_add_to_cart_button action-button to_checkout_button button alt">Proceed to checkout</button>
 
