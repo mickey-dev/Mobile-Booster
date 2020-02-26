@@ -22,20 +22,6 @@
             e("#filter .coverage").removeClass("active"), e("#filter .coverage").hide(), e("#filter #range3.coverage").show(), e(this).parent().parent().find("li").removeClass("LActive"), e(this).parent().addClass("active LActive"), e("#2").addClass("active"), e("#3").addClass("active"), e("#5").removeClass("active"), e("#filter-coverage-up-to-1000-sqm").prop("checked", !0);
         }), e("#5 .bulet, #5 .text").on("click", function () {
             e("#filter .coverage").removeClass("active"), e("#filter .coverage").hide(), e("#filter #range4.coverage").show(), e(this).parent().parent().find("li").removeClass("LActive"), e(this).parent().addClass("active LActive"), e("#2").addClass("active"), e("#3").addClass("active"), e("#4").addClass("active"), e("#5").addClass("active"), e("#filter-coverage-up-to-5000-sqm").prop("checked", !0);
-        }), e(".single-product form .tm-element-ul-checkbox li ").on("click", function () {
-            e(this).toggleClass("active");
-        }), e(".58b81f0f79a5a8 .tc-label").on("click", function () {
-            e(".58b81f0f79a5a8 .extra-cable-div .fa").toggleClass("rotated"), e(".58b81f0f79a5a8 .extra-cable-ul").toggleClass("open")
-        }), e(".58b81f0f79a5a8 .extra-cable-div").append('<i class="fa fa-angle-down"></i>'), e(".58b81f0f79a5a8 .extra-cable-div .fa").on("click", function () {
-            e(this).toggleClass("rotated"), e(".58b81f0f79a5a8 .extra-cable-ul").toggleClass("open");
-        }), e(".58b81f0f79a5a8 .extra-cable-ul li").on("click", function () {
-            e(this).prependTo(".58b81f0f79a5a8 .extra-cable-ul");
-        }), e(".58b81f0f79a625 .tc-label").on("click", function () {
-            e(".58b81f0f79a625 .warranty-div .fa").toggleClass("rotated"), e(".58b81f0f79a625 .warranty-ul").toggleClass("open");
-        }), e(".58b81f0f79a625 .warranty-ul li").on("click", function () {
-            e(this).prependTo(".58b81f0f79a625 .warranty-ul");
-        }), e(".58b81f0f79a625 .warranty-div").append('<i class="fa fa-angle-down"></i>'), e(".58b81f0f79a625 .warranty-div .fa").on("click", function () {
-            e(this).toggleClass("rotated"), e(".58b81f0f79a625 .warranty-ul").toggleClass("open");
         });
     });
 }(jQuery);

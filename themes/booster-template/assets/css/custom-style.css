@@ -2282,17 +2282,25 @@ nav.navbar-primary.sticky-top .main-header {
     height: auto
 }
 
-.single-product .product .main-content .right .summary form.cart ul#tm-extra-product-options-fields .cpf_hide_element, .single-product .product .main-content .right .summary form.cart ul#tm-extra-product-options-fields .tm-section-label {
+.single-product .product .main-content .right .summary form.cart ul#tm-extra-product-options-fields .cpf_hide_element,
+.single-product .product .main-content .right .summary form.cart ul#tm-extra-product-options-fields .tm-section-label {
     font-weight: 400;
-    margin-bottom: 0;
     font-size: 16px;
-    float: left;
-    width: 50%
+    width: 100%;
+    margin-bottom: 0;
 }
-
+.single-product .product .main-content .right .summary form.cart ul#tm-extra-product-options-fields .tm-section-label {
+    margin-bottom: 7px;
+    color: #1b3d56;
+    font-size: 15px;
+    font-weight: 400;
+}
+.single-product .product .main-content .right .summary form.cart ul#tm-extra-product-options-fields .cpf_hide_element select{
+    height: 35px;
+    width: 100%;
+}
 @media screen and (max-width: 320px) {
     .single-product .product .main-content .right .summary form.cart ul#tm-extra-product-options-fields .cpf_hide_element, .single-product .product .main-content .right .summary form.cart ul#tm-extra-product-options-fields .tm-section-label {
-        margin-bottom: 10px;
         width: 100%
     }
 }
@@ -2315,7 +2323,7 @@ nav.navbar-primary.sticky-top .main-header {
     -ms-transition: height .5s ease;
     -o-transition: height .5s ease;
     overflow: hidden;
-    height: 30px
+    height: 35px;
 }
 
 .single-product .product .main-content .right .summary form.cart ul#tm-extra-product-options-fields .extra-cable-div .extra-cable-ul.open {
@@ -2406,7 +2414,7 @@ nav.navbar-primary.sticky-top .main-header {
     -ms-transition: height .5s ease;
     -o-transition: height .5s ease;
     overflow: hidden;
-    height: 30px
+    height: 35px;
 }
 
 .single-product .product .main-content .right .summary form.cart ul#tm-extra-product-options-fields .warranty-div .warranty-ul.open {
@@ -2447,7 +2455,7 @@ nav.navbar-primary.sticky-top .main-header {
     background-color: transparent;
     padding: 0 0 10px;
     font-weight: 400;
-    text-align: right;
+    text-align: left;
     border-radius: 0;
     border: none
 }
@@ -2463,6 +2471,10 @@ nav.navbar-primary.sticky-top .main-header {
 
 .single-product .product .main-content .right .summary form.cart ul#tm-extra-product-options-fields .warranty-div .price {
     display: none !important
+}
+
+.single-product .product .main-content .right .summary form.cart ul#tm-extra-product-options-fields .upgrades-div {
+    padding-right: 20px
 }
 
 .single-product .product .main-content .right .summary form.cart ul#tm-extra-product-options-fields .cpf-type-checkbox .tm-element-ul-checkbox {
@@ -2567,10 +2579,12 @@ nav.navbar-primary.sticky-top .main-header {
     color: #fff;
     height: 15px;
     width: 15px;
-    right: 41px;
+    right: 0;
     top: 1px
 }
-
+.single-product .product .main-content .right .summary form.cart li.tmcp-field-wrap .tcfa-question-circle{
+    right: -20px;
+}
 @media screen and (max-width: 991px) {
     .single-product .product .main-content .right .summary form.cart .tcfa-question-circle {
         right: 0
@@ -2591,8 +2605,8 @@ nav.navbar-primary.sticky-top .main-header {
 
 .single-product .product .main-content .right .summary form.cart .tm-extra-product-options ul.tmcp-elements li.tmcp-field-wrap {
     width: 100% !important;
-    margin-bottom: 7px;
-    height: 30px;
+    margin-bottom: 0;
+    height: 35px;
     padding: 0
 }
 
@@ -4068,9 +4082,10 @@ nav.navbar-primary .main-header ul.navbar-nav ul.dropdown-menu {
 }
 
 .single-product .product .main-content .right .summary form.cart ul#tm-extra-product-options-fields .cpf-section {
-    margin-bottom: 7px !important;
-    margin-top: 0 !important;
-    border-color: #ddd
+    margin-bottom: 0 !important;
+    margin-top: 17px !important;
+    border: none;
+    padding: 0 !important;
 }
 
 .single-product .product .main-content .right .summary form.cart ul#tm-extra-product-options-fields .tcfa-question-circle {
