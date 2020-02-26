@@ -41,11 +41,14 @@
 }(jQuery);
 
 jQuery(document).ready(function ($) {
-    $(document).ready(function(){
-        $("#testimony .owl-carousel").owlCarousel({
-            items: 1,
-            dots: true,
-        });
+    $("#testimony .owl-carousel").owlCarousel({
+        items: 1,
+        dots: true,
+    });
+    $('.single-product .product .main-content .left .images .thumbnails a').click(function (e) {
+        e.preventDefault();
+        var imageUrl = $(this).attr("data-img");
+        $('.single-product .product .main-content .left .images .main-image a').html(Base64.decode(imageUrl));
     });
 });
 var currentTab = 0;

@@ -22,8 +22,10 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 global $post, $product;
 
-$cat_count = sizeof( get_the_terms( $post->ID, 'product_cat' ) );
-$tag_count = sizeof( get_the_terms( $post->ID, 'product_tag' ) );
+$tabs = get_the_terms( $post->ID, 'product_tag' );
+$cats = get_the_terms( $post->ID, 'product_cat' );
+$cat_count = is_array($cats) || is_object($cats) ? sizeof($cats) : 0;
+$tag_count = is_array($tabs) || is_object($tabs) ? sizeof($tabs) : 0;
 
 ?>
 <div class="product_meta">

@@ -30,8 +30,8 @@ class SmartBoosters
     public static function scripts() {
         wp_deregister_script('jquery');
         wp_deregister_script('wp-embed');
-        wp_register_script('object-fit', get_template_directory_uri() . '/assets/js/plugins/ofi.min.js', null, null, true);
-        wp_enqueue_script('object-fit');
+        wp_enqueue_script('object-fit', get_template_directory_uri() . '/assets/js/plugins/ofi.min.js', null, null, true);
+        wp_enqueue_script('base64-plugin', get_template_directory_uri() . '/assets/js/plugins/base64.min.js', null, null, true);
         if (is_woocommerce() || is_cart() || is_checkout()) {
             wp_register_script('jquery', get_template_directory_uri() . '/assets/js/plugins/jquery.min.js', array(), null, true);
             wp_enqueue_script('jquery');

@@ -21,9 +21,6 @@ body{
         padding: 0;
     }
 }
-nav.navbar-primary .main-header{
-    top: 0 !important;
-}
 nav.navbar-primary.sticky-top .main-header{
     height: 100px;
     top: 0;
@@ -235,6 +232,27 @@ nav.navbar-primary .main-header .dropdown-li a:hover{
     letter-spacing: 0.16px;
     text-align: left;
     padding-left: 17px;
+}
+
+/* breadcrumbs */
+#breadcrumbs{
+    margin-top: 99px;
+    padding: 26px 0;
+}
+#breadcrumbs p{
+    margin: 0;
+}
+#breadcrumbs p a{
+    color: #1b3d56;
+    font-size: 12px;
+    margin-right: 6px;
+    margin-left: 6px;
+}
+#breadcrumbs p .breadcrumb_last{
+    color: #f4b12e;
+    text-decoration: underline;
+    margin-left: 6px;
+    font-size: 12px;
 }
 /*home filter*/
 div#n2-ss-2 .n2-style-2a0a200d6a6e1fade27fb9c90af83812-dot.n2-active, div#n2-ss-2 .n2-style-2a0a200d6a6e1fade27fb9c90af83812-dot:HOVER, div#n2-ss-2 .n2-style-2a0a200d6a6e1fade27fb9c90af83812-dot:FOCUS{
@@ -559,46 +577,48 @@ div#n2-ss-2 .n2-style-2a0a200d6a6e1fade27fb9c90af83812-dot.n2-active, div#n2-ss-
     font-weight: 400;
     line-height: 28px;
 }
-.tex-inline{
+.single-product .tex-inline{
     display: flex !important;
     margin: 8px 0 29px 0;
 }
 .single-product .product .main-content .right .tax-info .coverages{
     margin-left: 71px!important;
 }
-.tax-items{
+.single-product .tax-items{
     display: flex;
     justify-content: flex-start;
     background-color: transparent;
     padding: 0;
 }
-.tex-home{
+.single-product .tex-home{
     display: flex;
     align-items: center;
     padding: 21px 0px 20px 21px;
     border: 1px solid #d5d5d5;
     margin-bottom: 10px;
 }
-.tex-home-left{
+.single-product .tex-home-left{
     color: #1b3d56;
     font-size: 15px;
     line-height: 0.9;
     padding-left: 23px;
 
 }
-.tex-home-left .tex-ideal{
+.single-product .tex-home-left .tex-ideal{
     font-weight: 700;
     padding-bottom: 12px;
+    font-size: 15px;
 }
-.tax-home-left > span{
+.single-product .tex-home-left > span{
     font-weight: 400;
+    font-size: 15px;
 }
-.tax-info-all{
+.single-product .tax-info-all{
     padding: 15px 0 0 31px ;
     margin: 29px 0 31px 0;
     border: 1px solid #d5d5d5!important;
 }
-.tax-info-text{
+.single-product .tax-info-text{
     color: #1b3d56;
     font-size: 15px;
     font-weight: 700;
@@ -618,6 +638,10 @@ div#n2-ss-2 .n2-style-2a0a200d6a6e1fade27fb9c90af83812-dot.n2-active, div#n2-ss-
 }
 .single-product .product-left{
     padding: 0 34px 0 0!important;
+}
+.single-product .product-left .images{
+    border: 1px solid #d5d5d5;
+    border-radius: 5px;
 }
 .single-product .product-right{
     padding: 0 0 0 34px!important;

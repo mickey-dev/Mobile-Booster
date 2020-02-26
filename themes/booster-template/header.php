@@ -157,21 +157,23 @@
     </div>
 
 </nav>
-<div class="container out-of-menu hidden">
-    <div class="visible-xs">
-        <div class="text-center top-menu-fixed-issues">
-            <span class="action-color"><i class="mb-icon mb-icon-connection"></i>  </span> Mobile Phone Signal Booster
-        </div>
-        <?php if (wc_isactive()){ ?>
-            <div class="text-center mb-top-menu-minicart">
-                <a href="<?= wc_get_cart_url() ?>">
-                    <?= do_shortcode('[minicart flush=1]') ?>
-                </a>
+<?php if (get_post_type()=='product'){?>
+<?php } else { ?>
+    <div class="container out-of-menu hidden">
+        <div class="visible-xs">
+            <div class="text-center top-menu-fixed-issues">
+                <span class="action-color"><i class="mb-icon mb-icon-connection"></i>  </span> Mobile Phone Signal Booster
             </div>
-        <?php } ?>
+            <?php if (wc_isactive()){ ?>
+                <div class="text-center mb-top-menu-minicart">
+                    <a href="<?= wc_get_cart_url() ?>">
+                        <?= do_shortcode('[minicart flush=1]') ?>
+                    </a>
+                </div>
+            <?php } ?>
+        </div>
     </div>
-</div>
-
+<?php } ?>
 <?php if ( apply_filters( 'woocommerce_show_page_title', true ) ) : ?>
 <?php ?>
 <?php if (get_post_type()=='post'){?>
@@ -202,7 +204,9 @@
         </div>
     </div>
     <?php }?>
-<?php } else{ ?>
+<?php } elseif ((get_post_type()=='product')) {
+
+} else{ ?>
     <div class="container-fluid page-header-bg full-center" style="background-image: url('<?php echo get_template_directory_uri() ?>/assets/img/antenna-bg.jpg')">
         <div class="overlay"></div>
         <div class="row">
