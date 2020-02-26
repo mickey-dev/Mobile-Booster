@@ -373,14 +373,12 @@ nav.navbar-primary .main-header ul.navbar-nav li a{
     height: 18px;
     background-size: contain;
 }
-
 .featured-details .mb-icon-home-img{
     background-image: url("assets/img/icons/home-img.png");
     width: 19px;
     height: 17px;
     background-size: contain;
 }
-
 .featured-details .meta_prodtitle, .featured-details .meta-name{
     color: #1b3d56;
     font-family: Montserrat;
@@ -405,13 +403,11 @@ nav.navbar-primary .main-header ul.navbar-nav li a{
     margin-right: 11px;
     font-weight: 700;
 }
-
 .featured-actions{
     display: flex;
     justify-content: center;
     flex-direction: column;
 }
-
 .home_featured .featured-actions .button{
     margin-top: 24px !important;
     margin-bottom: 31px !important;
@@ -423,6 +419,53 @@ nav.navbar-primary .main-header ul.navbar-nav li a{
     font-weight: 600;
     font-style: normal;
     text-transform: uppercase;
+}
+
+/* what-osbc */
+#what-osbc{
+    background-color: #f1f4f7;
+    padding-top: 77px;
+    padding-bottom: 91px;
+}
+#what-osbc .title-box h1{
+    margin-top: 0;
+    margin-bottom: 55px;
+    text-align: center;
+    color: #1b3d56;
+    font-size: 36px;
+    font-weight: 400;
+}
+#what-osbc .row{
+    display: flex;
+}
+.osbc-card-wrapper{
+
+}
+.osbc-card-wrapper .osbc-card{
+    background-color: #ffffff;
+    text-align: center;
+    padding: 29px 24px 38px 24px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+    height: 100%;
+}
+.osbc-card .osbc-card-img{
+    height: 47px;
+    margin-bottom: 29px;
+}
+.osbc-card .osbc-card-titile{
+    font-size: 19px;
+    color: #1a3246;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 21px;
+    margin-top: 0;
+}
+.osbc-card .osbc-card-desc{
+    color: #343434;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    margin: 0;
 }
 
 /*home edit product*/

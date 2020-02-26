@@ -143,115 +143,43 @@ get_header();
     </div>
   </div>
 </section>
-
-
-
 <?php how_it_works(); ?>
-
-<section id="specialist" class="full-background hidden" style="background-image:url('<?php echo get_template_directory_uri() ?>/assets/img/specialist-bg.jpg')">
-  <div class="overlay"></div>
-  <div class="container">
-    <div class="row">
-      <div class="col-xs-12 col-sm-12 text">
-        <img class="combine1 sprite-thropy" src="<?php echo get_template_directory_uri() ?>/assets/img/combine1.png" alt="Mobile Booster">
-        <h2 class="text-white"><b class="text-orange">Specialist in</b> <br>Mobile Signal Amplification</h2>
-      </div>
-      <div class="col-xs-12 col-sm-4 value text-white">
-        <h2 class="text-white">13,862</h2>
-        Signal issues fixed
-      </div>
-      <div class="col-xs-12 col-sm-4 value text-white">
-        <h2 class="text-white">125</h2>
-        Awards winning
-      </div>
-      <div class="col-xs-12 col-sm-4 value text-white">
-        <h2 class="text-white">99%</h2>
-        Satisfied customers
-      </div>
+<section id="what-osbc" class="what-osbc">
+    <div class="container">
+        <div class="title-box">
+            <h1>What Our Signal Boosters Cover</h1>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-md-4 osbc-card-wrapper">
+                <div class="osbc-card">
+                    <img class="osbc-card-img" src="<?php echo get_stylesheet_directory_uri()?>/assets/img/home-yellow-icon.png">
+                    <h2 class="osbc-card-titile">Homes</h2>
+                    <p class="osbc-card-desc">We have mobile boosters that can help you cover whatever area within your home that requires covering.</p>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-4 osbc-card-wrapper">
+                <div class="osbc-card">
+                    <img class="osbc-card-img" src="<?php echo get_stylesheet_directory_uri()?>/assets/img/icon-office.png">
+                    <h2 class="osbc-card-titile">Offices</h2>
+                    <p class="osbc-card-desc">We are offering you the best mobile phone signal booster. Caters for offices ranging from 300 sq. metres to 5000 sq. metres.</p>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-4 osbc-card-wrapper">
+                <div class="osbc-card">
+                    <img class="osbc-card-img" src="<?php echo get_stylesheet_directory_uri()?>/assets/img/icon-hotel.png">
+                    <h2 class="osbc-card-titile">Hotels</h2>
+                    <p class="osbc-card-desc">We provide you with mobile signal boosters for a hotel of up to 600 sq. metres and another one for up to 1500 sq. meters.</p>
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
 </section>
-
-<section id="why-choose">
-  <div class="container">
-    <div class="row">
-      <div class="col-xs-12 col-sm-12 title"><h2>Why Choose Us</h2></div>
-      <div class="col-xs-12 col-sm-12 content">
-        <div class="col-xs-12 col-sm-4">
-          <div class="img-wrapper">
-            <img src="<?php echo get_template_directory_uri() ?>/assets/img/free-delivery.png" alt="Top Mobile Signal Booster">
-          </div>
-          <div class="text">
-            <h4 class="text-blue"><?php echo theme_option('1st_judul'); ?></h4>
-            <p> <?php echo theme_option('1st_desc'); ?> </p>
-          </div>
-        </div>
-        <div class="col-xs-12 col-sm-4">
-          <div class="img-wrapper">
-            <img src="<?php echo get_template_directory_uri() ?>/assets/img/easy-setup.png" alt="Best Mobile Signal Booster">
-          </div>
-          <div class="text">
-            <h4 class="text-blue"><?php echo theme_option('2nd_judul'); ?></h4>
-            <p> <?php echo theme_option('2nd_desc'); ?> </p>
-          </div>
-        </div>
-        <div class="col-xs-12 col-sm-4">
-          <div class="img-wrapper">
-            <img src="<?php echo get_template_directory_uri() ?>/assets/img/support.png" alt="Mobile Signal Booster">
-          </div>
-          <div class="text">
-            <h4 class="text-blue"> <?php echo theme_option('3rd_judul'); ?> </h4>
-            <p> <?php echo theme_option('3rd_desc'); ?> </p>
-          </div>
-        </div>
-        <div class="col-xs-12 col-sm-4">
-          <div class="img-wrapper">
-            <img src="<?php echo get_template_directory_uri() ?>/assets/img/certified.png" alt="Mobile Signal Booster">
-          </div>
-          <div class="text">
-            <h4 class="text-blue"> <?php echo theme_option('4th_judul'); ?> </h4>
-            <p> <?php echo theme_option('4th_desc'); ?> </p>
-          </div>
-        </div>
-        <div class="col-xs-12 col-sm-4">
-          <div class="img-wrapper">
-            <img src="<?php echo get_template_directory_uri() ?>/assets/img/money-back.png" alt="Mobile Signal Booster">
-          </div>
-          <div class="text">
-            <h4 class="text-blue"> <?php echo theme_option('5th_judul'); ?> </h4>
-            <p> <?php echo theme_option('5th_desc'); ?> </p>
-          </div>
-        </div>
-        <div class="col-xs-12 col-sm-4">
-          <div class="img-wrapper">
-            <img class="combine1 sprite-signal" src="<?php echo get_template_directory_uri() ?>/assets/img/combine1.png" alt="Mobile Signal Booster">
-          </div>
-          <div class="text">
-            <h4 class="text-blue"> <?php echo theme_option('6th_judul'); ?> </h4>
-            <p> <?php echo theme_option('6th_desc'); ?> </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
 <section id="testimony" class="testimonials">
   <div class="container text-center title">
     <h2 class="text-center">Testimonials</h2>
 
     <div class="owl-carousel content">
       <?php get_testimonials(); ?>
-    </div>
-  </div>
-
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-xs-12 col-sm-12 center">
-        <img class="combine1 sprite-ISO" src="<?php echo get_template_directory_uri() ?>/assets/img/combine1.png" alt="Mobile Signal Booster">
-        <img class="combine1 sprite-CE" src="<?php echo get_template_directory_uri() ?>/assets/img/combine1.png" alt="Mobile Signal Booster">
-        <img class="combine1 sprite-RoHS" src="<?php echo get_template_directory_uri() ?>/assets/img/combine1.png" alt="Mobile Signal Booster">
-      </div>
     </div>
   </div>
 </section>

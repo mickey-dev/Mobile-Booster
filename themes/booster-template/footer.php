@@ -9,7 +9,7 @@ if ($taxs=='provider'){
 } elseif (get_the_title()=='Contact us'){
 
 }else{
-    get_page_title();
+//    get_page_title();
 }
 // Redux
 global $redux_demo;
