@@ -84,10 +84,12 @@ function filter_shortcode($atts,$content=null)
             $html .= '<span class="choice-name">';
 //            $html .= '<i class="fa fa-wifi"></i>'. $coverage->name .'<br>';
             $html .= $coverage->description;
+
             $html .= '</span>';
             $html .= '</span>';
             $html .= '</label>';
             $html .= '</div>';
+
         }
 
 
@@ -133,8 +135,11 @@ function filter_shortcode($atts,$content=null)
   <div class="step-buts">
     <div style="">
       <button type="button" id="prevBtn" onclick="nextPrev(-1)">PREVIOUS</button>
-      <button type="button" id="nextBtn" onclick="nextPrev(1)">NEXT STEP</button>
+      
       <button type="submit" id="frm_submit_Btn" class="">REVEAL YOUR BOOSTER</button>
+      <div class="nextBtnClass col-md-8">
+      <button type="button" id="nextBtn" onclick="nextPrev(1)">NEXT STEP</button>
+      </div>
     </div>
   </div>
   <!-- Circles which indicates the steps of the form: -->

@@ -22,19 +22,19 @@ get_header();
                 </div>
             </div>
             <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12 header-bottom-icons">
-                <img class="combine1 sprite-guarantee" src="<?php echo get_template_directory_uri() ?>/assets/img/1.png" alt="Mobile Booster Guarantee">
+                <img class="combine1 sprite-guarantee" src="<?php echo get_template_directory_uri() ?>/assets/img/2.png" alt="Mobile Booster Guarantee">
                 <div class="header-icons-span">
                     <span>30 Day Money-Back</span> <br> <span>Guarantee</span>
                 </div>
             </div>
             <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12 header-bottom-icons">
-                <img class="combine1 sprite-guarantee" src="<?php echo get_template_directory_uri() ?>/assets/img/1.png" alt="Mobile Booster Guarantee">
+                <img class="combine1 sprite-guarantee" src="<?php echo get_template_directory_uri() ?>/assets/img/3.png" alt="Mobile Booster Guarantee">
                 <div class="header-icons-span">
                     <span>Five Bar Signal</span> <br> <span>Guarantee</span>
                 </div>
             </div>
             <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12 header-bottom-icons">
-                <img class="combine1 sprite-guarantee" src="<?php echo get_template_directory_uri() ?>/assets/img/1.png" alt="Mobile Booster Guarantee">
+                <img class="combine1 sprite-guarantee" src="<?php echo get_template_directory_uri() ?>/assets/img/4.png" alt="Mobile Booster Guarantee">
                 <div class="header-icons-span">
                     <span>Works On Every </span> <br> <span>Network & Carrier</span>
                 </div>
@@ -45,7 +45,9 @@ get_header();
   </div>
 </section>
 <section id="filter" class="section filter-custom filter-custom2">
+    <div class="container filter-product">
     <?php echo do_shortcode('[filter title="Try Our Product Wizard"]'); ?>
+    </div>
 </section>
 
 <section id="home_featured">
