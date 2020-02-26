@@ -532,7 +532,7 @@ nav.navbar-primary .main-header ul.navbar-nav > li:hover a::after {
     -webkit-transition: all .5s ease;
     -ms-transition: all .5s ease;
     -o-transition: all .5s ease;
-    width: calc(100% - 30px)
+    width: 100%;
 }
 
 @media screen and (min-width: 992px) and (min-width: 768px) {
@@ -582,9 +582,8 @@ nav.navbar-primary .main-header ul.navbar-nav > li > a::after {
     -webkit-transition: all .5s ease;
     -ms-transition: all .5s ease;
     -o-transition: all .5s ease;
-    border-bottom: 2px solid #05a3d1;
+    border-bottom: 2px solid #ffbb00;
     position: absolute;
-    margin-left: 15px;
     content: "";
     bottom: 0;
     width: 0;
@@ -1478,7 +1477,8 @@ nav.navbar-primary.sticky-top .main-header {
 }
 
 #testimony {
-    padding: 70px 0 30px
+    background-color: #ffffff;
+    padding: 79px 0 74px;
 }
 
 #testimony .container {
@@ -1486,25 +1486,17 @@ nav.navbar-primary.sticky-top .main-header {
 }
 
 #testimony .container h2 {
+    margin-top: 0;
+    font-size: 36px;
+    color: #1b3d56;
     margin-bottom: 50px
 }
-
-#testimony .container h2::after {
-    transition: all .5s ease;
-    -moz-transition: all .5s ease;
-    -webkit-transition: all .5s ease;
-    -ms-transition: all .5s ease;
-    -o-transition: all .5s ease;
-    margin-left: calc(50% - 25px);
-    border: 1px solid #fb0;
-    margin-top: 10px;
-    display: block;
-    content: ' ';
-    width: 50px
+#testimony .container h2:after{
+    display: none;
 }
 
 #testimony .container .owl-carousel {
-    margin-bottom: 30px
+    /*margin-bottom: 30px*/
 }
 
 #testimony .container .owl-carousel .item {
@@ -1515,14 +1507,19 @@ nav.navbar-primary.sticky-top .main-header {
 
 #testimony .container .owl-carousel .item img {
     margin: 0 auto;
-    height: 100px;
-    width: 100px
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    border: 6px solid #f7f7f7;
 }
 
 #testimony .container .owl-carousel .item h4 {
     text-align: center;
-    margin-top: 20px;
-    padding-top: 0
+    color: #1b3d56;
+    font-size: 21px;
+    margin-top: 45px;
+    margin-bottom: 38px;
+    padding: 0
 }
 
 #testimony .container .owl-carousel .item .desc {
@@ -1530,9 +1527,25 @@ nav.navbar-primary.sticky-top .main-header {
 }
 
 #testimony .container .owl-carousel .item .desc p {
-    color: #757575
+    color: #343434;
+    font-size: 14px;
+    line-height: 26px;
+    margin-bottom: 45px;
 }
 
+#testimony .owl-theme .owl-nav.disabled+.owl-dots{
+    margin-top: 0;
+}
+#testimony .owl-theme .owl-dots .owl-dot span{
+    width: 11px;
+    height: 11px;
+    border: 2px solid #f4b12e;
+    background-color: #ffffff;
+    margin: 0px 4px;
+}
+#testimony .owl-theme .owl-dots .owl-dot.active span{
+    background-color: #f4b12e;
+}
 @media screen and (min-width: 768px) and (max-width: 1024px) {
     #testimony .container .owl-carousel .item {
         padding: 80px 10px 0;
@@ -3699,10 +3712,6 @@ nav.navbar-primary .main-header ul.navbar-nav ul.dropdown-menu {
     background-color: #fff
 }
 
-#testimony {
-    background-color: #f8f8f8
-}
-
 .archive ul.products {
     padding: 20px;
     border-radius: 10px;
@@ -4852,16 +4861,6 @@ footer.site-footer .spacing {
     #testimony .container .owl-carousel .item img {
         height: 100px;
         width: 100px
-    }
-
-    #testimony .container .owl-carousel .owl-nav {
-        position: relative;
-        margin-top: 20px
-    }
-
-    #testimony .container .owl-carousel .owl-nav .owl-next, #testimony .container .owl-carousel .owl-nav .owl-prev {
-        float: none;
-        margin: 0 10px
     }
 
     #tm-extra-product-options-fields h3 {

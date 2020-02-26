@@ -19,7 +19,7 @@ function get_testimonials() {
           }
         ?>
         <h4 class="text-blue"><?php the_title(); ?></h4>
-  			<div class="desc"><?php the_content();  ?></div>
+        <div class="desc"><?php the_content();  ?></div>
       </div>
 
     <?php

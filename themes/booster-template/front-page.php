@@ -176,9 +176,9 @@ get_header();
 </section>
 <section id="testimony" class="testimonials">
   <div class="container text-center title">
-    <h2 class="text-center">Testimonials</h2>
+    <h2 class="text-center">What Our Customers Say</h2>
 
-    <div class="owl-carousel content">
+    <div class="owl-carousel owl-theme content">
       <?php get_testimonials(); ?>
     </div>
   </div>
