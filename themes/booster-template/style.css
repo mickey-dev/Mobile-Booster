@@ -89,7 +89,7 @@ nav.navbar-primary .main-header ul.navbar-nav li{
 }
 nav.navbar-primary .main-header ul.navbar-nav li:last-child{
     margin: 0;
-    padding-left: 70px;
+    padding-left: 63px;
 }
 
 nav.navbar-primary .main-header ul.navbar-nav li a{
@@ -281,7 +281,7 @@ div#n2-ss-2 .n2-style-2a0a200d6a6e1fade27fb9c90af83812-dot.n2-active, div#n2-ss-
     margin: 0 40px!important;
 }
 #filter .filter .container{
-    max-width: 1024px;
+    max-width: 1024px!important;
     padding: 0;
 }
 #filter h2.title::after{
@@ -293,6 +293,10 @@ div#n2-ss-2 .n2-style-2a0a200d6a6e1fade27fb9c90af83812-dot.n2-active, div#n2-ss-
 }
 #filter .filter{
     background: white;
+}
+.nextBtnClass{
+    display: flex;
+    padding-left: 50px!important;
 }
 /*product*/
 #home_featured{
@@ -310,7 +314,9 @@ div#n2-ss-2 .n2-style-2a0a200d6a6e1fade27fb9c90af83812-dot.n2-active, div#n2-ss-
     line-height: 42px;
     text-transform: unset;
 }
-
+#filter.filter-custom2 .filter-step.coverages{
+    padding: 0 50px;
+}
 #filter.filter-custom2 .filter-step.coverages .trigger ul li .text span{
     font-size: 14px;
     padding-top: 10px;
@@ -357,33 +363,32 @@ div#n2-ss-2 .n2-style-2a0a200d6a6e1fade27fb9c90af83812-dot.n2-active, div#n2-ss-
 #filter.filter-custom .filter-step .step-body .provider .choice-details .choice-icon{
     border: 3px solid rgba(27, 61, 86, 0.4);
 }
-.user-icon{
+#filter .user-icon{
     background: url(assets/img/user-icon.png) no-repeat;
     width: 19px;
     height: 17px;
     display: block;
     margin-right: 10px;
-
 }
 #filter.filter-custom .filter-step .step-body .coverage .choice-details .choice-name span{
     font-weight: 700;
 
 }
-.home-icon{
+#filter .home-icon{
     background: url(assets/img/home-icon.png);
     width: 19px;
     height: 17px;
     display: block;
     margin-right: 10px;
 }
-.icon-line{
+#filter .icon-line{
     display: flex;
     align-items: center;
     color: #1b3d56;
     font-family: "Montserrat" !important;
     font-size: 15px;
     font-weight: 600;
-    line-height: 38px;
+
 }
 .section.filter-custom.filter-custom2 form .step-buts{
     margin-top: -75px;
@@ -391,9 +396,16 @@ div#n2-ss-2 .n2-style-2a0a200d6a6e1fade27fb9c90af83812-dot.n2-active, div#n2-ss-
 }
 
 /*featured products*/
-.nextBtnClass{
-    display: flex;
+#filter.filter-custom2 .filter-step.coverages .trigger ul li.active .bulet{
+    background: url("/assets/img/EllipseBlue.jpg")!important;
+
 }
+#filter.filter-custom2 .filter-step.coverages .trigger ul li .bulet{
+    background: url("/assets/img/Ellipse.jpg");
+    height: 36px;
+    width: 36px;
+}
+
 .title h1, .title h2, .title h3, .title h4{
     text-transform: unset;
 }

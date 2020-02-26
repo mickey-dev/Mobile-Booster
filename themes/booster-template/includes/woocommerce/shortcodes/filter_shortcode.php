@@ -30,10 +30,8 @@ function filter_shortcode($atts,$content=null)
 
         $html .= '
                     <li id="2">
-                      
-                      <div class="bulet"><svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><title>Slider button Copy</title><defs><rect id="a" width="20" height="20" rx="10"/></defs><g transform="translate(2 2)" fill="none" fill-rule="evenodd"><use fill="#F6F6F6" xlink:href="#a"/><rect stroke="#BCBBBB" stroke-width="2" x="-1" y="-1" width="22" height="22" rx="11"/><rect fill="#BCBBBB" x="4" y="4" width="12" height="12" rx="6"/></g></svg></div>
-
-
+                      <div class="garis"><div></div></div>
+                      <div class="bulet"></div>
                       <div class="text">300 <span class="text-sqm">SQM</span></div>
                     </li>
                   ';
@@ -41,28 +39,23 @@ function filter_shortcode($atts,$content=null)
         $html .= '  <li id="3">
                       <div class="garis"><div></div></div>
                       
-                      <div class="bulet"><svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><title>Slider button Copy</title><defs><rect id="a" width="20" height="20" rx="10"/></defs><g transform="translate(2 2)" fill="none" fill-rule="evenodd"><use fill="#F6F6F6" xlink:href="#a"/><rect stroke="#BCBBBB" stroke-width="2" x="-1" y="-1" width="22" height="22" rx="11"/><rect fill="#BCBBBB" x="4" y="4" width="12" height="12" rx="6"/></g></svg></div>
-
-
+                      <div class="bulet"></div>
                       <div class="text">500 <span class="text-sqm">SQM</span></div>
                     </li>';
 
         $html .= '<li id="4">
                       <div class="garis"><div></div></div>
                       
-                      <div class="bulet"><svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><title>Slider button Copy</title><defs><rect id="a" width="20" height="20" rx="10"/></defs><g transform="translate(2 2)" fill="none" fill-rule="evenodd"><use fill="#F6F6F6" xlink:href="#a"/><rect stroke="#BCBBBB" stroke-width="2" x="-1" y="-1" width="22" height="22" rx="11"/><rect fill="#BCBBBB" x="4" y="4" width="12" height="12" rx="6"/></g></svg></div>
-
-
+                     <div class="bulet"></div>
                       <div class="text">1000 <span class="text-sqm">SQM</span></div>
                     </li>';
 
         $html .= '<li id="5">
                       <div class="garis"><div></div></div>
                       
-                      <div class="bulet"><svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><title>Slider button Copy</title><defs><rect id="a" width="20" height="20" rx="10"/></defs><g transform="translate(2 2)" fill="none" fill-rule="evenodd"><use fill="#F6F6F6" xlink:href="#a"/><rect stroke="#BCBBBB" stroke-width="2" x="-1" y="-1" width="22" height="22" rx="11"/><rect fill="#BCBBBB" x="4" y="4" width="12" height="12" rx="6"/></g></svg></div>
-
-
-                      <div class="text">5000 <span class="text-sqm">SQM</span></div>
+                      <div class="bulet"></div>
+                      
+                     <div class="text">5000 <span class="text-sqm">SQM</span></div>
                     </li>';
         $html .= '</ul>';
         $html .= '</div>';
@@ -89,9 +82,7 @@ function filter_shortcode($atts,$content=null)
             $html .= '</span>';
             $html .= '</label>';
             $html .= '</div>';
-
         }
-
 
         $html .= '</div>';
         $html .= '</div>';
