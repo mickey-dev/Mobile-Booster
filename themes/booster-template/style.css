@@ -152,6 +152,11 @@ nav.navbar-primary .main-header .dropdown-li a:hover{
 .nav.navbar-primary .main-header ul.navbar-nav ul.dropdown-menu{
     padding: 0 !important;
 }
+nav.navbar-primary .main-header ul.navbar-nav ul.dropdown-menu{
+    right: unset;
+    left: -20px;
+    padding-left: 15px;
+}
 
 /*.header-right> img,*/
 /*.header-right > p {*/

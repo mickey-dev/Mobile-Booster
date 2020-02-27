@@ -190,7 +190,7 @@ $ins= theme_option( 'ins' );
                         </a>
 
                         <a href="https://www.paypal.com" target="_blank" rel="nofollow">
-                            <img class="footer-pay-icon" src="<?php echo get_template_directory_uri() ?>/assets/img/.paypal.png" alt="PayPal">
+                            <img class="footer-pay-icon" src="<?php echo get_template_directory_uri() ?>/assets/img/paypal.png" alt="PayPal">
                         </a>
                     </div>
                 </div>

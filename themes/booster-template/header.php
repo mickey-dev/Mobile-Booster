@@ -111,13 +111,15 @@
               </a>
 
               <div class="header-search">
-                  <input class="header-input" placeholder="Search Products (ie. carriers)">
+                  <form>
+                      <input class="header-input" name="s" placeholder="Search Products (ie. carriers)">
 
-                  <div class="input-group-append ">
-                      <button class="btn btn-secondary" type="button">
-                          <i class="fa fa-search"></i>
-                      </button>
-                  </div>
+                      <div class="input-group-append ">
+                          <button class="btn btn-secondary" type="button">
+                              <i class="fa fa-search"></i>
+                          </button>
+                      </div>
+                  </form>
               </div>
               <div class="header-right">
                   <div class="call-img">
