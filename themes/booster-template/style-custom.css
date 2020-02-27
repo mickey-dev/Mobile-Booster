@@ -223,12 +223,12 @@ div.wpcf7-validation-errors {
     border-right: 20px solid transparent
 }
 
-.archive .custom-sidebar {
+.woocommerce-page .custom-sidebar {
     width: 100%;
     float: left
 }
 
-.archive .custom-sidebar ul li {
+.woocommerce-page .custom-sidebar ul li {
     float: left;
     width: 23%;
     margin-left: 2%
@@ -246,7 +246,7 @@ div.wpcf7-validation-errors {
     font-size: 18px !important
 }
 
-.archive .custom-sidebar .sgr-custom-taxonomies-menu > ul > li ul {
+.woocommerce-page .custom-sidebar .sgr-custom-taxonomies-menu > ul > li ul {
     position: absolute;
     z-index: 99;
     width: 100%;
@@ -254,7 +254,7 @@ div.wpcf7-validation-errors {
     float: left
 }
 
-.archive .custom-sidebar .sgr-custom-taxonomies-menu > ul > li {
+.woocommerce-page .custom-sidebar .sgr-custom-taxonomies-menu > ul > li {
     position: relative;
     float: left;
     clear: both;
@@ -263,11 +263,11 @@ div.wpcf7-validation-errors {
     border-bottom: 1px dotted #fff
 }
 
-.archive .custom-sidebar .sgr-custom-taxonomies-menu > ul > li:last-child {
+.woocommerce-page .custom-sidebar .sgr-custom-taxonomies-menu > ul > li:last-child {
     border-bottom: 0
 }
 
-.archive .custom-sidebar .sgr-custom-taxonomies-menu ul {
+.woocommerce-page .custom-sidebar .sgr-custom-taxonomies-menu ul {
     float: left;
     display: none;
     width: 100%;
@@ -279,7 +279,7 @@ div.wpcf7-validation-errors {
     display: none
 }
 
-.archive .custom-sidebar .sgr-custom-taxonomies-menu h4 {
+.woocommerce-page .custom-sidebar .sgr-custom-taxonomies-menu h4 {
     border-radius: 9px !important;
     background-image: url(/wp-content/uploads/2018/10/chevron-down-filled.png);
     background-repeat: no-repeat;
@@ -287,15 +287,15 @@ div.wpcf7-validation-errors {
     background-size: 18px
 }
 
-.archive .custom-sidebar .sgr-custom-taxonomies-menu h4:hover {
+.woocommerce-page .custom-sidebar .sgr-custom-taxonomies-menu h4:hover {
     cursor: pointer
 }
 
-.archive ul.products li {
+.woocommerce-page ul.products li {
     width: calc(100% / 4 - 10px)
 }
 
-.archive ul.products {
+.woocommerce-page ul.products {
     float: left;
     width: 100%
 }
@@ -406,7 +406,7 @@ ul.products li.product {
 }
 
 @media screen and (max-width: 1024px) {
-    .archive ul.products li {
+    .woocommerce-page ul.products li {
         width: 100%
     }
 

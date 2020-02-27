@@ -33,7 +33,6 @@ nav.navbar-primary .main-header a.navbar-brand svg{
     width: 199px;
     height: 30px;
 }
-
 .navbar-header{
     display: flex;
     margin: 24px 0 22px 0;
@@ -72,11 +71,9 @@ nav.navbar-primary .main-header a.navbar-brand svg{
 ::-webkit-input-placeholder { /* Edge */
     color: #1e3c55;
 }
-
 :-ms-input-placeholder { /* Internet Explorer */
     color: #1e3c55;
 }
-
 ::placeholder {
     color: #1e3c55;
 }
@@ -92,7 +89,6 @@ nav.navbar-primary .main-header ul.navbar-nav li:last-child{
     margin: 0;
     padding-left: 62px;
 }
-
 nav.navbar-primary .main-header ul.navbar-nav li a{
     color: #ffffff;
     font-size: 12px;
@@ -198,6 +194,7 @@ nav.navbar-primary .main-header ul.navbar-nav ul.dropdown-menu{
 .minicart-wrapper .minicart .mb-icon-shopping_cart, .minicart-wrapper .minicart_notice .notice .mb-icon-shopping_cart{
     font-size: 17px;
 }
+
 /*slider*/
 #home-slider{
     margin-top: 65px;
@@ -205,6 +202,7 @@ nav.navbar-primary .main-header ul.navbar-nav ul.dropdown-menu{
 .slider2{
     letter-spacing: 2.25px;
 }
+
 /*header-bottom-icon*/
 .header-bottom{
     display: flex;
@@ -550,7 +548,6 @@ div#n2-ss-2 .n2-style-2a0a200d6a6e1fade27fb9c90af83812-dot.n2-active, div#n2-ss-
 .home_featured .owl-prev{
     left: -80px;
 }
-
 .home_featured .owl-next{
     right: -80px;
 }
@@ -742,6 +739,7 @@ div#n2-ss-2 .n2-style-2a0a200d6a6e1fade27fb9c90af83812-dot.n2-active, div#n2-ss-
 .single-product .product .after-content .additional-info .wc-tabs-wrapper ul.nav-tabs{
     display: none;
 }
+
 /*product description*/
 .product-description{
     margin: 20px 0 23px 0;
@@ -789,6 +787,7 @@ div#n2-ss-2 .n2-style-2a0a200d6a6e1fade27fb9c90af83812-dot.n2-active, div#n2-ss-
     margin-top: 5px;
 
 }
+
 /*how it work*/
 .single-product .product .installation-wrapper #how-it-works{
     margin-top: 64px;
@@ -802,8 +801,8 @@ div#n2-ss-2 .n2-style-2a0a200d6a6e1fade27fb9c90af83812-dot.n2-active, div#n2-ss-
     margin: 19px auto !important;
     padding: 4px 20px !important;
 }
-/*footer*/
 
+/*footer*/
 footer.site-footer{
     padding: 0;
     background:  #10293b;
@@ -907,4 +906,10 @@ footer.site-footer .copyright{
     background-image: url("assets/img/icons/icon-email.png");
     background-repeat: no-repeat;
     background-position: center;
+}
+
+/* Shop*/
+.woocommerce-page .container>.woocommerce h2{
+    border: none;
+    line-height: 26px;
 }

@@ -568,7 +568,7 @@ nav.navbar-primary .main-header ul.navbar-nav > li.active a::after {
     -webkit-transition: all .5s ease;
     -ms-transition: all .5s ease;
     -o-transition: all .5s ease;
-    width: calc(100% - 30px)
+    width: 100%
 }
 
 nav.navbar-primary .main-header ul.navbar-nav > li > a {
@@ -1676,20 +1676,20 @@ nav.navbar-primary.sticky-top .main-header {
     }
 }
 
-.archive ul.products {
+.woocommerce-page ul.products {
     float: left;
     width: 70%
 }
 
 @media screen and (max-width: 767px) {
-    .archive ul.products {
+    .woocommerce-page ul.products {
         margin: 0 auto;
         float: none;
         width: 80%
     }
 }
 
-.archive ul.products li {
+.woocommerce-page ul.products li {
     width: calc(100% / 3 - 10px);
     margin: 0;
     overflow: hidden;
@@ -1699,19 +1699,19 @@ nav.navbar-primary.sticky-top .main-header {
 }
 
 @media screen and (max-width: 991px) {
-    .archive ul.products li {
+    .woocommerce-page ul.products li {
         width: calc(50% - 10px)
     }
 }
 
 @media screen and (max-width: 767px) {
-    .archive ul.products li {
+    .woocommerce-page ul.products li {
         margin-right: 0;
         width: 100%
     }
 }
 
-.archive ul.products li:hover {
+.woocommerce-page ul.products li:hover {
     border-color: #ddd !important;
     -webkit-box-shadow: 1px 7px 22px 1px #d1d1d1;
     -moz-box-shadow: 1px 7px 22px 1px #d1d1d1;
@@ -1723,11 +1723,11 @@ nav.navbar-primary.sticky-top .main-header {
     -o-transition: all .5s ease
 }
 
-.archive ul.products li > .container-fluid {
+.woocommerce-page ul.products li > .container-fluid {
     padding: 0 !important
 }
 
-.archive ul.products li .onsale {
+.woocommerce-page ul.products li .onsale {
     -webkit-justify-content: center;
     justify-content: center;
     -webkit-align-items: center;
@@ -1750,11 +1750,11 @@ nav.navbar-primary.sticky-top .main-header {
     width: 100px
 }
 
-.archive ul.products li .no-padding-left {
+.woocommerce-page ul.products li .no-padding-left {
     padding: 0
 }
 
-.archive ul.products li img {
+.woocommerce-page ul.products li img {
     transition: all .5s ease;
     -moz-transition: all .5s ease;
     -webkit-transition: all .5s ease;
@@ -1762,7 +1762,7 @@ nav.navbar-primary.sticky-top .main-header {
     -o-transition: all .5s ease
 }
 
-.archive ul.products li img:hover {
+.woocommerce-page ul.products li img:hover {
     transition: all .5s ease;
     -moz-transition: all .5s ease;
     -webkit-transition: all .5s ease;
@@ -1771,7 +1771,7 @@ nav.navbar-primary.sticky-top .main-header {
     transform: scale(1.1)
 }
 
-.archive ul.products li .product-name {
+.woocommerce-page ul.products li .product-name {
     border-top: 1px solid #ddd;
     padding-top: 20px !important;
     display: block !important;
@@ -1780,7 +1780,7 @@ nav.navbar-primary.sticky-top .main-header {
     padding: 0
 }
 
-.archive ul.products li .product-name h3 {
+.woocommerce-page ul.products li .product-name h3 {
     font-size: 20px !important;
     margin: 0 10px !important;
     font-weight: 700;
@@ -1788,7 +1788,7 @@ nav.navbar-primary.sticky-top .main-header {
     color: #083d54
 }
 
-.archive ul.products li .product-price {
+.woocommerce-page ul.products li .product-price {
     text-align: left !important;
     display: block !important;
     margin-bottom: 10px;
@@ -1796,14 +1796,14 @@ nav.navbar-primary.sticky-top .main-header {
     margin-top: 0
 }
 
-.archive ul.products li .product-price del, .archive ul.products li .product-price ins {
+.woocommerce-page ul.products li .product-price del, .woocommerce-page ul.products li .product-price ins {
     color: #fb0 !important;
     width: auto !important;
     margin: 0 5px;
     margin: 0
 }
 
-.archive ul.products li .providers {
+.woocommerce-page ul.products li .providers {
     background: rgba(243, 243, 243, .5);
     -webkit-flex-wrap: wrap;
     -ms-flex-wrap: wrap;
@@ -1821,7 +1821,7 @@ nav.navbar-primary.sticky-top .main-header {
     width: 100%
 }
 
-.archive ul.products li .providers i {
+.woocommerce-page ul.products li .providers i {
     -webkit-align-items: center !important;
     align-items: center !important;
     -webkit-justify-content: center !important;
@@ -1836,11 +1836,11 @@ nav.navbar-primary.sticky-top .main-header {
     float: left
 }
 
-.archive ul.products li .providers i.icon-G, .archive ul.products li .providers i.icon-G2 {
+.woocommerce-page ul.products li .providers i.icon-G, .woocommerce-page ul.products li .providers i.icon-G2 {
     font-size: 24px
 }
 
-.archive ul.products li .double-wrapper {
+.woocommerce-page ul.products li .double-wrapper {
     display: -webkit-flex !important;
     display: -webkit-box !important;
     display: -ms-flexbox !important;
@@ -1849,7 +1849,7 @@ nav.navbar-primary.sticky-top .main-header {
     height: 42px
 }
 
-.archive ul.products li .double-wrapper .coverages, .archive ul.products li .double-wrapper .frequencies, .archive ul.products li .double-wrapper .providers {
+.woocommerce-page ul.products li .double-wrapper .coverages, .woocommerce-page ul.products li .double-wrapper .frequencies, .woocommerce-page ul.products li .double-wrapper .providers {
     display: -webkit-flex !important;
     display: -webkit-box !important;
     display: -ms-flexbox !important;
@@ -1861,30 +1861,30 @@ nav.navbar-primary.sticky-top .main-header {
     margin: 0
 }
 
-.archive ul.products li .double-wrapper .coverages i, .archive ul.products li .double-wrapper .frequencies i, .archive ul.products li .double-wrapper .providers i {
+.woocommerce-page ul.products li .double-wrapper .coverages i, .woocommerce-page ul.products li .double-wrapper .frequencies i, .woocommerce-page ul.products li .double-wrapper .providers i {
     display: inline-block;
     float: left
 }
 
-.archive ul.products li .double-wrapper .coverages i::before, .archive ul.products li .double-wrapper .frequencies i::before, .archive ul.products li .double-wrapper .providers i::before {
+.woocommerce-page ul.products li .double-wrapper .coverages i::before, .woocommerce-page ul.products li .double-wrapper .frequencies i::before, .woocommerce-page ul.products li .double-wrapper .providers i::before {
     font-size: 30px
 }
 
-.archive ul.products li .double-wrapper .coverages, .archive ul.products li .double-wrapper .frequencies {
+.woocommerce-page ul.products li .double-wrapper .coverages, .woocommerce-page ul.products li .double-wrapper .frequencies {
     -webkit-align-items: center;
     align-items: center;
     width: 50%
 }
 
-.archive ul.products li .double-wrapper .coverages i {
+.woocommerce-page ul.products li .double-wrapper .coverages i {
     margin: 0 !important
 }
 
-.archive ul.products li .double-wrapper .coverages .name {
+.woocommerce-page ul.products li .double-wrapper .coverages .name {
     width: auto
 }
 
-.archive ul.products li .double-wrapper .frequencies {
+.woocommerce-page ul.products li .double-wrapper .frequencies {
     -webkit-justify-content: flex-end;
     justify-content: flex-end;
     font-size: 15px !important;
@@ -1892,18 +1892,18 @@ nav.navbar-primary.sticky-top .main-header {
     color: #757575
 }
 
-.archive ul.products li .product-action {
+.woocommerce-page ul.products li .product-action {
     display: block !important;
     float: left !important;
     padding: 0;
     width: 100%
 }
 
-.archive ul.products li .product-action .nopadding {
+.woocommerce-page ul.products li .product-action .nopadding {
     padding: 0
 }
 
-.archive ul.products li .product-action a.btn {
+.woocommerce-page ul.products li .product-action a.btn {
     border: none;
     border-top: 1px solid #ddd;
     transition: all .5s ease;
@@ -1921,7 +1921,7 @@ nav.navbar-primary.sticky-top .main-header {
     width: 100%
 }
 
-.archive ul.products li .product-action a.btn::after {
+.woocommerce-page ul.products li .product-action a.btn::after {
     font-family: FontAwesome;
     display: inline-block;
     margin-left: 10px;
@@ -1930,7 +1930,7 @@ nav.navbar-primary.sticky-top .main-header {
     content: '\f105'
 }
 
-.archive ul.products li .product-action a.btn:hover {
+.woocommerce-page ul.products li .product-action a.btn:hover {
     transition: all .5s ease;
     -moz-transition: all .5s ease;
     -webkit-transition: all .5s ease;
@@ -1940,80 +1940,80 @@ nav.navbar-primary.sticky-top .main-header {
     color: #fff
 }
 
-.archive ul.products li.list.accessory {
+.woocommerce-page ul.products li.list.accessory {
     padding: 0 !important
 }
 
-.archive ul.products li.list.accessory img {
+.woocommerce-page ul.products li.list.accessory img {
     object-position: center;
     object-fit: cover;
     height: 230px
 }
 
-.archive ul.products li.list.accessory .product-name h3 {
+.woocommerce-page ul.products li.list.accessory .product-name h3 {
     margin-bottom: 10px !important;
     text-align: left
 }
 
-.archive ul.products li.list.accessory .product-price {
+.woocommerce-page ul.products li.list.accessory .product-price {
     padding: 0;
     margin: 0
 }
 
-.archive ul.products li.list.accessory .product-price .col-xs-12 {
+.woocommerce-page ul.products li.list.accessory .product-price .col-xs-12 {
     color: #fb0
 }
 
-.archive .custom-sidebar {
+.woocommerce-page .custom-sidebar {
     float: left;
     width: 30%
 }
 
-.archive .custom-sidebar .glyphicon {
+.woocommerce-page .custom-sidebar .glyphicon {
     display: none !important
 }
 
-.archive .custom-sidebar ul > li {
+.woocommerce-page .custom-sidebar ul > li {
     list-style-type: none
 }
 
-.archive .custom-sidebar ul > li .widget_text h4 {
+.woocommerce-page .custom-sidebar ul > li .widget_text h4 {
     color: #083d54;
     font-size: 18px
 }
 
-.archive .custom-sidebar ul > li.widget_product_categories {
+.woocommerce-page .custom-sidebar ul > li.widget_product_categories {
     margin-bottom: 5px
 }
 
-.archive .custom-sidebar ul > li.widget_product_categories ul {
+.woocommerce-page .custom-sidebar ul > li.widget_product_categories ul {
     padding: 10px 20px !important;
     background-color: #f1f1f7;
     padding: 0
 }
 
-.archive .custom-sidebar ul > li.widget_product_categories ul li a {
+.woocommerce-page .custom-sidebar ul > li.widget_product_categories ul li a {
     font-weight: 700;
     font-size: 18px;
     color: #333
 }
 
-.archive .custom-sidebar ul > li.sgr-custom-taxonomies-menu {
+.woocommerce-page .custom-sidebar ul > li.sgr-custom-taxonomies-menu {
     background-color: #f1f1f7;
     padding: 10px 20px;
     margin-bottom: 5px
 }
 
-.archive .custom-sidebar ul > li.sgr-custom-taxonomies-menu h4 {
+.woocommerce-page .custom-sidebar ul > li.sgr-custom-taxonomies-menu h4 {
     font-size: 16px !important
 }
 
-.archive .custom-sidebar ul > li.sgr-custom-taxonomies-menu ul {
+.woocommerce-page .custom-sidebar ul > li.sgr-custom-taxonomies-menu ul {
     margin-left: 30px;
     padding: 0
 }
 
-.archive .custom-sidebar ul > li.sgr-custom-taxonomies-menu ul li {
+.woocommerce-page .custom-sidebar ul > li.sgr-custom-taxonomies-menu ul li {
     transition: all .5s ease;
     -moz-transition: all .5s ease;
     -webkit-transition: all .5s ease;
@@ -2023,7 +2023,7 @@ nav.navbar-primary.sticky-top .main-header {
     padding: 5px 0
 }
 
-.archive .custom-sidebar ul > li.sgr-custom-taxonomies-menu ul li:hover {
+.woocommerce-page .custom-sidebar ul > li.sgr-custom-taxonomies-menu ul li:hover {
     transition: all .5s ease;
     -moz-transition: all .5s ease;
     -webkit-transition: all .5s ease;
@@ -2033,11 +2033,11 @@ nav.navbar-primary.sticky-top .main-header {
     margin-left: 5px
 }
 
-.archive .custom-sidebar ul > li.sgr-custom-taxonomies-menu ul li:hover a {
+.woocommerce-page .custom-sidebar ul > li.sgr-custom-taxonomies-menu ul li:hover a {
     color: #05a3d1
 }
 
-.archive .custom-sidebar ul > li.sgr-custom-taxonomies-menu ul li a {
+.woocommerce-page .custom-sidebar ul > li.sgr-custom-taxonomies-menu ul li a {
     color: #083d54
 }
 
@@ -3709,23 +3709,23 @@ nav.navbar-primary .main-header ul.navbar-nav ul.dropdown-menu {
     background-color: #fff
 }
 
-.archive ul.products {
+.woocommerce-page ul.products {
     padding: 20px;
     border-radius: 10px;
     padding-right: 10px;
     border: 2px solid #083d54
 }
 
-.archive ul.products li {
+.woocommerce-page ul.products li {
     background-color: #fff;
     border-radius: 10px
 }
 
-.archive ul.products li .onsale {
+.woocommerce-page ul.products li .onsale {
     display: none
 }
 
-.archive ul.products li .product-name {
+.woocommerce-page ul.products li .product-name {
     -webkit-align-items: center !important;
     align-items: center !important;
     -webkit-justify-content: center !important;
@@ -3739,29 +3739,29 @@ nav.navbar-primary .main-header ul.navbar-nav ul.dropdown-menu {
     height: 64px
 }
 
-.archive ul.products li .product-name h3 {
+.woocommerce-page ul.products li .product-name h3 {
     text-align: center;
     color: #0b4f6c
 }
 
-.archive ul.products li .double-wrapper {
+.woocommerce-page ul.products li .double-wrapper {
     height: auto
 }
 
-.archive ul.products li .coverages-frequencies {
+.woocommerce-page ul.products li .coverages-frequencies {
     font-size: 10px;
     color: #757575;
     width: 100%
 }
 
-.archive ul.products li .providers {
+.woocommerce-page ul.products li .providers {
     -webkit-align-items: flex-start !important;
     align-items: flex-start !important;
     background-color: transparent;
     height: 70px
 }
 
-.archive ul.products li .providers i {
+.woocommerce-page ul.products li .providers i {
     min-height: 20px !important;
     min-width: 20px !important;
     font-size: 16px;
@@ -3769,23 +3769,23 @@ nav.navbar-primary .main-header ul.navbar-nav ul.dropdown-menu {
     width: 22px
 }
 
-.archive ul.products li .providers i.icon-G, .archive ul.products li .providers i.icon-G2, .archive ul.products li .providers i.icon-G3 {
+.woocommerce-page ul.products li .providers i.icon-G, .woocommerce-page ul.products li .providers i.icon-G2, .woocommerce-page ul.products li .providers i.icon-G3 {
     font-size: 24px
 }
 
-.archive ul.products li .image {
+.woocommerce-page ul.products li .image {
     display: block !important;
     overflow: hidden
 }
 
-.archive ul.products li .image img {
+.woocommerce-page ul.products li .image img {
     max-width: 200px !important;
     object-position: center;
     object-fit: cover;
     max-height: 200px
 }
 
-.archive ul.products li .product-price {
+.woocommerce-page ul.products li .product-price {
     -webkit-justify-content: center;
     justify-content: center;
     display: -webkit-flex !important;
@@ -3795,7 +3795,7 @@ nav.navbar-primary .main-header ul.navbar-nav ul.dropdown-menu {
     margin-top: 10px
 }
 
-.archive ul.products li .product-price .price {
+.woocommerce-page ul.products li .product-price .price {
     -webkit-align-items: center;
     align-items: center;
     display: -webkit-box;
@@ -3804,26 +3804,26 @@ nav.navbar-primary .main-header ul.navbar-nav ul.dropdown-menu {
     display: flex
 }
 
-.archive ul.products li .product-price .price del {
+.woocommerce-page ul.products li .product-price .price del {
     color: #083d54 !important;
     color: #ccc !important;
     margin-right: 10px
 }
 
-.archive ul.products li .product-price .price del span {
+.woocommerce-page ul.products li .product-price .price del span {
     font-size: 14px !important;
     color: #ccc
 }
 
-.archive ul.products li .product-price .price ins {
+.woocommerce-page ul.products li .product-price .price ins {
     color: #083d54 !important
 }
 
-.archive ul.products li .product-price .price ins span {
+.woocommerce-page ul.products li .product-price .price ins span {
     font-size: 20px !important
 }
 
-.archive ul.products li .product-action a.button {
+.woocommerce-page ul.products li .product-action a.button {
     height: 40px;
     margin: 0 auto;
     max-width: 100%;
@@ -3842,58 +3842,58 @@ nav.navbar-primary .main-header ul.navbar-nav ul.dropdown-menu {
     width: calc(100% - 30px) !important
 }
 
-.archive ul.products li .product-action a.button:nth-child(1) {
+.woocommerce-page ul.products li .product-action a.button:nth-child(1) {
     margin-bottom: 5px
 }
 
-.archive ul.products li.list.accessory .product-name h3 {
+.woocommerce-page ul.products li.list.accessory .product-name h3 {
     text-align: center
 }
 
-.archive ul.products li.list.accessory .product-thumbnail {
+.woocommerce-page ul.products li.list.accessory .product-thumbnail {
     margin-bottom: 20px;
     overflow: hidden
 }
 
-.archive ul.products li.list.accessory .product-price {
+.woocommerce-page ul.products li.list.accessory .product-price {
     -webkit-flex-direction: column;
     flex-direction: column
 }
 
-.archive ul.products li.list.accessory .product-price .col-xs-12:nth-child(1) {
+.woocommerce-page ul.products li.list.accessory .product-price .col-xs-12:nth-child(1) {
     margin-bottom: 20px
 }
 
-.archive ul.products li.list.accessory .product-price .col-xs-12:nth-child(1) .price {
+.woocommerce-page ul.products li.list.accessory .product-price .col-xs-12:nth-child(1) .price {
     -webkit-justify-content: center;
     justify-content: center;
     color: #083d54
 }
 
-.archive ul.products li.list.accessory .product-price .col-xs-12:nth-child(1) .price del .amount {
+.woocommerce-page ul.products li.list.accessory .product-price .col-xs-12:nth-child(1) .price del .amount {
     font-size: 14px !important;
     color: #ccc
 }
 
-.archive ul.products li.list.accessory .product-price .col-xs-12:nth-child(1) .price .amount {
+.woocommerce-page ul.products li.list.accessory .product-price .col-xs-12:nth-child(1) .price .amount {
     font-size: 20px !important;
     font-weight: 700
 }
 
-.archive ul.products li.list.accessory .product-price .col-xs-12:nth-child(1) .price .amount .woocommerce-Price-currencySymbol {
+.woocommerce-page ul.products li.list.accessory .product-price .col-xs-12:nth-child(1) .price .amount .woocommerce-Price-currencySymbol {
     font-size: inherit
 }
 
-.archive ul.products li.list.accessory .product-price .col-xs-12:nth-child(2) .button {
+.woocommerce-page ul.products li.list.accessory .product-price .col-xs-12:nth-child(2) .button {
     width: 100% !important;
     max-width: none
 }
 
-.archive ul.products li.list.accessory .product-price .col-xs-12:nth-child(2) .button:nth-child(1) {
+.woocommerce-page ul.products li.list.accessory .product-price .col-xs-12:nth-child(2) .button:nth-child(1) {
     margin-bottom: 5px
 }
 
-.archive .custom-sidebar .widget_text h4 {
+.woocommerce-page .custom-sidebar .widget_text h4 {
     margin: 0;
     color: #fff;
     padding: 15px;
@@ -3904,13 +3904,13 @@ nav.navbar-primary .main-header ul.navbar-nav ul.dropdown-menu {
     text-transform: uppercase
 }
 
-.archive .custom-sidebar .sgr-custom-taxonomies-menu {
+.woocommerce-page .custom-sidebar .sgr-custom-taxonomies-menu {
     margin-bottom: 20px !important;
     background-color: transparent;
     padding: 0 !important
 }
 
-.archive .custom-sidebar .sgr-custom-taxonomies-menu h4 {
+.woocommerce-page .custom-sidebar .sgr-custom-taxonomies-menu h4 {
     background-color: #083d54;
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
@@ -3921,7 +3921,7 @@ nav.navbar-primary .main-header ul.navbar-nav ul.dropdown-menu {
     margin: 0
 }
 
-.archive .custom-sidebar .sgr-custom-taxonomies-menu ul {
+.woocommerce-page .custom-sidebar .sgr-custom-taxonomies-menu ul {
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
     padding: 20px 40px !important;
@@ -3929,25 +3929,25 @@ nav.navbar-primary .main-header ul.navbar-nav ul.dropdown-menu {
     margin-left: 0 !important
 }
 
-.archive .custom-sidebar .sgr-custom-taxonomies-menu ul li {
+.woocommerce-page .custom-sidebar .sgr-custom-taxonomies-menu ul li {
     list-style-type: disc !important;
     color: #fff
 }
 
-.archive .custom-sidebar .sgr-custom-taxonomies-menu ul li:nth-child(5) {
+.woocommerce-page .custom-sidebar .sgr-custom-taxonomies-menu ul li:nth-child(5) {
     display: none
 }
 
-.archive .custom-sidebar .sgr-custom-taxonomies-menu ul li a {
+.woocommerce-page .custom-sidebar .sgr-custom-taxonomies-menu ul li a {
     font-family: 'Roboto Light', sans-serif;
     color: #fff !important
 }
 
-.archive .custom-sidebar .term-description {
+.woocommerce-page .custom-sidebar .term-description {
     display: none
 }
 
-.archive .custom-sidebar .sidebar-guarantee {
+.woocommerce-page .custom-sidebar .sidebar-guarantee {
     background-color: #083d54;
     border-radius: 10px;
     margin-left: 20px;
@@ -3955,7 +3955,7 @@ nav.navbar-primary .main-header ul.navbar-nav ul.dropdown-menu {
     padding: 30px
 }
 
-.archive .custom-sidebar .sidebar-guarantee .title h4 {
+.woocommerce-page .custom-sidebar .sidebar-guarantee .title h4 {
     text-transform: uppercase;
     margin-bottom: 30px;
     font-weight: 700;
@@ -3964,14 +3964,14 @@ nav.navbar-primary .main-header ul.navbar-nav ul.dropdown-menu {
     color: #fff
 }
 
-.archive .custom-sidebar .sidebar-guarantee .title h4:after {
+.woocommerce-page .custom-sidebar .sidebar-guarantee .title h4:after {
     margin: 0;
     width: 100%;
     margin-top: 20px;
     border: 1px solid #fff
 }
 
-.archive .custom-sidebar .sidebar-guarantee .guarantee {
+.woocommerce-page .custom-sidebar .sidebar-guarantee .guarantee {
     -webkit-align-items: center;
     align-items: center;
     display: -webkit-box;
@@ -3983,33 +3983,33 @@ nav.navbar-primary .main-header ul.navbar-nav ul.dropdown-menu {
     padding: 0 10px
 }
 
-.archive .custom-sidebar .sidebar-guarantee .guarantee .image {
+.woocommerce-page .custom-sidebar .sidebar-guarantee .guarantee .image {
     width: 65px
 }
 
-.archive .custom-sidebar .sidebar-guarantee .guarantee .image img {
+.woocommerce-page .custom-sidebar .sidebar-guarantee .guarantee .image img {
     max-width: 45px
 }
 
-.archive .custom-sidebar .sidebar-guarantee .guarantee .text {
+.woocommerce-page .custom-sidebar .sidebar-guarantee .guarantee .text {
     display: inline-block
 }
 
-.archive .custom-sidebar .sidebar-guarantee .guarantee .text h5 {
+.woocommerce-page .custom-sidebar .sidebar-guarantee .guarantee .text h5 {
     font-weight: 700;
     font-size: 20px;
     margin: 0
 }
 
-.archive .custom-sidebar .sidebar-guarantee .guarantee .text span {
+.woocommerce-page .custom-sidebar .sidebar-guarantee .guarantee .text span {
     font-size: 10px
 }
 
-.archive .custom-sidebar .sidebar-guarantee .guarantee.delivery .image img {
+.woocommerce-page .custom-sidebar .sidebar-guarantee .guarantee.delivery .image img {
     max-width: 50px
 }
 
-.archive .custom-sidebar .sidebar-guarantee .guarantee.support .image img {
+.woocommerce-page .custom-sidebar .sidebar-guarantee .guarantee.support .image img {
     width: 45px
 }
 
@@ -4478,43 +4478,43 @@ footer.site-footer .fourth .payment-icon img {
     color: #fb0
 }
 
-.archive ul.products li .product-action a.button:nth-child(1) {
+.woocommerce-page ul.products li .product-action a.button:nth-child(1) {
     background-color: #fb0;
     border-color: #fb0
 }
 
-.archive ul.products li .product-action a.button:nth-child(1):after {
+.woocommerce-page ul.products li .product-action a.button:nth-child(1):after {
     color: #fff
 }
 
-.archive ul.products li .product-action a.button:nth-child(1):hover {
+.woocommerce-page ul.products li .product-action a.button:nth-child(1):hover {
     background-color: transparent;
     color: #fb0
 }
 
-.archive ul.products li .product-action a.button:nth-child(1):hover:after {
+.woocommerce-page ul.products li .product-action a.button:nth-child(1):hover:after {
     color: #fb0
 }
 
-.archive ul.products li.list.accessory .product-price .col-xs-12:nth-child(2) .button {
+.woocommerce-page ul.products li.list.accessory .product-price .col-xs-12:nth-child(2) .button {
     border-radius: 30px
 }
 
-.archive ul.products li.list.accessory .product-price .col-xs-12:nth-child(2) .button:nth-child(1) {
+.woocommerce-page ul.products li.list.accessory .product-price .col-xs-12:nth-child(2) .button:nth-child(1) {
     background-color: #fb0;
     border-color: #fb0
 }
 
-.archive ul.products li.list.accessory .product-price .col-xs-12:nth-child(2) .button:nth-child(1):after {
+.woocommerce-page ul.products li.list.accessory .product-price .col-xs-12:nth-child(2) .button:nth-child(1):after {
     color: #fff
 }
 
-.archive ul.products li.list.accessory .product-price .col-xs-12:nth-child(2) .button:nth-child(1):hover {
+.woocommerce-page ul.products li.list.accessory .product-price .col-xs-12:nth-child(2) .button:nth-child(1):hover {
     background-color: transparent;
     color: #fb0
 }
 
-.archive ul.products li.list.accessory .product-price .col-xs-12:nth-child(2) .button:nth-child(1):hover:after {
+.woocommerce-page ul.products li.list.accessory .product-price .col-xs-12:nth-child(2) .button:nth-child(1):hover:after {
     color: #fb0
 }
 
