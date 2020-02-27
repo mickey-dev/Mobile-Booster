@@ -396,16 +396,22 @@ div#n2-ss-2 .n2-style-2a0a200d6a6e1fade27fb9c90af83812-dot.n2-active, div#n2-ss-
 }
 
 /*featured products*/
-#filter.filter-custom2 .filter-step.coverages .trigger ul li.active .bulet{
-    background: url("/assets/img/EllipseBlue.jpg")!important;
+#filter.filter-custom2 .filter-step.coverages .trigger ul li.LActive .bulet{
+    background: url("assets/img/Ellipse.jpg");
+
 
 }
 #filter.filter-custom2 .filter-step.coverages .trigger ul li .bulet{
-    background: url("/assets/img/Ellipse.jpg");
+    background: url("assets/img/EllipseBlue.jpg");
     height: 36px;
     width: 36px;
 }
-
+#filter.filter-custom2 .filter-step.coverages .trigger ul li:nth-child(1) .text{
+    left: -24px;
+}
+#filter.filter-custom2 .filter-step.coverages .trigger{
+    padding-left: 25px;
+}
 .title h1, .title h2, .title h3, .title h4{
     text-transform: unset;
 }
