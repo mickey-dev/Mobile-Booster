@@ -111,7 +111,7 @@
               </a>
 
               <div class="header-search">
-                  <form>
+                  <form class="search-inline">
                       <input class="header-input" name="s" placeholder="Search Products (ie. carriers)">
 
                       <div class="input-group-append ">

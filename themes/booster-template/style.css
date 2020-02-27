@@ -44,8 +44,9 @@ nav.navbar-primary .main-header a.navbar-brand svg{
     position: relative;
     margin-left: 179px;
     margin-right: 152px;
+    }
+.header-search .search-inline{
     display: flex;
-
 }
 .header-search input{
     color: #1e3c55;
