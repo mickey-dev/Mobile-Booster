@@ -1135,8 +1135,8 @@ nav.navbar-primary.sticky-top .main-header {
 #filter .filter-step .step-body .provider .choice-details .choice-icon {
     margin-bottom: 0;
     border-radius: 0;
-    height: 80px;
-    width: 80px
+    height: 60px;
+    width: 60px
 }
 
 #filter .filter-step .step-body .provider .choice-details .choice-icon:hover {
@@ -1197,11 +1197,11 @@ nav.navbar-primary.sticky-top .main-header {
 }
 
 #filter.filter-custom .filter-step .step-title .step-number {
+    text-transform: uppercase;
     background-color: transparent;
-    margin-right: 10px;
     border-radius: 0;
-    font-size: 24px;
-    font-weight: bold;
+    font-size: 27px;
+    font-weight: 700;
     padding: 10px;
     color: #fb0;
     margin: 0;
@@ -1310,24 +1310,13 @@ nav.navbar-primary.sticky-top .main-header {
 
 #filter.filter-custom .filter-step .step-body .provider .choice-details .choice-icon {
     padding: 0;
-    border: none;
     color: #083d54;
-    border-radius: 10px;
-    -webkit-align-items: center !important;
     align-items: center !important;
-    -webkit-justify-content: center !important;
     justify-content: center !important;
-    display: -webkit-flex !important;
-    display: -webkit-box !important;
-    display: -ms-flexbox !important;
     display: flex !important;
     background-color: #fff;
-    border: 2px solid #fff;
+    border: 3px solid #a4b1bb;
     transition: all .5s ease;
-    -moz-transition: all .5s ease;
-    -webkit-transition: all .5s ease;
-    -ms-transition: all .5s ease;
-    -o-transition: all .5s ease
 }
 
 #filter.filter-custom .filter-step .step-body .provider .choice-details .choice-icon:hover {
@@ -1340,7 +1329,7 @@ nav.navbar-primary.sticky-top .main-header {
 }
 
 #filter.filter-custom .filter-step .step-body .provider .choice-details .choice-icon i {
-    font-size: 45px
+    font-size: 32px
 }
 
 #filter.filter-custom .filter-step .step-body .provider .choice-details .choice-icon.choosen {
@@ -3335,14 +3324,11 @@ nav.navbar-primary .main-header ul.navbar-nav ul.dropdown-menu {
 }
 
 #filter.filter-custom2 .filter-step.coverages .step-title {
-    width: 360px;
     padding: 10px;
     border-radius: 20px;
     display: block;
     text-align: left;
-    -webkit-flex-direction: column;
-    flex-direction: column;
-    margin-top: 32px;
+    margin-top: 31px;
 }
 
 #filter.filter-custom2 .filter-step.coverages .step-title .step-number {
@@ -3658,11 +3644,7 @@ nav.navbar-primary .main-header ul.navbar-nav ul.dropdown-menu {
 }
 
 #filter.filter-custom2 .filter-step.providers .provider:nth-child(5) {
-    display: none
-}
-
-#filter.filter-custom2 .filter-step.providers .choice-icon {
-    border-color: #083d54 !important
+    /*display: none*/
 }
 
 #filter.filter-custom2 .filter-step.providers .choice-icon.choosen, #filter.filter-custom2 .filter-step.providers .choice-icon:hover {
@@ -5143,7 +5125,7 @@ form .screen-reader-text {
 }
 
 #filter .filter-step .step-body .provider .choice-details .choice-icon .icon-G:before, #filter .filter-step .step-body .provider .choice-details .choice-icon .icon-G2:before, #filter .filter-step .step-body .provider .choice-details .choice-icon .icon-G3:before {
-    font-size: 57px !important;
+    font-size: 32px !important;
 }
 
 .container.white-bg.archive-container {
@@ -5178,6 +5160,9 @@ form .screen-reader-text {
 #filter.filter-custom2 .filter-step.providers .step-body {
     margin-bottom: 100px;
     padding-bottom: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 @media screen and (max-width: 991px) {

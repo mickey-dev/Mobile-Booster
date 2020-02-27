@@ -21,8 +21,7 @@ function filter_shortcode($atts,$content=null)
         $html .= '<div class="col-md-4 back-img"></div>';
         $html .= '<div class="filter-step coverages col-md-8">';
 
-        //$html .= '<div class="step-title"><div class="step-number">1</div><div class="step-description">Select the size of building you want to boost</div></div>';
-        $html .= '<div class="step-title"><div class="step-number">STEP I</div><div class="step-description">Select Your Range</div></div>';
+        $html .= '<div class="step-title"><div class="step-number">Step 1</div><div class="step-description">Select Your Range</div></div>';
 
         $html .= '<div class="step-body">';
         $html .= '<div class="trigger">';
@@ -99,7 +98,7 @@ function filter_shortcode($atts,$content=null)
         $html .= '<div class="filter-step providers">';
 
         //$html .= '<div class="step-title"><div class="step-number">2</div><div class="step-description">Select your voice/data carriers</div></div>';
-        $html .= '<div class="step-title"><div class="step-number">STEP II</div><div class="step-description">Select Your Providers</div></div>';
+        $html .= '<div class="step-title"><div class="step-number">Step 2</div><div class="step-description">Select Your Providers</div></div>';
 
         $html .= '<div class="step-body">';
 
