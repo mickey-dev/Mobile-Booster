@@ -89,7 +89,7 @@ nav.navbar-primary .main-header ul.navbar-nav li{
 }
 nav.navbar-primary .main-header ul.navbar-nav li:last-child{
     margin: 0;
-    padding-left: 58px;
+    padding-left: 62px;
 }
 
 nav.navbar-primary .main-header ul.navbar-nav li a{
@@ -114,7 +114,7 @@ nav.navbar-primary .main-header ul.navbar-nav li a{
     letter-spacing: 0.94px;
 }
 .minicart-wrapper{
-    padding: 16px 24px 19.5px 21px;
+    padding: 16px 24px 18.5px 21px;
     background-color: #f4b12e;
 
 }
@@ -495,6 +495,13 @@ div#n2-ss-2 .n2-style-2a0a200d6a6e1fade27fb9c90af83812-dot.n2-active, div#n2-ss-
     bottom: 0;
     width: 100%;
     border-top: 1px solid #9babb7;
+}
+.home_featured .featured-item .button{
+    border: 1px solid #fb0 !important;
+    border-radius: 25px;
+    background: #fb0;
+    /* font-size: 18px; */
+    margin: 19px auto !important
 }
 .home_featured .featured-actions .button{
     margin-top: 24px !important;
