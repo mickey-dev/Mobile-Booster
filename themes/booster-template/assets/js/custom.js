@@ -31,6 +31,11 @@ jQuery(document).ready(function ($) {
         items: 1,
         dots: true,
     });
+    $("#home_featured .featured-items").owlCarousel({
+        items: 4,
+        nav: true,
+        dots: false,
+    });
     $('.single-product .product .main-content .left .images .thumbnails a').click(function (e) {
         e.preventDefault();
         var imageUrl = $(this).attr("data-img");

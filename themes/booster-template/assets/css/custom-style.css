@@ -2620,8 +2620,6 @@ nav.navbar-primary.sticky-top .main-header {
 .single-product .product .main-content .right .summary .price-container .price {
     -webkit-align-items: center !important;
     align-items: center !important;
-    -webkit-justify-content: center !important;
-    justify-content: center !important;
     display: -webkit-flex !important;
     display: -webkit-box !important;
     display: -ms-flexbox !important;

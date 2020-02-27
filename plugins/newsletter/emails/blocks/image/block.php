@@ -42,7 +42,7 @@ $url = $options['url'];
 ?>
 
 <?php if (!empty($url)) { ?>
-    <a href="<?php echo $media->url ?>" target="_blank"><img src="<?php echo $image ?>" width="<?php echo $media->width ?>" height="<?php echo $media->height ?>" border="0" alt="<?php echo esc_attr($media->alt) ?>" style="max-width: 100%!important; height: auto!important; display: inline-block;"></a>                
+    <a href="<?php echo $url ?>" target="_blank"><img src="<?php echo $media->url ?>" width="<?php echo $media->width ?>" height="<?php echo $media->height ?>" border="0" alt="<?php echo esc_attr($media->alt) ?>" style="max-width: 100%!important; height: auto!important; display: inline-block;"></a>                
 <?php } else { ?>
     <img src="<?php echo $media->url ?>" border="0" alt="<?php echo esc_attr($media->alt) ?>" width="<?php echo $media->width ?>" height="<?php echo $media->height ?>" style="max-width: 100%!important; height: auto!important; display: inline-block;">              
 <?php } ?>

@@ -2,7 +2,7 @@
 Tags: email, email marketing, newsletter, newsletter subscribers, welcome email, signup forms, contact, lead generation, popup, marketing automation
 Requires at least: 3.4.0
 Tested up to: 5.3.2
-Stable tag: 6.5.1
+Stable tag: 6.5.2
 Requires PHP: 5.6
 Contributors: satollo,webagile,michael-travan
 
@@ -109,6 +109,11 @@ Thank you, The Newsletter Team
 
 == Changelog ==
 
+= 6.5.2 =
+
+* Fixed image block 
+* Newsletter editing page with TinyMCE now saves before sending a test
+
 = 6.5.1 =
 
 * Solved hero block media problem not showing
@@ -127,6 +132,9 @@ Thank you, The Newsletter Team
 * Posts block can now specify an offset to skip the first *n* posts
 * Fixed the display of multiline title on some blocks (was overlapping)
 * Added the excerpt length on Posts block
+* Removed the shortcodes from generated excerpt for blog post composer block
+* New media resize to better fit the email layout standards
+* Updated image block
 
 = 6.4.8 =
 
@@ -138,14 +146,6 @@ Thank you, The Newsletter Team
 * Profile saving antispam check
 * Fixed hero block (button)
 * Added logging on spam checking (enable info lov level to see the spam check results in the logs)
-= Next =
-
-* Removed the shortcodes from generated excerpt for blog post composer block
-* New media resize to better fit the email layout standards
-* Updated image block
-* Added "Excerpt words" field on "Blog Posts" composer block
-* Added "Posts offset" field on "Blog Posts" composer block
-* Added background color on email
 
 = 6.4.6 =
 

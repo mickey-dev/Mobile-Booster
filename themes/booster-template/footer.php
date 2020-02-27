@@ -126,7 +126,7 @@ $ins= theme_option( 'ins' );
                 <img  class="message" src="<?php echo get_template_directory_uri() ?>/assets/img/message.jpg" alt="">
 				<div class="footer-title">Subscribe</div>
 
-				<div class="newsletter"><?php echo do_shortcode('[newsletter_form type="minimal"]'); ?></div>
+				<div class="newsletter"><?php echo do_shortcode('[newsletter_form type="minimal" button=" "]'); ?></div>
 				<div class="social">
 
                     <h4>Follow us</h4>
