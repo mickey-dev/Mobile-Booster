@@ -125,7 +125,7 @@ if ( ! defined( 'ABSPATH' ) ) {
                 <h2 class="text-center">Similar Products</h2>
                 <div class="featured-items owl-carousel">
                     <?php
-                    $args = array( 'post_type' => 'product', 'meta_key' => '_featured','posts_per_page' => 4,'columns' => '4', 'meta_value' => 'yes' );
+                    $args = array( 'post_type' => 'product', 'meta_key' => '_featured','posts_per_page' => 12,'columns' => '4', 'meta_value' => 'yes' );
                     $loop = new WP_Query( $args );
 
                     while ( $loop->have_posts() ) : $loop->the_post(); global $product; ?>
@@ -155,29 +155,34 @@ if ( ! defined( 'ABSPATH' ) ) {
                                     <i class="icon-wifi-img meta-icon"></i>
                                     <span class="meta_prodtitle">Coverage:</span>
                                     <?php
-
-                                    foreach ($coverages as $coverage){
-                                        echo '<div class="meta-name">';
-                                        echo '<span>';
-                                        echo $coverage->name;
-                                        echo '</span>';
-                                        echo '</div>';
+                                    if ($coverages) {
+                                        foreach ($coverages as $coverage){
+                                            echo '<div class="meta-name">';
+                                            echo '<span>';
+                                            echo $coverage->name;
+                                            echo '</span>';
+                                            echo '</div>';
+                                        }
                                     }
+
                                     ?>
                                 </div>
 
                                 <div class="coverages col-xs-12 no-padding">
                                     <?php
-                                    foreach ($coverages as $coverage){
-                                        $icon_class = get_term_meta($coverage->term_id, 'icon',true);
-                                        echo '<i class="'.$icon_class.' meta-icon"></i>';
-                                        echo '<span class="meta_prodtitle">Ideal for:</span>';
-                                        echo '<div class="meta-name">';
-                                        echo '<span>';
-                                        echo get_term_meta($coverage->term_id, 'alt_name',true);
-                                        echo '</span>';
-                                        echo '</div>';
+                                    if ($coverages) {
+                                        foreach ($coverages as $coverage){
+                                            $icon_class = get_term_meta($coverage->term_id, 'icon',true);
+                                            echo '<i class="'.$icon_class.' meta-icon"></i>';
+                                            echo '<span class="meta_prodtitle">Ideal for:</span>';
+                                            echo '<div class="meta-name">';
+                                            echo '<span>';
+                                            echo get_term_meta($coverage->term_id, 'alt_name',true);
+                                            echo '</span>';
+                                            echo '</div>';
+                                        }
                                     }
+
                                     ?>
                                 </div>
 
@@ -185,14 +190,17 @@ if ( ! defined( 'ABSPATH' ) ) {
                                     <div class="meta-prov-title">Providers:</div>
                                     <?php
                                     echo '<div class="providers_wrapper">';
-                                    foreach ( $providers as $provider ){
-                                        echo '<span class="provider">';
-                                        $icon_class = get_term_meta($provider->term_id, 'icon',true);
-                                        if ($icon_class){
-                                            echo '<i class="'.$icon_class.'" title="'. $provider->name .'"></i>';
+                                    if ($providers) {
+                                        foreach ( $providers as $provider ){
+                                            echo '<span class="provider">';
+                                            $icon_class = get_term_meta($provider->term_id, 'icon',true);
+                                            if ($icon_class){
+                                                echo '<i class="'.$icon_class.'" title="'. $provider->name .'"></i>';
+                                            }
+                                            echo '</span>';
                                         }
-                                        echo '</span>';
                                     }
+
                                     echo '</div>';
                                     ?>
                                 </div>

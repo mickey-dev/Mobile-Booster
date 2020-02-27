@@ -509,11 +509,54 @@ div#n2-ss-2 .n2-style-2a0a200d6a6e1fade27fb9c90af83812-dot.n2-active, div#n2-ss-
     padding: 16px 42px !important;
     font-size: 14px;
     color: #ffffff;
+    align-self: center;
     letter-spacing: 0.35px;
     line-height: 14px;
     font-weight: 600;
     font-style: normal;
     text-transform: uppercase;
+}
+.home_featured .owl-prev, .home_featured .owl-next{
+    position: absolute;
+    top: calc(50% - 27px);
+    border: 2px solid #c6ced5 !important;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.home_featured .owl-prev:hover, .home_featured .owl-next:hover{
+    border: 2px solid #1b3d56 !important;
+    background: #1b3d56 !important;
+}
+.home_featured .owl-prev:focus, .home_featured .owl-next:focus{
+    outline: none;
+}
+.home_featured .owl-prev{
+    left: -80px;
+}
+
+.home_featured .owl-next{
+    right: -80px;
+}
+.home_featured .owl-prev .mb-prev, .home_featured .owl-next .mb-next{
+    width: 10px;
+    height: 18px;
+    background-size: contain;
+}
+.home_featured .owl-prev .mb-prev{
+    background-image: url("assets/img/icons/mb-prev-dark.png");
+}
+.home_featured .owl-prev:hover .mb-prev{
+    background-image: url("assets/img/icons/mb-prev-white.png");
+}
+.home_featured .owl-next .mb-next{
+    background-image: url("assets/img/icons/mb-next-dark.png");
+}
+.home_featured .owl-next:hover .mb-next{
+    background-image: url("assets/img/icons/mb-next-white.png");
 }
 
 /* what-osbc */

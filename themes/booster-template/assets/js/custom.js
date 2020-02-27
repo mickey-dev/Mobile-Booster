@@ -33,6 +33,7 @@ jQuery(document).ready(function ($) {
     });
     $("#home_featured .featured-items").owlCarousel({
         items: 4,
+        navText: ['<span class="mb-prev"></span>', '<span class="mb-next"></span>'],
         nav: true,
         dots: false,
     });
