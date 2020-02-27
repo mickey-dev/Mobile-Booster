@@ -122,16 +122,15 @@ if ( ! defined( 'ABSPATH' ) ) {
     <div class="container">
         <div class="row">
             <div class="col-xs-12 col-sm-12 home_featured title">
-                <h2 class="text-center">Our Best Sellers</h2>
-                <?php //echo do_shortcode('[featured_products per_page="4" columns="4"]'); ?>
-                <div class="featured-items">
+                <h2 class="text-center">Similar Products</h2>
+                <div class="featured-items owl-carousel">
                     <?php
                     $args = array( 'post_type' => 'product', 'meta_key' => '_featured','posts_per_page' => 4,'columns' => '4', 'meta_value' => 'yes' );
                     $loop = new WP_Query( $args );
 
                     while ( $loop->have_posts() ) : $loop->the_post(); global $product; ?>
 
-                        <li class="product type-product status-publish has-post-thumbnail provider-vodafone provider-o2-mobile provider-id provider-ee provider-3g provider-4g provider-three coverage-up-to-1000-sqm frequency-90018002100mhz tm-has-options last instock sale featured shipping-taxable purchasable product-type-simple">
+                        <div class="featured-item product type-product status-publish has-post-thumbnail provider-vodafone provider-o2-mobile provider-id provider-ee provider-3g provider-4g provider-three coverage-up-to-1000-sqm frequency-90018002100mhz tm-has-options last instock sale featured shipping-taxable purchasable product-type-simple">
 
                             <a href="<?php echo get_permalink( $loop->post->ID ) ?>" title="<?php echo esc_attr($loop->post->post_title ? $loop->post->post_title : $loop->post->ID); ?>" class="woocommerce-LoopProduct-link">
 
@@ -203,7 +202,7 @@ if ( ! defined( 'ABSPATH' ) ) {
                                 <a href="<?php echo get_permalink( $loop->post->ID ) ?>" class="button button-filled">Product Details</a>
                             </div>
 
-                        </li>
+                        </div>
                         <?php
                         ?>
                     <?php endwhile; ?>

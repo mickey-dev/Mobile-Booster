@@ -415,6 +415,10 @@ div#n2-ss-2 .n2-style-2a0a200d6a6e1fade27fb9c90af83812-dot.n2-active, div#n2-ss-
 .title h1, .title h2, .title h3, .title h4{
     text-transform: unset;
 }
+.home_featured .featured-items .owl-stage{
+    display: flex;
+    justify-content: center;
+}
 .home_featured li h3{
     color: #1b3d56;
     font-family: "Montserrat";
@@ -434,8 +438,6 @@ div#n2-ss-2 .n2-style-2a0a200d6a6e1fade27fb9c90af83812-dot.n2-active, div#n2-ss-
     justify-content: center;
     flex-direction: column;
     padding-bottom: 9px;
-    border-bottom: 1px solid #9babb7;
-
 }
 .featured-details .meta-icon{
     color: #1b3d56;
@@ -466,8 +468,13 @@ div#n2-ss-2 .n2-style-2a0a200d6a6e1fade27fb9c90af83812-dot.n2-active, div#n2-ss-
 .home_featured .providers{
     flex-direction: column;
 }
-.providers .providers_wrapper{
+.home_featured .providers .providers_wrapper{
     flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+}
+.home_featured .providers .providers_wrapper .provider{
+    margin-bottom: 7px;
 }
 .featured-details .meta-prov-title{
     color: #1b3d56;
@@ -479,10 +486,15 @@ div#n2-ss-2 .n2-style-2a0a200d6a6e1fade27fb9c90af83812-dot.n2-active, div#n2-ss-
     margin-right: 11px;
     font-weight: 700;
 }
-.featured-actions{
+.home_featured .featured-actions{
     display: flex;
     justify-content: center;
     flex-direction: column;
+    position: absolute;
+    height: 156px;
+    bottom: 0;
+    width: 100%;
+    border-top: 1px solid #9babb7;
 }
 .home_featured .featured-actions .button{
     margin-top: 24px !important;
@@ -822,4 +834,14 @@ footer.site-footer .copyright{
     margin-top: -24px;
     position: absolute;
     right: 15px;
+}
+
+
+/* Newsletter*/
+.tnp-subscription-minimal input.tnp-submit{
+    width: 52px;
+    position: relative;
+    background-image: url("assets/img/icons/icon-email.png");
+    background-repeat: no-repeat;
+    background-position: center;
 }

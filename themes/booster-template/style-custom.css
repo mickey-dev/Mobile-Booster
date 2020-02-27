@@ -68,24 +68,29 @@ div.wpcf7-validation-errors {
 .home_featured h2 {
     margin-bottom: 50px
 }
-.home_featured li {
-    float: left;
-    width: 23%;
-    margin: 0 1%;
-    /*padding: 10px 20px;*/
+.home_featured .featured-item {
+    width: calc(100% - 30px);
+    height: 100%;
+    margin: 0;
     position: relative;
     border: 1px solid rgba(27, 61, 86, 0.4);
-    /*border-radius: 15px*/
+    padding-bottom: 156px;
 }
 
-.home_featured li .button {
+.home_featured .featured-item:first-child{
+    margin-left: 0;
+}
+.home_featured .featured-item:last-child{
+    margin-left: 0;
+}
+.home_featured .featured-item .button {
     border: 1px solid #083d54;
     padding: 5px 9px;
     font-size: 15px;
     margin-top: 20px
 }
 
-.home_featured li .button:first-child {
+.home_featured .featured-item .button:first-child {
     margin-right: 4px
 }
 
@@ -106,19 +111,19 @@ div.wpcf7-validation-errors {
     color: #fb0
 }
 
-.home_featured li img {
+.home_featured .featured-item img {
     object-fit: cover;
     font-family: 'object-fit: cover;';
     height: 161px;
     width: 100%;
 }
 
-.home_featured li .price {
+.home_featured .featured-item .price {
     text-align: center;
     display: block;
     margin-top: 29px;
 }
-.home_featured li .price span{
+.home_featured .featured-item .price span{
     font-size: 23px;
     color: #1b3d56;
     font-style: normal;
@@ -126,10 +131,10 @@ div.wpcf7-validation-errors {
     font-family: "Montserrat";
     line-height: 24px;
 }
-.home_featured li .price del{
+.home_featured .featured-item .price del{
     display: none;
 }
-.home_featured li .price ins{
+.home_featured .featured-item .price ins{
     text-decoration: none;
 }
 .home_featured .coverages, .home_featured .providers {
@@ -145,7 +150,7 @@ div.wpcf7-validation-errors {
     width: 75%
 }
 
-.home_featured li h3 {
+.home_featured .featured-item h3 {
     font-size: 20px
 }
 
@@ -159,9 +164,11 @@ div.wpcf7-validation-errors {
     font-size: 20px;
 }
 
-.home_featured .providers .provider .icon-id {
+.home_featured .providers .provider .icon-id:before {
     height: 26px;
     width: 26px;
+    content: " ";
+    display: block;
     background-image: url(assets/css/assets/id.svg);
     background-size: contain;
     background-repeat: no-repeat;
@@ -434,12 +441,12 @@ ul.products li.product {
     #home_featured .view_boosters a {
         font-size: 16px
     }
-    .home_featured li {
+    .home_featured .featured-item {
         width: 100%;
         margin: 15px 0
     }
 
-    .home_featured li .button {
+    .home_featured .featured-item .button {
         border: 1px solid #083d54;
         padding: 5px 9px;
         font-size: 10px;
