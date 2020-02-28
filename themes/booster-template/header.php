@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/assets/css/owl.carousel.css">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/assets/css/owl.theme.default.min.css">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/assets/css/custom-style.css">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/bootstrap.min.css">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/style-custom.css">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/style.css">
 
@@ -138,20 +139,20 @@
               </div>
 
           </div>
-          <div class="col-xs-2 col-sm-6 visible-xs visible-sm mobile-trigger">
+          <div class="col-xs-2 col-sm-6 visible-xs mobile-trigger mobile-nav-toggle d-lg-none" onclick="toggleFunction()">
               <span class="bar"></span>
               <span class="bar"></span>
               <span class="bar"></span>
           </div>
         </div>
-        <div class="col-xs-12 col-sm-12 header-next">
+        <div  class="header-next">
             <?php
             wp_nav_menu( array(
                     'menu'              => 'right-menu',
                     'depth'             => 2,
                     'container'         => 'div',
                     'container_class'   => 'container collapse navbar-collapse no-padding',
-                    'container_id'      => '',
+                    'container_id'      => 'myLinks',
                     'menu_class'        => 'nav navbar-nav',
                     'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
                     'walker'            => new wp_bootstrap_navwalker())

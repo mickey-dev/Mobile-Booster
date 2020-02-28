@@ -67,5 +67,12 @@ function fixStepIndicator(e) {
     for (a = 0; a < t.length; a++) t[a].className = t[a].className.replace(" active", "");
     t[e].className += " active"
 }
-
+function toggleFunction() {
+    var x = document.getElementById("myLinks");
+    if (x.style.display === "block") {
+        x.style.display = "none";
+    } else {
+        x.style.display = "block";
+    }
+}
 showTab(currentTab);

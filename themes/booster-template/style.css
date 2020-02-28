@@ -157,35 +157,6 @@ nav.navbar-primary .main-header ul.navbar-nav ul.dropdown-menu{
     left: -20px;
     padding-left: 15px;
 }
-@media (max-width:1200px){
-    nav.navbar-primary .main-header ul.navbar-nav li{
-        margin-right: 35px;
-    }
-}
-@media (max-width: 991px){
-    #container{width:100%;}
-    #left{float:left;width:199px;}
-    #right{float:right;width:225px;}
-    #center{
-        width:300px;
-        margin: 0 auto;
-    }
-
-    .navbar-primary .main-header{
-        height: 96px!important;
-    }
-}
-
-@media (min-width: 768px){
-.navbar-nav{
-    float: unset!important;
-}
-
-}
-/*.header-right> img,*/
-/*.header-right > p {*/
-/*    display: inline-block;*/
-/*}*/
 .header-right{
     display: flex;
     align-items: center;
@@ -201,7 +172,7 @@ nav.navbar-primary .main-header ul.navbar-nav ul.dropdown-menu{
     font-family: Montserrat;
     font-size: 14px;
     font-weight: 700;
-     text-transform: uppercase;
+    text-transform: uppercase;
     /* Text style for "24/7 Suppo" */
     letter-spacing: 1.4px;
     margin: 0;
@@ -213,7 +184,6 @@ nav.navbar-primary .main-header ul.navbar-nav ul.dropdown-menu{
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: -0.6px;
-
 }
 .minicart-wrapper .minicart, .minicart-wrapper .minicart_notice .notice{
     padding: 0;
@@ -221,6 +191,127 @@ nav.navbar-primary .main-header ul.navbar-nav ul.dropdown-menu{
 .minicart-wrapper .minicart .mb-icon-shopping_cart, .minicart-wrapper .minicart_notice .notice .mb-icon-shopping_cart{
     font-size: 17px;
 }
+@media (max-width:1200px){
+    nav.navbar-primary .main-header ul.navbar-nav li{
+        margin-right: 50px;
+    }
+}
+@media (max-width: 991px){
+    #container{width:100%;}
+    #left{float:left;width:199px;}
+    #right{float:right;width:225px;}
+    #center{
+        width:300px;
+        margin: 0 auto;
+    }
+    .navbar-primary .main-header{
+        height: 96px!important;
+    }
+    nav.navbar-primary .main-header ul.navbar-nav li{
+        margin-right: 30px;
+    }
+    nav.navbar-primary .main-header ul.navbar-nav li a{
+        font-size: 10px;
+        font-weight: 400;
+    }
+    .cart-0{
+        font-size: 10px;
+        font-weight: 400;
+    }
+    .minicart-wrapper{
+        padding: 16px 14px 18.5px 11px;
+    }
+
+}
+
+@media (max-width: 768px){
+
+    .container-fluid>.navbar-collapse, .container-fluid>.navbar-header, .container>.navbar-collapse, .container>.navbar-header{
+        margin: 0!important;
+    }
+    .container-fluid>.navbar-collapse, .container-fluid>.navbar-header, .container>.navbar-collapse, .container>.navbar-header{
+        margin: 0!important;
+    }
+
+}
+@media(min-width: 768px){
+    .navbar-nav{
+        float: unset!important;
+    }
+}
+
+
+@media (max-width: 767px){
+    .navbar-header{
+        padding-top: 24px;
+    }
+    .navbar-header #center{
+        width: 50px;
+        display: none;
+    }
+    #right{
+        margin: 0 auto;
+        width:225px;
+    }
+    .header-next{
+        background: rgba(255,255,255,.15);
+    }
+    #myLinks{
+        background: #1b3d56;
+        margin: 0 -15px;
+    }
+    nav.navbar-primary .main-header ul.navbar-nav{
+        padding-left: 30px;
+    }
+    nav.navbar-primary .main-header ul.navbar-nav > li > a::after{
+        display: none;
+    }
+    nav.navbar-primary .main-header a.navbar-brand svg{
+        width: 143px;
+    }
+    #left{
+        width: 150px;
+    }
+    .call-img img{
+        width: 28px;
+    }
+    .call-number .right-text1{
+        font-size: 11px;
+    }
+    .call-number .right-text2 a{
+        font-size: 15px;
+    }
+    .main-header .header-next{
+        height: 0;
+    }
+
+
+}
+
+@media (max-width: 375px){
+    nav.navbar-primary .main-header a.navbar-brand svg{
+        width: 130px;
+    }
+    #left{
+        width: 160px;
+    }
+    .call-img img{
+        width: 20px;
+    }
+    .call-number .right-text1{
+        font-size: 10px;
+    }
+    .call-number .right-text2 a{
+        font-size: 12px;
+    }
+}
+
+/*header next guarantee*/
+
+@media (max-width: 991px){
+
+}
+
 
 /*slider*/
 #home-slider{
@@ -229,7 +320,11 @@ nav.navbar-primary .main-header ul.navbar-nav ul.dropdown-menu{
 .slider2{
     letter-spacing: 2.25px;
 }
-
+@media (max-width: 767px){
+    #home-slider{
+        margin-top: 0;
+    }
+}
 /*header-bottom-icon*/
 .header-bottom{
     display: flex;
