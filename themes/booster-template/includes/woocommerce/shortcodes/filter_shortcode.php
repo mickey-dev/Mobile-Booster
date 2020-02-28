@@ -100,9 +100,26 @@ function filter_shortcode($atts,$content=null)
         //$html .= '<div class="step-title"><div class="step-number">2</div><div class="step-description">Select your voice/data carriers</div></div>';
         $html .= '<div class="step-title"><div class="step-number">Step 2</div><div class="step-description">Select Your Providers</div></div>';
 
-        $html .= '<div class="step-body">';
+        $html .= '<div class="step-body hertz-wrapper">';
 
+        $count = 0;
         foreach ($providers as $provider) {
+            if ($count === 0){
+                $html .= '<div class="hertz-item hertz-900">
+                            <div class="choice-wrapper">';
+            } elseif ($count === 2){
+                $html .= '</div>
+                          <div class="hertz-txt"><h3>900<br><span>Mhz</span></h3></div>                    
+                        </div>
+                        <div class="hertz-item hertz-1800">
+                            <div class="choice-wrapper">';
+            } elseif ($count === 6){
+                $html .= '</div>
+                          <div class="hertz-txt"><h3>1800<br><span>Mhz</span></h3></div>                    
+                        </div>
+                        <div class="hertz-item hertz-2100">
+                            <div class="choice-wrapper">';
+            }
             $html .= '<div class="choice provider" title="'.get_term_meta($provider->term_id, 'additional_info',true).'">';
             $html .= '<label for"filter-provider-'.$provider->slug.'">';
             $html .= '<input name="data[provider][]" id="filter-provider-'.$provider->slug.'" type="checkbox" value="'.$provider->term_id.'">';
@@ -117,19 +134,27 @@ function filter_shortcode($atts,$content=null)
             $html .= '</span>';
             $html .= '</label>';
             $html .= '</div>';
+            if ($count === 7) {
+                $html .= '</div>';
+                $html .= '<div class="hertz-txt"><h3>2100<br><span>Mhz</span></h3></div>                    
+                        </div>';
+            }
+            $count++;
         }
         $html .= '</div>';
         $html .= '</div>';
     }
     $html .= '</div>
   <div class="step-buts">
-    <div style="">
+    <div class="step1-buttons">
+        <div class="col-md-4"></div>
+        <div class="col-md-8">
+            <button type="button" id="nextBtn" onclick="nextPrev(1)">NEXT STEP</button>
+        </div>  
+    </div>
+    <div style="step2-buttons">
       <button type="button" id="prevBtn" onclick="nextPrev(-1)">PREVIOUS</button>
-      
       <button type="submit" id="frm_submit_Btn" class="">REVEAL YOUR BOOSTER</button>
-      <div class="nextBtnClass col-md-8">
-      <button type="button" id="nextBtn" onclick="nextPrev(1)">NEXT STEP</button>
-      </div>
     </div>
   </div>
   <!-- Circles which indicates the steps of the form: -->

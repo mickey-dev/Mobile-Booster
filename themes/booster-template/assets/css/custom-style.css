@@ -1124,19 +1124,15 @@ nav.navbar-primary.sticky-top .main-header {
 
 #filter .filter-step .step-body .provider .choice-details {
     transition: all .5s ease;
-    -moz-transition: all .5s ease;
-    -webkit-transition: all .5s ease;
-    -ms-transition: all .5s ease;
-    -o-transition: all .5s ease;
-    margin: 10px;
+    margin: 6px;
     padding: 0
 }
 
 #filter .filter-step .step-body .provider .choice-details .choice-icon {
     margin-bottom: 0;
     border-radius: 0;
-    height: 60px;
-    width: 60px
+    height: 65px;
+    width: 65px
 }
 
 #filter .filter-step .step-body .provider .choice-details .choice-icon:hover {
@@ -1200,7 +1196,7 @@ nav.navbar-primary.sticky-top .main-header {
     text-transform: uppercase;
     background-color: transparent;
     border-radius: 0;
-    font-size: 27px;
+    font-size: 21px;
     font-weight: 700;
     padding: 10px;
     color: #fb0;
@@ -3324,11 +3320,12 @@ nav.navbar-primary .main-header ul.navbar-nav ul.dropdown-menu {
 }
 
 #filter.filter-custom2 .filter-step.coverages .step-title {
-    padding: 10px;
+    padding-right: 10px;
     border-radius: 20px;
     display: block;
     text-align: left;
-    margin-top: 31px;
+    margin-top: 35px;
+    margin-bottom: 13px;
 }
 
 #filter.filter-custom2 .filter-step.coverages .step-title .step-number {
@@ -3440,7 +3437,7 @@ nav.navbar-primary .main-header ul.navbar-nav ul.dropdown-menu {
 }
 
 #filter.filter-custom2 .filter-step.coverages .coverage#range1 .choice-details .choice-name {
-    padding-top: 32px
+    padding-top: 30px
 }
 
 @media screen and (max-width: 767px) {
@@ -3588,7 +3585,7 @@ nav.navbar-primary .main-header ul.navbar-nav ul.dropdown-menu {
     line-height: 1;
     color: #083d54;
     bottom: -60px;
-    right: -15px
+    right: 0;
 }
 
 #filter.filter-custom2 .filter-step.coverages .trigger ul li .text:hover {
@@ -3621,17 +3618,12 @@ nav.navbar-primary .main-header ul.navbar-nav ul.dropdown-menu {
 }
 
 #filter.filter-custom2 .filter-step.providers .step-title {
-    width: 360px;
-    padding: 10px;
+    padding-left: 10px;
     margin: 0 auto;
     border-radius: 20px;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-flex-direction: column;
     flex-direction: column;
-    margin-top: 32px;
+    margin-top: 40px;
 }
 
 #filter.filter-custom2 .filter-step.providers .step-title .step-number {
@@ -4995,12 +4987,12 @@ p.desc {
 }
 
 .section.filter-custom.filter-custom2 form {
-    border: 1px solid #083d54;
+    border: 1px solid #a4b1bb;
     margin-top: 36px;
 }
 
 .section.filter-custom.filter-custom2 form .back-img {
-    min-height: 450px;
+    min-height: 461px;
     background: url("../img/step1.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -5153,13 +5145,13 @@ form .screen-reader-text {
 }
 
 .section.filter-custom.filter-custom2 form .step-buts {
-    margin-top: -65px;
-    margin-bottom: 27px;
+    position: absolute;
+    width: 100%;
+    bottom: 41px;
 }
 
 #filter.filter-custom2 .filter-step.providers .step-body {
-    margin-bottom: 100px;
-    padding-bottom: 45px;
+    margin-top: 40px;
     display: flex;
     align-items: center;
     justify-content: center;

@@ -417,13 +417,72 @@ div#n2-ss-2 .n2-style-2a0a200d6a6e1fade27fb9c90af83812-dot.n2-active, div#n2-ss-
 .section.filter-custom.filter-custom2 form{
     margin-top: 45px;
     margin-bottom: 91px;
+    min-height: 464px;
+    position: relative;
 }
 #filter .filter{
     background: white;
 }
-.nextBtnClass{
+#filter.filter-custom2 .filter-step.providers .hertz-wrapper{
     display: flex;
-    padding-left: 50px!important;
+    justify-content: center;
+}
+#filter.filter-custom2 .filter-step.providers .hertz-wrapper .hertz-item{
+
+}
+#filter.filter-custom2 .filter-step.providers .hertz-wrapper .choice-wrapper{
+    display: flex;
+    justify-content: center;
+}
+#filter.filter-custom2 .filter-step.providers .hertz-wrapper .hertz-txt{
+    padding-top: 28px;
+    position: relative;
+}
+#filter.filter-custom2 .filter-step.providers .hertz-wrapper .hertz-txt:before{
+    content: " ";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 10px;
+    border-left: 3px solid #a4b1bb;
+    border-right: 3px solid #a4b1bb;
+    border-bottom: 3px solid #a4b1bb;
+    top: 0;
+}
+#filter.filter-custom2 .filter-step.providers .hertz-wrapper .hertz-900{
+    width: 174px;
+    margin-right: 60px;
+}
+#filter.filter-custom2 .filter-step.providers .hertz-wrapper .hertz-900:before{
+
+}
+#filter.filter-custom2 .filter-step.providers .hertz-wrapper .hertz-1800{
+    width: 328px;
+    margin-right: 60px;
+}
+#filter.filter-custom2 .filter-step.providers .hertz-wrapper .hertz-2100{
+    width: 174px;
+}
+#filter.filter-custom2 .filter-step.providers .hertz-wrapper h3{
+    margin: 0;
+    font-size: 24px;
+    color: #1b3d56;
+    line-height: 21px;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    font-weight: 600;
+}
+#filter.filter-custom2 .filter-step.providers .hertz-wrapper h3 span{
+    font-size: 14px;
+    letter-spacing: 0.35px;
+}
+.step1-buttons{
+}
+.step1-buttons .col-md-8{
+    text-align: left;
+    padding-left: 60px;
+}
+.step2-buttons{
 }
 
 /*product*/
@@ -458,7 +517,7 @@ div#n2-ss-2 .n2-style-2a0a200d6a6e1fade27fb9c90af83812-dot.n2-active, div#n2-ss-
     font-size: 26px;
     font-weight: 700;
     line-height: 42px;
-    margin-bottom: 26px;
+    margin-bottom: 18px;
 }
 #filter.filter-custom2 .filter-step.coverages .trigger ul li .text{
     font-size: 24px;
@@ -522,10 +581,6 @@ div#n2-ss-2 .n2-style-2a0a200d6a6e1fade27fb9c90af83812-dot.n2-active, div#n2-ss-
     font-size: 15px;
     font-weight: 600;
 
-}
-.section.filter-custom.filter-custom2 form .step-buts{
-    margin-top: -75px;
-    margin-bottom: 42px;
 }
 
 /*featured products*/
@@ -836,9 +891,7 @@ div#n2-ss-2 .n2-style-2a0a200d6a6e1fade27fb9c90af83812-dot.n2-active, div#n2-ss-
     font-weight: 700;
     line-height: 0.9;
 }
-.section.filter-custom.filter-custom2 form .step-buts{
-    margin-bottom: 75px;
-}
+
 .single-product .product .main-content .right .tax-info{
     margin: 0;
 }
