@@ -24,66 +24,97 @@ if ( empty( $product ) || ! $product->is_visible() ) {
 	return;
 }
 ?>
-<li <?php wc_product_class( 'list booster', $product ); ?>>
-    <div class="container-fluid">
-	<?php
-	/**
-	 * Hook: woocommerce_before_shop_loop_item.
-	 *
-	 * @hooked woocommerce_show_product_loop_sale_flash - 10
-	 */
-    do_action( 'woocommerce_before_shop_loop_item' );
-	?>
-        <div class="col-xs-12 col-sm-12 no-padding-left product-name">
-    <?php
-    /**
-     * Hook: woocommerce_shop_loop_item_title.
-     *
-     * @hooked woocommerce_template_loop_product_link_open - 5
-     * @hooked woocommerce_template_loop_product_title - 10
-     * @hooked woocommerce_template_loop_product_link_close - 15
-     */
-    do_action( 'woocommerce_shop_loop_item_title' );
-    ?>
-        </div>
-        <div class="double-wrapper"> <div class="coverages-frequencies"> 300 Sqm / 1800 MHz </div></div>
-        <div class="double-wrapper" style="display: none !important;"> <div class="col-xs-12 col-sm-6 coverages"> <i class="mb-icon-building-1" title="300sqm – Ideal for small office, studios, and small homes - Max 6 users"></i><div class="name">300 Sqm</div> </div> <div class="col-xs-12 col-sm-6 frequencies"> 1800 MHz </div></div>
-        <div class="col-xs-12 col-sm-6 providers"> <i class="icon-G" title="4G Mobile Signal Boosters"></i></div>
-        <div class="col-xs-12 col-sm-12 no-padding-left image">
+<?php if(is_product_category('accessories')): ?>
+<?php
+    $class = [
+        'list',
+        'accessory',
+        'text-center',
+        'col-xs-12',
+        'col-sm-6',
+        'col-md-4'
+    ];
+?>
+    <li <?php post_class($class); ?>>
+
+        <div class="container-fluid">
             <?php
-            /**
-             * Hook: woocommerce_before_shop_loop_item_title.
-             *
-             * @hooked woocommerce_template_loop_product_link_open - 5
-             * @hooked woocommerce_template_loop_product_thumbnail - 10
-             * @hooked woocommerce_template_loop_product_link_close - 15
-             */
-            do_action( 'woocommerce_before_shop_loop_item_title' );
+            woocommerce_show_product_loop_sale_flash();
             ?>
-        </div>
-        <div class="product-price">
-            <?php
-            /**
-             * Hook: woocommerce_after_shop_loop_item_title.
-             *
-             * @hooked woocommerce_template_loop_rating - 5
-             * @hooked woocommerce_template_loop_price - 10
-             */
-            do_action( 'woocommerce_after_shop_loop_item_title' );
-            ?>
-        </div>
-        <div class="col-xs-12 col-sm-12 no-padding-right product-action">
-            <div class="col-xs-12 nopadding">
+            <div class="col-xs-12 product-name">
                 <?php
-                /**
-                 * Hook: woocommerce_after_shop_loop_item.
-                 *
-                 * @hooked woocommerce_template_loop_product_link_close - 5
-                 * @hooked woocommerce_template_loop_add_to_cart - 10
-                 */
-                do_action( 'woocommerce_after_shop_loop_item' );
+                woocommerce_template_loop_product_link_open();
+                woocommerce_template_loop_product_title();
+                woocommerce_template_loop_product_link_close();
                 ?>
             </div>
+            <div class="col-xs-12 product-thumbnail">
+                <?php
+                woocommerce_template_loop_product_link_open();
+                woocommerce_template_loop_product_thumbnail();
+                woocommerce_template_loop_product_link_close();
+                ?>
+            </div>
+            <div class="col-xs-12 product-price">
+                <div class="col-xs-12">
+                    <?php
+                    woocommerce_template_loop_price();
+                    ?>
+                </div>
+                <div class="col-xs-12">
+                    <?php
+                    woocommerce_template_loop_add_to_cart()
+                    ?>
+                </div>
+            </div>
         </div>
-    </div>
-</li>
+
+
+    </li>
+
+<?php else: ?>
+    <?php
+    $class = [
+        'list',
+        'booster'
+    ];
+
+    ?>
+    <li <?php post_class($class); ?>>
+
+        <div class="container-fluid">
+            <?php
+            woocommerce_show_product_loop_sale_flash();
+            ?>
+            <div class="col-xs-12 col-sm-12 no-padding-left product-name">
+                <?php
+                woocommerce_template_loop_product_link_open();
+                woocommerce_template_loop_product_title();
+                woocommerce_template_loop_product_link_close();
+                ?>
+            </div>
+
+            <?php woocommerce_get_product_list_details(); ?>
+
+            <div class="col-xs-12 col-sm-12 no-padding-left image">
+                <?php
+                woocommerce_template_loop_product_link_open();
+                woocommerce_template_loop_product_thumbnail();
+                woocommerce_template_loop_product_link_close();
+                ?>
+            </div>
+
+            <div class="product-price">
+                <?php woocommerce_template_loop_price(); ?>
+            </div>
+
+            <div class="col-xs-12 col-sm-12 no-padding-right product-action">
+                <div class="col-xs-12 nopadding">
+                    <?php woocommerce_template_loop_add_to_cart() ?>
+                </div>
+            </div>
+        </div>
+
+    </li>
+<?php endif; ?>
+

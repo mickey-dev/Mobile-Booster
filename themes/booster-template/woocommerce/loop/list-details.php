@@ -16,13 +16,18 @@ $frequencies = get_the_terms($product->id,'frequency');
   <div class="coverages-frequencies">
     <?php
 
-    foreach ( $coverages as $coverage ) {
-      echo $coverage->name .' / ';
+    if ($coverages) {
+        foreach ( $coverages as $coverage ) {
+            echo $coverage->name .' / ';
+        }
+    }
+    if ($frequencies) {
+
+        foreach ($frequencies as $frequency){
+            echo $frequency->name;
+        }
     }
 
-    foreach ($frequencies as $frequency){
-        echo $frequency->name;
-    }
 
     ?>
   </div>
@@ -35,15 +40,18 @@ $frequencies = get_the_terms($product->id,'frequency');
      * loop coverages
      */
 
-    foreach ($coverages as $coverage){
-        $icon_class = get_term_meta($coverage->term_id, 'icon',true);
-        if ($icon_class){
-            echo '<i class="'.$icon_class.'" title="'. get_term_meta($coverage->term_id, 'additional_info',true) .'"></i>';
+    if ($coverages) {
+        foreach ($coverages as $coverage){
+            $icon_class = get_term_meta($coverage->term_id, 'icon',true);
+            if ($icon_class){
+                echo '<i class="'.$icon_class.'" title="'. get_term_meta($coverage->term_id, 'additional_info',true) .'"></i>';
+            }
+            echo '<div class="name">';
+            echo $coverage->name;
+            echo '</div>';
         }
-        echo '<div class="name">';
-        echo $coverage->name;
-        echo '</div>';
     }
+
     ?>
   </div>
 
@@ -52,9 +60,12 @@ $frequencies = get_the_terms($product->id,'frequency');
     /*
      * loop frequencies
      */
-    foreach ($frequencies as $frequency){
-        echo $frequency->name;
+    if ($frequencies) {
+        foreach ($frequencies as $frequency){
+            echo $frequency->name;
+        }
     }
+
     ?>
   </div>
 </div>
@@ -65,11 +76,14 @@ $frequencies = get_the_terms($product->id,'frequency');
      * loop providers
      */
 
-    foreach ($providers as $provider){
-        $icon_class = get_term_meta($provider->term_id, 'icon',true);
-        if ($icon_class){
-            echo '<i class="'.$icon_class.'" title="'. $provider->name .'"></i>';
+    if ($providers) {
+        foreach ($providers as $provider){
+            $icon_class = get_term_meta($provider->term_id, 'icon',true);
+            if ($icon_class){
+                echo '<i class="'.$icon_class.'" title="'. $provider->name .'"></i>';
+            }
         }
     }
+
     ?>
 </div>

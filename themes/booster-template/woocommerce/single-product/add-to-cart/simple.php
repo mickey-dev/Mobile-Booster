@@ -80,15 +80,18 @@ if ( ! $product->is_purchasable() ) {
                 <div class="tax-items">
                     <?php
 
-                    foreach ($providers as $provider){
-                        $icon_class = get_term_meta($provider->term_id, 'icon',true);
-                        if ($icon_class){
-                            echo '<i class="'.$icon_class.'" title="'. $provider->name .'"></i>';
+                    if ($providers) {
+                        foreach ($providers as $provider){
+                            $icon_class = get_term_meta($provider->term_id, 'icon',true);
+                            if ($icon_class){
+                                echo '<i class="'.$icon_class.'" title="'. $provider->name .'"></i>';
+                            }
                         }
                     }
+
                     ?>
                 </div>
-        </div>
+            </div>
         </div>
 
 	 	<button type="submit" class="single_add_to_cart_button button primary-button alt"><?php echo esc_html( $product->single_add_to_cart_text() ); ?>&nbsp;| &nbsp; <?php echo $product->get_price_html(); ?></button>
