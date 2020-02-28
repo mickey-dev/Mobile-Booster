@@ -4,7 +4,7 @@ get_header();
 
 ?>
 
-<section id="home-slider">
+<section id="">
   <div class="container-fluid">
     <div class="row">
        <?php
