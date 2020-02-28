@@ -794,7 +794,7 @@ nav.navbar-primary.sticky-top .main-header {
 }
 #how-it-works .row .htw-desc p{
     text-align: center;
-    line-height: 28px;
+    line-height: 24px;
     color: #333333;
     font-size: 14px;
     margin: 0;
@@ -858,6 +858,7 @@ nav.navbar-primary.sticky-top .main-header {
 #how-it-works .row .how .text {
     flex: 1;
     padding-right: 12px;
+    margin-top: 3px;
 }
 
 @media screen and (max-width: 768px) {
@@ -867,7 +868,7 @@ nav.navbar-primary.sticky-top .main-header {
 
 #how-it-works .row .how .text h3{
     margin-top: 0;
-    margin-bottom: 28px;
+    margin-bottom: 7px;
     font-size: 19px;
     font-weight: 700;
     text-transform: uppercase;
@@ -4172,7 +4173,7 @@ nav.navbar-primary .main-header ul.navbar-nav ul.dropdown-menu {
 .single-product .product .after-content .package-includes h3, .single-product .product .after-content .why-chose-us h3 {
     border-top: 1px solid #ddd;
     border-bottom: none;
-    margin-bottom: 10px;
+    margin-bottom: 0;
     padding-top: 50px;
     color: #0b4f6c
 }
@@ -4186,7 +4187,12 @@ nav.navbar-primary .main-header ul.navbar-nav ul.dropdown-menu {
 }
 
 .single-product .product .after-content .package-includes ul li:before, .single-product .product .after-content .why-chose-us ul li:before {
-    content: url(../img/checked2.png)
+    content: " ";
+    height: 19px;
+    width: 19px;
+    display: block;
+    background-size: contain;
+    background-image: url(../img/checked2.png);
 }
 
 .single-product .product .after-content .additional-info .wc-tabs-wrapper .wc-tab h2, .single-product .product .after-content .additional-info .wc-tabs-wrapper .wc-tab h3, .single-product .product .after-content .additional-info .wc-tabs-wrapper .wc-tab h4 {
@@ -4602,7 +4608,7 @@ footer.site-footer ul {
 
 footer.site-footer ul li {
     list-style-type: none;
-    margin-bottom: 20px
+    margin-bottom: 12px
 }
 
 footer.site-footer ul li a {
@@ -4664,8 +4670,7 @@ footer.site-footer .second ul li a, footer.site-footer .third ul li a {
 
 footer.site-footer .second ul li a:hover, footer.site-footer .third ul li a:hover {
     transition: all .5s ease;
-    margin-left: 10px;
-    color: #fb0
+    color: #f4b12e
 }
 
 footer.site-footer .fourth {
