@@ -990,7 +990,7 @@ footer.site-footer{
 }
 #colophon .footer-title{
     margin-top: 41px;
-    margin-bottom: 30px;
+    margin-bottom: 16px;
     color: #ffffff;
     font-family: "Open Sans";
     font-size: 14px;
@@ -1005,14 +1005,6 @@ footer.site-footer ul li a{
     font-size: 12px;
     font-weight: 400!important;
     line-height: 14px;
-    /* Text style for "About Us ," */
-    letter-spacing: 0.3px;
-}
-footer.site-footer ul li{
-    color: #ffffff;
-    font-size: 12px;
-    font-weight: 400!important;
-    line-height: 24px;
     /* Text style for "About Us ," */
     letter-spacing: 0.3px;
 }

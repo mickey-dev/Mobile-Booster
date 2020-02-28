@@ -4603,7 +4603,7 @@ footer.site-footer ul {
 
 footer.site-footer ul li {
     list-style-type: none;
-    margin-bottom: 20px
+    margin-bottom: 12px
 }
 
 footer.site-footer ul li a {
@@ -4665,8 +4665,7 @@ footer.site-footer .second ul li a, footer.site-footer .third ul li a {
 
 footer.site-footer .second ul li a:hover, footer.site-footer .third ul li a:hover {
     transition: all .5s ease;
-    margin-left: 10px;
-    color: #fb0
+    color: #f4b12e
 }
 
 footer.site-footer .fourth {
