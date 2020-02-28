@@ -64,7 +64,7 @@ function wc_archive_description(){
     // echo '</div>';
 }
 
-add_action('woocommerce_after_shop_loop','wc_archive_bottom_content');
+//add_action('woocommerce_before_shop_loop','wc_archive_bottom_content');
 
 function wc_archive_bottom_content(){
     echo '<div class="custom-sidebar hidden-xs">';

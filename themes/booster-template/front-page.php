@@ -51,7 +51,7 @@ get_header();
 
 <section id="home_featured">
   <div class="container">
-    <div class="row">
+    <div class="">
       <div class="col-xs-12 col-sm-12 home_featured title">
         <h2 class="text-center">Our Best Sellers</h2>
           <div class="featured-items owl-carousel">

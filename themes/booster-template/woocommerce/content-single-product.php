@@ -120,7 +120,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 </div><!-- #product-<?php the_ID(); ?> -->
 <section id="home_featured">
     <div class="container">
-        <div class="row">
+        <div class="">
             <div class="col-xs-12 col-sm-12 home_featured title">
                 <h2 class="text-center">Similar Products</h2>
                 <div class="featured-items owl-carousel">

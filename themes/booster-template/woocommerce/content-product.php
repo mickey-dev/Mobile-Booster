@@ -25,53 +25,6 @@ if ( empty( $product ) || ! $product->is_visible() ) {
 }
 ?>
 <?php if(is_product_category('accessories')): ?>
-<?php
-    $class = [
-        'list',
-        'accessory',
-        'text-center',
-        'col-xs-12',
-        'col-sm-6',
-        'col-md-4'
-    ];
-?>
-    <li <?php post_class($class); ?>>
-
-        <div class="container-fluid">
-            <?php
-            woocommerce_show_product_loop_sale_flash();
-            ?>
-            <div class="col-xs-12 product-name">
-                <?php
-                woocommerce_template_loop_product_link_open();
-                woocommerce_template_loop_product_title();
-                woocommerce_template_loop_product_link_close();
-                ?>
-            </div>
-            <div class="col-xs-12 product-thumbnail">
-                <?php
-                woocommerce_template_loop_product_link_open();
-                woocommerce_template_loop_product_thumbnail();
-                woocommerce_template_loop_product_link_close();
-                ?>
-            </div>
-            <div class="col-xs-12 product-price">
-                <div class="col-xs-12">
-                    <?php
-                    woocommerce_template_loop_price();
-                    ?>
-                </div>
-                <div class="col-xs-12">
-                    <?php
-                    woocommerce_template_loop_add_to_cart()
-                    ?>
-                </div>
-            </div>
-        </div>
-
-
-    </li>
-
 <?php else: ?>
     <?php
     $class = [
