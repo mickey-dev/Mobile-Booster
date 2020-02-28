@@ -57,7 +57,7 @@ $ins= theme_option( 'ins' );
 	<div class="container">
 		<div class="row">
 
-			<div class="col-xs-12 col-sm-6 col-md-3 second">
+			<div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 second">
 				<div class="footer-title">Useful Information</div>
 				<div class="links">
 					<ul>
@@ -71,9 +71,7 @@ $ins= theme_option( 'ins' );
 				</div>
 			</div>
 
-			<div class="col-sm-12 visible-sm spacing"></div>
-
-			<div class="col-xs-12 col-sm-6 col-md-2 third">
+			<div class="col-xs-12 col-sm-6 col-md-6 col-lg-2 third">
 				<div class="footer-title">Help & Support</div>
 				<div class="links">
 					<ul>
@@ -86,7 +84,9 @@ $ins= theme_option( 'ins' );
 				</div>
 			</div>
 
-            <div class="col-xs-12 col-sm-6 col-md-3 first">
+            <div class="col-sm-12 visible-sm spacing"></div>
+
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 first">
                 <div class="contact">
                     <div class="footer-title">
                     Contact Us</div>
@@ -124,7 +124,7 @@ $ins= theme_option( 'ins' );
                 </div>
             </div>
 
-			<div class="col-xs-12 col-sm-6 col-md-4 fourth">
+			<div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 fourth">
                 <img  class="message" src="<?php echo get_template_directory_uri() ?>/assets/img/message.jpg" alt="">
 				<div class="footer-title">Subscribe</div>
 

@@ -31,12 +31,35 @@ jQuery(document).ready(function ($) {
         items: 1,
         dots: true,
     });
-    $("#home_featured .featured-items").owlCarousel({
-        items: 4,
-        navText: ['<span class="mb-prev"></span>', '<span class="mb-next"></span>'],
-        nav: true,
-        dots: false,
-    });
+    // $("#home_featured .featured-items").owlCarousel({
+    //     items: 4,
+    //     navText: ['<span class="mb-prev"></span>', '<span class="mb-next"></span>'],
+    //     nav: true,
+    //     dots: false,
+    // });
+    $('#home_featured .featured-items').owlCarousel({
+        loop:true,
+        margin:10,
+        responsiveClass:true,
+        responsive:{
+            0:{
+                items:1,
+                nav: false,
+                dots: true,
+            },
+            600:{
+                items:2,
+                nav: false,
+                dots: true,
+            },
+            1000:{
+                items:4,
+                navText: ['<span class="mb-prev"></span>', '<span class="mb-next"></span>'],
+                nav: true,
+                dots: false,
+            }
+        }
+    })
     $('.single-product .product .main-content .left .images .thumbnails a').click(function (e) {
         e.preventDefault();
         var imageUrl = $(this).attr("data-img");
