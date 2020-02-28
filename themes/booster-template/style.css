@@ -836,7 +836,7 @@ div#n2-ss-2 .n2-style-2a0a200d6a6e1fade27fb9c90af83812-dot.n2-active, div#n2-ss-
     font-family: "Montserrat"!important;
     font-size: 14px!important;
     font-weight: 400;
-    line-height: 28px;
+    line-height: 24px;
     background: #f1f4f7;
 }
 .single-product .product .after-content .additional-info .wc-tabs-wrapper .wc-tab h5{
@@ -937,7 +937,9 @@ div#n2-ss-2 .n2-style-2a0a200d6a6e1fade27fb9c90af83812-dot.n2-active, div#n2-ss-
     color: #333333;
     font-size: 14px;
     font-weight: 400;
-    line-height: 40px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
 }
 .single-product .product .after-content{
     background: #f1f4f7;

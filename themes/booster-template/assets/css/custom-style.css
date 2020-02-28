@@ -4173,7 +4173,7 @@ nav.navbar-primary .main-header ul.navbar-nav ul.dropdown-menu {
 .single-product .product .after-content .package-includes h3, .single-product .product .after-content .why-chose-us h3 {
     border-top: 1px solid #ddd;
     border-bottom: none;
-    margin-bottom: 10px;
+    margin-bottom: 0;
     padding-top: 50px;
     color: #0b4f6c
 }
@@ -4187,7 +4187,12 @@ nav.navbar-primary .main-header ul.navbar-nav ul.dropdown-menu {
 }
 
 .single-product .product .after-content .package-includes ul li:before, .single-product .product .after-content .why-chose-us ul li:before {
-    content: url(../img/checked2.png)
+    content: " ";
+    height: 19px;
+    width: 19px;
+    display: block;
+    background-size: contain;
+    background-image: url(../img/checked2.png);
 }
 
 .single-product .product .after-content .additional-info .wc-tabs-wrapper .wc-tab h2, .single-product .product .after-content .additional-info .wc-tabs-wrapper .wc-tab h3, .single-product .product .after-content .additional-info .wc-tabs-wrapper .wc-tab h4 {
