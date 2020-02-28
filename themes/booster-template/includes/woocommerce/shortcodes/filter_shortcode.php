@@ -65,18 +65,8 @@ function filter_shortcode($atts,$content=null)
             $html .= '<label for"filter-coverage-'.$coverage->slug.'">';
             $html .= '<input name="data[coverage][]" id="filter-coverage-'.$coverage->slug.'" type="radio" value="'.$coverage->term_id.'">';
             $html .= '<span class="choice-details">';
-//            $icon_class = get_term_meta($coverage->term_id, 'icon',true);
-//            if($icon_class){
-//                $html .= '<span class="choice-icon">';
-//                $html .= '<i class="'.$icon_class.'"></i>';
-//                $html .= '<span class="checkbox"></span>';
-//                $html .= '</span>';
-//            }
-            // $html .= '<span class="choice-name"><span>Up to</span> <br/>';
             $html .= '<span class="choice-name">';
-//            $html .= '<i class="fa fa-wifi"></i>'. $coverage->name .'<br>';
             $html .= $coverage->description;
-
             $html .= '</span>';
             $html .= '</span>';
             $html .= '</label>';

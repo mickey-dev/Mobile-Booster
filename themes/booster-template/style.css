@@ -51,7 +51,6 @@ nav.navbar-primary .main-header a.navbar-brand svg{
 }
 .header-search input{
     color: #1e3c55;
-    font-family: Montserrat;
     font-size: 13px;
     font-weight: 600;
     padding: 13px 0 12px 21px;
@@ -87,7 +86,7 @@ nav.navbar-primary .main-header ul.navbar-nav li{
     margin-right: 74px;
 
 }
-nav.navbar-primary .main-header ul.navbar-nav li:last-child{
+nav.navbar-primary .main-header ul.navbar-nav > li:last-child{
     margin: 0;
     float: right;
 }
@@ -95,7 +94,6 @@ nav.navbar-primary .main-header ul.navbar-nav li:last-child{
 nav.navbar-primary .main-header ul.navbar-nav li a{
     color: #ffffff;
     font-size: 12px;
-    font-family: Montserrat;
     font-weight: 700;
     line-height: 50px;
     text-transform: uppercase;
@@ -105,7 +103,6 @@ nav.navbar-primary .main-header ul.navbar-nav li a{
 }
 .cart-0{
     color: #ffffff;
-    font-family: Montserrat;
     font-size: 12px;
     font-weight: 700;
     line-height: 50px;
@@ -169,7 +166,6 @@ nav.navbar-primary .main-header ul.navbar-nav ul.dropdown-menu{
 }
 .right-text1{
     color: #1b3d56;
-    font-family: Montserrat;
     font-size: 14px;
     font-weight: 700;
     text-transform: uppercase;
@@ -179,7 +175,6 @@ nav.navbar-primary .main-header ul.navbar-nav ul.dropdown-menu{
 }
 .right-text2 a{
     color: #1b3d56;
-    font-family: Montserrat;
     font-size: 20px;
     font-weight: 700;
     text-transform: uppercase;
@@ -349,7 +344,6 @@ nav.navbar-primary .main-header ul.navbar-nav ul.dropdown-menu{
 }
 .header-icons-span{
     color: #1b3d56;
-    font-family: Montserrat;
     font-size: 16px;
     font-weight: 700;
     line-height: 21px;
@@ -387,7 +381,6 @@ div#n2-ss-2 .n2-style-2a0a200d6a6e1fade27fb9c90af83812-dot.n2-active, div#n2-ss-
 }
 #filter h2.title{
     color: #1b3d56;
-    font-family: "Montserrat";
     font-size: 36px;
     font-weight: 700;
     line-height: 42px;
@@ -395,10 +388,9 @@ div#n2-ss-2 .n2-style-2a0a200d6a6e1fade27fb9c90af83812-dot.n2-active, div#n2-ss-
 }
 #filter-form{
     color: #333333;
-    font-family: "Montserrat";
     font-size: 14px;
     font-weight: 400;
-    line-height: 28px;
+    line-height: 24px;
 }
 #home-slider .guarantee{
     background:#f1f4f7;
@@ -496,7 +488,6 @@ div#n2-ss-2 .n2-style-2a0a200d6a6e1fade27fb9c90af83812-dot.n2-active, div#n2-ss-
 .home_featured h2{
     margin-bottom: 70px;
     color: #1b3d56;
-    font-family: "Montserrat";
     font-size: 36px;
     line-height: 42px;
     text-transform: unset;
@@ -507,7 +498,6 @@ div#n2-ss-2 .n2-style-2a0a200d6a6e1fade27fb9c90af83812-dot.n2-active, div#n2-ss-
 #filter.filter-custom2 .filter-step.coverages .trigger ul li .text span{
     font-size: 14px;
     padding-top: 10px;
-    font-family: "montserrat semibold";
 }
 #filter.filter-custom2 .filter-step.coverages .trigger{
     padding-top: unset;
@@ -522,12 +512,10 @@ div#n2-ss-2 .n2-style-2a0a200d6a6e1fade27fb9c90af83812-dot.n2-active, div#n2-ss-
 #filter.filter-custom2 .filter-step.coverages .trigger ul li .text{
     font-size: 24px;
     top: 45px;
-    font-family: "montserrat semibold";
 }
 #frm_submit_Btn, #nextBtn, #prevBtn{
     text-shadow: 0 1px 4px rgba(0, 0, 0, 0.12);
     color: #ffffff;
-    font-family: Montserrat;
     font-size: 14px;
     font-weight: 700;
     line-height: 42px;
@@ -542,7 +530,6 @@ div#n2-ss-2 .n2-style-2a0a200d6a6e1fade27fb9c90af83812-dot.n2-active, div#n2-ss-
 }
 #filter.filter-custom2 .filter-step.providers .step-title .step-description{
     color: #1b3d56;
-    font-family: "Montserrat";
     font-size: 26px;
     font-weight: 700;
     line-height: 42px;
@@ -573,14 +560,13 @@ div#n2-ss-2 .n2-style-2a0a200d6a6e1fade27fb9c90af83812-dot.n2-active, div#n2-ss-
     display: block;
     margin-right: 10px;
 }
-#filter .icon-line{
+#filter.filter-custom2 .filter-step.coverages .icon-line{
     display: flex;
     align-items: center;
     color: #1b3d56;
-    font-family: "Montserrat" !important;
     font-size: 15px;
     font-weight: 600;
-
+    margin-bottom: 6px;
 }
 
 /*featured products*/
@@ -609,7 +595,6 @@ div#n2-ss-2 .n2-style-2a0a200d6a6e1fade27fb9c90af83812-dot.n2-active, div#n2-ss-
 }
 .home_featured li h3{
     color: #1b3d56;
-    font-family: "Montserrat";
     font-size: 21px;
     font-weight: 700;
     line-height: 24px;
@@ -647,7 +632,6 @@ div#n2-ss-2 .n2-style-2a0a200d6a6e1fade27fb9c90af83812-dot.n2-active, div#n2-ss-
 }
 .featured-details .meta_prodtitle, .featured-details .meta-name{
     color: #1b3d56;
-    font-family: Montserrat;
     font-size: 15px;
 }
 .featured-details .meta_prodtitle{
@@ -662,13 +646,12 @@ div#n2-ss-2 .n2-style-2a0a200d6a6e1fade27fb9c90af83812-dot.n2-active, div#n2-ss-
     justify-content: center;
 }
 .home_featured .providers .providers_wrapper .provider{
-    margin-bottom: 7px;
+    margin-bottom: 8px;
 }
-.featured-details .meta-prov-title{
+.home_featured .featured-details .providers .meta-prov-title{
     color: #1b3d56;
-    font-family: Montserrat;
     font-size: 15px;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
 }
 .featured-details .meta-name span{
     margin-right: 11px;
@@ -679,7 +662,6 @@ div#n2-ss-2 .n2-style-2a0a200d6a6e1fade27fb9c90af83812-dot.n2-active, div#n2-ss-
     justify-content: center;
     flex-direction: column;
     position: absolute;
-    height: 156px;
     bottom: 0;
     width: 100%;
     border-top: 1px solid #9babb7;
@@ -692,9 +674,9 @@ div#n2-ss-2 .n2-style-2a0a200d6a6e1fade27fb9c90af83812-dot.n2-active, div#n2-ss-
     margin: 19px auto !important
 }
 .home_featured .featured-actions .button{
-    margin-top: 24px !important;
-    margin-bottom: 31px !important;
-    padding: 16px 42px !important;
+    margin-top: 15px !important;
+    margin-bottom: 25px !important;
+    padding: 16px 25px !important;
     font-size: 14px;
     color: #ffffff;
     align-self: center;
@@ -805,14 +787,12 @@ div#n2-ss-2 .n2-style-2a0a200d6a6e1fade27fb9c90af83812-dot.n2-active, div#n2-ss-
 }
 .single-product .product .main-content .right .product-title h1.product_title{
     color: #1b3d56;
-    font-family: "Montserrat";
     font-size: 28px!important;
     font-weight: 700;
     line-height: 42px;
 }
 .single-product .product .main-content .right .tax-info .frequencies{
     color: #f4b12e;
-    font-family: "Montserrat - Semi Bold";
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
@@ -821,7 +801,6 @@ div#n2-ss-2 .n2-style-2a0a200d6a6e1fade27fb9c90af83812-dot.n2-active, div#n2-ss-
 }
 .single-product .product .main-content .right .tax-info .coverages{
     color: #f4b12e;
-    font-family: "Montserrat - Semi Bold";
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
@@ -920,7 +899,6 @@ div#n2-ss-2 .n2-style-2a0a200d6a6e1fade27fb9c90af83812-dot.n2-active, div#n2-ss-
     margin: 20px 0 23px 0;
     color: #1b3d56;
     font-weight: 700;
-    font-family: "Montserrat";
     font-size: 36px;
     line-height: 42px;}
 .single-product .product .after-content .additional-info{
@@ -928,14 +906,12 @@ div#n2-ss-2 .n2-style-2a0a200d6a6e1fade27fb9c90af83812-dot.n2-active, div#n2-ss-
 }
 .single-product .product .after-content .package-includes h3{
     color: #1b3d56;
-    font-family: "Montserrat";
     font-size: 26px;
     font-weight: 500;
     line-height: 42px;
 }
 .single-product .product .after-content .package-includes ul li, .single-product .product .after-content .why-chose-us ul li{
     color: #333333;
-    font-family: "Montserrat";
     font-size: 14px;
     font-weight: 400;
     line-height: 40px;

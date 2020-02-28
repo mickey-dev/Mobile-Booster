@@ -140,8 +140,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
                                 <?php if (has_post_thumbnail( $loop->post->ID )) echo get_the_post_thumbnail($loop->post->ID, 'shop_catalog'); else echo '<img src="'.woocommerce_placeholder_img_src().'" alt="Placeholder" width="300px" height="300px" class="attachment-shop_catalog size-shop_catalog wp-post-image" />'; ?>
 
-                                <h3><?php the_title(); ?></h3><br />
-
+                                <h3><?php the_title(); ?></h3>
                             </a>
 
                             <?php
