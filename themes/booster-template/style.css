@@ -483,8 +483,8 @@ div#n2-ss-2 .n2-style-2a0a200d6a6e1fade27fb9c90af83812-dot.n2-active, div#n2-ss-
     margin: 0 40px!important;
 }
 #filter .filter .container{
-    max-width: 1024px!important;
-    padding: 0;
+    max-width: 1073px!important;
+    padding: 0 15px!important;
 }
 #filter h2.title::after{
     border: unset;
@@ -494,9 +494,11 @@ div#n2-ss-2 .n2-style-2a0a200d6a6e1fade27fb9c90af83812-dot.n2-active, div#n2-ss-
     margin-bottom: 91px;
     min-height: 464px;
     position: relative;
+
 }
 #filter .filter{
     background: white;
+
 }
 #filter.filter-custom2 .filter-step.providers .hertz-wrapper{
     display: flex;
@@ -564,6 +566,18 @@ div#n2-ss-2 .n2-style-2a0a200d6a6e1fade27fb9c90af83812-dot.n2-active, div#n2-ss-
         padding-bottom: 20px;
         background: #f1f4f7;
     }
+    #filter.filter-custom2 .filter-step.providers .hertz-wrapper{
+        flex-direction: column;
+    }
+    #filter.filter-custom2 .filter-step.providers .hertz-wrapper .hertz-900{
+        margin-right:0;
+    }
+    #filter.filter-custom2 .filter-step.providers .hertz-wrapper .hertz-1800{
+        margin-right: 0;
+    }
+    .section.filter-custom.filter-custom2 form{
+        padding-bottom: 134px;
+    }
 }
 @media (max-width: 768px){
     #filter .filter{
@@ -581,11 +595,26 @@ div#n2-ss-2 .n2-style-2a0a200d6a6e1fade27fb9c90af83812-dot.n2-active, div#n2-ss-
         /*width: 100%;*/
     }
     #filter.filter-custom2 .filter-step.coverages .trigger ul li .text {
-        font-size: 16px;
+        font-size: 16px!important;
+    }
+    #frm_submit_Btn, #nextBtn, #prevBtn{
+        line-height: 30px!important;
+    }
+    .step-body .hertz-item{
+        width: 100%;
+    }
+    .section.filter-custom.filter-custom2 form{
+        padding-bottom: 160px;
+    }
+    #prevBtn{
+        margin-bottom: 15px;
     }
 
 
-    }
+
+
+
+}
 
 /*product*/
 #home_featured{
@@ -1079,6 +1108,9 @@ div#n2-ss-2 .n2-style-2a0a200d6a6e1fade27fb9c90af83812-dot.n2-active, div#n2-ss-
     #how-it-works .row .htw-main{
         display: unset;
     }
+    #how-it-works{
+        padding: 0 15px;
+    }
 }
 
 /*footer*/
@@ -1168,7 +1200,9 @@ footer.site-footer .copyright{
     position: absolute;
     right: 15px;
 }
-
+#colophon .guarantee{
+    background: #10293b;
+}
 @media (max-width: 1200px){
     .footer-title-next{
         margin-top: 0!important;
