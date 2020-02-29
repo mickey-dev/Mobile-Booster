@@ -112,7 +112,7 @@ function how_it_works() { ?>
                     </p>
                 </div>
                 <div class="htw-main">
-                    <div class="col-xs-12 col-sm-12 col-md-6 col-xl-4 how-items">
+                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 how-items">
                         <div class="how satu">
                             <div class="numb siji"><span>1</span></div>
                             <div class="text siji">
@@ -135,7 +135,7 @@ function how_it_works() { ?>
                             </div>
                         </div>
                     </div>
-                    <div class="col-xs-12 col-sm-12 col-md-6 col-xl-8 gambar">
+                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-8 gambar">
                         <img src="<?php echo get_template_directory_uri() ?>/assets/img/how-it-works.svg" alt="How it works">
                     </div>
                 </div>
