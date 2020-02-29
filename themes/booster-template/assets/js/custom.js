@@ -65,6 +65,7 @@ jQuery(document).ready(function ($) {
         var imageUrl = $(this).attr("data-img");
         $('.single-product .product .main-content .left .images .main-image a').html(Base64.decode(imageUrl));
     });
+    objectFitImages();
 });
 var currentTab = 0;
 
