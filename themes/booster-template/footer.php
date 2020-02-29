@@ -28,7 +28,7 @@ $ins= theme_option( 'ins' );
             <div class="container">
                 <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-xs-6 header-bottom-icons">
                     <img class="combine1 sprite-guarantee" src="<?php echo get_template_directory_uri() ?>/assets/img/1.png" alt="Mobile Booster Guarantee">
-                    <div class="header-icons-span">
+                    <div class="header-icons-span ">
                         <span>Free Delivery</span> <br> <span>in the UK</span>
                     </div>
                 </div>
@@ -55,7 +55,7 @@ $ins= theme_option( 'ins' );
     </div>
 
 	<div class="container">
-		<div class="row">
+		<div class="row footer-blue">
 
 			<div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 second">
 				<div class="footer-title">Useful Information</div>
@@ -88,7 +88,7 @@ $ins= theme_option( 'ins' );
 
             <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 first">
                 <div class="contact">
-                    <div class="footer-title">
+                    <div class="footer-title footer-title-next">
                     Contact Us</div>
                    <ul>
                         <?php
@@ -126,7 +126,7 @@ $ins= theme_option( 'ins' );
 
 			<div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 fourth">
                 <img  class="message" src="<?php echo get_template_directory_uri() ?>/assets/img/message.jpg" alt="">
-				<div class="footer-title">Subscribe</div>
+				<div class="footer-title footer-title-next">Subscribe</div>
 
 				<div class="newsletter"><?php echo do_shortcode('[newsletter_form type="minimal" button=" "]'); ?></div>
 				<div class="social">
