@@ -461,11 +461,7 @@ nav.navbar-primary .main-header {
 }
 
 nav.navbar-primary .main-header > .container {
-    -webkit-align-items: center;
     align-items: center;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
     display: flex
 }
 
@@ -509,7 +505,7 @@ nav.navbar-primary .main-header a.navbar-brand svg {
 nav.navbar-primary .main-header ul.navbar-nav {
     margin: 0;
     padding-left: 9px;
-    padding-right: 7px;
+    padding-right: 5px;
 }
 
 nav.navbar-primary .main-header ul.navbar-nav li {
@@ -4763,8 +4759,6 @@ footer.site-footer .spacing {
 
     .navbar-primary .main-header > .container {
         padding: 0 20px;
-        width: 100%;
-        margin: 0
     }
 
     .navbar-primary .main-header .mobile-trigger {

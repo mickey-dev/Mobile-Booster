@@ -37,7 +37,6 @@ body{
         padding: 0;
     }
 }
-#container{width:100%;}
 #left{float:left;width:199px;}
 #right{float:right;width:225px;}
 #center{margin:0 auto;width:400px;}
@@ -45,7 +44,7 @@ nav.navbar-primary.sticky-top .main-header{
     height: 100px;
     top: 0;
 }
-nav.navbar-primary .main-header > .container{
+nav.navbar-primary .main-header .container{
     max-width: 1149px;
     padding: 0;
 }
@@ -207,23 +206,99 @@ nav.navbar-primary .main-header ul.navbar-nav ul.dropdown-menu{
         margin-right: 50px;
     }
 }
+@media (min-width: 768px) and (max-width: 991px){
+    .main-header .navbar-collapse.collapse{
+        display: none!important;
+    }
+    .main-header.active .navbar-collapse.collapse{
+        display: block !important;
+    }
+    .container-fluid>.navbar-collapse, .container-fluid>.navbar-header, .container>.navbar-collapse, .container>.navbar-header{
+        margin: 0!important;
+    }
+}
+
 @media (max-width: 991px){
-    #container{width:100%;}
-    #left{float:left;width:199px;}
-    #right{float:right;width:225px;}
-    #center{
-        width:300px;
-        margin: 0 auto;
+    .header-next{
+        background: rgba(255,255,255,.15);
     }
     .navbar-primary .main-header{
         height: 96px!important;
     }
+    nav.navbar-primary .main-header > .container{
+        padding: 0 20px;
+    }
+    nav.navbar-primary .main-header > .container .navbar-header{
+        padding: 19px 5px;
+    }
+    #right {
+        display: none;
+        margin: 0 auto;
+        width: 200px;
+    }
+    .call-number .right-text1{
+        font-size: 12px;
+    }
+    .call-number .right-text2 a{
+        font-size: 16px;
+    }
+    #center{
+        width:300px;
+        margin: 0 auto;
+    }
+    .navbar-header #center{
+        display: none;
+    }
+    .navbar-primary .main-header .mobile-trigger{
+        display: block !important;
+    }
+    .main-header .header-next{
+        height: 0;
+    }
+    .main-header .header-next .container{
+        width: 100%;
+    }
+    #myLinks{
+        background: #1b3d56;
+        margin: 0 -15px;
+    }
+    nav.navbar-primary .main-header ul.navbar-nav{
+        padding-left: 30px;
+    }
     nav.navbar-primary .main-header ul.navbar-nav li{
-        margin-right: 30px;
+        margin-right: 18px;
+        float: none;
+        clear: both;
+    }
+    nav.navbar-primary .main-header ul.navbar-nav > li:last-child{
+        display: none;
     }
     nav.navbar-primary .main-header ul.navbar-nav li a{
-        font-size: 10px;
-        font-weight: 400;
+        line-height: 42px;
+        padding: 0 10px;
+    }
+    nav.navbar-primary .main-header ul.navbar-nav > li > a::after{
+        display: none;
+    }
+    .navbar-nav .open .dropdown-menu {
+        position: static;
+        float: none;
+        width: auto;
+        margin-top: 0;
+        background-color: transparent;
+        border: 0;
+        box-shadow: none;
+    }
+    nav.navbar-primary .main-header ul.navbar-nav > li.menu-item-has-children ul.dropdown-menu {
+        border-bottom: 3px solid #fb0 !important;
+        transform: translateX(-50%);
+        background-color: #f7f7f7;
+        position: relative;
+        border-radius: 0;
+        box-shadow: none;
+        padding: 10px 0;
+        border: none;
+        left: 50%;
     }
     .cart-0{
         font-size: 10px;
@@ -243,11 +318,6 @@ nav.navbar-primary .main-header ul.navbar-nav ul.dropdown-menu{
     .container-fluid>.navbar-collapse, .container-fluid>.navbar-header, .container>.navbar-collapse, .container>.navbar-header{
         margin: 0!important;
     }
-    .navbar-header{
-        padding: 19px 5px;
-    }
-
-
 }
 @media(min-width: 768px){
     .header-next .navbar-nav{
@@ -261,50 +331,6 @@ nav.navbar-primary .main-header ul.navbar-nav ul.dropdown-menu{
 
 
 @media (max-width: 767px){
-    .navbar-header{
-        padding-top: 24px;
-    }
-    .navbar-header #center{
-        width: 50px;
-        display: none;
-    }
-    #right{
-        margin: 0 auto;
-        width:225px;
-    }
-    .header-next{
-        background: rgba(255,255,255,.15);
-    }
-    #myLinks{
-        background: #1b3d56;
-        margin: 0 -15px;
-    }
-    nav.navbar-primary .main-header ul.navbar-nav{
-        padding-left: 30px;
-    }
-    nav.navbar-primary .main-header ul.navbar-nav > li > a::after{
-        display: none;
-    }
-    nav.navbar-primary .main-header a.navbar-brand svg{
-        width: 143px;
-    }
-    #left{
-        width: 150px;
-    }
-    .call-img img{
-        width: 28px;
-    }
-    .call-number .right-text1{
-        font-size: 11px;
-    }
-    .call-number .right-text2 a{
-        font-size: 15px;
-    }
-    .main-header .header-next{
-        height: 0;
-    }
-
-
 
 }
 

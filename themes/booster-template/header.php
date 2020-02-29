@@ -144,19 +144,21 @@
               <span class="bar"></span>
           </div>
         </div>
-        <div  class="header-next">
-            <?php
-            wp_nav_menu( array(
-                    'menu'              => 'right-menu',
-                    'depth'             => 2,
-                    'container'         => 'div',
-                    'container_class'   => 'container collapse navbar-collapse no-padding',
-                    'container_id'      => 'myLinks',
-                    'menu_class'        => 'nav navbar-nav',
-                    'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
-                    'walker'            => new wp_bootstrap_navwalker())
-            );
-            ?>
+        <div class="header-next">
+            <div class="container">
+                <?php
+                wp_nav_menu( array(
+                        'menu'              => 'right-menu',
+                        'depth'             => 2,
+                        'container'         => 'div',
+                        'container_class'   => 'collapse navbar-collapse no-padding',
+                        'container_id'      => 'myLinks',
+                        'menu_class'        => 'nav navbar-nav',
+                        'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
+                        'walker'            => new wp_bootstrap_navwalker())
+                );
+                ?>
+            </div>
         </div>
     </div>
 </nav>
