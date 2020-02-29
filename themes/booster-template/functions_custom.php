@@ -141,8 +141,8 @@ function how_it_works() { ?>
                 </div>
                 <div class="col-xs-12 col-sm-12 go-shop center">
                     <a href="<?php echo home_url(); ?>/how-it-works" class="button btn-see">See How Our Boosters Work</a>
-                    <a href="<?php echo home_url(); ?>/shop" class="button button-filled angle-right btn-shop"
-                       style="display: none; max-width: 300px; margin: 0 auto;">SHOP OUR BOOSTER</a>
+<!--                    <a href="--><?php //echo home_url(); ?><!--/shop" class="button button-filled angle-right btn-shop"-->
+<!--                       style="display: none; max-width: 300px; margin: 0 auto;">SHOP OUR BOOSTER</a>-->
                 </div>
             </div>
         </div>
