@@ -582,6 +582,12 @@ div#n2-ss-2 .n2-style-2a0a200d6a6e1fade27fb9c90af83812-dot.n2-active, div#n2-ss-
     .step-body .hertz-item{
         width: 100%;
     }
+    .section.filter-custom.filter-custom2 form{
+        padding-bottom: 167px;
+    }
+    #prevBtn{
+        margin-bottom: 15px;
+    }
 
 
 
