@@ -473,7 +473,7 @@ div#n2-ss-2 .n2-style-2a0a200d6a6e1fade27fb9c90af83812-dot.n2-active, div#n2-ss-
     margin-bottom: 91px;
     min-height: 464px;
     position: relative;
-    padding-bottom: 134px;
+
 }
 #filter .filter{
     background: white;
@@ -553,6 +553,9 @@ div#n2-ss-2 .n2-style-2a0a200d6a6e1fade27fb9c90af83812-dot.n2-active, div#n2-ss-
     }
     #filter.filter-custom2 .filter-step.providers .hertz-wrapper .hertz-1800{
         margin-right: 0;
+    }
+    .section.filter-custom.filter-custom2 form{
+        padding-bottom: 134px;
     }
 }
 @media (max-width: 768px){
@@ -656,17 +659,18 @@ div#n2-ss-2 .n2-style-2a0a200d6a6e1fade27fb9c90af83812-dot.n2-active, div#n2-ss-
     height: 17px;
     display: block;
     margin-right: 10px;
+    background-size: 100% 100%;
 }
 #filter.filter-custom .filter-step .step-body .coverage .choice-details .choice-name span{
     font-weight: 700;
-
 }
 #filter .home-icon{
-    background: url(assets/img/home-icon.png);
+    background: url(assets/img/home-icon.png) no-repeat;
     width: 19px;
     height: 17px;
     display: block;
     margin-right: 10px;
+    background-size: 100% 100%;
 }
 #filter.filter-custom2 .filter-step.coverages .icon-line{
     display: flex;
