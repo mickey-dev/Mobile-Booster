@@ -3554,7 +3554,7 @@ nav.navbar-primary .main-header ul.navbar-nav ul.dropdown-menu {
     -ms-transition: all .3s ease;
     -o-transition: all .3s ease;
     background-color: #dedede;
-    margin-left: -20px;
+    margin-left: -10px;
     position: relative;
     height: 3px;
     width: 100%
@@ -4758,7 +4758,7 @@ footer.site-footer .spacing {
     }
 
     .navbar-primary .main-header > .container {
-        padding: 0 20px;
+        padding: 0 20px !important;
     }
 
     .navbar-primary .main-header .mobile-trigger {
