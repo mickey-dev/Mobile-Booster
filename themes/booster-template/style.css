@@ -274,8 +274,10 @@ nav.navbar-primary .main-header ul.navbar-nav ul.dropdown-menu{
         display: none;
     }
     nav.navbar-primary .main-header ul.navbar-nav li a{
-        line-height: 42px;
+        line-height: 14px;
         padding: 0 10px;
+        margin-top: 26px !important;
+        margin-bottom: 26px !important;
     }
     nav.navbar-primary .main-header ul.navbar-nav > li > a::after{
         display: none;
@@ -296,7 +298,8 @@ nav.navbar-primary .main-header ul.navbar-nav ul.dropdown-menu{
         position: relative;
         border-radius: 0;
         box-shadow: none;
-        padding: 10px 0;
+        padding: 0;
+        padding-left: 16px;
         border: none;
         left: 50%;
     }
@@ -307,7 +310,6 @@ nav.navbar-primary .main-header ul.navbar-nav ul.dropdown-menu{
     .minicart-wrapper{
         padding: 16px 14px 18.5px 11px;
     }
-
 }
 
 @media (max-width: 768px){
@@ -320,13 +322,12 @@ nav.navbar-primary .main-header ul.navbar-nav ul.dropdown-menu{
     }
 }
 @media(min-width: 768px){
-    .header-next .navbar-nav{
+    .header-next .navbar-nav {
         float: unset!important;
     }
     .section.filter-custom.filter-custom2 form{
         margin-bottom: 0;
     }
-
 }
 
 
@@ -369,7 +370,7 @@ nav.navbar-primary .main-header ul.navbar-nav ul.dropdown-menu{
 .slider2{
     letter-spacing: 2.25px;
 }
-@media (max-width: 767px){
+@media (max-width: 991px){
     #home-slider{
         margin-top: 0;
     }
