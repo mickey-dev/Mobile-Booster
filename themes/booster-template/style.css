@@ -362,9 +362,7 @@ nav.navbar-primary .main-header ul.navbar-nav ul.dropdown-menu{
 .header-bottom-icons{
     display: flex;
     align-items: center;
-    height: 118px;
-    margin-top: 32px;
-    margin-bottom: 32px;
+    height: 94px;
     padding: 0!important;
 
 }
@@ -539,6 +537,11 @@ div#n2-ss-2 .n2-style-2a0a200d6a6e1fade27fb9c90af83812-dot.n2-active, div#n2-ss-
     padding-left: 60px;
 }
 .step2-buttons{
+}
+@media (max-width: 1200px){
+    .section.filter-custom.filter-custom2 form{
+        margin-bottom: 50px;
+    }
 }
 @media (max-width: 992px){
     .guarantee{
