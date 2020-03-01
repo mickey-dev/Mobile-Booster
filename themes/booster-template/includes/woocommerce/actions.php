@@ -158,8 +158,10 @@ add_action( 'pre_get_posts', 'custom_pre_get_posts_query' );
 
 function custom_pre_get_posts_query( $q ) {
 
-    if ( ! $q->is_main_query() ) return;
-    if ( ! $q->is_post_type_archive() ) return;
+    if ( ! $q->is_main_query() )
+        return;
+    if ( ! $q->is_post_type_archive() )
+        return;
 
     if ( ! is_admin() && is_shop() ) {
 

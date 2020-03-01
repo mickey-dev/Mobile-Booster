@@ -359,11 +359,14 @@ nav.navbar-primary .main-header ul.navbar-nav ul.dropdown-menu{
 #home-slider .guarantee{
     padding: 0;
 }
+#home-slider .guarantee .header-bottom{
+    padding-top: 16px !important;
+}
 .header-bottom-icons{
     display: flex;
     align-items: center;
-    height: 94px;
     padding: 0!important;
+    margin-bottom: 16px;
 
 }
 #home-slider .guarantee img{
@@ -386,11 +389,7 @@ nav.navbar-primary .main-header ul.navbar-nav ul.dropdown-menu{
     padding-left: 17px;
 }
 @media (max-width: 992px){
-    .header-bottom{
-        margin-top: 32px;
-    }
     .header-bottom-icons{
-        height: 55px;
         margin-top: 0;
     }
     #colophon .fourth .message{
@@ -408,7 +407,6 @@ nav.navbar-primary .main-header ul.navbar-nav ul.dropdown-menu{
     }
     #home-slider .header-bottom-icons{
         width: 100%;
-        height: 60px;
         padding-left: 35px!important;
     }
 }
