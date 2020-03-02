@@ -2213,7 +2213,10 @@ nav.navbar-primary.sticky-top .main-header {
     display: -webkit-box !important;
     display: -ms-flexbox !important;
     display: flex !important;
-    font-size: 30px
+    font-size: 30px;
+    padding: 5px 0 0 0;
+
+
 }
 
 .single-product .product .main-content .right .tax-info .tax-items i.icon-G, .single-product .product .main-content .right .tax-info .tax-items i.icon-G2 {
@@ -2748,7 +2751,7 @@ nav.navbar-primary.sticky-top .main-header {
 }
 
 .single-product .product .after-content .additional-info {
-    margin-top: 30px;
+    margin-top: 7.7em;
     padding: 0
 }
 
@@ -4033,7 +4036,10 @@ nav.navbar-primary .main-header ul.navbar-nav ul.dropdown-menu {
     justify-content: center;
     min-width: 40px !important;
     margin-right: 5px;
-    font-size: 24px
+    font-size: 24px;
+    padding: 5px 0 0 0;
+
+
 }
 
 .single-product .product .main-content .right .summary > div:nth-child(1) {
@@ -4177,8 +4183,8 @@ nav.navbar-primary .main-header ul.navbar-nav ul.dropdown-menu {
     height: 19px;
     width: 19px;
     display: block;
-    background-size: contain;
-    background-image: url(../img/checked2.png);
+    background-size: 100% 100%;
+    background-image: url(../img/checked2.png) ;
 }
 
 .single-product .product .after-content .additional-info .wc-tabs-wrapper .wc-tab h2, .single-product .product .after-content .additional-info .wc-tabs-wrapper .wc-tab h3, .single-product .product .after-content .additional-info .wc-tabs-wrapper .wc-tab h4 {
@@ -4325,6 +4331,7 @@ nav.navbar-primary .main-header ul.navbar-nav ul.dropdown-menu {
 #contact h2 {
     font-size: 36px !important
 }
+
 
 footer.site-footer .fourth .payment-icon, footer.site-footer .fourth .social {
     margin-top: 30px
