@@ -153,32 +153,25 @@ function custom_add_to_cart_message($message) {
 }
 
 /* hide category from shop*/
-
-add_action( 'pre_get_posts', 'custom_pre_get_posts_query' );
-
 function custom_pre_get_posts_query( $q ) {
 
-    if ( ! $q->is_main_query() )
-        return;
-    if ( ! $q->is_post_type_archive() )
-        return;
-
-    if ( ! is_admin() && is_shop() ) {
-
-        $q->set( 'tax_query', array(array(
+    if ( !is_admin() && is_shop() ) {
+        $tax_query[] = array(
             'taxonomy' => 'product_cat',
             'field' => 'slug',
-            'terms' => array( 'accessories' ), // Don't display products in the knives category on the shop page
+            'terms' => array( 'accessories' ), // Don't display products in the clothing category on the shop page.
             'operator' => 'NOT IN'
-        )));
+        );
 
+
+        $q->set( 'tax_query', $tax_query );
+        $q->set( 'posts_per_page', '-1' );
     }
-    remove_action( 'pre_get_posts', 'custom_pre_get_posts_query' );
-
 }
+add_action( 'woocommerce_product_query', 'custom_pre_get_posts_query' );
+
 
 add_action('woocommerce_gpf_title', 'override_gpf_title', 10, 3);
-
 function override_gpf_title($title, $feed_item_id, $taxonomy){
     if ( $taxonomy == null )
         return $title . ' Mobile Phone Signal Booster';
