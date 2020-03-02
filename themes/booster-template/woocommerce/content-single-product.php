@@ -123,7 +123,7 @@ if ( ! defined( 'ABSPATH' ) ) {
         <div class="">
             <div class="col-xs-12 col-sm-12 home_featured title">
                 <h2 class="text-center">Similar Products</h2>
-                <div class="featured-items owl-carousel">
+                <div class="featured-items owl-theme owl-carousel">
                     <?php
                     $args = array( 'post_type' => 'product', 'meta_key' => '_featured','posts_per_page' => 12,'columns' => '4', 'meta_value' => 'yes' );
                     $loop = new WP_Query( $args );

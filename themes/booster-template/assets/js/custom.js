@@ -54,8 +54,8 @@ jQuery(document).ready(function ($) {
             },
             900:{
                 items:3,
-                nav: false,
-                dots: true,
+                nav: true,
+                dots: false,
             },
 
             1200:{

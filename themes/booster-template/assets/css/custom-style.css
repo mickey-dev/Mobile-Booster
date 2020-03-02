@@ -1510,17 +1510,20 @@ nav.navbar-primary.sticky-top .main-header {
     margin-bottom: 3.21em;
 }
 
+.owl-theme .owl-nav.disabled+.owl-dots{
+    margin-top: 20px;
+}
 #testimony .owl-theme .owl-nav.disabled+.owl-dots{
     margin-top: 0;
 }
-#testimony .owl-theme .owl-dots .owl-dot span{
+.owl-theme .owl-dots .owl-dot span{
     width: 11px;
     height: 11px;
     border: 2px solid #f4b12e;
     background-color: #ffffff;
     margin: 0px 4px;
 }
-#testimony .owl-theme .owl-dots .owl-dot.active span{
+.owl-theme .owl-dots .owl-dot.active span{
     background-color: #f4b12e;
 }
 @media screen and (min-width: 768px) and (max-width: 1024px) {
