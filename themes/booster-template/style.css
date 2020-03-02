@@ -462,15 +462,15 @@ nav.navbar-primary .main-header ul.navbar-nav ul.dropdown-menu{
     .header-bottom{
         padding-left: 15px;
     }
-    #home-slider .header-bottom-icons{
-        width: 100%;
+
+}
+@media(max-width: 576px){
+    .header-icons-span span{
+        font-size: 10px;
     }
 }
-
 @media (max-width: 375px){
-    .header-bottom .header-bottom-icons{
-        width: 100%;
-    }
+
 }
 
 /* breadcrumbs */
