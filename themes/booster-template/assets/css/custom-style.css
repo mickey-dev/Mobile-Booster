@@ -2163,9 +2163,6 @@ nav.navbar-primary.sticky-top .main-header {
     .single-product .product .main-content .right .product-title h1.product_title {
         font-size: 28px !important
     }
-    .single-product .product .main-content .left .images .main-image img{
-        margin-left: 30%;
-     }
 }
 
 @media screen and (max-width: 767px) {
@@ -4015,6 +4012,14 @@ nav.navbar-primary .main-header ul.navbar-nav ul.dropdown-menu {
 }
 .single-product .product .main-content .left .images .main-image a {
     width: 100%;
+
+}
+@media (max-width: 767px){
+    .single-product .product .main-content .left .images .main-image a {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
 }
 .single-product .product .main-content .left .images .thumbnails {
     display: none
