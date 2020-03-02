@@ -501,6 +501,7 @@ nav.navbar-primary .main-header ul.navbar-nav {
     margin: 0;
     padding-left: 9px;
     padding-right: 5px;
+    width: 100%;
 }
 
 nav.navbar-primary .main-header ul.navbar-nav li {

@@ -29,7 +29,7 @@ function filter_shortcode($atts,$content=null)
 
         $html .= '
                     <li id="2">
-                      <div class="garis"><div></div></div>
+                      
                       <div class="bulet"></div>
                       <div class="text">300 <span class="text-sqm">SQM</span></div>
                     </li>

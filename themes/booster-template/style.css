@@ -422,24 +422,35 @@ nav.navbar-primary .main-header ul.navbar-nav ul.dropdown-menu{
 
 }
 .sprite-guarantee{
-    width: 55px;
-    height: 55px;
+    width: 5.5em;
+    height: 5.5em;
     object-position: unset;
 }
 .header-icons-span{
+    text-align: left;
+}
+.header-icons-span span{
     color: #1b3d56;
     font-size: 16px;
     font-weight: 700;
-    line-height: 21px;
+    line-height: 1.3em;
     text-transform: uppercase;
     /* Text style for "Free Deliv" */
     letter-spacing: 0.16px;
     text-align: left;
     padding-left: 1em;
 }
+@media (max-width: 1200px){
+    .header-icons-span span{
+        font-size: 15px;
+    }
+}
 @media (max-width: 992px){
     #colophon .fourth .message{
         display: none;
+    }
+    .header-icons-span span{
+        font-size: 11px;
     }
 }
 @media (max-width: 768px){
@@ -1231,7 +1242,7 @@ footer.site-footer{
     padding: 7px 0;
     border-bottom: 1px solid #28475b;
 }
-#colophon .header-icons-span{
+#colophon .header-icons-span span{
     color: white!important;
 }
 #colophon .footer-title{
