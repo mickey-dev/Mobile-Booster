@@ -260,7 +260,7 @@ nav.navbar-primary .main-header ul.navbar-nav ul.dropdown-menu{
         padding: 0 20px;
     }
     nav.navbar-primary .main-header > .container .navbar-header{
-        padding: 19px 15px;
+        padding: 19px 0;
     }
     #right {
         display: none;
@@ -1078,7 +1078,7 @@ div#n2-ss-2 .n2-style-2a0a200d6a6e1fade27fb9c90af83812-dot.n2-active, div#n2-ss-
     border-radius: 5px;
 }
 .single-product .product-right{
-    padding: 0 0 0 34px!important;
+    padding: 0 0 0 34px;
 }
 .single-product .product .after-content .additional-info .wc-tabs-wrapper ul.nav-tabs{
     display: none;
@@ -1117,7 +1117,7 @@ div#n2-ss-2 .n2-style-2a0a200d6a6e1fade27fb9c90af83812-dot.n2-active, div#n2-ss-
         margin-bottom: 55px;
     }
     .single-product .product-right{
-        padding: 0 15px!important;
+        padding: 35px 15px 35px 15px !important;
     }
     .single-product .product .images{
         margin: 0 15px;

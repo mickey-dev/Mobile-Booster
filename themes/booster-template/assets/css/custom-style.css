@@ -2119,6 +2119,7 @@ nav.navbar-primary.sticky-top .main-header {
 }
 
 .single-product .product .main-content .left .images .onsale {
+    display: none;
     background-color: #f6a43a;
     background-clip: inherit;
     transform: none;
@@ -2158,6 +2159,9 @@ nav.navbar-primary.sticky-top .main-header {
     .single-product .product .main-content .right .product-title h1.product_title {
         font-size: 28px !important
     }
+    .single-product .product .main-content .left .images .main-image img{
+        margin-left: 30%;
+     }
 }
 
 @media screen and (max-width: 767px) {
