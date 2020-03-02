@@ -395,10 +395,6 @@ ul.products li.product {
     color: #fff !important
 }
 
-#filter .filter {
-    padding: 70px 0 0 0
-}
-
 .single .tmcp-field-wrap .tc-price, .single-product .product .main-content .right .summary .cart #tm-extra-product-options-fields .cpf-type-checkbox .tm-element-ul-checkbox li span, .single-product .product .main-content .right .summary form.cart ul#tm-extra-product-options-fields .cpf-type-checkbox .tm-element-ul-checkbox li .price {
     display: none !important
 }

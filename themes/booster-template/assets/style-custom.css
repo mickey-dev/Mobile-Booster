@@ -37,13 +37,9 @@ div.wpcf7-validation-errors { border-color: #dd5347; }
 /*Custom Styles*/
 
 #home_featured{
-	padding:70px 0;
 	background:#f8f8f8;
 }
 
-.home_featured h2{
-	margin-bottom:50px;
-}
 
 #how-it-works .row .gambar img{
 	width: 65%;
