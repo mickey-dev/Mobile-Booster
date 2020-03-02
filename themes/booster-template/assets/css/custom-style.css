@@ -5158,7 +5158,7 @@ form .screen-reader-text {
 .section.filter-custom.filter-custom2 form .step-buts {
     position: absolute;
     width: 100%;
-    bottom: 41px;
+    bottom: 4.1em;
 }
 
 #filter.filter-custom2 .filter-step.providers .step-body {
