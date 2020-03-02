@@ -1139,6 +1139,9 @@ div#n2-ss-2 .n2-style-2a0a200d6a6e1fade27fb9c90af83812-dot.n2-active, div#n2-ss-
     .single-product .product .container-fluid{
         padding: 0 15px!important;
     }
+    .single-product .product .shipping-text p{
+        padding-top: 7px;
+    }
 }
 /*product description*/
 
