@@ -15,59 +15,11 @@
  * @version 3.6.0
  */
 
-defined( 'ABSPATH' ) || exit;
-
-global $product;
-
-// Ensure visibility.
-if ( empty( $product ) || ! $product->is_visible() ) {
-	return;
-}
+defined('ABSPATH') || exit;
 ?>
-<?php if(is_product_category('accessories')): ?>
+<?php if (is_product_category('accessories')): ?>
+    <?php wc_get_template_part('content', 'accessories_list'); ?>
 <?php else: ?>
-    <?php
-    $class = [
-        'list',
-        'booster'
-    ];
-
-    ?>
-    <li <?php post_class($class); ?>>
-
-        <div class="container-fluid">
-            <?php
-            woocommerce_show_product_loop_sale_flash();
-            ?>
-            <div class="col-xs-12 col-sm-12 no-padding-left product-name">
-                <?php
-                woocommerce_template_loop_product_link_open();
-                woocommerce_template_loop_product_title();
-                woocommerce_template_loop_product_link_close();
-                ?>
-            </div>
-
-            <?php woocommerce_get_product_list_details(); ?>
-
-            <div class="col-xs-12 col-sm-12 no-padding-left image">
-                <?php
-                woocommerce_template_loop_product_link_open();
-                woocommerce_template_loop_product_thumbnail();
-                woocommerce_template_loop_product_link_close();
-                ?>
-            </div>
-
-            <div class="product-price">
-                <?php woocommerce_template_loop_price(); ?>
-            </div>
-
-            <div class="col-xs-12 col-sm-12 no-padding-right product-action">
-                <div class="col-xs-12 nopadding">
-                    <?php woocommerce_template_loop_add_to_cart() ?>
-                </div>
-            </div>
-        </div>
-
-    </li>
+    <?php wc_get_template_part('content', 'product_list'); ?>
 <?php endif; ?>
 
