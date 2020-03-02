@@ -3995,7 +3995,6 @@ nav.navbar-primary .main-header ul.navbar-nav ul.dropdown-menu {
 
 @media screen and (min-width: 991px) and (max-width: 1199px) {
     .single-product .product {
-        margin-top: 100px
     }
 }
 
@@ -4746,9 +4745,6 @@ footer.site-footer .spacing {
         height: 75px !important
     }
 
-    .navbar-primary .main-header > .container {
-        padding: 0 20px !important;
-    }
 
     .navbar-primary .main-header .mobile-trigger {
         position: absolute;
@@ -4858,6 +4854,7 @@ footer.site-footer .spacing {
 }
 
 @media screen and (max-width: 767px) {
+
     .woocommerce-page .navbar-primary {
         margin-bottom: 0 !important
     }
@@ -4872,6 +4869,10 @@ footer.site-footer .spacing {
 
     .navbar-primary .main-header {
         top: 0 !important
+    }
+
+    .navbar-primary .main-header > .container {
+        padding: 0 20px !important;
     }
 
     .navbar-primary .main-header .mobile-trigger {

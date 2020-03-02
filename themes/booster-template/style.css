@@ -464,10 +464,11 @@ nav.navbar-primary .main-header ul.navbar-nav ul.dropdown-menu{
         width: 100%;
     }
 }
+
 /* breadcrumbs */
 #breadcrumbs{
     margin-top: 99px;
-    padding: 26px 0;
+    padding: 2.6em 0;
 }
 #breadcrumbs p{
     margin: 0;
@@ -478,11 +479,17 @@ nav.navbar-primary .main-header ul.navbar-nav ul.dropdown-menu{
     margin-right: 6px;
     margin-left: 6px;
 }
-#breadcrumbs p .breadcrumb_last{
+#breadcrumbs p .breadcrumb_last {
     color: #f4b12e;
     text-decoration: underline;
     margin-left: 6px;
     font-size: 12px;
+}
+@media (max-width: 991px){
+    #breadcrumbs{
+        margin-top: 0;
+        padding: 2.6em 0;
+    }
 }
 
 /*home filter*/
