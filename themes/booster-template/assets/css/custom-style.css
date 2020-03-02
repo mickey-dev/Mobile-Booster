@@ -2285,6 +2285,7 @@ nav.navbar-primary.sticky-top .main-header {
 .single-product .product .main-content .right .summary form.cart ul#tm-extra-product-options-fields .cpf_hide_element select{
     height: 35px;
     width: 100%;
+    font-size: 14px;
 }
 @media screen and (max-width: 320px) {
     .single-product .product .main-content .right .summary form.cart ul#tm-extra-product-options-fields .cpf_hide_element, .single-product .product .main-content .right .summary form.cart ul#tm-extra-product-options-fields .tm-section-label {
