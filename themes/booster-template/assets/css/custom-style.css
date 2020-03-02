@@ -112,11 +112,6 @@ b {
     font-size: inherit
 }
 
-@media screen and (max-width: 767px) {
-    h2 {
-        font-size: 26px !important
-    }
-}
 
 h2.widget-title {
     font-size: 15px
@@ -762,9 +757,6 @@ nav.navbar-primary.sticky-top .main-header {
     padding: 20px
 }
 
-#home-slider .guarantee img {
-    width: 21px
-}
 
 #how-it-works {
     background-color: #ffffff;
@@ -944,7 +936,6 @@ nav.navbar-primary.sticky-top .main-header {
 }
 
 #filter h2.title {
-    margin-bottom: 50px;
     text-align: center;
     color: #083d54;
     font-weight: 700;
