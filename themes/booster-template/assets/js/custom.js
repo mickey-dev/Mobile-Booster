@@ -47,12 +47,18 @@ jQuery(document).ready(function ($) {
                 nav: false,
                 dots: true,
             },
-            600:{
+            700:{
                 items:2,
                 nav: false,
                 dots: true,
             },
-            1000:{
+            900:{
+                items:3,
+                nav: false,
+                dots: true,
+            },
+
+            1200:{
                 items:4,
                 navText: ['<span class="mb-prev"></span>', '<span class="mb-next"></span>'],
                 nav: true,
