@@ -7,7 +7,7 @@ get_header();
 ?>
 
 <div class="container white-bg default-padding page-contact" style="min-height: 60vh;">
-    <div class="row">
+    <div class="contactUs row">
       <div class="col-xs-12 col-sm-6 col-md-6 left">
         <div class="col-xs-12 col-sm-12 atas">
           <ul>

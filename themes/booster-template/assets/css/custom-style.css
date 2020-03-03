@@ -3087,6 +3087,7 @@ nav.navbar-primary.sticky-top .main-header {
 }
 
 .page-contact .left .atas {
+    margin-top: 70px;
     padding-left: 24px
 }
 
@@ -3101,7 +3102,8 @@ nav.navbar-primary.sticky-top .main-header {
 
 .page-contact .left .atas ul li a {
     color: #083d54;
-    display: block
+    display: block;
+    font-size: 14px;
 }
 
 .page-contact .left .atas ul li a i {
@@ -3130,11 +3132,13 @@ nav.navbar-primary.sticky-top .main-header {
     width: 40px
 }
 
-.page-contact .right form input[type=email], .page-contact .right form input[type=text], .page-contact .right form label, .page-contact .right form textarea {
+.page-contact .right form input[type=email], .page-contact .right form input[type=text], .page-contact .right form label, .page-contact .right form textarea
+{
     font-weight: 400;
     color: #083d54;
     padding: 0 10px;
-    width: 100%
+    width: 100%;
+    font-size: 14px;
 }
 
 .page-contact .right form input[type=email], .page-contact .right form input[type=text] {
