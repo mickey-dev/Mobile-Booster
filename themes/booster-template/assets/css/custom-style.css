@@ -1124,8 +1124,8 @@ nav.navbar-primary.sticky-top .main-header {
 #filter .filter-step .step-body .provider .choice-details .choice-icon {
     margin-bottom: 0;
     border-radius: 0;
-    height: 65px;
-    width: 65px
+    height: 1.85em;
+    width: 1.85em;
 }
 
 #filter .filter-step .step-body .provider .choice-details .choice-icon:hover {
@@ -1318,7 +1318,7 @@ nav.navbar-primary.sticky-top .main-header {
 }
 
 #filter.filter-custom .filter-step .step-body .provider .choice-details .choice-icon i {
-    font-size: 32px
+    font-size: 1.2em;
 }
 
 #filter.filter-custom .filter-step .step-body .provider .choice-details .choice-icon.choosen {
@@ -3320,7 +3320,6 @@ nav.navbar-primary .main-header ul.navbar-nav ul.dropdown-menu {
 }
 
 #filter.filter-custom2 .filter-step.coverages .step-title {
-    padding-right: 10px;
     border-radius: 20px;
     display: block;
     text-align: left;
@@ -3337,7 +3336,6 @@ nav.navbar-primary .main-header ul.navbar-nav ul.dropdown-menu {
     width: 100%;
     display: none;
     margin: 0 auto;
-    margin-bottom: 32px
 }
 
 #filter.filter-custom2 .filter-step.coverages .coverage.active {
@@ -3615,12 +3613,12 @@ nav.navbar-primary .main-header ul.navbar-nav ul.dropdown-menu {
 }
 
 #filter.filter-custom2 .filter-step.providers .step-title {
-    padding-left: 10px;
+    padding-left: 1em;
     margin: 0 auto;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
-    margin-top: 40px;
+    margin-top: 4em;
 }
 
 #filter.filter-custom2 .filter-step.providers .step-title .step-number {
@@ -4955,7 +4953,6 @@ footer.site-footer .spacing {
     }
 
     #filter.filter-custom2 .filter-step.coverages .coverage {
-        margin-bottom: 20px;
         margin-top: 0;
         width: 100%
     }
@@ -5127,7 +5124,7 @@ form .screen-reader-text {
 }
 
 #filter .filter-step .step-body .provider .choice-details .choice-icon .icon-G:before, #filter .filter-step .step-body .provider .choice-details .choice-icon .icon-G2:before, #filter .filter-step .step-body .provider .choice-details .choice-icon .icon-G3:before {
-    font-size: 32px !important;
+    font-size: 1.2em !important;
 }
 
 .container.white-bg.archive-container {
@@ -5141,6 +5138,9 @@ form .screen-reader-text {
 
     .container.white-bg.archive-container {
         padding-top: 32px;
+    }
+    #filter.filter-custom2 .filter-step.providers .step-body{
+        margin: 0;
     }
 }
 
@@ -5161,7 +5161,7 @@ form .screen-reader-text {
 }
 
 #filter.filter-custom2 .filter-step.providers .step-body {
-    margin-top: 40px;
+
     display: flex;
     align-items: center;
     justify-content: center;
