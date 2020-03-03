@@ -36,10 +36,7 @@ jQuery( function ( $ ) {
 				$parent = $state.parent(),
 				input_name = $state.attr( 'name' ),
 				input_id = $state.attr( 'id' ),
-				stickstatefield = 'woocommerce.stickState-' + country,
-				value = $this.data( stickstatefield ) ? $this.data( stickstatefield ) : $state.val(),
-				placeholder = $state.attr( 'placeholder' ),
-				$newstate;
+				value = $this.data( 'woocommerce.stickState-' + country ) ? $this.data( 'woocommerce.stickState-' + country ) : $state.val();
 
 			if ( stickValue ){
 				$this.data( 'woocommerce.stickState-' + country, value );
@@ -49,37 +46,22 @@ jQuery( function ( $ ) {
 			$parent.show().find( '.select2-container' ).remove();
 
 			if ( ! $.isEmptyObject( wc_users_fields.states[ country ] ) ) {
-				var state          = wc_users_fields.states[ country ],
-					$defaultOption = $( '<option value=""></option>' )
-						.text( wc_users_fields.i18n_select_state_text );
+				var $states_select = $( '<select name="' + input_name + '" id="' + input_id + '" class="js_field-state" style="width: 25em;"></select>' ),
+					state = wc_users_fields.states[ country ];
 
-				$newstate = $( '<select style="width: 25em;"></select>' )
-					.prop( 'id', input_id )
-					.prop( 'name', input_name )
-					.prop( 'placeholder', placeholder )
-					.addClass( 'js_field-state' )
-					.append( $defaultOption );
+				$states_select.append( $( '<option value="">' + wc_users_params.i18n_select_state_text + '</option>' ) );
 
 				$.each( state, function( index ) {
-					var $option = $( '<option></option>' )
-						.prop( 'value', index )
-						.text( state[ index ] );
-					$newstate.append( $option );
+					$states_select.append( $( '<option value="' + index + '">' + state[ index ] + '</option>' ) );
 				} );
 
-				$newstate.val( value );
+				$states_select.val( value );
 
-				$state.replaceWith( $newstate );
+				$state.replaceWith( $states_select );
 
-				$newstate.show().selectWoo().hide().change();
+				$states_select.show().selectWoo().hide().change();
 			} else {
-				$newstate = $( '<input type="text" />' )
-					.prop( 'id', input_id )
-					.prop( 'name', input_name )
-					.prop( 'placeholder', placeholder )
-					.addClass( 'js_field-state regular-text' )
-					.val( value );
-				$state.replaceWith( $newstate );
+				$state.replaceWith( '<input type="text" class="js_field-state" name="' + input_name + '" id="' + input_id + '" value="' + value + '" />' );
 			}
 
 			// This event has a typo - deprecated in 2.5.0

@@ -56,9 +56,8 @@ jQuery( function( $ ) {
 		$( 'form' ).each( function() {
 			var $this  = $( this );
 			var method = $this.attr( 'method' );
-			var hasField = $this.find('input[name="v"]').length > 0;
 
-			if ( method && 'get' === method.toLowerCase() && !hasField ) {
+			if ( method && 'get' === method.toLowerCase() ) {
 				$this.append( '<input type="hidden" name="v" value="' + wc_geolocation_params.hash + '" />' );
 			} else {
 				var href = $this.attr( 'action' );
@@ -77,11 +76,6 @@ jQuery( function( $ ) {
 	}
 
 	$( document.body ).on( 'added_to_cart', function() {
-		$append_hashes();
-	});
-	
-	// Enable user to trigger manual append hashes on AJAX operations
-	$( document.body ).on( 'woocommerce_append_geo_hashes', function() {
 		$append_hashes();
 	});
 

@@ -11,20 +11,18 @@
  * the readme will list any important changes.
  *
  * @see 	    https://docs.woocommerce.com/document/template-structure/
+ * @author 		WooThemes
  * @package 	WooCommerce/Templates
- * @version     3.3.0
+ * @version     1.6.4
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly
 }
 
-$template = wc_get_theme_slug_for_templates();
+$template = get_option( 'template' );
 
 switch ( $template ) {
-	case 'twentyten' :
-		echo '</div></div>';
-		break;
 	case 'twentyeleven' :
 		echo '</div>';
 		get_sidebar( 'shop' );
@@ -47,6 +45,6 @@ switch ( $template ) {
 		echo '</main></div>';
 		break;
 	default :
-		echo '</main></div>';
+		echo '</div></div>';
 		break;
 }
