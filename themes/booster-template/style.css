@@ -21,6 +21,9 @@ body{
 p{
     font-size: 14px;
 }
+h4 strong{
+    font-size: 14px;
+}
 @media (max-width: 1200px){
     *{
         font-size: 9px;
@@ -742,7 +745,7 @@ div#n2-ss-2 .n2-style-2a0a200d6a6e1fade27fb9c90af83812-dot.n2-active, div#n2-ss-
     color: #1b3d56;
     font-size: 2.6em;
     font-weight: 700;
-    line-height: 1.61em;
+    line-height: 2.51em;
 }
 #filter.filter-custom .filter-step .step-body .provider .choice-details .choice-icon .icon-id:before{
     width: 32px;
@@ -955,7 +958,12 @@ div#n2-ss-2 .n2-style-2a0a200d6a6e1fade27fb9c90af83812-dot.n2-active, div#n2-ss-
         width: 243px;
         margin: 0 auto;
     }
-}
+    #filter.filter-custom2 .filter-step.providers .step-title .step-description{
+        line-height: 1.61em;
+    }
+
+
+    }
 /* what-osbc */
 #what-osbc{
     background-color: #f1f4f7;
