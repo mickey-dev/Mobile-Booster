@@ -4963,7 +4963,6 @@ footer.site-footer .spacing {
     #filter.filter-custom2 .filter-step.coverages .coverage .choice-details {
         -webkit-flex-direction: column;
         flex-direction: column;
-        padding: 0 20px;
         width: 100%
     }
 
