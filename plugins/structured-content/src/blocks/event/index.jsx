@@ -241,7 +241,7 @@ registerBlockType(`structured-content/${name}`, {
                                 }
                                 <div className="description" itemProp="text">
                                     <RichText
-                                        placeholder={__('Enter your Event Description here...', 'structured-content')}
+                                        placeholder={__('Enter your event description here...', 'structured-content')}
                                         value={data.description}
                                         className='wp-block-structured-content-event__text'
                                         onChange={(value) => (setAttributes(

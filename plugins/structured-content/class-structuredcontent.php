@@ -1,11 +1,11 @@
 <?php
 /**
  * Plugin Name: Structured Content
- * Plugin URI: https://gitlab.com/webwirtschaft/structured-content
+ * Plugin URI: https://wordpress.org/plugins/structured-content/
  * Description: Pimp your content with some feature boxes, which labels the output with micro formats http://schema.org/
  * Author: Gordon Böhme, Antonio Leutsch
- * Author URI: https://gorbo.de/structured-content/
- * Version: 1.4.1
+ * Author URI: https://wpsc-plugin.com
+ * Version: 1.4.2
  * License: GPL2+
  * License URI: https://www.gnu.org/licenses/gpl-2.0.txt
  * Text Domain: structured-content

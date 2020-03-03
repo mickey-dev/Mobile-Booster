@@ -1,48 +1,47 @@
-export default function ( editor ) {
+export default function (editor) {
     return {
-        text   : 'Person',
-        tooltip: 'Adds a Person block to the page.',
+        text   : editor.getLang('wpsc.personButtonText', 'Person'),
+        tooltip: editor.getLang('wpsc.personTooltip', 'Adds a Person block to the page.'),
         onclick: () => {
-            editor.windowManager.open( {
-                title   : 'Featured Snippet Person',
-                minWidth: 500,
-                height: 500,
+            editor.windowManager.open({
+                title     : editor.getLang('wpsc.personPopupTitle', 'Featured Snippet Person'),
+                minWidth  : 500,
+                height    : 500,
                 autoScroll: true,
-                classes: 'sc-panel',
-                body    : [
+                classes   : 'sc-panel',
+                body      : [
                     {
                         type   : 'checkbox',
                         name   : 'giveHTML',
-                        label  : 'Render HTML',
+                        label  : editor.getLang('wpsc.renderHTML', 'Render HTML'),
                         checked: true
                     },
                     {
                         type : 'container',
                         name : 'container',
                         label: '',
-                        html : '<h1 style="font-weight: bold;">Personal</h1>'
+                        html : `<h1 style="font-weight: bold;">${editor.getLang('wpsc.personal', 'Personal')}</h1>`
                     },
                     {
-                        label      : 'Name',
                         type       : 'textbox',
                         name       : 'personName',
+                        label      : editor.getLang('wpsc.name', 'Name'),
                         value      : '',
-                        placeholder: 'Please enter your Name here ...',
+                        placeholder: editor.getLang('wpsc.namePlaceholder', 'Please enter your Name here ...'),
                         multiline  : true,
                     },
                     {
-                        label      : 'Job Title',
                         type       : 'textbox',
                         name       : 'jobTitle',
+                        label      : editor.getLang('wpsc.jobTitle', 'Job Title'),
                         value      : '',
-                        placeholder: 'Please enter your job title here ...',
+                        placeholder: editor.getLang('wpsc.jobTitlePlaceholder', 'Please enter your job title here ...'),
                         multiline  : true,
                     },
-
                     {
                         type   : 'textbox',
                         name   : 'sc_img',
-                        label  : 'Image',
+                        label  : editor.getLang('wpsc.image', 'Image'),
                         value  : '',
                         classes: 'image',
                     },
@@ -50,99 +49,99 @@ export default function ( editor ) {
                         type   : 'button',
                         name   : 'select_image',
                         label  : ' ',
-                        text   : 'Select Image',
+                        text   : editor.getLang('wpsc.addImage', 'Add Image'),
                         classes: 'select_image',
                     },
                     {
                         type : 'container',
                         name : 'container',
                         label: '',
-                        html : '<h1 style="font-weight: bold;">Contact</h1>'
+                        html : `<h1 style="font-weight: bold;">${editor.getLang('wpsc.contact', 'Contact')}</h1>`
                     },
                     {
                         type       : 'textbox',
                         name       : 'email',
-                        label      : 'E-Mail',
+                        label      : editor.getLang('wpsc.email', 'E-Mail'),
                         value      : '',
-                        placeholder: 'jane-doe@xyz.edu',
+                        placeholder: editor.getLang('wpsc.contactEmail', 'jane-doe@xyz.edu'),
                         multiline  : false,
                     },
                     {
                         type       : 'textbox',
                         name       : 'homepage',
-                        label      : 'URL',
+                        label      : editor.getLang('wpsc.contactHomepage', 'URL'),
                         value      : '',
-                        placeholder: 'https://example.com',
+                        placeholder: editor.getLang('wpsc.contactHomepagePlaceholder', 'http://www.janedoe.com'),
                         multiline  : false,
                     },
                     {
                         type       : 'textbox',
                         name       : 'telephone',
-                        label      : 'Telephone',
+                        label      : editor.getLang('wpsc.contactPhone', 'Telephone'),
                         value      : '',
-                        placeholder: '(425) 123-4567',
+                        placeholder: editor.getLang('wpsc.contactPhonePlaceholder', '(425) 123-4567'),
                         multiline  : false,
                     },
                     {
                         type : 'container',
                         name : 'container',
                         label: '',
-                        html : '<h1 style="font-weight: bold;">Address</h1>'
+                        html : `<h1 style="font-weight: bold;">${editor.getLang('wpsc.address', 'Address')}</h1>`
                     },
                     {
                         type       : 'textbox',
                         name       : 'streetAddress',
-                        label      : 'Street',
+                        label      : editor.getLang('wpsc.street', 'Street'),
                         value      : '',
-                        placeholder: 'Any Street 3A',
+                        placeholder: editor.getLang('wpsc.streetPlaceholder', 'Any Street 3A'),
                     },
                     {
                         type       : 'textbox',
                         name       : 'postalCode',
-                        label      : 'Postal Code',
+                        label      : editor.getLang('wpsc.zip', 'Postal Code'),
                         value      : '',
-                        placeholder: 'Any Postal Code',
+                        placeholder: editor.getLang('wpsc.zipPlaceholder', 'Any Postal Code'),
                     },
                     {
                         type       : 'textbox',
                         name       : 'addressLocality',
-                        label      : 'Locality',
+                        label      : editor.getLang('wpsc.locality', 'Locality'),
                         value      : '',
-                        placeholder: 'Any City',
+                        placeholder: editor.getLang('wpsc.localityPlaceholder', 'Any City'),
                     },
                     {
                         type       : 'textbox',
                         name       : 'addressCountry',
-                        label      : 'Country ISO Code',
+                        label      : editor.getLang('wpsc.countryCode', 'Country ISO Code'),
                         value      : '',
-                        placeholder: 'US',
+                        placeholder: editor.getLang('wpsc.countryCode', 'US'),
                     },
                     {
                         type       : 'textbox',
                         name       : 'addressRegion',
-                        label      : 'Region ISO Code',
+                        label      : editor.getLang('wpsc.regionCode', 'Region ISO Code'),
                         value      : '',
-                        placeholder: 'CA',
+                        placeholder: editor.getLang('wpsc.regionCodePlaceholder', 'CA')
                     },
                     {
                         type : 'container',
                         name : 'container',
                         label: '',
-                        html : '<h1 style="font-weight: bold;">Colleague</h1>'
+                        html : `<h1 style="font-weight: bold;">${editor.getLang('wpsc.colleague', 'Colleague')}</h1>`
                     },
                     {
                         type       : 'textbox',
                         name       : 'colleague',
-                        label      : 'Colleague',
+                        label      : editor.getLang('wpsc.colleague', 'Colleague'),
                         value      : '',
-                        placeholder: 'Comma seperated URLs',
+                        placeholder: editor.getLang('wpsc.colleaguePlaceholder', 'Comma seperated URLs'),
                     },
                     {
-                        type : 'textbox',
-                        name : 'sc_cssClass',
-                        label: 'CSS classes',
-                        value: '',
-                        default : '',
+                        type   : 'textbox',
+                        name   : 'sc_cssClass',
+                        label  : editor.getLang('wpsc.cssClass', 'CSS class'),
+                        value  : '',
+                        default: '',
                     },
                 ],
 
@@ -166,7 +165,7 @@ export default function ( editor ) {
                         ]`
                     );
                 },
-            } );
+            });
             bindImageButtons();
         },
     }

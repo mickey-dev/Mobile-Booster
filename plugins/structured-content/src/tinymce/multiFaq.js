@@ -2,11 +2,11 @@ import './tinymce.css';
 
 export default function (editor) {
     return {
-        text   : 'Multi FAQ',
-        tooltip: 'Adds a FAQ block to the page.',
+        text   : editor.getLang('wpsc.multiFaqButtonText', 'Multi FAQ'),
+        tooltip: editor.getLang('wpsc.multiFaqTooltip', 'Adds multiple FAQ blocks to the page.'),
         onclick: () => {
             editor.windowManager.open({
-                title     : 'Featured Snippet FAQ',
+                title     : editor.getLang('wpsc.faqTitle', 'Featured Snippet FAQ'),
                 minWidth  : 500,
                 autoScroll: true,
                 classes   : 'sc-panel',
@@ -14,14 +14,15 @@ export default function (editor) {
                     {
                         type   : 'checkbox',
                         name   : 'giveHTML',
-                        label  : 'Render HTML',
+                        label  : editor.getLang('wpsc.renderHTML', 'Render HTML'),
                         checked: true
                     },
                     {
-                        type : 'textbox',
-                        name : 'sc_css_classes',
-                        label: 'CSS classes',
-                        value: '',
+                        type       : 'textbox',
+                        name       : 'sc_css_classes',
+                        label      : editor.getLang('wpsc.cssClass', 'CSS class'),
+                        placeholder: editor.getLang('wpsc.cssClassPlaceholder', 'additional css classes ...'),
+                        value      : '',
                     },
                     {
                         type : 'container',
@@ -33,7 +34,7 @@ export default function (editor) {
                                         <fieldset id="fieldset-0" data-key="0">
                                             <hr class="sc-hr">
                                             <div>
-                                                <label>Headline-Tag</label>
+                                                <label>${editor.getLang('wpsc.titleTag', 'Title Tag')}</label>
                                                 <select name="headlineTag" id="headlineTag-0">
                                                     <option value="h2">h2</option>
                                                     <option value="h3">h3</option>
@@ -44,23 +45,23 @@ export default function (editor) {
                                                 </select>
                                             </div>
                                             <div>
-                                                <label>Frage</label>
-                                                <input type="text" id="question-0" name="question">
+                                                <label>${editor.getLang('wpsc.question', 'Question')}</label>
+                                                <input type="text" id="question-0" name="question" placeholder="${editor.getLang('wpsc.questionPlaceholder', 'Enter Your Question here...')}">
                                             </div>
                                             <div>
-                                                <label>Antwort</label>
-                                                <textarea id="answer-0" rows="5" name="answer"></textarea>
+                                                <label>${editor.getLang('wpsc.answer', 'Answer')}</label>
+                                                <textarea id="answer-0" rows="5" name="answer" placeholder="${editor.getLang('wpsc.answerPlaceholder', 'Enter your answer here...')}"></textarea>
                                             </div>
                                             <div>
                                                 <div type="text" id="imageID-0" name="imageID"></div>
                                                 <div class="mce-btn">
-                                                    <button type="button" class="mce-select_image" data-target="imageID-0">Select Image</button>
+                                                    <button type="button" class="mce-select_image" data-target="imageID-0">${editor.getLang('wpsc.addImage', 'Add Image')}</button>
                                                 </div>
                                             </div> 
                                         </fieldset>
                                     </div>
                                     <div class="mce-btn long">
-                                        <button id="addOne" type="button">+ Add One</button>
+                                        <button id="addOne" type="button">${editor.getLang('wpsc.addOne', 'Answer')}</button>
                                     </div>
                                 </form>`
                     },
@@ -80,7 +81,7 @@ export default function (editor) {
                     <fieldset id="fieldset-${id}" data-key="${id}">
                         <hr class="sc-hr">
                         <div>
-                            <label>Headline-Tag</label>
+                            <label>${editor.getLang('wpsc.titleTag', 'Title Tag')}</label>
                             <select name="headlineTag" id="headlineTag-${id}">
                                 <option value="h2">h2</option>
                                 <option value="h3">h3</option>
@@ -91,24 +92,25 @@ export default function (editor) {
                             </select>
                         </div>
                         <div>
-                            <label>Frage</label>
-                            <input type="text" id="question-${id}" name="question">
+                            <label>${editor.getLang('wpsc.question', 'Question')}</label>
+                            <input type="text" id="question-${id}" name="question" placeholder="${editor.getLang('wpsc.questionPlaceholder', 'Enter Your Question here...')}">
                         </div>
                         <div>
-                            <label>Antwort</label>
-                            <textarea id="answer-${id}" rows="5" name="answer"></textarea>
+                            <label>${editor.getLang('wpsc.answer', 'Answer')}</label>
+                            <textarea id="answer-${id}" rows="5" name="answer" placeholder="${editor.getLang('wpsc.answerPlaceholder', 'Enter your answer here...')}"></textarea>
                         </div>
                         <div>
                             <div type="text" id="imageID-${id}" name="imageID"></div>
                             <div class="mce-btn">
-                                <button type="button"  class="mce-select_image" data-target="imageID-${id}">Select Image</button>
+                                <button type="button"  class="mce-select_image" data-target="imageID-${id}">${editor.getLang('wpsc.addImage', 'Add Image')}</button>
                             </div>
                         </div>
                         <div class="mce-btn removeLast">
-                            <button type="button" onclick="removeLastFAQ()" data-target="bild-${id}">- Remove Last One</button>
+                            <button type="button" onclick="removeLastFAQ()" data-target="bild-${id}">- ${editor.getLang('wpsc.removeLastOne', 'Add Image')}</button>
                         </div>
                     </fieldset>
                 `;
+
                 setHeight(layoutWrapper, layoutWrapper.offsetHeight + height);
                 insertAfter(createElementFromHTML(template), nextField);
                 bindImageButtons();

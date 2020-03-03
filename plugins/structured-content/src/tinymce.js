@@ -9,8 +9,7 @@ import course from './tinymce/course';
 (function () {
     if (typeof tinymce !== 'undefined') {
         tinymce.PluginManager.add('structured_content_dropdown', function (
-            editor,
-            url
+            editor
         ) {
             editor.addButton('structured_content_dropdown', {
                 icon: 'structured-content',

@@ -34,26 +34,6 @@ class TNP_Composer {
     }
 
     /**
-     * Return normalized array from json encoded global style options
-     * 
-     * @param $raw
-     *
-     * @return array
-     */
-    static function normalize_global_style_options($raw) {
-        $global_styles = json_decode($raw);
-        $regex_rule = "/^options\[([\w-]*)\]$/";
-        $global_styles_formatted = array();
-        foreach ($global_styles as $input) {
-            preg_match($regex_rule, $input->name, $match);
-
-            $global_styles_formatted["$match[1]"] = $input->value;
-        }
-
-        return $global_styles_formatted;
-    }
-
-    /**
      * @param string $open
      * @param string $inner
      * @param string $close
@@ -123,18 +103,15 @@ class TNP_Composer {
      * @return string
      */
     static function get_main_wrapper_open($email) {
-        if (!isset($email->options['composer_background']))
-            return '';
+        if (!isset($email->options['composer_background'])) {
+            $bgcolor = '#ffffff';
+        } else {
+            $bgcolor = $email->options['composer_background'];
+        }
 
-        $bgcolor = $email->options['composer_background'];
-        return "\n\n<table cellpadding='0' cellspacing='0' border='0' width='100%'>\n" .
+        return "\n<table cellpadding='0' cellspacing='0' border='0' width='100%'>\n" .
                 "<tr>\n" .
-                "<td bgcolor='$bgcolor' valign='top'>\n" .
-                "<!--[if gte mso 9]>\n" .
-                "<v:rect xmlns:v='urn:schemas-microsoft-com:vml' fill='true' stroke='false' style='mso-width-percent:1000;'>\n" .
-                "<v:fill type='tile' color='$bgcolor' />\n" .
-                "<v:textbox style='mso-fit-shape-to-text:true' inset='0,0,0,0'>\n" .
-                "<![endif]-->\n\n<!-- tnp -->\n\n";
+                "<td bgcolor='$bgcolor' valign='top'><!-- tnp -->";
     }
 
     /**
@@ -143,57 +120,10 @@ class TNP_Composer {
      * @return string
      */
     static function get_main_wrapper_close($email) {
-        if (!isset($email->options['composer_background']))
-            return '';
-
-        return "\n\n<!-- /tnp -->\n\n<!--[if gte mso 9]>\n" .
-                "</v:textbox>\n" .
-                "</v:rect>\n" .
-                "<![endif]-->\n" .
+        return "\n<!-- /tnp -->\n" .
                 "</td>\n" .
                 "</tr>\n" .
                 "</table>\n\n";
-    }
-
-    /**
-     * Wrap email coming from composer block with <doctype>, <body> and other stuff
-     * 
-     * @param array $email
-     * @param string $body
-     *
-     * @return string
-     */
-    static function wrap_email($email, $body) {
-
-        $open = '<!DOCTYPE html><html><head><title>' . $email['subject'] . '</title><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta http-equiv="X-UA-Compatible" content="IE=edge">';
-        $open .= '<style type="text/css">' . NewsletterEmails::instance()->get_composer_css() . '</style>';
-        $open .= '</head><body style="margin: 0; padding: 0;">';
-
-        $close = '';
-
-        if (isset($email['options']['global-styles']['global-styles-bgcolor'])) {
-            $bgcolor = $email['options']['global-styles']['global-styles-bgcolor'];
-            $open .= "<table cellpadding='0' cellspacing='0' border='0' width='100%'>
-						  <tr>
-						    <td bgcolor='$bgcolor' valign='top'>
-						      <!--[if gte mso 9]>
-						      <v:rect xmlns:v='urn:schemas-microsoft-com:vml' fill='true' stroke='false' style='mso-width-percent:1000;'>
-						        <v:fill type='tile' color='$bgcolor' />
-						        <v:textbox style='mso-fit-shape-to-text:true' inset='0,0,0,0'>
-						      <![endif]-->";
-
-            $close .= "<!--[if gte mso 9]>
-						        </v:textbox>
-						      </v:rect>
-						      <![endif]-->
-						    </td>
-						  </tr>
-						</table>";
-        }
-
-        $close .= '</body></html>';
-
-        return self::wrap_html_element($open, $body, $close);
     }
 
     /**
@@ -258,14 +188,8 @@ class TNP_Composer {
             }
         }
 
-        //var_dump($email->options);
-        //die();
-
         $email->editor = NewsletterEmails::EDITOR_COMPOSER;
 
-        $email->options['global-styles'] = TNP_Composer::normalize_global_style_options($controls->data['global-styles']);
-
-        // TODO: align the field name, please!
         $email->message = self::get_html_open($email) . self::get_main_wrapper_open($email) .
                 $controls->data['message'] . self::get_main_wrapper_close($email) . self::get_html_close($email);
     }

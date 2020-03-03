@@ -19,7 +19,8 @@ class NewsletterFields {
     }
 
     public function _label($text, $for = '') {
-        if (empty($text)) return;
+        if (empty($text))
+            return;
         echo '<label class="tnp-label">', $text, '</label>';
     }
 
@@ -124,7 +125,7 @@ class NewsletterFields {
         $attrs = $this->_merge_attrs($attrs);
         $this->_open();
         $this->_label($label);
-        $this->controls->textarea_fixed($name);
+        $this->controls->textarea_fixed($name, '100%', '150');
         $this->_description($attrs);
         $this->_close();
     }
@@ -148,17 +149,38 @@ class NewsletterFields {
 
         if (version_compare($wp_version, '4.8', '>=')) {
             echo '<script>wp.editor.remove("options-', $name, '");';
-            echo 'wp.editor.initialize("options-', $name, '", { tinymce: {toolbar1: "undo redo | formatselect fontselect fontsizeselect | bold italic forecolor backcolor | link unlink | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | removeformat | help", fontsize_formats: "11px 12px 14px 16px 18px 24px 36px 48px", plugins: "link textcolor colorpicker", default_link_target: "_blank", relative_urls : false, convert_urls: false}});</script>';
+            echo 'wp.editor.initialize("options-', $name, '", { tinymce: {content_style: "body {background-color: #f4f4f4;}", toolbar1: "undo redo | formatselect fontselect fontsizeselect | bold italic forecolor backcolor | link unlink | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | removeformat | help", fontsize_formats: "11px 12px 14px 16px 18px 24px 36px 48px", plugins: "link textcolor colorpicker", default_link_target: "_blank", relative_urls : false, convert_urls: false}});</script>';
         }
         $this->_description($attrs);
         $this->_close();
     }
 
     public function select($name, $label = '', $options = array(), $attrs = array()) {
-        $attrs = $this->_merge_attrs($attrs);
+        $attrs = $this->_merge_attrs($attrs, ['reload' => false, 'after-rendering' => '']);
         $this->_open();
         $this->_label($label);
-        $this->controls->select($name, $options);
+        $value = $this->controls->get_value($name);
+
+        echo '<select id="options-' . esc_attr($name) . '" name="options[' . esc_attr($name) . ']"';
+        if ($attrs['reload']) {
+            echo ' onchange="tnpc_reload_options(event)"';
+        }
+        if (!empty($attrs['after-rendering'])) {
+            echo ' data-after-rendering="' . $attrs['after-rendering'] . '"';
+        }
+        echo '>';
+        if (!empty($first)) {
+            echo '<option value="">' . esc_html($first) . '</option>';
+        }
+        foreach ($options as $key => $label) {
+            echo '<option value="' . esc_attr($key) . '"';
+            if ($value == $key)
+                echo ' selected';
+            echo '>' . esc_html($label) . '</option>';
+        }
+        echo '</select>';
+
+        //$this->controls->select($name, $options);
         $this->_description($attrs);
         $this->_close();
     }
@@ -210,7 +232,7 @@ class NewsletterFields {
 
     /** Configuration for a simple button with label and color */
     public function button($name, $label = '', $attrs = array()) {
-        $attrs = $this->_merge_attrs($attrs, array('placeholder' => 'Label...', 'url_placeholder' => 'https://...', 'url' => true));
+        $attrs = $this->_merge_attrs($attrs, array('placeholder' => 'Label...', 'url_placeholder' => 'https://...', 'url' => true, 'weight' => true));
         $this->_open('tnp-cta');
         $this->_label($label);
         $value = $this->controls->get_value($name . '_label');
@@ -229,8 +251,9 @@ class NewsletterFields {
             echo ' value="', esc_attr($value), '">';
             echo '</div>';
         }
+        echo '<div style="clear: both"></div>';
         echo '</div>';
-        $this->controls->css_font($name . '_font', array('weight' => false));
+        $this->controls->css_font($name . '_font', array('weight' => $attrs['weight']));
         $this->controls->color($name . '_background');
         $this->_close();
     }
@@ -469,8 +492,14 @@ class NewsletterFields {
         $this->_open('tnp-block-commons');
         $this->_label('Padding and background');
         $this->controls->color('block_background');
+
+            echo '&nbsp;&rarr;&nbsp;';
+            $this->controls->checkbox('block_background_gradient');
+            $this->controls->color('block_background_2');
+
         echo '&nbsp;&nbsp;&nbsp;';
         $this->padding('block_padding', '', $attrs = array('field_only' => true));
+        echo '<div class="tnp-description">Gradients are displayed only by few clients</div>';
         $this->_close();
     }
 

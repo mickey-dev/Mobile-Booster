@@ -2,7 +2,7 @@
 Tags: email, email marketing, newsletter, newsletter subscribers, welcome email, signup forms, contact, lead generation, popup, marketing automation
 Requires at least: 3.4.0
 Tested up to: 5.3.2
-Stable tag: 6.5.2
+Stable tag: 6.5.3
 Requires PHP: 5.6
 Contributors: satollo,webagile,michael-travan
 
@@ -109,6 +109,13 @@ Thank you, The Newsletter Team
 
 == Changelog ==
 
+= 6.5.3 =
+
+* Removed a background wrapper for outlook otherwise outlook cut down long emails
+* Added background gradient (experimental, no supported by all mail clients)
+* Added dark color schema to cta and hero blocks
+* Fixed a debug notice
+
 = 6.5.2 =
 
 * Fixed image block 
@@ -139,6 +146,10 @@ Thank you, The Newsletter Team
 = 6.4.8 =
 
 * Antispam on PHP API
+* Improved hero block layout
+* Added color schema to some blocks
+* Added background gradient (experimental)
+* Added image width control on image block
 
 = 6.4.7 =
 

@@ -238,7 +238,7 @@ registerBlockType(`structured-content/${name}`, {
                             <PanelBody>
                                 <PanelRow>
                                     <SelectControl
-                                        label={__('Question tag', 'structured-content')}
+                                        label={__('Title tag', 'structured-content')}
                                         value={question_tag}
                                         className="w-100"
                                         options={[

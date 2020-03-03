@@ -12,26 +12,48 @@ $defaults = array(
     'title' => 'An Awesome Title',
     'text' => 'This is just a simple text you should change',
     'font_family' => 'Helvetica, Arial, sans-serif',
-    'font_size' => '14',
+    'font_size' => 18,
     'font_weight' => 'normal',
     'font_color' => '#000000',
     'title_font_family' => 'Helvetica, Arial, sans-serif',
-    'title_font_size' => '20',
-    'title_font_weight' => 'normal',
+    'title_font_size' => '32',
+    'title_font_weight' => 'bold',
     'title_font_color' => '#000000',
     'block_background' => '#ffffff',
     'layout' => 'full',
     'button_url' => '',
     'button_label' => 'Click Here',
     'button_font_color' => '#ffffff',
-    'button_font_weight' => 'normal',
+    'button_font_weight' => 'bold',
     'button_font_size' => 20,
     'button_background' => '#256F9C',
-    'block_padding_top'=>20,
-    'block_padding_bottom'=>20
+    'layout' => 'full',
+    'block_padding_top'=>30,
+    'block_padding_bottom'=>30,
+    'block_padding_left'=>15,
+    'block_padding_right'=>15
 );
 
 $options = array_merge($defaults, $options);
+
+if (!empty($options['schema'])) {
+    if ($options['schema'] === 'dark') {
+        $options['block_background'] = '#000000';
+        $options['title_font_color'] = '#ffffff';
+        $options['font_color'] = '#ffffff';
+        $options['button_font_color'] = '#ffffff';
+        $options['button_background'] = '#96969C';
+    }
+    
+    if ($options['schema'] === 'bright') {
+        $options['block_background'] = '#ffffff';
+        $options['title_font_color'] = '#000000';
+        $options['font_color'] = '#000000';
+        $options['button_font_color'] = '#ffffff';
+        $options['button_background'] = '#256F9C';
+    }
+}
+
 $layout = $options['layout'];
 
 if ($layout == 'full') {
@@ -51,9 +73,6 @@ $title_font_size = $options['title_font_size'];
 $title_font_weight = $options['title_font_weight'];
 $title_font_color = $options['title_font_color'];
 
-$button_color = $options['button_color'];
-$button_background = $options['button_background'];
-$button_label = $options['button_label'];
 $layout = $options['layout'];
 
 if (!empty($options['image']['id'])) {
@@ -74,7 +93,6 @@ if (!empty($options['image']['id'])) {
         .hero-title {
             font-size: <?php echo $title_font_size ?>px; 
             color: <?php echo $title_font_color ?>; 
-            padding-top: 30px; 
             font-family: <?php echo $title_font_family ?>;
             font-weight: <?php echo $title_font_weight ?>; 
         }

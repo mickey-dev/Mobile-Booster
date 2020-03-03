@@ -1,10 +1,10 @@
 export default function (editor) {
     return {
-        text   : 'Single FAQ',
-        tooltip: 'Adds a FAQ block to the page.',
+        text   : editor.getLang('wpsc.faqButtonText', 'Single FAQ'),
+        tooltip: editor.getLang('wpsc.faqTooltip', 'Adds a FAQ block to the page.'),
         onclick: () => {
             editor.windowManager.open({
-                title     : 'Featured Snippet FAQ',
+                title     : editor.getLang('wpsc.faqTitle', 'Featured Snippet FAQ'),
                 minWidth  : 500,
                 height    : 500,
                 autoScroll: true,
@@ -13,13 +13,13 @@ export default function (editor) {
                     {
                         type   : 'checkbox',
                         name   : 'giveHTML',
-                        label  : 'Render HTML',
+                        label  : editor.getLang('wpsc.renderHTML', 'Render HTML'),
                         checked: true
                     },
                     {
                         type  : 'listbox',
                         name  : 'sc_headline',
-                        label : 'Headline-Tag',
+                        label : editor.getLang('wpsc.titleTag', 'Title Tag'),
                         values: [
                             {text: 'h2', value: 'h2'},
                             {text: 'h3', value: 'h3'},
@@ -31,26 +31,26 @@ export default function (editor) {
                         value : 'h2', // Sets the default
                     },
                     {
-                        label      : 'Question',
                         type       : 'textbox',
                         name       : 'sc_question',
+                        label      : editor.getLang('wpsc.question', 'Question'),
                         value      : '',
-                        placeholder: 'Please enter your question here ...',
+                        placeholder: editor.getLang('wpsc.questionPlaceholder', 'Enter Your Question here...'),
                         multiline  : true,
                     },
                     {
                         type       : 'textbox',
                         name       : 'sc_answer',
-                        label      : 'Answer',
+                        label      : editor.getLang('wpsc.answer', 'Answer'),
                         value      : '',
-                        placeholder: 'Please enter your answer here ...',
+                        placeholder: editor.getLang('wpsc.answerPlaceholder', 'Enter your answer here...'),
                         multiline  : true,
                         minHeight  : 100,
                     },
                     {
                         type   : 'textbox',
                         name   : 'sc_img',
-                        label  : 'Image',
+                        label  : editor.getLang('wpsc.image', 'Image'),
                         value  : '',
                         classes: 'image',
                     },
@@ -58,20 +58,21 @@ export default function (editor) {
                         type   : 'button',
                         name   : 'select_image',
                         label  : ' ',
-                        text   : 'Select Image',
+                        text   : editor.getLang('wpsc.addImage', 'Add Image'),
                         classes: 'select_image',
-                    }, // new stuff!
+                    },
                     {
                         type     : 'textbox',
                         name     : 'sc_img_description',
-                        label    : 'Image description',
+                        label    : editor.getLang('wpsc.imageDescription', 'Image Description'),
                         value    : '',
                         multiline: true,
                     },
                     {
                         type : 'textbox',
                         name : 'sc_css_classes',
-                        label: 'CSS classes',
+                        label: editor.getLang('wpsc.cssClass', 'CSS class'),
+                        placeholder: editor.getLang('wpsc.cssClassPlaceholder', 'additional css classes ...'),
                         value: '',
                     },
                 ],

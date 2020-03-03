@@ -80,7 +80,26 @@ class StructuredContent_Shortcodes {
 		add_shortcode( 'sc_fs_person', [ $this, 'person' ] );
 		add_shortcode( 'sc_fs_course', [ $this, 'course' ] );
 
+		add_filter( 'the_content', [ $this, 'fix_shortcodes' ] );
+		add_filter( 'category_description', [ $this, 'fix_shortcodes' ] );
+	}
 
+	/**
+	 * Fixes empty Tags in Content of Shortcodes without using wp_autotop
+	 *
+	 * @param $content
+	 *
+	 * @return string
+	 */
+	public function fix_shortcodes( $content ) {
+		$array   = [
+			'<p>['    => '[',
+			']</p>'   => ']',
+			']<br />' => ']',
+		];
+		$content = strtr( $content, $array );
+
+		return $content;
 	}
 
 

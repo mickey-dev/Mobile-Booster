@@ -19,6 +19,23 @@ $default_options = array(
     'block_padding_top' => 15
 );
 $options = array_merge($default_options, $options);
+
+if (!empty($options['schema'])) {
+    if ($options['schema'] === 'dark') {
+        $options['block_background'] = '#000000';
+        $options['font_color'] = '#ffffff';
+    }
+    
+    if ($options['schema'] === 'bright') {
+        $options['block_background'] = '#ffffff';
+        $options['font_color'] = '#444444';
+    }
+    
+    if ($options['schema'] === 'red') {
+        $options['block_background'] = '#c00000';
+        $options['font_color'] = '#ffffff';
+    }
+}
 ?>
 
 <style>

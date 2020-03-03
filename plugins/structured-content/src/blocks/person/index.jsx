@@ -292,7 +292,7 @@ registerBlockType(`structured-content/${name}`, {
                                             <TextControl
                                                 type="text"
                                                 value={person_name}
-                                                placeholder={__('Person Name', 'structured-content')}
+                                                placeholder={__('Please enter your Name here ...', 'structured-content')}
                                                 className="wp-block-structured-content-person__person_name"
                                                 onChange={(person_name) => setAttributes({person_name: person_name})}
                                             />
@@ -304,7 +304,7 @@ registerBlockType(`structured-content/${name}`, {
                                             <TextControl
                                                 type="text"
                                                 value={job_title}
-                                                placeholder={__('Professor', 'structured-content')}
+                                                placeholder={__('Please enter your job title here ...', 'structured-content')}
                                                 className="wp-block-structured-content-person__job_title"
                                                 onChange={(job_title) => setAttributes({job_title: job_title})}
                                             />

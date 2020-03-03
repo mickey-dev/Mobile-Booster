@@ -1,26 +1,26 @@
-# Copyright (C) 2019 Gordon Böhme, Antonio Leutsch
+# Copyright (C) 2020 Gordon Böhme, Antonio Leutsch
 # This file is distributed under the same license as the Structured Content plugin.
 msgid ""
 msgstr ""
-"Project-Id-Version: Structured Content 1.4.0\n"
+"Project-Id-Version: Structured Content 1.4.2\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/structured-content\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2019-11-09T10:26:56+00:00\n"
+"POT-Creation-Date: 2020-02-28T10:21:43+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"X-Generator: WP-CLI 2.2.0\n"
+"X-Generator: WP-CLI 2.4.0\n"
 "X-Domain: structured-content\n"
 
 #. Plugin Name of the plugin
-#: includes/class-structuredcontent-register-tinymce.php:98
+#: includes/class-structuredcontent-register-tinymce.php:99
 msgid "Structured Content"
 msgstr ""
 
 #. Plugin URI of the plugin
-msgid "https://gitlab.com/webwirtschaft/structured-content"
+msgid "https://wordpress.org/plugins/structured-content/"
 msgstr ""
 
 #. Description of the plugin
@@ -32,11 +32,7 @@ msgid "Gordon Böhme, Antonio Leutsch"
 msgstr ""
 
 #. Author URI of the plugin
-msgid "https://gorbo.de/structured-content/"
-msgstr ""
-
-#: includes/class-structuredcontent-block-settings.php:88
-msgid "Enable or disable blocks"
+msgid "https://wpsc-plugin.com"
 msgstr ""
 
 #: class-structuredcontent.php:79
@@ -44,17 +40,570 @@ msgstr ""
 msgid "Ahh not so funny Dude?"
 msgstr ""
 
+#: includes/class-structuredcontent-block-settings.php:88
+msgid "Enable or disable blocks"
+msgstr ""
+
+#: languages/wpsc-mce-locale.php:14
+msgid "Single FAQ"
+msgstr ""
+
+#: languages/wpsc-mce-locale.php:15
+msgid "Adds a FAQ block to the page."
+msgstr ""
+
+#: languages/wpsc-mce-locale.php:17
+msgid "Multi FAQ"
+msgstr ""
+
+#: languages/wpsc-mce-locale.php:18
+msgid "Adds multiple FAQ blocks to the page."
+msgstr ""
+
+#: languages/wpsc-mce-locale.php:20
+msgid "Featured Snippet FAQ"
+msgstr ""
+
+#: languages/wpsc-mce-locale.php:22
+#: dist/blocks.build.js:1
+msgid "Job"
+msgstr ""
+
+#: languages/wpsc-mce-locale.php:23
+msgid "Adds a Job Posting block to the page."
+msgstr ""
+
+#: languages/wpsc-mce-locale.php:24
+msgid "Featured Snippet Job"
+msgstr ""
+
+#: languages/wpsc-mce-locale.php:26
+#: dist/blocks.build.js:1
+msgid "Event"
+msgstr ""
+
+#: languages/wpsc-mce-locale.php:27
+msgid "Adds a Event block to the page."
+msgstr ""
+
+#: languages/wpsc-mce-locale.php:28
+msgid "Featured Snippet Event"
+msgstr ""
+
+#: languages/wpsc-mce-locale.php:30
+#: languages/wpsc-mce-locale.php:62
+#: dist/blocks.build.js:1
+msgid "Person"
+msgstr ""
+
+#: languages/wpsc-mce-locale.php:31
+msgid "Adds a Person block to the page."
+msgstr ""
+
+#: languages/wpsc-mce-locale.php:32
+msgid "Featured Snippet Person"
+msgstr ""
+
+#: languages/wpsc-mce-locale.php:34
+#: dist/blocks.build.js:1
+msgid "Course"
+msgstr ""
+
+#: languages/wpsc-mce-locale.php:35
+msgid "Adds a Course block to the page."
+msgstr ""
+
+#: languages/wpsc-mce-locale.php:36
+msgid "Featured Snippet Course"
+msgstr ""
+
+#: languages/wpsc-mce-locale.php:39
+msgid "Render HTML"
+msgstr ""
+
+#: languages/wpsc-mce-locale.php:40
+msgid "Title Tag"
+msgstr ""
+
+#: languages/wpsc-mce-locale.php:42
+msgid "Question"
+msgstr ""
+
+#: languages/wpsc-mce-locale.php:43
+#: dist/blocks.build.js:1
+msgid "Enter Your Question here..."
+msgstr ""
+
+#: languages/wpsc-mce-locale.php:44
+msgid "Answer"
+msgstr ""
+
+#: languages/wpsc-mce-locale.php:45
+#: dist/blocks.build.js:1
+msgid "Enter your answer here..."
+msgstr ""
+
+#: languages/wpsc-mce-locale.php:47
+msgid "Job title"
+msgstr ""
+
+#: languages/wpsc-mce-locale.php:48
+#: languages/wpsc-mce-locale.php:82
+#: dist/blocks.build.js:1
+msgid "Please enter your job title here ..."
+msgstr ""
+
+#: languages/wpsc-mce-locale.php:49
+msgid "Description"
+msgstr ""
+
+#: languages/wpsc-mce-locale.php:50
+#: dist/blocks.build.js:1
+msgid "Enter your job description here..."
+msgstr ""
+
+#: languages/wpsc-mce-locale.php:52
+msgid "Event title"
+msgstr ""
+
+#: languages/wpsc-mce-locale.php:53
+msgid "Please enter your event title here ..."
+msgstr ""
+
+#: languages/wpsc-mce-locale.php:54
+#: dist/blocks.build.js:1
+msgid "Enter your event description here..."
+msgstr ""
+
+#: languages/wpsc-mce-locale.php:55
 #: shortcodes/event.php:40
 #: dist/blocks.build.js:1
 msgid "Event Meta"
 msgstr ""
 
+#: languages/wpsc-mce-locale.php:56
+msgid "Event Location name"
+msgstr ""
+
+#: languages/wpsc-mce-locale.php:57
+#: dist/blocks.build.js:1
+msgid "Event Location"
+msgstr ""
+
+#: languages/wpsc-mce-locale.php:58
+#: languages/wpsc-mce-locale.php:64
+#: dist/blocks.build.js:1
+msgid "Performer"
+msgstr ""
+
+#: languages/wpsc-mce-locale.php:60
+#: shortcodes/event.php:129
+#: dist/blocks.build.js:1
+msgid "Type"
+msgstr ""
+
+#: languages/wpsc-mce-locale.php:61
+#: dist/blocks.build.js:1
+msgid "Performing Group"
+msgstr ""
+
+#: languages/wpsc-mce-locale.php:65
+#: dist/blocks.build.js:1
+msgid "John Doe"
+msgstr ""
+
+#: languages/wpsc-mce-locale.php:67
+#: languages/wpsc-mce-locale.php:68
+#: shortcodes/event.php:148
+#: dist/blocks.build.js:1
+msgid "Offer"
+msgstr ""
+
+#: languages/wpsc-mce-locale.php:70
+#: shortcodes/event.php:153
+#: dist/blocks.build.js:1
+msgid "Availability"
+msgstr ""
+
+#: languages/wpsc-mce-locale.php:71
+#: dist/blocks.build.js:1
+msgid "In Stock"
+msgstr ""
+
+#: languages/wpsc-mce-locale.php:72
+#: dist/blocks.build.js:1
+msgid "Sold Out"
+msgstr ""
+
+#: languages/wpsc-mce-locale.php:73
+#: dist/blocks.build.js:1
+msgid "Pre Order"
+msgstr ""
+
+#: languages/wpsc-mce-locale.php:75
+#: shortcodes/event.php:161
+#: dist/blocks.build.js:1
+msgid "Ticket Website"
+msgstr ""
+
+#: languages/wpsc-mce-locale.php:76
+#: languages/wpsc-mce-locale.php:100
+#: dist/blocks.build.js:1
+msgid "https://your-website.com"
+msgstr ""
+
+#: languages/wpsc-mce-locale.php:78
+#: shortcodes/event.php:180
+#: dist/blocks.build.js:1
+msgid "Price"
+msgstr ""
+
+#: languages/wpsc-mce-locale.php:80
+msgid "Please enter your Name"
+msgstr ""
+
+#: languages/wpsc-mce-locale.php:81
+#: shortcodes/person.php:35
+#: dist/blocks.build.js:1
+msgid "Job Title"
+msgstr ""
+
+#: languages/wpsc-mce-locale.php:84
+#: shortcodes/person.php:69
+#: dist/blocks.build.js:1
+msgid "E-Mail"
+msgstr ""
+
+#: languages/wpsc-mce-locale.php:85
+#: dist/blocks.build.js:1
+msgid "jane-doe@xyz.edu"
+msgstr ""
+
+#: languages/wpsc-mce-locale.php:86
+#: shortcodes/person.php:77
+#: shortcodes/person.php:149
+#: dist/blocks.build.js:1
+msgid "URL"
+msgstr ""
+
+#: languages/wpsc-mce-locale.php:87
+#: dist/blocks.build.js:1
+msgid "http://www.janedoe.com"
+msgstr ""
+
+#: languages/wpsc-mce-locale.php:89
+#: shortcodes/person.php:46
+#: dist/blocks.build.js:1
+msgid "Image"
+msgstr ""
+
+#: languages/wpsc-mce-locale.php:90
+#: dist/blocks.build.js:1
+msgid "Add Image"
+msgstr ""
+
+#: languages/wpsc-mce-locale.php:91
+msgid "Image Description"
+msgstr ""
+
+#: languages/wpsc-mce-locale.php:93
+#: dist/blocks.build.js:1
+msgid "CSS class"
+msgstr ""
+
+#: languages/wpsc-mce-locale.php:94
+#: dist/blocks.build.js:1
+msgid "additional css classes ..."
+msgstr ""
+
+#: languages/wpsc-mce-locale.php:96
+#: shortcodes/job.php:29
+#: dist/blocks.build.js:1
+msgid "Company"
+msgstr ""
+
+#: languages/wpsc-mce-locale.php:97
 #: shortcodes/event.php:46
 #: shortcodes/event.php:137
-#: shortcodes/person.php:27
 #: shortcodes/job.php:35
+#: shortcodes/person.php:27
 #: dist/blocks.build.js:1
 msgid "Name"
+msgstr ""
+
+#: languages/wpsc-mce-locale.php:98
+msgid "Company Name"
+msgstr ""
+
+#: languages/wpsc-mce-locale.php:99
+#: shortcodes/course.php:40
+#: shortcodes/job.php:43
+#: dist/blocks.build.js:1
+msgid "Same as (Website / Social Media)"
+msgstr ""
+
+#: languages/wpsc-mce-locale.php:102
+#: shortcodes/job.php:73
+#: dist/blocks.build.js:1
+msgid "Job Location"
+msgstr ""
+
+#: languages/wpsc-mce-locale.php:104
+#: shortcodes/event.php:77
+#: shortcodes/job.php:77
+#: shortcodes/person.php:100
+#: dist/blocks.build.js:1
+msgid "Street"
+msgstr ""
+
+#: languages/wpsc-mce-locale.php:105
+#: dist/blocks.build.js:1
+msgid "Any Street 3A"
+msgstr ""
+
+#: languages/wpsc-mce-locale.php:107
+#: shortcodes/event.php:86
+#: shortcodes/job.php:86
+#: shortcodes/person.php:109
+#: dist/blocks.build.js:1
+msgid "Postal Code"
+msgstr ""
+
+#: languages/wpsc-mce-locale.php:108
+#: dist/blocks.build.js:1
+msgid "Any Postal Code"
+msgstr ""
+
+#: languages/wpsc-mce-locale.php:110
+#: shortcodes/event.php:94
+#: shortcodes/job.php:94
+#: shortcodes/person.php:117
+#: dist/blocks.build.js:1
+msgid "Locality"
+msgstr ""
+
+#: languages/wpsc-mce-locale.php:111
+#: dist/blocks.build.js:1
+msgid "Any City"
+msgstr ""
+
+#: languages/wpsc-mce-locale.php:113
+#: shortcodes/event.php:104
+#: shortcodes/job.php:104
+#: shortcodes/person.php:127
+#: dist/blocks.build.js:1
+msgid "Country ISO Code"
+msgstr ""
+
+#: languages/wpsc-mce-locale.php:114
+#: dist/blocks.build.js:1
+msgid "US"
+msgstr ""
+
+#: languages/wpsc-mce-locale.php:116
+#: shortcodes/event.php:112
+#: shortcodes/job.php:112
+#: shortcodes/person.php:135
+#: dist/blocks.build.js:1
+msgid "Region ISO Code"
+msgstr ""
+
+#: languages/wpsc-mce-locale.php:117
+#: dist/blocks.build.js:1
+msgid "CA"
+msgstr ""
+
+#: languages/wpsc-mce-locale.php:119
+#: shortcodes/event.php:172
+#: shortcodes/job.php:155
+#: dist/blocks.build.js:1
+msgid "Currency ISO Code"
+msgstr ""
+
+#: languages/wpsc-mce-locale.php:120
+#: dist/blocks.build.js:1
+msgid "USD"
+msgstr ""
+
+#: languages/wpsc-mce-locale.php:122
+#: shortcodes/job.php:163
+#: dist/blocks.build.js:1
+msgid "Value"
+msgstr ""
+
+#: languages/wpsc-mce-locale.php:123
+#: shortcodes/job.php:173
+#: dist/blocks.build.js:1
+msgid "Job Meta"
+msgstr ""
+
+#: languages/wpsc-mce-locale.php:125
+#: shortcodes/job.php:124
+#: dist/blocks.build.js:1
+msgid "Salary"
+msgstr ""
+
+#: languages/wpsc-mce-locale.php:126
+#: shortcodes/job.php:128
+#: dist/blocks.build.js:1
+msgid "Unit"
+msgstr ""
+
+#: languages/wpsc-mce-locale.php:127
+#: shortcodes/job.php:134
+#: dist/blocks.build.js:1
+msgid "Hourly"
+msgstr ""
+
+#: languages/wpsc-mce-locale.php:128
+#: shortcodes/job.php:137
+#: dist/blocks.build.js:1
+msgid "Daily"
+msgstr ""
+
+#: languages/wpsc-mce-locale.php:129
+#: shortcodes/job.php:140
+#: dist/blocks.build.js:1
+msgid "Weekly"
+msgstr ""
+
+#: languages/wpsc-mce-locale.php:130
+#: shortcodes/job.php:143
+#: dist/blocks.build.js:1
+msgid "Monthly"
+msgstr ""
+
+#: languages/wpsc-mce-locale.php:131
+#: shortcodes/job.php:146
+#: dist/blocks.build.js:1
+msgid "Yearly"
+msgstr ""
+
+#: languages/wpsc-mce-locale.php:133
+#: shortcodes/job.php:177
+#: dist/blocks.build.js:1
+msgid "Employment Type"
+msgstr ""
+
+#: languages/wpsc-mce-locale.php:134
+#: shortcodes/job.php:183
+#: dist/blocks.build.js:1
+msgid "Full Time"
+msgstr ""
+
+#: languages/wpsc-mce-locale.php:135
+#: shortcodes/job.php:186
+#: dist/blocks.build.js:1
+msgid "Part Time"
+msgstr ""
+
+#: languages/wpsc-mce-locale.php:136
+#: shortcodes/job.php:189
+#: dist/blocks.build.js:1
+msgid "Contractor"
+msgstr ""
+
+#: languages/wpsc-mce-locale.php:137
+#: shortcodes/job.php:192
+#: dist/blocks.build.js:1
+msgid "Temporary"
+msgstr ""
+
+#: languages/wpsc-mce-locale.php:138
+#: shortcodes/job.php:195
+#: dist/blocks.build.js:1
+msgid "Intern"
+msgstr ""
+
+#: languages/wpsc-mce-locale.php:139
+#: shortcodes/job.php:198
+#: dist/blocks.build.js:1
+msgid "Volunteer"
+msgstr ""
+
+#: languages/wpsc-mce-locale.php:140
+#: shortcodes/job.php:201
+#: dist/blocks.build.js:1
+msgid "Per Diem"
+msgstr ""
+
+#: languages/wpsc-mce-locale.php:141
+#: shortcodes/job.php:204
+#: dist/blocks.build.js:1
+msgid "Other"
+msgstr ""
+
+#: languages/wpsc-mce-locale.php:143
+#: shortcodes/person.php:21
+#: dist/blocks.build.js:1
+msgid "Personal"
+msgstr ""
+
+#: languages/wpsc-mce-locale.php:144
+#: shortcodes/person.php:65
+#: dist/blocks.build.js:1
+msgid "Contact"
+msgstr ""
+
+#: languages/wpsc-mce-locale.php:145
+#: shortcodes/person.php:96
+#: dist/blocks.build.js:1
+msgid "Address"
+msgstr ""
+
+#: languages/wpsc-mce-locale.php:146
+#: shortcodes/person.php:145
+#: dist/blocks.build.js:1
+msgid "Colleague"
+msgstr ""
+
+#: languages/wpsc-mce-locale.php:148
+msgid "Course Name"
+msgstr ""
+
+#: languages/wpsc-mce-locale.php:149
+msgid "Enter your Course Name here..."
+msgstr ""
+
+#: languages/wpsc-mce-locale.php:150
+msgid "Enter your Course Description here..."
+msgstr ""
+
+#: languages/wpsc-mce-locale.php:151
+#: shortcodes/course.php:27
+#: dist/blocks.build.js:1
+msgid "Provider Information"
+msgstr ""
+
+#: languages/wpsc-mce-locale.php:152
+#: shortcodes/course.php:32
+#: dist/blocks.build.js:1
+msgid "Provider Name"
+msgstr ""
+
+#: languages/wpsc-mce-locale.php:154
+#: shortcodes/job.php:212
+#: dist/blocks.build.js:1
+msgid "Valid Through"
+msgstr ""
+
+#: languages/wpsc-mce-locale.php:155
+#: shortcodes/event.php:189
+#: dist/blocks.build.js:1
+msgid "Valid From"
+msgstr ""
+
+#: languages/wpsc-mce-locale.php:156
+msgid "Additional"
+msgstr ""
+
+#: languages/wpsc-mce-locale.php:158
+#: dist/blocks.build.js:1
+msgid "Add One"
+msgstr ""
+
+#: languages/wpsc-mce-locale.php:159
+msgid "Remove Last One"
 msgstr ""
 
 #: shortcodes/event.php:54
@@ -71,146 +620,8 @@ msgstr ""
 msgid "EVENT Location"
 msgstr ""
 
-#: shortcodes/event.php:77
-#: shortcodes/person.php:100
-#: shortcodes/job.php:77
-#: dist/blocks.build.js:1
-msgid "Street"
-msgstr ""
-
-#: shortcodes/event.php:86
-#: shortcodes/person.php:109
-#: shortcodes/job.php:86
-#: dist/blocks.build.js:1
-msgid "Postal Code"
-msgstr ""
-
-#: shortcodes/event.php:94
-#: shortcodes/person.php:117
-#: shortcodes/job.php:94
-#: dist/blocks.build.js:1
-msgid "Locality"
-msgstr ""
-
-#: shortcodes/event.php:104
-#: shortcodes/person.php:127
-#: shortcodes/job.php:104
-#: dist/blocks.build.js:1
-msgid "Country ISO Code"
-msgstr ""
-
-#: shortcodes/event.php:112
-#: shortcodes/person.php:135
-#: shortcodes/job.php:112
-#: dist/blocks.build.js:1
-msgid "Region ISO Code"
-msgstr ""
-
 #: shortcodes/event.php:125
 msgid "PERFORMER"
-msgstr ""
-
-#: shortcodes/event.php:129
-#: dist/blocks.build.js:1
-msgid "Type"
-msgstr ""
-
-#: shortcodes/event.php:148
-#: dist/blocks.build.js:1
-msgid "Offer"
-msgstr ""
-
-#: shortcodes/event.php:153
-#: dist/blocks.build.js:1
-msgid "Availability"
-msgstr ""
-
-#: shortcodes/event.php:161
-#: dist/blocks.build.js:1
-msgid "Ticket Website"
-msgstr ""
-
-#: shortcodes/event.php:172
-#: shortcodes/job.php:155
-#: dist/blocks.build.js:1
-msgid "Currency ISO Code"
-msgstr ""
-
-#: shortcodes/event.php:180
-#: dist/blocks.build.js:1
-msgid "Price"
-msgstr ""
-
-#: shortcodes/event.php:189
-#: dist/blocks.build.js:1
-msgid "Valid From"
-msgstr ""
-
-#: shortcodes/person.php:21
-#: dist/blocks.build.js:1
-msgid "Personal"
-msgstr ""
-
-#: shortcodes/person.php:35
-#: dist/blocks.build.js:1
-msgid "Job Title"
-msgstr ""
-
-#: shortcodes/person.php:46
-#: dist/blocks.build.js:1
-msgid "Image"
-msgstr ""
-
-#: shortcodes/person.php:65
-#: dist/blocks.build.js:1
-msgid "Contact"
-msgstr ""
-
-#: shortcodes/person.php:69
-#: dist/blocks.build.js:1
-msgid "E-Mail"
-msgstr ""
-
-#: shortcodes/person.php:77
-#: shortcodes/person.php:149
-#: dist/blocks.build.js:1
-msgid "URL"
-msgstr ""
-
-#: shortcodes/person.php:85
-#: dist/blocks.build.js:1
-msgid "Telephone"
-msgstr ""
-
-#: shortcodes/person.php:96
-#: dist/blocks.build.js:1
-msgid "Address"
-msgstr ""
-
-#: shortcodes/person.php:145
-#: dist/blocks.build.js:1
-msgid "Colleague"
-msgstr ""
-
-#: shortcodes/course.php:27
-#: dist/blocks.build.js:1
-msgid "Provider Information"
-msgstr ""
-
-#: shortcodes/course.php:32
-#: dist/blocks.build.js:1
-msgid "Provider Name"
-msgstr ""
-
-#: shortcodes/course.php:40
-#: shortcodes/job.php:43
-#: dist/blocks.build.js:1
-msgid "Same as (Website / Social Media)"
-msgstr ""
-
-#: shortcodes/job.php:29
-#: dist/blocks.build.js:1
-msgid "Company"
 msgstr ""
 
 #: shortcodes/job.php:54
@@ -218,104 +629,9 @@ msgstr ""
 msgid "Logo"
 msgstr ""
 
-#: shortcodes/job.php:73
+#: shortcodes/person.php:85
 #: dist/blocks.build.js:1
-msgid "Job Location"
-msgstr ""
-
-#: shortcodes/job.php:124
-#: dist/blocks.build.js:1
-msgid "Salary"
-msgstr ""
-
-#: shortcodes/job.php:128
-#: dist/blocks.build.js:1
-msgid "Unit"
-msgstr ""
-
-#: shortcodes/job.php:134
-#: dist/blocks.build.js:1
-msgid "Hourly"
-msgstr ""
-
-#: shortcodes/job.php:137
-#: dist/blocks.build.js:1
-msgid "Daily"
-msgstr ""
-
-#: shortcodes/job.php:140
-#: dist/blocks.build.js:1
-msgid "Weekly"
-msgstr ""
-
-#: shortcodes/job.php:143
-#: dist/blocks.build.js:1
-msgid "Monthly"
-msgstr ""
-
-#: shortcodes/job.php:146
-#: dist/blocks.build.js:1
-msgid "Yearly"
-msgstr ""
-
-#: shortcodes/job.php:163
-#: dist/blocks.build.js:1
-msgid "Value"
-msgstr ""
-
-#: shortcodes/job.php:173
-#: dist/blocks.build.js:1
-msgid "Job Meta"
-msgstr ""
-
-#: shortcodes/job.php:177
-#: dist/blocks.build.js:1
-msgid "Employment Type"
-msgstr ""
-
-#: shortcodes/job.php:183
-#: dist/blocks.build.js:1
-msgid "Full Time"
-msgstr ""
-
-#: shortcodes/job.php:186
-#: dist/blocks.build.js:1
-msgid "Part Time"
-msgstr ""
-
-#: shortcodes/job.php:189
-#: dist/blocks.build.js:1
-msgid "Contractor"
-msgstr ""
-
-#: shortcodes/job.php:192
-#: dist/blocks.build.js:1
-msgid "Temporary"
-msgstr ""
-
-#: shortcodes/job.php:195
-#: dist/blocks.build.js:1
-msgid "Intern"
-msgstr ""
-
-#: shortcodes/job.php:198
-#: dist/blocks.build.js:1
-msgid "Volunteer"
-msgstr ""
-
-#: shortcodes/job.php:201
-#: dist/blocks.build.js:1
-msgid "Per Diem"
-msgstr ""
-
-#: shortcodes/job.php:204
-#: dist/blocks.build.js:1
-msgid "Other"
-msgstr ""
-
-#: shortcodes/job.php:212
-#: dist/blocks.build.js:1
-msgid "Valid Through"
+msgid "Telephone"
 msgstr ""
 
 #: dist/blocks.build.js:1
@@ -335,35 +651,7 @@ msgid "structured-content"
 msgstr ""
 
 #: dist/blocks.build.js:1
-msgid "Enter Your Question here..."
-msgstr ""
-
-#: dist/blocks.build.js:1
-msgid "Add Image"
-msgstr ""
-
-#: dist/blocks.build.js:1
-msgid "Enter your answer here..."
-msgstr ""
-
-#: dist/blocks.build.js:1
-msgid "Question tag"
-msgstr ""
-
-#: dist/blocks.build.js:1
-msgid "CSS class"
-msgstr ""
-
-#: dist/blocks.build.js:1
-msgid "additional css classes ..."
-msgstr ""
-
-#: dist/blocks.build.js:1
-msgid "Add One"
-msgstr ""
-
-#: dist/blocks.build.js:1
-msgid "Job"
+msgid "Title tag"
 msgstr ""
 
 #: dist/blocks.build.js:1
@@ -379,19 +667,7 @@ msgid "Select a Type"
 msgstr ""
 
 #: dist/blocks.build.js:1
-msgid "Title tag"
-msgstr ""
-
-#: dist/blocks.build.js:1
 msgid "Enter Your job title here..."
-msgstr ""
-
-#: dist/blocks.build.js:1
-msgid "Enter your job description here..."
-msgstr ""
-
-#: dist/blocks.build.js:1
-msgid "https://your-website.com"
 msgstr ""
 
 #: dist/blocks.build.js:1
@@ -399,55 +675,7 @@ msgid "Remove Image"
 msgstr ""
 
 #: dist/blocks.build.js:1
-msgid "Any Street 3A"
-msgstr ""
-
-#: dist/blocks.build.js:1
-msgid "Any Postal Code"
-msgstr ""
-
-#: dist/blocks.build.js:1
-msgid "Any City"
-msgstr ""
-
-#: dist/blocks.build.js:1
-msgid "US"
-msgstr ""
-
-#: dist/blocks.build.js:1
-msgid "CA"
-msgstr ""
-
-#: dist/blocks.build.js:1
-msgid "USD"
-msgstr ""
-
-#: dist/blocks.build.js:1
-msgid "Event"
-msgstr ""
-
-#: dist/blocks.build.js:1
 msgid "event"
-msgstr ""
-
-#: dist/blocks.build.js:1
-msgid "Performing Group"
-msgstr ""
-
-#: dist/blocks.build.js:1
-msgid "Person"
-msgstr ""
-
-#: dist/blocks.build.js:1
-msgid "In Stock"
-msgstr ""
-
-#: dist/blocks.build.js:1
-msgid "Sold Out"
-msgstr ""
-
-#: dist/blocks.build.js:1
-msgid "Pre Order"
 msgstr ""
 
 #: dist/blocks.build.js:1
@@ -455,23 +683,7 @@ msgid "Enter Your Event Title..."
 msgstr ""
 
 #: dist/blocks.build.js:1
-msgid "Enter your Event Description here..."
-msgstr ""
-
-#: dist/blocks.build.js:1
 msgid "Event Location Name"
-msgstr ""
-
-#: dist/blocks.build.js:1
-msgid "Event Location"
-msgstr ""
-
-#: dist/blocks.build.js:1
-msgid "Performer"
-msgstr ""
-
-#: dist/blocks.build.js:1
-msgid "John Doe"
 msgstr ""
 
 #: dist/blocks.build.js:1
@@ -487,27 +699,11 @@ msgid "http://www.xyz.edu/students/alicejones.html"
 msgstr ""
 
 #: dist/blocks.build.js:1
-msgid "Person Name"
-msgstr ""
-
-#: dist/blocks.build.js:1
-msgid "Professor"
-msgstr ""
-
-#: dist/blocks.build.js:1
-msgid "jane-doe@xyz.edu"
-msgstr ""
-
-#: dist/blocks.build.js:1
-msgid "http://www.janedoe.com"
+msgid "Please enter your Name here ..."
 msgstr ""
 
 #: dist/blocks.build.js:1
 msgid "(425) 123-4567"
-msgstr ""
-
-#: dist/blocks.build.js:1
-msgid "Course"
 msgstr ""
 
 #: dist/blocks.build.js:1

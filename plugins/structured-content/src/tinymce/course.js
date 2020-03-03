@@ -1,10 +1,10 @@
 export default function (editor) {
     return {
-        text   : 'Course',
-        tooltip: 'Adds a Course block to the page.',
+        text   : editor.getLang('wpsc.courseButtonText', 'Course'),
+        tooltip: editor.getLang('wpsc.courseTooltip', 'Adds a Course block to the page.'),
         onclick: () => {
             editor.windowManager.open({
-                title     : 'Featured Snippet Course',
+                title     : editor.getLang('wpsc.coursePopupTitle', 'Featured Snippet Course'),
                 minWidth  : 500,
                 height    : 500,
                 autoScroll: true,
@@ -13,13 +13,13 @@ export default function (editor) {
                     {
                         type   : 'checkbox',
                         name   : 'giveHTML',
-                        label  : 'Render HTML',
+                        label  : editor.getLang('wpsc.renderHTML', 'Render HTML'),
                         checked: true
                     },
                     {
                         type  : 'listbox',
                         name  : 'titleTag',
-                        label : 'Headline-Tag',
+                        label : editor.getLang('wpsc.titleTag', 'Title Tag'),
                         values: [
                             {text: 'h2', value: 'h2'},
                             {text: 'h3', value: 'h3'},
@@ -31,19 +31,19 @@ export default function (editor) {
                         value : 'h2', // Sets the default
                     },
                     {
-                        label      : 'Title',
                         type       : 'textbox',
                         name       : 'title',
+                        label      : editor.getLang('wpsc.course', 'Course Name'),
                         value      : '',
-                        placeholder: 'Enter Your Course Title...',
+                        placeholder: editor.getLang('wpsc.coursePlaceholder', 'Enter Your Course Name here...'),
                         multiline  : true,
                     },
                     {
                         type       : 'textbox',
                         name       : 'description',
-                        label      : 'Description',
+                        label      : editor.getLang('wpsc.description', 'Description'),
                         value      : '',
-                        placeholder: 'Enter your Course Description here...',
+                        placeholder: editor.getLang('wpsc.description', 'Enter your description here...'),
                         multiline  : true,
                         minHeight  : 100,
                     },
@@ -51,34 +51,34 @@ export default function (editor) {
                         type : 'container',
                         name : 'container',
                         label: '',
-                        html : '<h1 style="font-weight: bold;">Provider</h1>'
+                        html : `<h1 style="font-weight: bold;">${editor.getLang('wpsc.providerInformation', 'Provider Information')}</h1>`
                     },
                     {
                         type       : 'textbox',
                         name       : 'providerName',
-                        label      : 'Name',
+                        label      : editor.getLang('wpsc.providerName', 'Provider Name'),
                         value      : '',
-                        placeholder: 'Provider Name',
+                        placeholder: editor.getLang('wpsc.providerName', 'Provider Name'),
                         multiline  : false,
                     },
                     {
                         type       : 'textbox',
                         name       : 'providerSameAs',
-                        label      : 'Same As',
+                        label      : editor.getLang('wpsc.sameAs', 'Same as (Website / Social Media)'),
                         value      : '',
-                        placeholder: 'https://example.com',
+                        placeholder: editor.getLang('wpsc.sameAsPlaceholder', 'https://your-website.com'),
                         multiline  : false,
                     },
                     {
                         type : 'container',
                         name : 'container',
                         label: '',
-                        html : '<h1 style="font-weight: bold;">Additional</h1>'
+                        html : `<h1 style="font-weight: bold;">${editor.getLang('wpsc.additional', 'Additional')}</h1>`
                     },
                     {
                         type : 'textbox',
                         name : 'cssClass',
-                        label: 'CSS classes',
+                        label: editor.getLang('wpsc.cssClass', 'CSS class'),
                         value: '',
                     },
                 ],

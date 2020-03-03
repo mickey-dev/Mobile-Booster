@@ -6,7 +6,7 @@ Donate link: https://paypal.me/antonioleutsch
 Requires at least: 5.0
 Tested up to: 5.3
 Requires PHP: 7.0
-Stable tag: 1.4.1
+Stable tag: 1.4.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -23,10 +23,10 @@ Alternatively
 2. then activate
 
 == What does it do ==
-With this plugin you can insert structured data elements multiple times in any post or page. 
+With this plugin you can insert structured data elements multiple times in any post or page.
 
-In simple dialogs, for example FAQ can be inserted. Because the the plugin renders the given information as JSON-LD according to schema.org, the bots of the search engines, like google, recognize this schema. 
-Nice option: you can decide if only the JSON-LD should be displayed in the source code or if the content should be preformatted and visible. Check or uncheck the "Render HTML" box to do this. 
+In simple dialogs, for example FAQ can be inserted. Because the the plugin renders the given information as JSON-LD according to schema.org, the bots of the search engines, like google, recognize this schema.
+Nice option: you can decide if only the JSON-LD should be displayed in the source code or if the content should be preformatted and visible. Check or uncheck the "Render HTML" box to do this.
 
 You can test whether the information has been labeled correctly with the [Structured Data Testing Tool](https://search.google.com/structured-data/testing-tool) from Google, for example.
 
@@ -47,7 +47,7 @@ Once the the plugin is installed and activated, you'll find a new icon in the ti
 
 If you use *Gutenberg* you'll find a new content block. Choose your preferred structured content element and fill out the form. If you want to answer more than one question, then simply add them by clicking on "Add one" *within* this Gutenberg block.
 
-Alternatively use these shortcodes in your TinyMCE: 
+Alternatively use these shortcodes in your TinyMCE:
 
 **FAQPage**
 *Single FAQ*
@@ -80,6 +80,10 @@ We will continuously offer new structured data elements and deliver them as upda
 4. Adding a FAQPage section in Gutenberg
 
 == Changelog ==
+= 1.4.2 =
+* [FIX] translation now works in lightboxmodal for tinyMCE
+* [FIX] output of incorrectly nested HTML within JSON-LD
+
 = 1.4.1 =
 * [FIX] Backend issues with the lightbox modal
 * [FEATURE] jQuery completely removed from the plugin
@@ -116,5 +120,8 @@ Please visit [https://gitlab.com/webwirtschaft/structured-content/activity](http
 If you want a special structured data element, we can implement it especially for your needs. As a sponsor you will be mentioned on the website, the plugin description and the changelog. If you are interested, write us an e-mail *infoⒶwpsc-plugin.com*
 
 == Frequently Asked Questions ==
+= Where do i find some HowTo =
+Please check out our ["HowTo" section](https://wpsc-plugin.com/how-to/) on our website.
+
 = Where i can report bugs? =
 Please use the ["Issue" section](https://gitlab.com/webwirtschaft/structured-content/issues) of the gitlab page of the Plugin.

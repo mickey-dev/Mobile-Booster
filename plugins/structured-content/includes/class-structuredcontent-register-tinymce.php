@@ -58,6 +58,7 @@ class StructuredContent_Register_TinyMCE {
 
 		add_action( 'init', [ $this, 'register_tinymce' ], 99 );
 		add_action( 'after_wp_tiny_mce', [ $this, 'tinymce_extra_vars' ] );
+		add_filter( 'mce_external_languages', [ $this, 'wpsc_tinymce_languages' ] );
 	}
 
 	/**
@@ -100,6 +101,12 @@ class StructuredContent_Register_TinyMCE {
 				);
 				?>;
         </script><?php
+	}
+
+	public function wpsc_tinymce_languages( $wpsc_locales ) {
+		$wpsc_locales['wpsc'] = STRUCTURED_CONTENT_PLUGIN_DIR . '/languages/wpsc-mce-locale.php';
+
+		return $wpsc_locales;
 	}
 }
 

@@ -110,7 +110,11 @@ class NewsletterEmails extends NewsletterModule {
         $controls->init();
         echo '<input type="hidden" name="action" value="tnpc_render">';
         echo '<input type="hidden" name="b" value="' . esc_attr($_REQUEST['id']) . '">';
-	    echo '<input type="hidden" name="options[inline_edits]" value="' . esc_attr( serialize( $controls->data['inline_edits'] ) ) . '">';
+        $inline_edits = '';
+        if (isset($controls->data['inline_edits'])) {
+            $inline_edits = $controls->data['inline_edits'];
+        }
+        echo '<input type="hidden" name="options[inline_edits]" value="' . esc_attr( serialize( $inline_edits ) ) . '">';
 
         ob_start();
         include $block['dir'] . '/options.php';
@@ -275,11 +279,11 @@ class NewsletterEmails extends NewsletterModule {
     }
 
     static function get_outlook_wrapper_open($width = 600) {
-        return '<!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" align="center" cellspacing="0" width="' . $width . '"><tr><td width="' . $width . '" style="vertical-align:top;width:' . $width . 'px;"><![endif]-->' . "\n";
+        return '<!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" align="center" cellspacing="0" width="' . $width . '"><tr><td width="' . $width . '" style="vertical-align:top;width:' . $width . 'px;"><![endif]-->';
     }
 
     static function get_outlook_wrapper_close() {
-        echo "<!--[if mso | IE]></td></tr></table><![endif]-->\n";
+        echo "<!--[if mso | IE]></td></tr></table><![endif]-->";
     }
 
     /**
@@ -370,12 +374,16 @@ class NewsletterEmails extends NewsletterModule {
         $style .= 'padding-bottom: ' . $options['block_padding_bottom'] . 'px; ';
         $style .= 'background-color: ' . $options['block_background'] . ';';
 
+            if (isset($options['block_background_gradient'])) {
+                $style .= 'background: linear-gradient(180deg, ' . $options['block_background'] . ' 0%, ' . $options['block_background_2'] . '  100%);';
+            }
+
 
 
         $data = $this->options_encode($options);
         // First time block creation wrapper
         if ($wrapper) {
-            echo '<table type="block" border="0" cellpadding="0" cellspacing="0" align="center" width="100%" style="border-collapse: collapse; width: 100%;" class="tnpc-row tnpc-row-block" data-id="', esc_attr($block_id), '">', "\n";
+            echo '<table border="0" cellpadding="0" cellspacing="0" align="center" width="100%" style="border-collapse: collapse; width: 100%;" class="tnpc-row tnpc-row-block" data-id="', esc_attr($block_id), '">', "\n";
             echo "<tr>";
             echo '<td align="center" style="padding: 0;" class="edit-block">', "\n";
         }
@@ -385,20 +393,19 @@ class NewsletterEmails extends NewsletterModule {
 
         echo '<table type="options" data-json="', esc_attr($data), '" class="tnpc-block-content" border="0" cellpadding="0" align="center" cellspacing="0" width="100%" style="width: 100%!important; max-width: ', $width, 'px!important">', "\n";
         echo "<tr>";
-        echo '<td align="center" style="', $style, '" bgcolor="', $options['block_background'], '" width="100%">', "\n";
+        echo '<td align="center" style="', $style, '" bgcolor="', $options['block_background'], '" width="100%">';
 
         //echo "<!-- block generated content -->\n";
-        echo $content;
+        echo trim($content);
         //echo "\n<!-- /block generated content -->\n";
 
-        echo "\n</td></tr></table>";
+        echo "</td></tr></table>";
         echo $this->get_outlook_wrapper_close();
 
         // First time block creation wrapper
         if ($wrapper) {
             echo "</td></tr></table>";
         }
-        echo "\n";
 
         return $out;
     }
@@ -610,7 +617,7 @@ class NewsletterEmails extends NewsletterModule {
                 break;
 
 
-             
+
             case 'emails-create':
                 // Newsletter from themes are created on frontend context because sometime WP themes change the way the content,
                 // excerpt, thumbnail are extracted.
@@ -624,14 +631,14 @@ class NewsletterEmails extends NewsletterModule {
                 if (!$controls->is_action('create')) {
                     die('Wrong call');
                 }
-                
+
                 $theme_id = $controls->data['id'];
                 $theme = $this->themes->get_theme($theme_id);
 
                 if (!$theme) {
                     die('invalid theme');
                 }
-                
+
                 $this->themes->save_options($theme_id, $controls->data);
 
                 $email = array();

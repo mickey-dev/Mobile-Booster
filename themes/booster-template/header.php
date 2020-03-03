@@ -180,6 +180,7 @@
     </div>
 <?php } ?>
 <?php if ( apply_filters( 'woocommerce_show_page_title', true ) ) : ?>
+
 <?php ?>
 <?php if (get_post_type()=='post'){?>
     <?php if(is_single()){ ?>
@@ -209,9 +210,7 @@
         </div>
     </div>
     <?php }?>
-<?php } elseif ((get_post_type()=='product')) {
-
-} else{ ?>
+<?php } elseif (get_post_type()=='product') { ?>
     <div class="container-fluid page-header-bg full-center" style="background-image: url('<?php echo get_template_directory_uri() ?>/assets/img/antenna-bg.jpg')">
         <div class="overlay"></div>
         <div class="row">
@@ -223,7 +222,21 @@
             </h2>
         </div>
     </div>
-<?php } ?>
+<?php } else {
+    ?>
+    <div class="container-fluid page-header-bg full-center" style="background-image: url('<?php echo get_template_directory_uri() ?>/assets/img/antenna-bg.jpg')">
+        <div class="overlay"></div>
+        <div class="row">
+            <h2 class="page-title">
+                <?php
+                $url = array_reverse( explode('/', $_SERVER["REQUEST_URI"]) );
+                echo str_replace( "-", " ", $url[1] );
+                ?>
+            </h2>
+        </div>
+    </div>
+    <?php
+} ?>
 
 
   <script type="text/javascript" src="//code.jquery.com/jquery-2.2.4.min.js"></script>

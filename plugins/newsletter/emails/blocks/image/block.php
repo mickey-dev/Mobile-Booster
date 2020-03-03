@@ -11,6 +11,7 @@
 $defaults = array(
     'image' => '',
     'url' => '',
+    'width'=>0,
     'block_background' => '#ffffff',
     'block_padding_left' => 0,
     'block_padding_right' => 0,
@@ -40,9 +41,18 @@ if (empty($options['image']['id'])) {
 
 $url = $options['url'];
 ?>
-
+<style>
+    .image {
+        max-width: 100%!important;
+        height: auto!important;
+        display: inline-block;
+        <?php if (!empty($options['width'])) { ?>
+        width: <?php echo $options['width']?>px;
+        <?php } ?>
+    }
+</style>
 <?php if (!empty($url)) { ?>
-    <a href="<?php echo $url ?>" target="_blank"><img src="<?php echo $media->url ?>" width="<?php echo $media->width ?>" height="<?php echo $media->height ?>" border="0" alt="<?php echo esc_attr($media->alt) ?>" style="max-width: 100%!important; height: auto!important; display: inline-block;"></a>                
+    <a href="<?php echo $url ?>" target="_blank"><img src="<?php echo $media->url ?>" width="<?php echo $media->width ?>" height="<?php echo $media->height ?>" border="0" alt="<?php echo esc_attr($media->alt) ?>" inline-class="image"></a>                
 <?php } else { ?>
-    <img src="<?php echo $media->url ?>" border="0" alt="<?php echo esc_attr($media->alt) ?>" width="<?php echo $media->width ?>" height="<?php echo $media->height ?>" style="max-width: 100%!important; height: auto!important; display: inline-block;">              
+    <img src="<?php echo $media->url ?>" border="0" alt="<?php echo esc_attr($media->alt) ?>" width="<?php echo $media->width ?>" height="<?php echo $media->height ?>"  inline-class="image">              
 <?php } ?>
