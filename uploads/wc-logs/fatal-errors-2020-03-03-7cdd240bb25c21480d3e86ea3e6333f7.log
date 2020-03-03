@@ -1,0 +1,22 @@
+2020-03-03T16:35:18+00:00 CRITICAL Uncaught Error: Call to undefined function get_countries() in F:\WebWork\Wordpress\mobilebooster\Mobile-Booster\wp-content\themes\booster-template\header.php:81
+Stack trace:
+#0 F:\WebWork\Wordpress\mobilebooster\Mobile-Booster\wp-includes\template.php(722): require_once()
+#1 F:\WebWork\Wordpress\mobilebooster\Mobile-Booster\wp-includes\template.php(671): load_template('F:\\WebWork\\Word...', true)
+#2 F:\WebWork\Wordpress\mobilebooster\Mobile-Booster\wp-includes\general-template.php(41): locate_template(Array, true)
+#3 F:\WebWork\Wordpress\mobilebooster\Mobile-Booster\wp-content\themes\booster-template\index.php(3): get_header()
+#4 F:\WebWork\Wordpress\mobilebooster\Mobile-Booster\wp-includes\template-loader.php(98): include('F:\\WebWork\\Word...')
+#5 F:\WebWork\Wordpress\mobilebooster\Mobile-Booster\wp-blog-header.php(19): require_once('F:\\WebWork\\Word...')
+#6 F:\WebWork\Wordpress\mobilebooster\Mobile-Booster\index.php(17): require('F:\\WebWork\\Word...')
+#7 {main}
+  thrown in F:\WebWork\Wordpress\mobilebooster\Mobile-Booster\wp-content\themes\booster-template\header.php on line 81
+
+2020-03-03T16:36:23+00:00 CRITICAL Uncaught Error: Call to undefined function wc_isactive() in F:\WebWork\Wordpress\mobilebooster\Mobile-Booster\wp-content\themes\booster-template\includes\theme.php:293
+Stack trace:
+#0 F:\WebWork\Wordpress\mobilebooster\Mobile-Booster\wp-includes\class-wp-hook.php(290): right_menu_items('<li id="menu-it...')
+#1 F:\WebWork\Wordpress\mobilebooster\Mobile-Booster\wp-includes\plugin.php(206): WP_Hook->apply_filters('<li id="menu-it...', Array)
+#2 F:\WebWork\Wordpress\mobilebooster\Mobile-Booster\wp-includes\nav-menu-template.php(258): apply_filters('wp_nav_menu_rig...', '<li id="menu-it...', Object(stdClass))
+#3 F:\WebWork\Wordpress\mobilebooster\Mobile-Booster\wp-content\themes\booster-template\header.php(158): wp_nav_menu(Object(stdClass))
+#4 F:\WebWork\Wordpress\mobilebooster\Mobile-Booster\wp-includes\template.php(722): require_once('F:\\WebWork\\Word...')
+#5 F:\WebWork\Wordpress\mobilebooster\Mobile-Booster\wp-includes\template.php(671): load_template('F:\\WebWork\\Word...', true)
+#6 F:\WebWork\Wordpress\mobi in F:\WebWork\Wordpress\mobilebooster\Mobile-Booster\wp-content\themes\booster-template\includes\theme.php on line 293
+
