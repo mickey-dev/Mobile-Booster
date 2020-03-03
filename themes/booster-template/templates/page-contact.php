@@ -32,10 +32,10 @@ get_header();
             </a>
         </div>
 
-          <div class="col-xs-12 col-sm-6 col-md-6 right">
-            <?php echo do_shortcode('[contact-form-7 id="455" title="Contact"]'); ?>
-          </div>
+      </div>
 
+        <div class="col-xs-12 col-sm-6 col-md-6 right">
+            <?php echo do_shortcode('[contact-form-7 id="455" title="Contact"]'); ?>
         </div>
     </div>
 </div>
