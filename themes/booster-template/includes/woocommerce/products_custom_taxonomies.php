@@ -30,6 +30,7 @@ function product_taxonomies() {
     );
 
     register_taxonomy( 'provider', 'product', $args );
+    register_taxonomy_for_object_type( 'provider', 'product' );
 
     $labels = array(
         'name'              => _x( 'Coverages', 'taxonomy general name', 'woocommerce' ),
@@ -56,6 +57,7 @@ function product_taxonomies() {
     );
 
     register_taxonomy( 'coverage', 'product', $args );
+    register_taxonomy_for_object_type( 'coverage', 'product' );
 
     $labels = array(
         'name'              => _x( 'Frequencies', 'taxonomy general name', 'woocommerce' ),
@@ -82,6 +84,7 @@ function product_taxonomies() {
     );
 
     register_taxonomy( 'frequency', 'product', $args );
+    register_taxonomy_for_object_type( 'frequency', 'product' );
 
 }
 
