@@ -37,6 +37,22 @@ jQuery(document).ready(function ($) {
     //     nav: true,
     //     dots: false,
     // });
+
+
+        $("#owl-demo").owlCarousel({
+            loop:true,
+            dots:true,
+            // autoplay:true,
+            autoplayTimeout:6000,
+            navigation : true, // Show next and prev buttons
+            slideSpeed : 200,
+            items : 1,
+            itemsDesktop : false,
+            itemsDesktopSmall : false,
+            itemsTablet: false,
+            itemsMobile : false
+        });
+
     $('#home_featured .featured-items').owlCarousel({
         loop:true,
         margin:10,

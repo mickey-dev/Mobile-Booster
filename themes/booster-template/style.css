@@ -71,7 +71,7 @@ h4 strong{
     }
 }
 #left{float:left;width:199px;}
-#right{float:right;width:225px;}
+#right{float:right;width:190px;}
 #center{margin:0 auto;width:35%;}
 nav.navbar-primary.sticky-top .main-header{
     height: 100px;
@@ -213,7 +213,7 @@ nav.navbar-primary .main-header ul.navbar-nav ul.dropdown-menu{
 }
 .call-number .right-text1{
     color: #1b3d56;
-    font-size: 1.4em;
+    font-size: 1em;
     font-weight: 700;
     text-transform: uppercase;
     /* Text style for "24/7 Suppo" */
@@ -222,7 +222,7 @@ nav.navbar-primary .main-header ul.navbar-nav ul.dropdown-menu{
 }
 .call-number .right-text2 a{
     color: #1b3d56;
-    font-size: 2em;
+    font-size: 1.6em;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: -0.6px;
@@ -399,18 +399,129 @@ nav.navbar-primary .main-header ul.navbar-nav ul.dropdown-menu{
 }
 
 /*slider*/
-#home-slider{
-    margin-top: 65px;
-}
+
 #home-slider .guarantee{
     box-shadow: unset;
 }
-.slider2{
+#owl-demo .header-slider1{
+    background: url("assets/img/slider1.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+#owl-demo .header-slider2{
+    background: url("assets/img/slider2.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+#owl-demo .header-slider3{
+    background: url("assets/img/slider3.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+#owl-demo .header-slider4{
+    background: url("assets/img/slider4.jpg") no-repeat;
+    background-size: 100% 100%;
+    text-align: center;
+}
+#owl-demo .slider1-text1{
+    padding-top:4.91em;
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.12);
+    color: #ffffff;
+    font-family: "Montserrat";
+    font-size: 2.4em;
+    font-weight: 300;
+    text-transform: uppercase;
+    /* Text style for "S, peciali" */
+    letter-spacing: 1.2px;
+}
+#owl-demo .slider1-text2{
+    padding-top: 4px;
+    padding-bottom: 0.71em;
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.12);
+    color: #ffffff;
+    font-family: "Montserrat";
+    font-size: 4.5em;
+    line-height: 1.11em;
+    font-weight: 700;
+    text-transform: uppercase;
+    /* Text style for "v, oice an" */
     letter-spacing: 2.25px;
 }
-@media (max-width: 991px){
+#owl-demo hr{
+    margin: 0;
+    width: 7.9em;
+    border-top: 4px solid #f1c330;
+}
+#owl-demo .slider1-text3{
+    padding-top: 2.05em;
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.12);
+    color: #ffffff;
+    font-family: "Montserrat";
+    font-size: 1.7em;
+    font-weight: 400;
+    /* Text style for "T, ake adv" */
+    letter-spacing: 0.17px;
+}
+#owl-demo .slider1-button{
+    margin-top: 2.64em;
+    margin-bottom: 10.5em;
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.12);
+    color: #ffffff;
+    font-family: Montserrat;
+    font-size: 1.4em;
+    font-weight: 700;
+    text-transform: uppercase;
+    /* Text style for "View Our P" */
+    letter-spacing: 0.7px;
+    padding: 1.35em 3.07em 1.28em 3.07em;
+    border-radius: 2em;
+    background: #f4b12e;
+    border: 0;
+}
+#owl-demo .slider4-text2{
+    margin: 0 auto;
+}
+#owl-demo .slider4-text3{
+    margin: 0 auto;
+}
+#owl-demo hr.slider4-hr{
+    margin: 0 auto;
+}
+@media (max-width: 1200px){
+    #owl-demo .header-slider1,#owl-demo .header-slider2,#owl-demo .header-slider3,#owl-demo .header-slider4{
+        background-size: cover;
+        background-position: center;
+    }
+}
+@media (max-width: 992px){
     #home-slider{
         margin-top: 0;
+    }
+}
+@media (max-width: 768px){
+    #owl-demo .header-slider1,#owl-demo .header-slider2,#owl-demo .header-slider3{
+        padding: 0 20px;
+    }
+    #owl-demo .slider1-button{
+        margin-bottom: 4.5em;
+    }
+}
+@media (max-width: 500px){
+    #owl-demo .slider1-text1{
+        font-size: 1.6em;
+    }
+    #owl-demo .slider1-text2{
+        font-size: 2.5em;
+
+    }
+    #owl-demo .slider1-text3{
+
+    }
+    #owl-demo .slider1-button{
+        margin-bottom: 8.5em;
+        font-size: 0.8em;
+    }
+}
+@media (max-width: 335px){
+    #owl-demo .slider1-text3{
+      font-size: 1.6em;
     }
 }
 /*header-bottom-icon*/
@@ -498,6 +609,13 @@ nav.navbar-primary .main-header ul.navbar-nav ul.dropdown-menu{
     }
 }
 
+
+/*Owl-carousel*/
+#owl-demo .item img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
 /* breadcrumbs */
 #breadcrumbs{
     margin-top: 99px;
@@ -787,7 +905,7 @@ div#n2-ss-2 .n2-style-2a0a200d6a6e1fade27fb9c90af83812-dot.n2-active, div#n2-ss-
 }
 /*featured products*/
 #filter.filter-custom2 .filter-step.coverages .trigger ul li.LActive .bulet{
-    background: url("assets/img/Ellipse.jpg");
+    background: url("assets/img/Ellipse.jpg") no-repeat;
     background-size:100% 100% ;
     width: 3.6em;
     height: 3.6em;

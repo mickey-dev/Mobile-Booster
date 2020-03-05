@@ -7,10 +7,77 @@ get_header();
 <section id="home-slider">
   <div class="container-fluid">
     <div class="row">
-       <?php
-        echo do_shortcode('[smartslider3 slider=2]');
-      ?>
-      <div class="row guarantee">
+        <div id="owl-demo" class="owl-carousel owl-theme" data-ride="carousel">
+
+            <div class="item header-slider1">
+                <div class="container slider1-full">
+                    <div class="slider1-text1">
+                        Specialise in enhancing
+                    </div>
+                    <div class="slider1-text2">
+                        voice and<br> data signals
+                   </div>
+                    <hr>
+                    <div class="slider1-text3">
+                        Take advantage of our exclusive offer. Fusce our<br> porta non vehicula vitae congue egestas preet elit.
+                    </div>
+                    <button class="slider1-button">View Our Products</button>
+                </div>
+            </div>
+            <div class="item header-slider2">
+                <div class="container slider1-full">
+                    <div class="slider1-text1">
+                        No More dropped calls
+                    </div>
+                    <div class="slider1-text2">
+                        Try our<br>
+                        Product Wizard
+                    </div>
+                    <hr>
+                    <div class="slider1-text3">
+                        Take advantage of our exclusive offer. Fusce our <br>porta non vehicula vitae congue egestas preet elit.
+                    </div>
+                    <button class="slider1-button">Try Product Wizard</button>
+                </div>
+            </div>
+            <div class="item header-slider3">
+                <div class="container slider1-full">
+                    <div class="slider1-text1">
+                        Live chat support 24/7
+                    </div>
+                    <div class="slider1-text2">
+                        5 Bar Signal<br>Guarantee
+                    </div>
+                    <hr>
+                    <div class="slider1-text3">
+                        Our UK support and returns address will help you in<br>every step of the way.
+                    </div>
+                    <button class="slider1-button">Get in touch with us</button>
+                </div>
+            </div>
+            <div class="item header-slider4">
+                <div class="container slider1-full">
+                    <div class="slider1-text1">
+                        Innovative Solutions
+                    </div>
+                    <div class="slider1-text2 slider4-text2">
+                        Mobile Signal<br>Booster
+                    </div>
+                    <hr class="slider4-hr">
+                    <div class="slider1-text3 slider4-text3">
+                        We have mobile boosters that can help you cover whatever<br> area within your home that requires covering.
+                    </div>
+                    <button class="slider1-button">Get in touch with us</button>
+                </div>
+            </div>
+
+            <?php
+            echo do_shortcode('[smartslider3 slider=2]');
+            ?>
+        </div>
+
+
+        <div class="row guarantee">
         <div class="header-bottom">
             <div class="container">
                 <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-xs-6  header-bottom-icons">

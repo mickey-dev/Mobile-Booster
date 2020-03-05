@@ -1510,8 +1510,26 @@ nav.navbar-primary.sticky-top .main-header {
     margin-bottom: 3.21em;
 }
 
-.owl-theme .owl-nav.disabled+.owl-dots{
-    margin-top: 20px;
+#home-slider .owl-theme .owl-nav.disabled+.owl-dots{
+    position: absolute;
+    bottom: 40px;
+    left: 25%;
+    right: 25%;
+}
+@media (max-width: 992px){
+    #home-slider .owl-theme .owl-nav.disabled+.owl-dots{
+        bottom: 30px;
+    }
+}
+@media (max-width: 768px){
+    #home-slider .owl-theme .owl-nav.disabled+.owl-dots{
+        bottom: 15px;
+    }
+}
+@media (max-width: 500px){
+    #home-slider .owl-theme .owl-nav.disabled+.owl-dots{
+        bottom: 8px;
+    }
 }
 #testimony .owl-theme .owl-nav.disabled+.owl-dots{
     margin-top: 0;

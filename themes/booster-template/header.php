@@ -113,15 +113,7 @@
               </div>
 
               <div id="center" class="header-search" >
-                  <form class="search-inline">
-                      <input class="header-input" name="s" placeholder="Search Products (ie. carriers)">
 
-                      <div class="input-group-append ">
-                          <button class="btn btn-secondary" type="button">
-                              <i class="fa fa-search"></i>
-                          </button>
-                      </div>
-                  </form>
               </div>
 
               <div id="right" class="header-right">
