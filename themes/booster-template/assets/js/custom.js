@@ -37,15 +37,42 @@ jQuery(document).ready(function ($) {
     //     nav: true,
     //     dots: false,
     // });
+    $('.slider1-button a[href=".filter"]').on('click', function(e) {
+        e.preventDefault()
 
+        $('html, body').animate(
+            {
+                scrollTop: $($(this).attr('href')).offset().top,
+            },
+            500,
+            'linear'
+        );
 
-        $("#owl-demo").owlCarousel({
+            var el = $( e.target.getAttribute('href') );
+            var elOffset = el.offset().top;
+            var elHeight = el.height();
+            var windowHeight = $(window).height();
+            var offset;
+
+            if (elHeight < windowHeight) {
+                offset = elOffset - ((windowHeight / 2) - (elHeight / 2));
+            }
+            else {
+                offset = elOffset;
+            }
+
+            $.smoothScroll({ speed: 700 }, offset);
+            return false;
+
+    });
+
+    $("#owl-demo").owlCarousel({
             loop:true,
             dots:true,
             // autoplay:true,
             autoplayTimeout:6000,
             navigation : true, // Show next and prev buttons
-            slideSpeed : 200,
+
             items : 1,
             itemsDesktop : false,
             itemsDesktopSmall : false,

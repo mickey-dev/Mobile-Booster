@@ -21,7 +21,8 @@ get_header();
                     <div class="slider1-text3">
                         Take advantage of our exclusive offer. Fusce our<br> porta non vehicula vitae congue egestas preet elit.
                     </div>
-                    <button class="slider1-button">View Our Products</button>
+                    <button class="slider1-button">
+                        <a href=".filter" >View Our Products</a></button>
                 </div>
             </div>
             <div class="item header-slider2">
@@ -71,9 +72,7 @@ get_header();
                 </div>
             </div>
 
-            <?php
-            echo do_shortcode('[smartslider3 slider=2]');
-            ?>
+
         </div>
 
 
