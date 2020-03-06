@@ -733,17 +733,19 @@ nav.navbar-primary.sticky-top .main-header {
     font-size: 20px
 }
 
-#home-slider .carrier .carrier-icon {
+#home-carrier .carrier-icon {
     -webkit-align-items: center !important;
     align-items: center !important;
     -webkit-justify-content: center !important;
     justify-content: center !important;
-    display: -webkit-flex !important;
-    display: -webkit-box !important;
-    display: -ms-flexbox !important;
-    display: flex !important;
-    margin-top: 20px
-}
+    display: -webkit-flex ;
+    display: -webkit-box ;
+    display: -ms-flexbox ;
+    display: flex ;
+    background: #ffffff;
+    padding: 7px 0 38px 0;
+    text-align: center;
+ }
 
 #home-slider .carrier svg {
     margin: 0 20px
@@ -765,12 +767,12 @@ nav.navbar-primary.sticky-top .main-header {
 }
 
 #how-it-works .row {
-    padding-top: 8.9em;
-    padding-bottom: 9.3em;
+    padding-top: 4.9em;
+    padding-bottom: 5.3em;
 }
 
 #how-it-works .row .title {
-    margin-bottom: 4.6em;
+    margin-bottom: 1.5em;
 }
 
 #how-it-works .row .title h2 {
@@ -781,7 +783,7 @@ nav.navbar-primary.sticky-top .main-header {
     font-weight: 700;
 }
 #how-it-works .row .htw-desc{
-    margin-bottom: 6.3em;
+    margin-bottom: 3.3em;
 }
 #how-it-works .row .htw-desc p{
     text-align: center;
@@ -798,7 +800,7 @@ nav.navbar-primary.sticky-top .main-header {
 #how-it-works .row .how {
     padding: 0;
     display: flex;
-    margin-bottom: 3.6em;
+    margin-bottom: 1.6em;
 }
 #how-it-works .row .how:last-child{
     margin-bottom: 0;
@@ -909,11 +911,11 @@ nav.navbar-primary.sticky-top .main-header {
     justify-content: center;
 }
 #how-it-works .row .gambar img {
-    width: 100%
+    width: 85%
 }
 
 #how-it-works .row .go-shop {
-    padding-top: 6em;
+    padding-top: 3em;
 }
 
 
@@ -932,7 +934,7 @@ nav.navbar-primary.sticky-top .main-header {
 
 #filter .filter {
     background-color: #f8f8f8;
-    margin: 7.5em 0 9em 0;
+    margin: 4.5em 0 6em 0;
     padding: 0;
 }
 
@@ -1455,7 +1457,7 @@ nav.navbar-primary.sticky-top .main-header {
 
 #testimony {
     background-color: #ffffff;
-    padding: 7.9em 0 7.4em;
+    padding: 4.9em 0 3.4em;
 }
 
 #testimony .container {
@@ -1466,7 +1468,7 @@ nav.navbar-primary.sticky-top .main-header {
     margin-top: 0;
     font-size: 3.6em;
     color: #1b3d56;
-    margin-bottom: 1.38em;
+    margin-bottom: 0.7em;
 }
 #testimony .container h2:after{
     display: none;
@@ -1494,8 +1496,8 @@ nav.navbar-primary.sticky-top .main-header {
     text-align: center;
     color: #1b3d56;
     font-size: 2.1em;
-    margin-top: 2.14em;
-    margin-bottom: 1.8em;
+    margin-top: 0.35em;
+    margin-bottom: 0.8em;
     padding: 0
 }
 
@@ -1507,7 +1509,7 @@ nav.navbar-primary.sticky-top .main-header {
     color: #343434;
     font-size: 14px;
     line-height: 1.85em;
-    margin-bottom: 3.21em;
+    margin-bottom: 1.21em;
 }
 
 #home-slider .owl-theme .owl-nav.disabled+.owl-dots{
@@ -5035,9 +5037,9 @@ p.desc {
 
 .section.filter-custom.filter-custom2 form .back-img {
     min-height: 461px;
-    background: url("../img/step1.jpg");
+    background: url("../img/300sql.jpg");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100% 100%;
 }
 
 .section.filter-custom.filter-custom2 form .tab.row {

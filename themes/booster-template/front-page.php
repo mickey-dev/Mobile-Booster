@@ -22,7 +22,7 @@ get_header();
                         Take advantage of our exclusive offer. Fusce our<br> porta non vehicula vitae congue egestas preet elit.
                     </div>
                     <button class="slider1-button">
-                        <a href=".filter" >View Our Products</a></button>
+                     View Our Products</button>
                 </div>
             </div>
             <div class="item header-slider2">
@@ -109,14 +109,34 @@ get_header();
     </div>
   </div>
 </section>
+
 <section id="filter" class="section filter-custom filter-custom2">
     <div class="container filter-product">
     <?php echo do_shortcode('[filter title="Try Our Product Wizard"]'); ?>
     </div>
+
 </section>
+
+<div id="home-carrier">
+    <div class="carrier-title">
+        Our Signal Boosters Work on Every Network & Every Carrier in UK
+    </div>
+    <div class="col-xs-12 col-sm-12 carrier-icon">
+        <a href="/provider/vodafone-mobile-signal-booster/"><img class="combine1 sprite-Vodafone" src="<?php echo get_template_directory_uri() ?>/assets/img/Vodafone.png" alt="Vodafone Mobile Signal Booster"></a>
+        <a href="/provider/three-mobile-signal-booster/"><img class="combine1" src="<?php echo get_template_directory_uri() ?>/assets/img/Three.png" alt="Three Mobile Signal Booster"></a>
+        <a href="/provider/id-mobile-signal-booster/"><img class="combine1" src="<?php echo get_template_directory_uri() ?>/assets/img/id.png" alt="iD Mobile Signal Booster"></a>
+        <a href="/provider/o2-mobile-signal-booster/"><img class="combine1" src="<?php echo get_template_directory_uri() ?>/assets/img/O2.png" alt="O2 Mobile Signal Booster"></a>
+        <a href="/provider/ee-mobile-signal-booster/"><img class="combine1" src="<?php echo get_template_directory_uri() ?>/assets/img/EE.png" alt="EE Mobile Signal Booster"></a>
+        <a href="/provider/3g-mobile-signal-booster/"><img class="combine1" src="<?php echo get_template_directory_uri() ?>/assets/img/3G.png" alt="3G Mobile Signal Booster"></a>
+        <a href="/provider/4g-mobile-signal-booster/"><img class="combine1" src="<?php echo get_template_directory_uri() ?>/assets/img/4G.png" alt="4G Mobile Signal Booster"></a>
+        <a href="/provider/5g-mobile-signal-booster/"><img class="combine1" src="<?php echo get_template_directory_uri() ?>/assets/img/5g.png" alt="5G Mobile Signal Booster"></a>
+    </div>
+
+</div>
 
 <section id="home_featured">
   <div class="container">
+
     <div class="">
       <div class="col-xs-12 col-sm-12 home_featured title">
         <h2 class="text-center">Our Best Sellers</h2>
@@ -213,6 +233,7 @@ get_header();
     </div>
   </div>
 </section>
+
 <?php how_it_works(); ?>
 <section id="what-osbc" class="what-osbc">
     <div class="container">

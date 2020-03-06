@@ -127,12 +127,12 @@ div.wpcf7-validation-errors {
     margin-top: 18px;
 }
 .home_featured .featured-item .price span{
-    font-size: 23px;
+    font-size: 21px;
     color: #1b3d56;
     font-style: normal;
     font-weight: 600;
     font-family: "Montserrat";
-    line-height: 24px;
+    line-height: 20px;
 }
 .home_featured .featured-item .price del{
     display: none;
@@ -465,11 +465,6 @@ ul.products li.product {
         margin-bottom: 15px
     }
 
-    #filter .filter {
-        padding: 140px 0 50px 0;
-        margin-top: -70px
-    }
-
     #why-choose {
         padding: 50px 0
     }
@@ -534,85 +529,72 @@ ul.products li.product {
 }
 
 .sprite-3G {
-    width: 47px;
-    height: 30px;
-    object-position: -5px -5px
+    width: 33px;
+    height: 32px;
+
 }
 
 .sprite-4G {
-    width: 48px;
-    height: 30px;
-    object-position: -62px -5px
+    width: 33px;
+    height: 32px;
 }
 
 .sprite-CE {
-    width: 50px;
-    height: 36px;
-    object-position: -120px -5px
+    width: 33px;
+    height: 32px;
 }
 
 .sprite-EE {
-    width: 30px;
-    height: 50px;
-    object-position: -180px -5px
+    width: 33px;
+    height: 32px;
 }
 
 .sprite-ISO {
-    width: 60px;
-    height: 48px;
-    object-position: -220px -5px
+    width: 33px;
+    height: 32px;
 }
 
 .sprite-O2 {
-    width: 37px;
-    height: 39px;
-    object-position: -290px -5px
+    width: 33px;
+    height: 32px;
 }
 
 .sprite-RoHS {
-    width: 84px;
-    height: 39px;
-    object-position: -337px -5px
+    width: 33px;
+    height: 32px;
 }
 
 .sprite-Three {
-    width: 31px;
-    height: 40px;
-    object-position: -431px -5px
+    width: 33px;
+    height: 32px;
 }
 
 .sprite-Vodafone {
     width: 33px;
     height: 32px;
-    object-position: -472px -5px
 }
 
 .sprite-guarantee {
-    width: 21px;
-    height: 25px;
-    object-position: -515px -5px
+    width: 33px;
+    height: 32px;
 }
 
 .sprite-id {
-    width: 40px;
-    height: 40px;
-    object-position: -546px -5px
+    width: 33px;
+    height: 32px;
 }
 
 .sprite-logo-visa {
-    width: 50px;
-    height: 34px;
-    object-position: -596px -5px
+    width: 33px;
+    height: 32px;
 }
 
 .sprite-signal {
-    width: 82px;
-    height: 70px;
-    object-position: -656px -5px
+    width: 33px;
+    height: 32px;
 }
 
 .sprite-thropy {
-    width: 80px;
-    height: 76px;
-    object-position: -748px -5px
+    width: 33px;
+    height: 32px;
 }

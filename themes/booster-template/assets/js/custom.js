@@ -14,13 +14,38 @@
             e(this).toggleClass("choosen");
         }), e("#filter #range1").show(), e("#filter .trigger #1").addClass("active"), e("#filter .trigger #2").addClass("active LActive"), e("#filter-coverage-up-to-300-sqm").prop("checked", !0), e(".trigger ul li .text").hover(function () {
             e(this).prev().toggleClass("hover");
-        }), e("#2 .bulet, #2 .text").on("click", function () {
+        }), e("#2 .bulet, #2 .text").on("click", function (show) {
+            if (show) {
+                $(".section.filter-custom.filter-custom2 form .back-img").css('background', 'url("/wp-content/themes/booster-template/assets/img/300sql.jpg") no-repeat');
+                $(".section.filter-custom.filter-custom2 form .back-img").css('background-size', '100% 100%');
+
+            }  else {
+                $(".section.filter-custom.filter-custom2 form .back-img").css('display', 'none');
+            }
             e("#filter .coverage").removeClass("active"), e("#filter .coverage").hide(), e(this).parent().parent().find("li").removeClass("LActive"), e(this).parent().addClass("active LActive"), e("#filter #range1.coverage").show(), e("#3").removeClass("active"), e("#4").removeClass("active"), e("#5").removeClass("active"), e("#filter-coverage-up-to-300-sqm").prop("checked", !0);
-        }), e("#3 .bulet, #3 .text").on("click", function () {
+        }), e("#3 .bulet, #3 .text").on("click", function (show) {
+            if (show) {
+                $(".section.filter-custom.filter-custom2 form .back-img").css('background', 'url("/wp-content/themes/booster-template/assets/img/500sql.jpg") no-repeat');
+                $(".section.filter-custom.filter-custom2 form .back-img").css('background-size', '100% 100%');
+            }  else {
+                $(".section.filter-custom.filter-custom2 form .back-img").css('display', 'none');
+            }
             e("#filter .coverage").removeClass("active"), e("#filter .coverage").hide(), e("#filter #range2.coverage").show(), e(this).parent().parent().find("li").removeClass("LActive"), e(this).parent().addClass("active LActive"), e("#4").removeClass("active"), e("#5").removeClass("active"), e("#filter-coverage-up-to-500-sqm").prop("checked", !0);
-        }), e("#4 .bulet, #4 .text").on("click", function () {
+        }), e("#4 .bulet, #4 .text").on("click", function (show) {
+            if (show) {
+                $(".section.filter-custom.filter-custom2 form .back-img").css('background', 'url("/wp-content/themes/booster-template/assets/img/1000sql.jpg") no-repeat');
+                $(".section.filter-custom.filter-custom2 form .back-img").css('background-size', '100% 100%');
+            }  else {
+                $(".section.filter-custom.filter-custom2 form .back-img").css('display', 'none');
+            }
             e("#filter .coverage").removeClass("active"), e("#filter .coverage").hide(), e("#filter #range3.coverage").show(), e(this).parent().parent().find("li").removeClass("LActive"), e(this).parent().addClass("active LActive"), e("#2").addClass("active"), e("#3").addClass("active"), e("#5").removeClass("active"), e("#filter-coverage-up-to-1000-sqm").prop("checked", !0);
-        }), e("#5 .bulet, #5 .text").on("click", function () {
+        }), e("#5 .bulet, #5 .text").on("click", function (show) {
+            if (show) {
+                $(".section.filter-custom.filter-custom2 form .back-img").css('background', 'url("/wp-content/themes/booster-template/assets/img/1500sql.jpg") no-repeat');
+                $(".section.filter-custom.filter-custom2 form .back-img").css('background-size', '100% 100%');
+            }  else {
+                $(".section.filter-custom.filter-custom2 form .back-img").css('display', 'none');
+            }
             e("#filter .coverage").removeClass("active"), e("#filter .coverage").hide(), e("#filter #range4.coverage").show(), e(this).parent().parent().find("li").removeClass("LActive"), e(this).parent().addClass("active LActive"), e("#2").addClass("active"), e("#3").addClass("active"), e("#4").addClass("active"), e("#5").addClass("active"), e("#filter-coverage-up-to-5000-sqm").prop("checked", !0);
         });
     });
@@ -37,35 +62,19 @@ jQuery(document).ready(function ($) {
     //     nav: true,
     //     dots: false,
     // });
-    $('.slider1-button a[href=".filter"]').on('click', function(e) {
-        e.preventDefault()
+
+
+    $('.slider1-button').on('click', function(e) {
+        e.preventDefault();
 
         $('html, body').animate(
             {
-                scrollTop: $($(this).attr('href')).offset().top,
+                scrollTop: $('.filter').offset().top,
             },
             500,
             'linear'
         );
-
-            var el = $( e.target.getAttribute('href') );
-            var elOffset = el.offset().top;
-            var elHeight = el.height();
-            var windowHeight = $(window).height();
-            var offset;
-
-            if (elHeight < windowHeight) {
-                offset = elOffset - ((windowHeight / 2) - (elHeight / 2));
-            }
-            else {
-                offset = elOffset;
-            }
-
-            $.smoothScroll({ speed: 700 }, offset);
-            return false;
-
     });
-
     $("#owl-demo").owlCarousel({
             loop:true,
             dots:true,

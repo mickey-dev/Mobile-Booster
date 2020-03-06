@@ -171,27 +171,27 @@ $ins= theme_option( 'ins' );
                 <div class="col-xs-12 col-sm-12 copyright text-center">
                     <?php echo theme_option( 'copyright_text' ) ?>
                     <div class="payment-icon">
-                        <a href="https://https://www.paypal.com" target="_blank" rel="nofollow">
+                        <a>
                             <img class="footer-pay-icon" src="<?php echo get_template_directory_uri() ?>/assets/img/mc.png" alt="Mc">
                         </a>
 
-                        <a href="https://www.visaeurope.com/" target="_blank" rel="nofollow">
+                        <a>
                             <img class="footer-pay-icon" src="<?php echo get_template_directory_uri() ?>/assets/img/visa.png" alt="Credit Card">
                         </a>
 
-                        <a href="https://www.paypal.com" target="_blank" rel="nofollow">
+                        <a>
                             <img class="footer-pay-icon" src="<?php echo get_template_directory_uri() ?>/assets/img/maestro.png" alt="PayPal">
                         </a>
 
-                        <a href="https://www.paypal.com" target="_blank" rel="nofollow">
+                        <a>
                             <img class="footer-pay-icon" src="<?php echo get_template_directory_uri() ?>/assets/img/am.png" alt="PayPal">
                         </a>
 
-                        <a href="https://www.paypal.com" target="_blank" rel="nofollow">
+                        <a>
                             <img class="footer-pay-icon" src="<?php echo get_template_directory_uri() ?>/assets/img/cus.png" alt="PayPal">
                         </a>
 
-                        <a href="https://www.paypal.com" target="_blank" rel="nofollow">
+                        <a>
                             <img class="footer-pay-icon" src="<?php echo get_template_directory_uri() ?>/assets/img/paypal.png" alt="PayPal">
                         </a>
                     </div>
