@@ -16,7 +16,7 @@
             e(this).prev().toggleClass("hover");
         }), e("#2 .bulet, #2 .text").on("click", function (show) {
             if (show) {
-                $(".section.filter-custom.filter-custom2 form .back-img").css('background', 'url("/wp-content/themes/booster-template/assets/img/300sql.jpg") no-repeat');
+                $(".section.filter-custom.filter-custom2 form .back-img").css('background', 'url("/wp-content/themes/booster-template/assets/img/300-sql.jpg") no-repeat');
                 $(".section.filter-custom.filter-custom2 form .back-img").css('background-size', '100% 100%');
 
             }  else {
