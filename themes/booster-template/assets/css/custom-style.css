@@ -3071,7 +3071,8 @@ nav.navbar-primary.sticky-top .main-header {
 }
 
 .woocommerce-checkout .woocommerce .kanan #order_review .cart_item .product-name {
-    text-align: left
+    text-align: left;
+    font-size: 12px!important;
 }
 
 .woocommerce-checkout .woocommerce .kanan #order_review .cart_item .product-total {
@@ -3084,7 +3085,7 @@ nav.navbar-primary.sticky-top .main-header {
     background-color: #efefef;
     margin-bottom: 5px;
     border-radius: 5px;
-    padding: 10px
+    padding: 10px;
 }
 
 .woocommerce-checkout .woocommerce .kanan #order_review .cart-subtotal .text-left, .woocommerce-checkout .woocommerce .kanan #order_review .order-total .text-left, .woocommerce-checkout .woocommerce .kanan #order_review .shipping .text-left {
@@ -3104,6 +3105,11 @@ nav.navbar-primary.sticky-top .main-header {
 
 .woocommerce-checkout .woocommerce .kanan #order_review #payment .wc_payment_methods li.wc_payment_method {
     border-radius: 5px
+}
+.woocommerce-checkout .woocommerce .kanan #order_review #payment .wc_payment_methods li.wc_payment_method.payment_method_stripe {
+    margin-top: 50px;
+    border-radius: 5px;
+    padding: 10% 5% 0% 5%;
 }
 
 .woocommerce-checkout .woocommerce .kanan #order_review #payment .wc_payment_methods li.wc_payment_method input[type=radio]:checked + label {
@@ -4254,6 +4260,9 @@ nav.navbar-primary .main-header ul.navbar-nav ul.dropdown-menu {
     line-height: 1.7em;
 }
 
+.container > .woocommerce .woocommerce-checkout #order_review .woocommerce-checkout-payment .wc_payment_methods .wc_payment_method img{
+    width: 85px;
+}
 .single-product .product .after-content .package-includes ul, .single-product .product .after-content .why-chose-us ul {
     display: block !important
 }

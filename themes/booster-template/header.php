@@ -1,3 +1,6 @@
+<?php
+global $theme_options;
+?>
 <!DOCTYPE html>
 <html class="no-js" <?php language_attributes(); ?>>
 <head>
@@ -125,7 +128,13 @@
                   </div>
                   <div class="call-number">
                       <p class="right-text1">24/7 Support</p>
-                      <span class="right-text2"><a href="tel:+44 20 3287 7868">+44 20 3287 7868</a></span>
+                      <?php
+                      $phone_number = "+44 20 3287 7868";
+                      if (isset($theme_options['phone_number']) && !empty($theme_options['phone_number'])) {
+                          $phone_number = $theme_options['phone_number'];
+                      }
+                      ?>
+                      <span class="right-text2"><a href="tel:<?php echo $phone_number;?>"><?php echo $phone_number;?></a></span>
                   </div>
               </div>
 
