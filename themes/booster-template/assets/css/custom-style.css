@@ -4244,11 +4244,14 @@ nav.navbar-primary .main-header ul.navbar-nav ul.dropdown-menu {
 }
 
 .single-product .product .after-content .package-includes h3, .single-product .product .after-content .why-chose-us h3 {
-    border-top: 1px solid #ddd;
+    border-top: unset;
     border-bottom: none;
     margin-bottom: 0;
-    padding-top: 50px;
-    color: #0b4f6c
+    padding-top: 0;
+    color: #1b3d56;
+    font-size: 2.6em;
+    font-weight: 500;
+    line-height: 1.7em;
 }
 
 .single-product .product .after-content .package-includes ul, .single-product .product .after-content .why-chose-us ul {
