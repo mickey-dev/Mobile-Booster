@@ -2242,8 +2242,23 @@ nav.navbar-primary.sticky-top .main-header {
     display: flex !important;
     font-size: 30px;
     padding: 5px 0 0 0;
-
-
+}
+.single-product .product .main-content .right .tax-info .tax-items .icon-id {
+    background: url("../img/id.png");
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    align-items: center;
+    display: -webkit-flex !important;
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    font-size: 30px;
+    padding: 5px 0 0 0;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 29px;
 }
 
 .single-product .product .main-content .right .tax-info .tax-items i.icon-G, .single-product .product .main-content .right .tax-info .tax-items i.icon-G2 {
@@ -3796,6 +3811,16 @@ nav.navbar-primary .main-header ul.navbar-nav ul.dropdown-menu {
     width: 22px
 }
 
+.woocommerce-page ul.products li .providers .icon-id {
+    background: url("../img/id.png");
+    min-height: 20px !important;
+    min-width: 20px !important;
+    font-size: 16px;
+    height: 22px;
+    width: 22px;
+    background-size: 100% 100%;
+}
+
 .woocommerce-page ul.products li .providers i.icon-G, .woocommerce-page ul.products li .providers i.icon-G2, .woocommerce-page ul.products li .providers i.icon-G3 {
     font-size: 24px
 }
@@ -4485,7 +4510,9 @@ footer.site-footer .fourth .payment-icon img {
 .removeBanner.checkout .page-header-bg {
     display: none
 }
-
+.container-fluid.page-header-bg.full-center.antenna-bg{
+    margin-top: 67px;
+}
 #home-slider .rslides_container ul.rslides .caption a.button:hover {
     background-color: transparent !important;
     color: #fb0

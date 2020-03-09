@@ -190,7 +190,7 @@
         <?php } ?>
     </div>
     <?php } else{ ?>
-    <div class="container-fluid page-header-bg full-center" style="background-image: url('<?php echo get_template_directory_uri() ?>/assets/img/antenna-bg.jpg')">
+    <div class="container-fluid page-header-bg full-center " style="background-image: url('<?php echo get_template_directory_uri() ?>/assets/img/antenna-bg.jpg')">
         <div class="overlay"></div>
         <div class="row">
             <h2 class="page-title">
@@ -203,7 +203,7 @@
     </div>
     <?php }?>
 <?php } elseif (get_post_type()=='product') { ?>
-    <div class="container-fluid page-header-bg full-center" style="background-image: url('<?php echo get_template_directory_uri() ?>/assets/img/antenna-bg.jpg')">
+    <div class="container-fluid page-header-bg full-center antenna-bg" style="background-image: url('<?php echo get_template_directory_uri() ?>/assets/img/antenna-bg.jpg')">
         <div class="overlay"></div>
         <div class="row">
             <h2 class="page-title">
@@ -216,7 +216,7 @@
     </div>
 <?php } else {
     ?>
-    <div class="container-fluid page-header-bg full-center" style="background-image: url('<?php echo get_template_directory_uri() ?>/assets/img/antenna-bg.jpg')">
+    <div class="container-fluid page-header-bg full-center antenna-bg" style="background-image: url('<?php echo get_template_directory_uri() ?>/assets/img/antenna-bg.jpg')">
         <div class="overlay"></div>
         <div class="row">
             <h2 class="page-title">
