@@ -48,6 +48,35 @@
             }
             e("#filter .coverage").removeClass("active"), e("#filter .coverage").hide(), e("#filter #range4.coverage").show(), e(this).parent().parent().find("li").removeClass("LActive"), e(this).parent().addClass("active LActive"), e("#2").addClass("active"), e("#3").addClass("active"), e("#4").addClass("active"), e("#5").addClass("active"), e("#filter-coverage-up-to-5000-sqm").prop("checked", !0);
         });
+
+        // tm extra options
+        $('.single-product form .tm-element-ul-checkbox li ').on('click', function () {
+            $(this).toggleClass('active');
+        })
+        $('.5e6370f4a78375 .tc-label').on('click', function () {
+            $('.5e6370f4a78375 .extra-cable-div .fa').toggleClass('rotated');
+            $('.5e6370f4a78375 .extra-cable-ul').toggleClass('open');
+        });
+        $('.5e6370f4a78375 .extra-cable-div').append('<i class="fa fa-angle-down"></i>');
+        $('.5e6370f4a78375 .extra-cable-div .fa').on('click', function () {
+            $(this).toggleClass('rotated');
+            $('.5e6370f4a78375 .extra-cable-ul').toggleClass('open');
+        })
+        $('.5e6370f4a78375 .extra-cable-ul li').on('click', function () {
+            $(this).prependTo('.5e6370f4a78375 .extra-cable-ul');
+        });
+        $('.5e6370f4a783f4 .tc-label').on('click', function () {
+            $('.5e6370f4a783f4 .warranty-div .fa').toggleClass('rotated');
+            $('.5e6370f4a783f4 .warranty-ul').toggleClass('open');
+        });
+        $('.5e6370f4a783f4 .warranty-ul li').on('click', function () {
+            $(this).prependTo('.5e6370f4a783f4 .warranty-ul');
+        });
+        $('.5e6370f4a783f4 .warranty-div').append('<i class="fa fa-angle-down"></i>');
+        $('.5e6370f4a783f4 .warranty-div .fa').on('click', function () {
+            $(this).toggleClass('rotated');
+            $('.5e6370f4a783f4 .warranty-ul').toggleClass('open');
+        });
     });
 }(jQuery);
 
