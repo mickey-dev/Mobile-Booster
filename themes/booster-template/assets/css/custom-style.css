@@ -4657,7 +4657,8 @@ footer.site-footer ul {
 
 footer.site-footer ul li {
     list-style-type: none;
-    margin-bottom: 12px
+    margin-bottom: 12px;
+    font-size: 12px;
 }
 
 footer.site-footer ul li a {
@@ -4777,16 +4778,16 @@ footer.site-footer .fourth .social h4 {
     color: #fff
 }
 
-footer.site-footer .fourth .social a:hover svg {
-    transition: all .5s ease;
-    transform: scale(.9)
-}
+/*footer.site-footer .fourth .social a:hover svg {*/
+/*    transition: all .5s ease;*/
+/*    transform: scale(.9)*/
+/*}*/
 
 footer.site-footer .fourth .social a svg {
-    transition: all .5s ease;
     margin-right: 10px;
-    height: 40px;
-    width: 40px
+    height: 38px;
+    width: 38px;
+    vertical-align: middle;
 }
 
 footer.site-footer .copyright {
@@ -5044,7 +5045,7 @@ p.desc {
 
 .section.filter-custom.filter-custom2 form .back-img {
     min-height: 461px;
-    background: url("../img/300sql.jpg");
+    background: url("../img/300-sql.jpg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }

@@ -1100,6 +1100,8 @@ div#n2-ss-2 .n2-style-2a0a200d6a6e1fade27fb9c90af83812-dot.n2-active, div#n2-ss-
 .home_featured .owl-prev .mb-prev, .home_featured .owl-next .mb-next{
     width: 10px;
     height: 18px;
+    display: block;
+    margin: 0 auto;
     background-size: contain;
 }
 .home_featured .owl-prev .mb-prev{
@@ -1533,6 +1535,10 @@ footer.site-footer .copyright{
 }
 #colophon .guarantee{
     background: #10293b;
+}
+.social .linkDin {
+    width: 38px;
+    height: 38px;
 }
 @media (max-width: 1200px){
     .footer-title-next{
