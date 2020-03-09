@@ -778,7 +778,7 @@ nav.navbar-primary.sticky-top .main-header {
 #how-it-works .row .title h2 {
     margin-top: 0;
     color: #1b3d56;
-    font-size: 3.6em;
+    font-size: 3.6em!important;
     font-style: normal;
     font-weight: 700;
 }
