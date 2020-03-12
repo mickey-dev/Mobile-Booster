@@ -1689,3 +1689,65 @@ footer.site-footer .copyright{
         margin: 20px 15px 0 15px;
     }
 }
+.woocommerce-thankyou-order-details .order{
+    font-size: 14px;
+}
+.woocommerce-thankyou-order-details .order strong{
+    font-size: 14px;
+}
+.woocommerce .addresses address{
+    font-size: 14px;
+}
+.container > .woocommerce .shop_table tfoot th{
+    font-size: 14px;
+}
+.woocommerce .customer_details td, .woocommerce .customer_details th, .woocommerce .order_details td, .woocommerce .order_details th{
+    font-size: 14px;
+}
+@media (max-width: 1200px){
+    .container > .woocommerce{
+        padding-top: 5.5em;
+    }
+}
+main h2 strong,main h2 a,h2 em{
+    font-size: 24px;
+    font-weight: 500;
+}
+main ul li{
+    font-size: 14px;
+}
+main ul li strong{
+    font-size: 14px;
+    font-weight: 500;
+}
+main p strong{
+    font-size: 14px;
+    font-weight: 500;
+}
+.mb-post-next-prev-content a{
+    font-size: 14px;
+}
+main p a{
+    font-size: 14px;
+}
+main ol li, main ol li a{
+    font-size: 14px;
+}
+main p em{
+    font-size: 14px;
+}
+main h3 strong,main h3 strong a{
+    font-size: 24px;
+    font-weight: 500;
+}
+main h4 strong{
+    font-weight: 500;
+    font-size: 18px;
+}
+.sc_fs_faq.sc_card h2{
+    font-size: 16px;
+    font-weight: 500;
+    }
+.sc_fs_faq.sc_card p{
+    font-size: 14px;
+}
