@@ -2723,7 +2723,11 @@ nav.navbar-primary.sticky-top .main-header {
     padding-right: 20px;
     border-bottom: none
 }
-
+@media (max-width: 768px){
+    .single-product .product .after-content .package-includes, .single-product .product .after-content .why-chose-us{
+        padding-left: 20px;
+    }
+}
 .single-product .product .after-content .package-includes:hover, .single-product .product .after-content .why-chose-us:hover {
     cursor: pointer
 }

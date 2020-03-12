@@ -20,6 +20,8 @@ global $theme_options;
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/assets/css/font-awesome.min.css">
+    <link rel='stylesheet' id='elementor-icons-shared-0-css'  href='<?php echo get_template_directory_uri() ?>/assets/css/font-awesome.min.css' />
+    <link rel='stylesheet' id='elementor-icons-fa-solid-css'  href='https://www.booshsignal.com/wp-content/plugins/font-awesome/css/solid.min.css?ver=5.12.0' type='text/css' media='all' />
     <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/assets/css/owl.carousel.css">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/assets/css/owl.theme.default.min.css">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/assets/css/custom-style.css">
@@ -116,7 +118,7 @@ global $theme_options;
               </div>
 
               <div id="center" class="header-search" >
-
+                  Specialists In Amplifying Voice & Data Signals
               </div>
 
               <div id="right" class="header-right">
