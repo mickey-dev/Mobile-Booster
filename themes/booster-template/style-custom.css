@@ -430,10 +430,7 @@ ul.products li.product {
         padding: 50px 0 0 0
     }
 
-    .single-product .product .main-content .right .summary form.cart ul#tm-extra-product-options-fields .cpf-type-checkbox .tm-element-ul-checkbox li label .tm-epo-style-wrapper.round {
-        left: 25px !important;
-        right: auto !important
-    }
+
 
     #home_featured .view_boosters a {
         font-size: 16px

@@ -93,9 +93,16 @@ if ( ! $product->is_purchasable() ) {
                 </div>
             </div>
         </div>
-        <div itemprop="offers" itemscope="" itemtype="http://schema.org/Offer" class="price-container"> <p class="price"><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">$</span>630.00</span></p> <meta itemprop="price" content="595"> <meta itemprop="priceCurrency" content="NZD">
-            <link itemprop="availability" href="http://schema.org/InStock"></div>
-	 	<button type="submit" class="single_add_to_cart_button button primary-button alt"><?php echo esc_html( $product->single_add_to_cart_text() ); ?></button>
+<!--        <div itemprop="offers" itemscope="" itemtype="http://schema.org/Offer" class="price-container"> <p class="price"><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">$</span>630.00</span></p> <meta itemprop="price" content="595"> <meta itemprop="priceCurrency" content="NZD">-->
+<!--            <link itemprop="availability" href="http://schema.org/InStock"></div>-->
+
+<!--	 	<button type="submit" class="single_add_to_cart_button button primary-button alt">--><?php //echo esc_html( $product->single_add_to_cart_text() ); ?><!--</button>-->
+
+        <button type="submit" itemprop="offers" itemscope="" itemtype="http://schema.org/Offer" class="single_add_to_cart_button button primary-button alt"><?php echo esc_html( $product->single_add_to_cart_text() ); ?>
+            &nbsp | &nbsp <p class="price"><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">$</span>630.00</span>
+            </p>
+            <meta itemprop="price" content="595"> <meta itemprop="priceCurrency" content="NZD"><link itemprop="availability" href="http://schema.org/InStock">
+        </button>
 
         <button type="submit" name="to_checkout" value="1" class="single_add_to_cart_button action-button to_checkout_button button alt">Proceed to checkout</button>
 

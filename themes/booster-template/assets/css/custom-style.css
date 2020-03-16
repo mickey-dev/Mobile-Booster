@@ -1409,7 +1409,9 @@ nav.navbar-primary.sticky-top .main-header {
     background-attachment: fixed;
     padding: 70px 0
 }
-
+.price .woocommerce-Price-amount.amount,.price .woocommerce-Price-currencySymbol{
+    font-size: 20px;
+}
 @media screen and (max-width: 767px) {
     #specialist {
         padding: 70px 15px
@@ -2303,12 +2305,29 @@ nav.navbar-primary.sticky-top .main-header {
 /*    height: auto*/
 /*}*/
 .single-product .product .main-content .right .summary form.cart ul#tm-extra-product-options-fields .cpf-section{
-    margin-bottom: 7px !important;
+    display: flex;
+    margin-bottom: 0 !important;
     margin-top: 0 !important;
-    border-color: #dddddd;
+    padding-right: 0 !important;
+    /*border-color: #dddddd;*/
+    border-color: transparent;
 }
 
-.single-product .product .main-content .right .summary form.cart ul#tm-extra-product-options-fields .cpf_hide_element,
+.tm-row:nth-child(1) .tm-section-label:before{
+    content: url(../img/icons/icon-tm-users.png);
+    margin-left: -26px;
+    margin-right: 9px;
+}
+.tm-row:nth-child(3) .tm-section-label:before{
+    content: url(../img/icons/icon-tm-home.png);
+    margin-left: -26px;
+    margin-right: 9px;
+}
+.tm-row:nth-child(5) .tm-section-label:before{
+    content: url(../img/icons/icon-tm-sparcle.png);
+    margin-left: -26px;
+    margin-right: 9px;
+}
 .single-product .product .main-content .right .summary form.cart ul#tm-extra-product-options-fields .tm-section-label {
     font-weight: 400;
     font-size: 16px;
@@ -2405,7 +2424,8 @@ nav.navbar-primary.sticky-top .main-header {
 
 .single-product .product .main-content .right .summary form.cart ul#tm-extra-product-options-fields .extra-cable-div .extra-cable-ul li label {
     font-weight: 400;
-    text-align: right
+    text-align: right;
+    margin-left: -23px;
 }
 
 .single-product .product .main-content .right .summary form.cart ul#tm-extra-product-options-fields .extra-cable-div .extra-cable-ul li label:hover {
@@ -2484,12 +2504,13 @@ nav.navbar-primary.sticky-top .main-header {
     font-weight: 400;
     text-align: right;
     border-radius: 0;
-    border: none
+    border: none;
+    margin-left: -23px;
 }
 
 .single-product .product .main-content .right .summary form.cart ul#tm-extra-product-options-fields .warranty-div .warranty-ul li label:hover {
     cursor: pointer;
-    color: #f6a43a
+    color: #f6a43a;
 }
 
 .single-product .product .main-content .right .summary form.cart ul#tm-extra-product-options-fields .warranty-div .warranty-ul li input:checked + label {
@@ -2547,7 +2568,7 @@ nav.navbar-primary.sticky-top .main-header {
 .single-product .product .main-content .right .summary form.cart ul#tm-extra-product-options-fields .cpf-type-checkbox .tm-element-ul-checkbox li label .tm-epo-style-wrapper.round {
     position: absolute;
     height: 20px;
-    right: -23px;
+    right: -18px;
     width: 20px;
     top: 9px
 }
@@ -2571,10 +2592,10 @@ nav.navbar-primary.sticky-top .main-header {
     position: absolute;
     color: #fff;
     height: 15px;
-    left: -15px;
     margin: 0;
     top: 10px;
     font-size: 14px;
+    display: block;
 }
 .tm-extra-product-options ul.tmcp-ul-wrap.tm-extra-product-options-radio li.tmcp-field-wrap .tm-label{
     font-size: 14px;
@@ -2585,16 +2606,12 @@ nav.navbar-primary.sticky-top .main-header {
 }
 .single-product .product .main-content .right .summary form.cart ul#tm-extra-product-options-fields .tm-section-label, .single-product .product .main-content .right .summary form.cart ul#tm-extra-product-options-fields .cpf_hide_element{
     margin-bottom: 0;
-    font-size: 16px;
+    font-size: 15px;
     float: left;
-    width: 50%;
+    width: 100%;
+    margin-left: 12px;
 }
-@media screen and (max-width: 991px) {
-    .single-product .product .main-content .right .summary form.cart ul#tm-extra-product-options-fields .cpf-type-checkbox .tm-element-ul-checkbox li .tcfa-question-circle {
-        left: unset;
-        top: -2px;
-    }
-}
+
 
 @media screen and (max-width: 375px) {
     .single-product .product .main-content .right .summary form.cart ul#tm-extra-product-options-fields .cpf-type-checkbox .tm-element-ul-checkbox li .tcfa-question-circle {
@@ -2617,7 +2634,9 @@ nav.navbar-primary.sticky-top .main-header {
     height: 15px;
     width: 15px;
     right: 0px;
-    top: 1px
+    top: 1px;
+    left: 200%;
+    z-index: 5;
 }
 .single-product .product .main-content .right .summary form.cart li.tmcp-field-wrap .tcfa-question-circle{
     right: -20px;
@@ -2674,6 +2693,9 @@ nav.navbar-primary.sticky-top .main-header {
 }
 
 .single-product .product .main-content .right .summary .single_add_to_cart_button.primary-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     transition: all .5s ease;
     -moz-transition: all .5s ease;
     -webkit-transition: all .5s ease;
@@ -2691,7 +2713,14 @@ nav.navbar-primary.sticky-top .main-header {
     width: 100%;
     padding: 0
 }
-
+@media (max-width: 350px){
+    .single-product .product .main-content .right .summary .single_add_to_cart_button.primary-button{
+        font-size: 13px;
+    }
+    .price .woocommerce-Price-amount.amount, .price .woocommerce-Price-currencySymbol{
+        font-size: 17px;
+    }
+}
 .single-product .product .main-content .right .summary .single_add_to_cart_button.primary-button:hover {
     transition: all .5s ease;
     -moz-transition: all .5s ease;
@@ -2859,11 +2888,13 @@ nav.navbar-primary.sticky-top .main-header {
 
 .single-product .product .after-content .additional-info .wc-tabs-wrapper ul.nav-tabs li.active a {
     border: none !important;
-    color: #fff !important
+    color: #fff !important;
+    font-size: 10px;
 }
 
 .single-product .product .after-content .additional-info .wc-tabs-wrapper ul.nav-tabs li a {
-    color: #083d54 !important
+    color: #083d54 !important;
+    font-size: 10px;
 }
 
 .single-product .product .after-content .additional-info .wc-tabs-wrapper .wc-tab {
@@ -4135,12 +4166,6 @@ nav.navbar-primary .main-header ul.navbar-nav ul.dropdown-menu {
     display: none
 }
 
-/*.single-product .product .main-content .right .summary form.cart ul#tm-extra-product-options-fields .cpf-section {*/
-/*    margin-bottom: 0 !important;*/
-/*    margin-top: 17px !important;*/
-/*    border: none;*/
-/*    padding: 0 !important;*/
-/*}*/
 
 .single-product .product .main-content .right .summary form.cart ul#tm-extra-product-options-fields .tcfa-question-circle {
     background-color: transparent;
@@ -4162,10 +4187,10 @@ nav.navbar-primary .main-header ul.navbar-nav ul.dropdown-menu {
     -ms-transition: all .5s ease;
     -o-transition: all .5s ease;
     position: absolute;
-    font-size: 25px;
+    font-size: 24px;
     color: #ccc;
-    right: -5px;
-    top: -5px
+    right: 21px;
+    top: -4px
 }
 
 .single-product .product .main-content .right .summary form.cart ul#tm-extra-product-options-fields .extra-cable-div .fa-angle-down:hover, .single-product .product .main-content .right .summary form.cart ul#tm-extra-product-options-fields .warranty-div .fa-angle-down:hover {
@@ -4179,19 +4204,22 @@ nav.navbar-primary .main-header ul.navbar-nav ul.dropdown-menu {
     -webkit-transition: all .5s ease;
     -ms-transition: all .5s ease;
     -o-transition: all .5s ease;
-    transform: rotate(180deg)
+    transform: rotate(180deg);
+    position: absolute;
+    right: 18px;
 }
 
 .single-product .product .main-content .right .summary form.cart ul#tm-extra-product-options-fields .cpf-type-checkbox .tm-element-ul-checkbox li label span, .single-product .product .main-content .right .summary form.cart ul#tm-extra-product-options-fields .extra-cable-div .extra-cable-ul li input:checked + label, .single-product .product .main-content .right .summary form.cart ul#tm-extra-product-options-fields .warranty-div .warranty-ul li input:checked + label {
     color: #083d54;
-    font-weight: 700;
+    font-weight: 500;
     font-size: 13px;
 
 }
 
 .single-product .product .main-content .right .summary .price-container {
     background-color: transparent;
-    border: 2px solid #083d54
+    /*border: 2px solid #083d54*/
+    border: unset;
 }
 
 .single-product .product .main-content .right .summary .price-container .price .amount {
@@ -4632,7 +4660,9 @@ footer.site-footer .fourth .payment-icon img {
 
 .single-product .product .main-content .right .summary .single_add_to_cart_button.primary-button {
     background-color: #fb0;
-    border-color: #fb0
+    border-color: #fb0;
+    margin-top: 1em;
+    display: flex!important;
 }
 
 .single-product .product .main-content .right .summary .single_add_to_cart_button.primary-button:hover {
@@ -5062,7 +5092,8 @@ footer.site-footer .spacing {
     #filter.filter-custom2 .filter-step.coverages .trigger ul li .text {
         font-size: 16px;
         bottom: -45px;
-        right: -5px
+        right: -5px;
+        font-weight: 500;
     }
 
     #filter.filter-custom2 .filter-step.coverages .trigger ul li .text span {
@@ -5087,12 +5118,16 @@ p.desc {
 }
 
 .section.filter-custom.filter-custom2 form .back-img {
-    min-height: 461px;
+    min-height: 49em;
     background: url("../img/300-sql.jpg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
-
+@media (max-width: 1200px){
+    .section.filter-custom.filter-custom2 form .back-img{
+        min-height:51em
+    }
+}
 .section.filter-custom.filter-custom2 form .tab.row {
     margin-left: 0px;
     margin-right: 0px;
@@ -5202,6 +5237,14 @@ form .screen-reader-text {
 
 .sidebar .widget ul li {
     margin-bottom: 12px;
+}
+.term-description p strong{
+    font-size: 14px;
+    font-weight: 600;
+}
+.term-description p a{
+    font-size: 14px;
+    font-weight: 600;
 }
 
 .icon-G3:before {

@@ -12,63 +12,63 @@ get_header();
             <div class="item header-slider1">
                 <div class="container slider1-full">
                     <div class="slider1-text1">
-                        Specialise in enhancing
+                        SPECIALIST IN ENHANCING
                     </div>
                     <div class="slider1-text2">
-                        voice and<br> data signals
+                        VOICE AND<br> DATA SIGNALS
                    </div>
                     <hr>
                     <div class="slider1-text3">
-                        Take advantage of our exclusive offer. Fusce our<br> porta non vehicula vitae congue egestas preet elit.
+                        Take advantage of our extensive range of <br>Certified Mobile Signal Boosters.
                     </div>
                     <button class="slider1-button">
-                     View Our Products</button>
+                        <a>View Our Products</a></button>
                 </div>
             </div>
             <div class="item header-slider2">
                 <div class="container slider1-full">
                     <div class="slider1-text1">
-                        No More dropped calls
+                        NO MORE DROPPED CALLS
                     </div>
                     <div class="slider1-text2">
-                        Try our<br>
-                        Product Wizard
+                        We guarantee 100% Increase <br>
+                        In Voice & Data signals
                     </div>
                     <hr>
                     <div class="slider1-text3">
-                        Take advantage of our exclusive offer. Fusce our <br>porta non vehicula vitae congue egestas preet elit.
+                        Our Mobile Signal Boosters Cover Every Carrier in UK<br>&nbsp;
                     </div>
-                    <button class="slider1-button">Try Product Wizard</button>
+                    <button class="slider2-button"><a href="/shop/">SHOP NOW</a></button>
                 </div>
             </div>
             <div class="item header-slider3">
                 <div class="container slider1-full">
                     <div class="slider1-text1">
-                        Live chat support 24/7
+                        Live Chat Support 24/7
                     </div>
                     <div class="slider1-text2">
                         5 Bar Signal<br>Guarantee
                     </div>
                     <hr>
                     <div class="slider1-text3">
-                        Our UK support and returns address will help you in<br>every step of the way.
+                        Our UK support team will help you in every step <br>of the way.
                     </div>
-                    <button class="slider1-button">Get in touch with us</button>
+                    <button class="slider3-button"><a href="/contact-us/">Get in touch with us</a></button>
                 </div>
             </div>
             <div class="item header-slider4">
                 <div class="container slider1-full">
                     <div class="slider1-text1">
-                        Innovative Solutions
+                        NO MORE DROPPED CALLS & DEAD SPOTS
                     </div>
                     <div class="slider1-text2 slider4-text2">
-                        Mobile Signal<br>Booster
+                        Get The Amplified Signals,<br>Where You Need It Today!
                     </div>
                     <hr class="slider4-hr">
                     <div class="slider1-text3 slider4-text3">
-                        We have mobile boosters that can help you cover whatever<br> area within your home that requires covering.
+                        We have mobile boosters that can help you cover whatever<br>area within your home that requires covering.
                     </div>
-                    <button class="slider1-button">Get in touch with us</button>
+                    <button class="slider4-button"><a href="/shop/">BUY NOW!</a></button>
                 </div>
             </div>
 
