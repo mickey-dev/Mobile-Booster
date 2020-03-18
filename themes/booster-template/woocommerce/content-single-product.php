@@ -186,7 +186,7 @@ if ( ! defined( 'ABSPATH' ) ) {
                                 </div>
 
                                 <div class="providers col-xs-12 no-padding">
-                                    <div class="meta-prov-title">Providers:</div>
+                                    <div class="meta-prov-title">This Works With:</div>
                                     <?php
                                     echo '<div class="providers_wrapper">';
                                     if ($providers) {

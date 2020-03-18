@@ -81,9 +81,25 @@ function filter_shortcode($atts,$content=null)
         'hide_empty' => false,
     ));
 
+    $html .='</div>';
 
-    $html .= '</div>
-        <div class="tab">';
+
+    $html .= '<div class="step-buts">
+    <div class="step1-buttons">
+        <div class="col-md-4"></div>
+        <div class="col-md-8">
+            <button type="button" id="nextBtn" onclick="nextPrev(1)">NEXT STEP</button>
+        </div>  
+    </div>
+  <div class="step2-buttons">
+      <button type="button" id="prevBtn" onclick="nextPrev(-1)">PREVIOUS</button>
+      <button type="submit" id="frm_submit_Btn" class="">REVEAL YOUR BOOSTER</button>
+    </div>
+  </div>';
+
+
+$html .= ' <div class="tab">';
+
     if (!empty($providers)) {
         $html .= '<div class="filter-step providers">';
 
@@ -134,26 +150,20 @@ function filter_shortcode($atts,$content=null)
         $html .= '</div>';
         $html .= '</div>';
     }
-    $html .= '</div>
-  <div class="step-buts">
-    <div class="step1-buttons">
-        <div class="col-md-4"></div>
-        <div class="col-md-8">
-            <button type="button" id="nextBtn" onclick="nextPrev(1)">NEXT STEP</button>
-        </div>  
-    </div>
-    <div style="step2-buttons">
-      <button type="button" id="prevBtn" onclick="nextPrev(-1)">PREVIOUS</button>
-      <button type="submit" id="frm_submit_Btn" class="">REVEAL YOUR BOOSTER</button>
-    </div>
-  </div>
-  <!-- Circles which indicates the steps of the form: -->
-  <div style="text-align:center;margin-top:0px;">
+
+    $html .= '</div>';
+
+
+
+
+
+ $html .= ' <div style="text-align:center;margin-top:0px;">
     <span class="step"></span>
     <span class="step"></span>
   </div>
+     
 </form>';
-    $html .= '</div></div>';
+
     return $html;
 }
 
