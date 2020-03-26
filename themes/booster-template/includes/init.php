@@ -11,6 +11,11 @@ add_theme_support('widgets');
 
 add_theme_support('menus');
 
+register_nav_menus( array(
+    'primary'   => __( 'Primary Menu', 'myfirsttheme' ),
+    'secondary' => __( 'Secondary Menu', 'myfirsttheme' )
+) );
+
 if ( wc_isactive() )
     require_once('woocommerce.php');
 function wc_isactive(){

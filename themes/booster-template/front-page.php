@@ -11,11 +11,11 @@ get_header();
 
             <div class="item header-slider1">
                 <div class="container slider1-full">
-                    <div class="slider1-text1">
-                        SPECIALIST IN ENHANCING
-                    </div>
-                    <div class="slider1-text2">
-                        5 BAR SIGNAL GUARANTEE<br> or 100% MONEY BACK !
+<!--                    <div class="slider1-text1">-->
+<!--                        SPECIALIST IN ENHANCING-->
+<!--                    </div>-->
+                    <div class="slider1-text2 slider1">
+                        5 BAR SIGNAL GUARANTEE<br> or <br> 100% MONEY BACK !
                    </div>
                     <hr>
                     <div class="slider1-text3">

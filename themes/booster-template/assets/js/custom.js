@@ -109,7 +109,7 @@ jQuery(document).ready(function ($) {
     $("#owl-demo").owlCarousel({
             loop:true,
             dots:true,
-            autoplay:true,
+            // autoplay:true,
             autoplayTimeout:6000,
             navigation : true, // Show next and prev buttons
 

@@ -97,7 +97,6 @@ function filter_shortcode($atts,$content=null)
     </div>
   </div>';
 
-
 $html .= ' <div class="tab">';
 
     if (!empty($providers)) {

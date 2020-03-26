@@ -100,7 +100,6 @@ Mobile Phone Signal Boosters will help any property that is suffering from poor 
   <?php
 }
 
-
 function how_it_works() { ?>
     <section id="how-it-works">
         <div class="container">
