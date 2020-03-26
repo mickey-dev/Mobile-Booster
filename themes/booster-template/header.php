@@ -196,7 +196,7 @@ global $theme_options;
 
 <?php ?>
 <?php if (get_post_type()=='post'){?>
-    <?php if(is_single()){ ?>
+    <?php if(is_single()) { ?>
     <div class="container-fluid page-header-bg full-center" style="height: unset; padding-left: 0px; padding-right: 0px;">
         <?php if (get_the_post_thumbnail_url(null, 'full')){?>
         <img src="<?php echo get_the_post_thumbnail_url(null, 'full') ?>" alt="<?php
@@ -210,7 +210,7 @@ global $theme_options;
             ?>" height="auto" width="100%">
         <?php } ?>
     </div>
-    <?php } else{ ?>
+    <?php } else { ?>
     <div class="container-fluid page-header-bg full-center " style="background-image: url('<?php echo get_template_directory_uri() ?>/assets/img/antenna-bg.jpg')">
         <div class="overlay"></div>
         <div class="row">
@@ -221,7 +221,7 @@ global $theme_options;
                 ?>
             </h2>
         </div>
-    </div>
+    </div>Okay
     <?php }?>
 <?php } elseif (get_post_type()=='product') { ?>
     <div class="container-fluid page-header-bg full-center antenna-bg" style="background-image: url('<?php echo get_template_directory_uri() ?>/assets/img/antenna-bg.jpg')">
@@ -235,8 +235,15 @@ global $theme_options;
             </h2>
         </div>
     </div>
-<?php } else {
-    ?>
+<?php } elseif (is_page('cart')) { ?>
+    <div class="container-fluid woo-payment-steps full-center antenna-bg">
+        <div class="payment-steps-wrapper">
+            <div class="cart-step col-4"><i class="fa fa-fw fa-shopping-cart"></i></div>
+            <div class="checkout-step col-4"><i class="fa fa-fw fa-credit-card"></i></div>
+            <div class="payment-step col-4"><i class="fa fa-fw fa-shield"></i></div>
+        </div>
+    </div>
+<?php } else { ?>
     <div class="container-fluid page-header-bg full-center antenna-bg" style="background-image: url('<?php echo get_template_directory_uri() ?>/assets/img/antenna-bg.jpg')">
         <div class="overlay"></div>
         <div class="row">
@@ -252,10 +259,10 @@ global $theme_options;
 } ?>
 
 
-  <script type="text/javascript" src="//code.jquery.com/jquery-2.2.4.min.js"></script>
-    <script type="text/javascript">
-      jQuery(document).ready(function(){
-        jQuery('.sgr-custom-taxonomies-menu ul').hide();
-      });
-    </script>
+<script type="text/javascript" src="//code.jquery.com/jquery-2.2.4.min.js"></script>
+<script type="text/javascript">
+  jQuery(document).ready(function(){
+    jQuery('.sgr-custom-taxonomies-menu ul').hide();
+  });
+</script>
 <?php endif; ?>
