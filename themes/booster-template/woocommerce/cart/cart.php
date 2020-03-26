@@ -26,11 +26,11 @@ do_action( 'woocommerce_before_cart' ); ?>
 		<thead>
 			<tr>
 				<th class="product-remove">&nbsp;</th>
-				<th class="product-thumbnail">&nbsp;</th>
+				<th class="product-thumbnail"></th>
 				<th class="product-name"><?php esc_html_e( 'Product', 'woocommerce' ); ?></th>
 				<th class="product-price"><?php esc_html_e( 'Price', 'woocommerce' ); ?></th>
 				<th class="product-quantity"><?php esc_html_e( 'Quantity', 'woocommerce' ); ?></th>
-				<th class="product-subtotal"><?php esc_html_e( 'Subtotal', 'woocommerce' ); ?></th>
+				<th class="product-subtotal"><?php esc_html_e( 'Total', 'woocommerce' ); ?></th>
 			</tr>
 		</thead>
 		<tbody>
@@ -51,7 +51,7 @@ do_action( 'woocommerce_before_cart' ); ?>
 								echo apply_filters( // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 									'woocommerce_cart_item_remove_link',
 									sprintf(
-										'<a href="%s" class="remove" aria-label="%s" data-product_id="%s" data-product_sku="%s">&times;</a>',
+										'<a href="%s" class="remove-product" aria-label="%s" data-product_id="%s" data-product_sku="%s"><i class="fa fa-fw fa-trash-o"></i></a>',
 										esc_url( wc_get_cart_remove_url( $cart_item_key ) ),
 										esc_html__( 'Remove this item', 'woocommerce' ),
 										esc_attr( $product_id ),
@@ -135,42 +135,71 @@ do_action( 'woocommerce_before_cart' ); ?>
 
 			<?php do_action( 'woocommerce_cart_contents' ); ?>
 
-			<tr>
-				<td colspan="6" class="actions">
-
-					<?php if ( wc_coupons_enabled() ) { ?>
-						<div class="coupon">
-							<label for="coupon_code"><?php esc_html_e( 'Coupon:', 'woocommerce' ); ?></label> <input type="text" name="coupon_code" class="input-text" id="coupon_code" value="" placeholder="<?php esc_attr_e( 'Coupon code', 'woocommerce' ); ?>" /> <button type="submit" class="button" name="apply_coupon" value="<?php esc_attr_e( 'Apply coupon', 'woocommerce' ); ?>"><?php esc_attr_e( 'Apply coupon', 'woocommerce' ); ?></button>
-							<?php do_action( 'woocommerce_cart_coupon' ); ?>
-						</div>
-					<?php } ?>
-
-					<button type="submit" class="button" name="update_cart" value="<?php esc_attr_e( 'Update cart', 'woocommerce' ); ?>"><?php esc_html_e( 'Update cart', 'woocommerce' ); ?></button>
-
-					<?php do_action( 'woocommerce_cart_actions' ); ?>
-
-					<?php wp_nonce_field( 'woocommerce-cart', 'woocommerce-cart-nonce' ); ?>
-				</td>
-			</tr>
 
 			<?php do_action( 'woocommerce_after_cart_contents' ); ?>
 		</tbody>
 	</table>
+
+    <div class="after-table">
+        <div class="after-actions col-md-6">
+
+            <?php if ( wc_coupons_enabled() ) { ?>
+                <label class="coupon_code-label"><?php esc_html_e( 'Coupon Code', 'woocommerce' ); ?></label>
+                <div class="coupon">
+                    <input type="text" name="coupon_code" class="input-text" id="coupon_code" value="" placeholder="<?php esc_attr_e( 'Coupon code', 'woocommerce' ); ?>" />
+                    <button type="submit" class="button" name="apply_coupon" value="<?php esc_attr_e( 'Apply coupon', 'woocommerce' ); ?>"><?php esc_attr_e( 'Apply', 'woocommerce' ); ?></button>
+                    <?php do_action( 'woocommerce_cart_coupon' ); ?>
+                </div>
+            <?php } ?>
+
+            <button type="submit" class="button" name="update_cart" value="<?php esc_attr_e( 'Update cart', 'woocommerce' ); ?>"><?php esc_html_e( 'Update cart', 'woocommerce' ); ?></button>
+
+            <?php do_action( 'woocommerce_cart_actions' ); ?>
+
+            <?php wp_nonce_field( 'woocommerce-cart', 'woocommerce-cart-nonce' ); ?>
+        </div>
+        <div class="after-actions col-md-6">
+
+            <?php do_action( 'woocommerce_before_cart_collaterals' ); ?>
+
+            <div class="cart-collaterals">
+                <?php
+                /**
+                 * Cart collaterals hook.
+                 *
+                 * @hooked woocommerce_cross_sell_display
+                 * @hooked woocommerce_cart_totals - 10
+                 */
+                do_action( 'woocommerce_cart_collaterals' );
+                ?>
+            </div>
+
+        </div>
+    </div>
 	<?php do_action( 'woocommerce_after_cart_table' ); ?>
 </form>
 
-<?php do_action( 'woocommerce_before_cart_collaterals' ); ?>
-
-<div class="cart-collaterals">
-	<?php
-		/**
-		 * Cart collaterals hook.
-		 *
-		 * @hooked woocommerce_cross_sell_display
-		 * @hooked woocommerce_cart_totals - 10
-		 */
-		do_action( 'woocommerce_cart_collaterals' );
-	?>
-</div>
-
+<!--<div class="checkout-ads">-->
+<!--    <div class="container">-->
+<!--        <div class="col-md-6">-->
+<!--            <div class="checkout-ad-item">-->
+<!--                <img src="--><?php //echo get_theme_file_uri('assets/images/money_paper.png')?><!--">-->
+<!--                <div class="checkout-ad-content">-->
+<!--                    <h6>100% Money Back Guarantee </h6>-->
+<!--                    <p>All units come with a Money back guarantee for peace of mind.<br> We guarantee a 32x signal increase or your money back. <br> Please see our policy.</p>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        <div class="col-md-6">-->
+<!--            <div class="checkout-ad-item">-->
+<!--                <img src="--><?php //echo get_theme_file_uri('assets/images/money_paper.png')?><!--">-->
+<!--                <div class="checkout-ad-content">-->
+<!--                    <h6>28,893 Satisfied Customers</h6>-->
+<!--                    <p>We have worldwide customers who love our Mobile boosters.-->
+<!--                        Price Match Guarantee.</p>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</div>-->
 <?php do_action( 'woocommerce_after_cart' ); ?>

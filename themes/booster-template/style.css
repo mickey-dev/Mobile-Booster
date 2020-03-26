@@ -2130,15 +2130,106 @@ main h4 strong{
     color: white;
 }
 
+/* Woocommerce Checkout Pages*/
 .woo-payment-steps {
     height: 150px;
     padding-top: 30px !important;
     padding-bottom: 30px !important;
     background-color: #ffffff;
+    margin-bottom: 50px;
 }
 .payment-steps-wrapper {
     height: 79px;
     width: 100%;
     background-color: #1b3d56;
+    color: #ffffff;
     margin-top: 71px;
+    display: flex;
+    align-items: center;
+}
+.woo-payment-step {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.woo-payment-step i {
+    font-size: 30px;
+}
+.woo-payment-step span {
+    font-size: 12px;
+}
+.woocommerce-error ul{
+    list-style: none;
+}
+.woocommerce-error li{
+    font-size: 16px;
+}
+.woocommerce-cart-form__contents thead tr {
+    border-bottom: 1px solid #1b3d56;
+    height: 45px;
+}
+.woocommerce-cart-form__contents thead tr th {
+    font-size: 16px !important;
+}
+.woocommerce-cart-form__cart-item .remove-product{
+    font-size: 24px;
+}
+.woocommerce-cart-form__cart-item .product-name a:first-child{
+    font-size: 22px;
+    font-weight: bold;
+}
+.woocommerce-cart-form__cart-item .product-quantity .qty{
+    height: 35px;
+    border: 1px solid #1b3d56 !important;
+    font-size: 16px;
+    width: 50px !important;
+}
+.woocommerce-cart-form__cart-item:last-child{
+    border-bottom: 1px solid #1b3d56 !important;
+}
+.woocommerce-cart-form__contents.shop_table{
+    margin-bottom: 35px;
+}
+.woocommerce-cart-form .coupon {
+    display: flex;
+}
+.woocommerce-cart-form .coupon_code-label{
+    font-size: 22px;
+    color: #1b3d56;
+    margin-bottom: 18px;
+}
+.woocommerce-cart-form .coupon .input-text {
+    width: 140px !important;
+    margin-right: 12px !important;
+    font-size: 16px;
+}
+.woocommerce-cart-form .coupon button {
+    height: 40px !important;
+    border: 2px solid #1b3d56;
+    color: #1b3d56;
+    padding: 0 20px;
+    text-transform: uppercase;
+}
+.woocommerce-cart-form .after-actions{
+    padding: 0;
+}
+.woocommerce-cart-form .cart-collaterals .cart_totals h2 {
+    font-size: 22px !important;
+    margin: 0 !important;
+    font-weight: bold;
+}
+.woocommerce-cart-form .cart-collaterals table tr th{
+    padding: 0 !important;
+    font-size: 16px;
+}
+.woocommerce-cart-form .cart-collaterals table tr td{
+    padding: 0 !important;
+    font-size: 16px;
+}
+.woocommerce-cart-form .wc-proceed-to-checkout{
+    display: flex;
+    justify-content: flex-end;
+}
+.woocommerce-cart-form .wc-proceed-to-checkout a{
+    margin: 0 !important;
 }

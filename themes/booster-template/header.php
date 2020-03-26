@@ -228,9 +228,20 @@ global $theme_options;
 <?php } elseif (is_page('cart')) { ?>
     <div class="container-fluid woo-payment-steps full-center antenna-bg">
         <div class="payment-steps-wrapper">
-            <div class="cart-step col-4"><i class="fa fa-fw fa-shopping-cart"></i></div>
-            <div class="checkout-step col-4"><i class="fa fa-fw fa-credit-card"></i></div>
-            <div class="payment-step col-4"><i class="fa fa-fw fa-shield"></i></div>
+            <div class="container">
+                <div class="woo-payment-step col-xs-4">
+                    <i class="fa fa-fw fa-shopping-cart"></i>
+                    <span>Cart</span>
+                </div>
+                <div class="woo-payment-step col-xs-4">
+                    <i class="fa fa-fw fa-credit-card"></i>
+                    <span>Checkout</span>
+                </div>
+                <div class="woo-payment-step col-xs-4">
+                    <i class="fa fa-fw fa-shield"></i>
+                    <span>Secure Payment</span>
+                </div>
+            </div>
         </div>
     </div>
 <?php } else { ?>
