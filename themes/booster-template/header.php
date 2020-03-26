@@ -235,7 +235,7 @@ global $theme_options;
             </h2>
         </div>
     </div>
-<?php } elseif (is_page('cart')) { ?>
+<?php } elseif (is_page('cart') || is_page('checkout')) { ?>
     <div class="container-fluid woo-payment-steps full-center antenna-bg">
         <div class="payment-steps-wrapper">
             <div class="container">

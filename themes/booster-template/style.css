@@ -2193,14 +2193,18 @@ main h4 strong{
     list-style: none;
 }
 .woocommerce-error li{
-    font-size: 16px;
+    font-size: 2em;
+}
+.woocommerce-cart-form{
+    display: block;
+    overflow: hidden;
 }
 .woocommerce-cart-form__contents thead tr {
     border-bottom: 1px solid #1b3d56;
     height: 45px;
 }
 .woocommerce-cart-form__contents thead tr th {
-    font-size: 16px !important;
+    font-size: 2em !important;
 }
 .woocommerce-cart-form__cart-item .remove-product{
     font-size: 24px;
@@ -2212,7 +2216,7 @@ main h4 strong{
 .woocommerce-cart-form__cart-item .product-quantity .qty{
     height: 35px;
     border: 1px solid #1b3d56 !important;
-    font-size: 16px;
+    font-size: 2em;
     width: 50px !important;
 }
 .woocommerce-cart-form__cart-item:last-child{
@@ -2230,9 +2234,9 @@ main h4 strong{
     margin-bottom: 18px;
 }
 .woocommerce-cart-form .coupon .input-text {
-    width: 140px !important;
+    width: 170px !important;
     margin-right: 12px !important;
-    font-size: 16px;
+    font-size: 2em;
 }
 .woocommerce-cart-form .coupon button {
     height: 40px !important;
@@ -2244,6 +2248,11 @@ main h4 strong{
 .woocommerce-cart-form .after-actions{
     padding: 0;
 }
+.woocommerce-cart-form .after-actions button {
+    padding: 0 20px;
+    text-transform: uppercase;
+    height: 40px !important;
+}
 .woocommerce-cart-form .cart-collaterals .cart_totals h2 {
     font-size: 22px !important;
     margin: 0 !important;
@@ -2251,16 +2260,65 @@ main h4 strong{
 }
 .woocommerce-cart-form .cart-collaterals table tr th{
     padding: 0 !important;
-    font-size: 16px;
+    font-size: 1em;
+    font-weight: 400;
+    color: #10293b;
 }
 .woocommerce-cart-form .cart-collaterals table tr td{
     padding: 0 !important;
-    font-size: 16px;
+    font-size: 2em;
+    color: #10293b;
+}
+.woocommerce-cart-form  .woocommerce-Price-amount.amount{
+    font-size: 0.5em;
+}
+.woocommerce-cart-form .cart-collaterals .woocommerce-Price-currencySymbol{
+    font-size: 1em;
+}
+.woocommerce-cart-form .cart-collaterals table tr.order-total{
+    background-color: #ffffff !important;
+    border-top: 1px solid #10293b !important;
+}
+.woocommerce-shipping-totals ul{
+    list-style: none;
 }
 .woocommerce-cart-form .wc-proceed-to-checkout{
     display: flex;
-    justify-content: flex-end;
+}
+.woocommerce-cart-form .wc-proceed-to-checkout button{
+    background-color: #fb0;
+    border: 2px solid #fb0;
+    color: #fff;
+    text-transform: uppercase;
+    border-radius: 30px;
+    padding: 10px 30px;
+    font-size: 17px;
+    height: 50px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 12px;
 }
 .woocommerce-cart-form .wc-proceed-to-checkout a{
     margin: 0 !important;
+}
+.checkout-ads {
+    padding-top: 45px;
+    padding-bottom: 45px;
+}
+.checkout-ads .col-md-6{
+    padding: 0;
+}
+.checkout-ad-item {
+    display: flex;
+}
+.checkout-ad-item img{
+    width: 105px;
+    margin-right: 12px;
+}
+.checkout-ad-content h6{
+    font-size: 16px;
+}
+.checkout-ad-content p{
+    padding-right: 65px;
 }

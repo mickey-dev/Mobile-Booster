@@ -104,6 +104,7 @@ defined( 'ABSPATH' ) || exit;
 	</table>
 
 	<div class="wc-proceed-to-checkout">
+        <button type="submit" class="button" name="update_cart" value="<?php esc_attr_e( 'Update cart', 'woocommerce' ); ?>"><?php esc_html_e( 'Update cart', 'woocommerce' ); ?></button>
 		<?php do_action( 'woocommerce_proceed_to_checkout' ); ?>
 	</div>
 
