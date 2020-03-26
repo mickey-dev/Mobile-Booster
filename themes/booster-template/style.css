@@ -2111,13 +2111,13 @@ main h4 strong{
     }
 }
 
-@media (max-width: 768px){
+@media (max-width: 768px) {
     .single-product .product .main-content .right .summary form.cart ul#tm-extra-product-options-fields .cpf-type-checkbox .tm-element-ul-checkbox{
         padding-right: 22px;
     }
 }
 
-@media (max-width: 400px){
+@media (max-width: 400px) {
     .tm-row:nth-child(1),.tm-row:nth-child(3){
         display: block!important;
     }
@@ -2126,7 +2126,19 @@ main h4 strong{
     }
 }
 
-.tm-epo-style:after:hover{
+.tm-epo-style:after:hover {
     color: white;
 }
 
+.woo-payment-steps {
+    height: 150px;
+    padding-top: 30px !important;
+    padding-bottom: 30px !important;
+    background-color: #ffffff;
+}
+.payment-steps-wrapper {
+    height: 79px;
+    width: 100%;
+    background-color: #1b3d56;
+    margin-top: 71px;
+}

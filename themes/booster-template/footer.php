@@ -228,7 +228,6 @@ $ins= theme_option( 'ins' );
 <script src='https://www.mobilebooster.co.uk//wp-content/plugins/easy-social-share-buttons3/assets/js/essb-core.min.js?ver=6.2.9'></script>
 <script src='https://www.mobilebooster.co.uk//wp-content/plugins/easy-social-share-buttons3/assets/admin/sweetalert.min.js?ver=5.3.2'></script>
 <script src='https://www.mobilebooster.co.uk//wp-content/plugins/easy-social-share-buttons3/lib/modules/live-customizer/assets/essb-live-customizer.js?ver=5.3.2'></script>
-<script type='text/javascript' src='<?php echo get_template_directory_uri() ?>/assets/fontawesome/js/font-awesome/js/fontawesome.min.js'></script>
 <script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/assets/js/custom.js"></script>
 <script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/assets/js/owl.carousel.min.js"></script>
 <!-- <script type="text/javascript" src="<?php// echo home_url() ?>/wp-content/plugins/simple-responsive-slider/assets/js/responsiveslides.min.js"></script>
@@ -241,7 +240,7 @@ $ins= theme_option( 'ins' );
 
 		jQuery('.home .products .featured a:last-child').contents().filter(function() {
 		    return this.nodeType == 3
-		}).each(function(){
+		}).each(function() {
 		    this.textContent = this.textContent.replace('PRODUCT DETAILS','VIEW PRODUCT');
 		});
 
