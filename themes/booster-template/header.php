@@ -147,6 +147,12 @@ global $theme_options;
               <span class="bar"></span>
           </div>
         </div>
+
+
+        <?php
+        if ( is_page( array( 'cart', 'checkout') ) ) {
+        // either in about us, or contact, or management page is in view
+        } else {?>
         <div class="header-next">
             <div class="container">
                 <?php
@@ -163,6 +169,10 @@ global $theme_options;
                 ?>
             </div>
         </div>
+
+       <?php }
+        ?>
+
     </div>
 </nav>
 <?php if (get_post_type()=='product'){?>

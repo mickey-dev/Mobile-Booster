@@ -467,6 +467,37 @@ nav.navbar-primary .main-header ul.navbar-nav ul.dropdown-menu{
     /* Text style for "v, oice an" */
     letter-spacing: 2.25px;
 }
+#owl-demo .slider1-text2.slider1{
+    padding-top: 4px;
+    padding-bottom: 0.71em;
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.12);
+    color: #ffffff;
+    font-family: "Montserrat";
+    font-size: 4.5em;
+    line-height: 1.11em;
+    font-weight: 700;
+    text-transform: uppercase;
+    /* Text style for "v, oice an" */
+    letter-spacing: 2.25px;
+    margin-top: 2.26em;
+}
+@media (max-width: 768px){
+    #owl-demo .slider1-text2.slider1{
+        font-size: 2.5em;
+        margin-top: 4.97em;
+    }
+}
+@media (max-width: 500px){
+    #owl-demo .slider1-text2.slider1{
+        margin-top: 2.35em;
+    }
+}
+@media (max-width: 335px){
+    #owl-demo .slider1-text2.slider1{
+       font-size: 2em;
+        margin-top: 3.55em;
+    }
+}
 #owl-demo hr{
     margin: 0;
     width: 7.9em;

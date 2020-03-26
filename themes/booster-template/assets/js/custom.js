@@ -93,21 +93,23 @@ jQuery(document).ready(function ($) {
     // });
 
 
-    $('.slider1-button').on('click', function(e) {
-        e.preventDefault();
+    // $('.slider1-button').on('click', function(e) {
+    //     e.preventDefault();
+    //
+    //     $('html, body').animate(
+    //         {
+    //             scrollTop: $('.filter').offset().top,
+    //         },
+    //         500,
+    //         'linear'
+    //     );
+    // });
 
-        $('html, body').animate(
-            {
-                scrollTop: $('.filter').offset().top,
-            },
-            500,
-            'linear'
-        );
-    });
+
     $("#owl-demo").owlCarousel({
             loop:true,
             dots:true,
-            autoplay:true,
+            // autoplay:true,
             autoplayTimeout:6000,
             navigation : true, // Show next and prev buttons
 

@@ -333,7 +333,8 @@ h4 {
 
 .page-header-bg .row h1, .page-header-bg .row h2 {
     text-transform: uppercase;
-    color: #fff !important
+    color: #fff !important;
+    text-align: center;
 }
 
 .page-header-bg .row h1::after, .page-header-bg .row h2::after {
@@ -4556,6 +4557,11 @@ footer.site-footer .fourth .payment-icon img {
 }
 .container-fluid.page-header-bg.full-center.antenna-bg{
     margin-top: 67px;
+}
+@media (max-width: 992px){
+    .container-fluid.page-header-bg.full-center.antenna-bg{
+        margin-top: 0;
+    }
 }
 #home-slider .rslides_container ul.rslides .caption a.button:hover {
     background-color: transparent !important;

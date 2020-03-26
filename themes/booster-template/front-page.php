@@ -11,18 +11,18 @@ get_header();
 
             <div class="item header-slider1">
                 <div class="container slider1-full">
-                    <div class="slider1-text1">
-                        SPECIALIST IN ENHANCING
-                    </div>
-                    <div class="slider1-text2">
-                        VOICE AND<br> DATA SIGNALS
+<!--                    <div class="slider1-text1">-->
+<!--                        SPECIALIST IN ENHANCING-->
+<!--                    </div>-->
+                    <div class="slider1-text2 slider1">
+                        5 BAR SIGNAL GUARANTEE<br> or <br> 100% MONEY BACK !
                    </div>
                     <hr>
                     <div class="slider1-text3">
-                        Take advantage of our extensive range of <br>Certified Mobile Signal Boosters.
+                        Trusted by over 3.7 million customers worldwide. <br> &nbsp;
                     </div>
                     <button class="slider1-button">
-                        <a>View Our Products</a></button>
+                        <a href="/shop/">Shop Now!</a></button>
                 </div>
             </div>
             <div class="item header-slider2">
@@ -38,24 +38,24 @@ get_header();
                     <div class="slider1-text3">
                         Our Mobile Signal Boosters Cover Every Carrier in UK<br>&nbsp;
                     </div>
-                    <button class="slider2-button"><a href="/shop/">SHOP NOW</a></button>
+                    <button class="slider2-button"><a href="/shop/">SHOP NOW!</a></button>
                 </div>
             </div>
-            <div class="item header-slider3">
-                <div class="container slider1-full">
-                    <div class="slider1-text1">
-                        Live Chat Support 24/7
-                    </div>
-                    <div class="slider1-text2">
-                        5 Bar Signal<br>Guarantee
-                    </div>
-                    <hr>
-                    <div class="slider1-text3">
-                        Our UK support team will help you in every step <br>of the way.
-                    </div>
-                    <button class="slider3-button"><a href="/contact-us/">Get in touch with us</a></button>
-                </div>
-            </div>
+<!--            <div class="item header-slider3">-->
+<!--                <div class="container slider1-full">-->
+<!--                    <div class="slider1-text1">-->
+<!--                        Live Chat Support 24/7-->
+<!--                    </div>-->
+<!--                    <div class="slider1-text2">-->
+<!--                        5 Bar Signal<br>Guarantee-->
+<!--                    </div>-->
+<!--                    <hr>-->
+<!--                    <div class="slider1-text3">-->
+<!--                        Our UK support team will help you in every step <br>of the way.-->
+<!--                    </div>-->
+<!--                    <button class="slider3-button"><a href="/contact-us/">Get in touch with us</a></button>-->
+<!--                </div>-->
+<!--            </div>-->
             <div class="item header-slider4">
                 <div class="container slider1-full">
                     <div class="slider1-text1">
