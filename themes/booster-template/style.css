@@ -2347,8 +2347,27 @@ h3.checkout_page_content_steps_title{
     width: calc(50% - 12px);
     margin-right: 12px;
 }
+.select2-container .select2-selection--single{
+    height: 43px;
+}
+.select2-container--default .select2-selection--single .select2-selection__rendered{
+    color: #10293b;
+    line-height: 43px;
+    font-size: 15px;
+}
+.select2-container--default .select2-selection--single .select2-selection__arrow{
+    top: 9px;
+}
+.select2-search--dropdown .select2-search__field{
+    padding: 7px;
+    font-size: 15px;
+}
+.select2-results__option{
+    font-size: 15px;
+}
 .woocommerce-form__label-for-checkbox{
-    padding-left: 35px;
+    padding-left: 30px;
+    margin-left: 18px;
     display: block;
     position: relative;
     cursor: pointer;
@@ -2364,4 +2383,53 @@ h3.checkout_page_content_steps_title{
     cursor: pointer;
     height: 0;
     width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+    position: absolute;
+    top: 3px;
+    left: 0;
+    height: 23px;
+    width: 23px;
+    border-radius: 3px;
+    background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+.woocommerce-form__label-for-checkbox:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.woocommerce-form__label-for-checkbox input:checked ~ .checkmark {
+    background-color: #10293b;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+.woocommerce-form__label-for-checkbox input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.woocommerce-form__label-for-checkbox .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.woocommerce-checkout h3#ship-to-different-address{
+    border-bottom: none;
 }
