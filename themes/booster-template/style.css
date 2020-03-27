@@ -2323,3 +2323,45 @@ main h4 strong{
 .checkout-ad-content p{
     padding-right: 65px;
 }
+h3.checkout_page_content_steps_title{
+    display: flex;
+    color: #1b3d56;
+    align-items: center;
+    border-bottom: 1px solid #1b3d56 !important;
+}
+.checkout_page_content_steps_title span {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    color: #fff;
+    background-color: #10293b;
+    border-radius: 100%;
+}
+.container .woocommerce .checkout.woocommerce-checkout #customer_details .form-row{
+    padding: 0;
+    width: calc(50% - 12px);
+    margin-right: 12px;
+}
+.woocommerce-form__label-for-checkbox{
+    padding-left: 35px;
+    display: block;
+    position: relative;
+    cursor: pointer;
+    font-size: 18px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.woocommerce-form__label-for-checkbox input{
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
