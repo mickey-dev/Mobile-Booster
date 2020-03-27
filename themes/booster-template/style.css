@@ -2187,6 +2187,9 @@ main h4 strong{
     align-items: center;
     flex-direction: column;
 }
+.payment-step-active {
+    color: #fb0;
+}
 .woo-payment-step i {
     font-size: 30px;
 }

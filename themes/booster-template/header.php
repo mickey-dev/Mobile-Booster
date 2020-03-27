@@ -239,15 +239,15 @@ global $theme_options;
     <div class="container-fluid woo-payment-steps full-center antenna-bg">
         <div class="payment-steps-wrapper">
             <div class="container">
-                <div class="woo-payment-step col-xs-4">
+                <div class="woo-payment-step col-xs-4 <?php echo is_page('cart') ? "payment-step-active": "";?>">
                     <i class="fa fa-fw fa-shopping-cart"></i>
                     <span>Cart</span>
                 </div>
-                <div class="woo-payment-step col-xs-4">
+                <div class="woo-payment-step col-xs-4 <?php echo is_page('checkout') && !is_order_received_page() ? "payment-step-active": "";?>">
                     <i class="fa fa-fw fa-credit-card"></i>
                     <span>Checkout</span>
                 </div>
-                <div class="woo-payment-step col-xs-4">
+                <div class="woo-payment-step col-xs-4 <?php echo is_page('checkout') && is_order_received_page() ? "payment-step-active": "";?>">
                     <i class="fa fa-fw fa-shield"></i>
                     <span>Secure Payment</span>
                 </div>
