@@ -2444,3 +2444,9 @@ h3.checkout_page_content_steps_title{
 .woocommerce-additional-fields__field-wrapper #order_comments_field{
     width: 100% !important;
 }
+.woocommerce-checkout-review-order .cart-subtotal div{
+    font-size: 15px !important;
+}
+.woocommerce-checkout-review-order .cart-subtotal div.text-right{
+    text-align: left !important;
+}

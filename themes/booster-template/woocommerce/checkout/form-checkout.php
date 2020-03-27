@@ -51,7 +51,7 @@ if ( ! $checkout->is_registration_enabled() && $checkout->is_registration_requir
     </div>
     <div class="col-xs-12 col-sm-5 kanan">
         <?php do_action( 'woocommerce_checkout_before_order_review_heading' ); ?>
-        <h3 id="order_review_heading"><?php esc_html_e( 'Your order', 'woocommerce' ); ?></h3>
+        <h3 class="checkout_page_content_steps_title"><span>4</span><?php esc_html_e( 'Your Order', 'woocommerce' ); ?></h3>
 
         <?php do_action( 'woocommerce_checkout_before_order_review' ); ?>
 
