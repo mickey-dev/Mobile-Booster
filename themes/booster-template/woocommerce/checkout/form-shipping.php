@@ -54,8 +54,9 @@ defined( 'ABSPATH' ) || exit;
 
 		<?php if ( ! WC()->cart->needs_shipping() || wc_ship_to_billing_address_only() ) : ?>
 
-			<h3><?php esc_html_e( 'Additional information', 'woocommerce' ); ?></h3>
-
+			<h3 class="checkout_page_content_steps_title"><span>3</span><?php esc_html_e( 'Additional Information', 'woocommerce' ); ?></h3>
+        <?php else: ?>
+            <h3 class="checkout_page_content_steps_title"><span>3</span><?php esc_html_e( 'Additional Information', 'woocommerce' ); ?></h3>
 		<?php endif; ?>
 
 		<div class="woocommerce-additional-fields__field-wrapper">

@@ -2163,6 +2163,9 @@ main h4 strong{
 }
 
 /* Woocommerce Checkout Pages*/
+.woocommerce-form-login-toggle .woocommerce-info, .woocommerce-form-login-toggle .woocommerce-info a{
+    font-size: 15px;
+}
 .woo-payment-steps {
     height: 150px;
     padding-top: 30px !important;
@@ -2368,7 +2371,8 @@ h3.checkout_page_content_steps_title{
 .woocommerce-form__label-for-checkbox{
     padding-left: 30px;
     margin-left: 18px;
-    display: block;
+    display: flex !important;
+    align-items: center;
     position: relative;
     cursor: pointer;
     font-size: 18px;
@@ -2432,4 +2436,11 @@ h3.checkout_page_content_steps_title{
 }
 .woocommerce-checkout h3#ship-to-different-address{
     border-bottom: none;
+}
+.woocommerce-additional-fields__field-wrapper{
+    width: 100%;
+    overflow: hidden;
+}
+.woocommerce-additional-fields__field-wrapper #order_comments_field{
+    width: 100% !important;
 }

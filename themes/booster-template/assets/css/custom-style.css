@@ -4428,8 +4428,8 @@ nav.navbar-primary .main-header ul.navbar-nav ul.dropdown-menu {
 }
 
 .woocommerce-checkout .woocommerce .kiri .create-account label {
-    display: inline !important;
-    color: #083d54
+    display: flex !important;
+    color: #083d54;
 }
 
 .woocommerce-checkout .woocommerce .kiri #ship-to-different-address input, .woocommerce-checkout .woocommerce .kiri #ship-to-different-address label {
