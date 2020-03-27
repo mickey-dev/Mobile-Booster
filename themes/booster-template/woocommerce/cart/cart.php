@@ -150,6 +150,15 @@ do_action( 'woocommerce_before_cart' ); ?>
                     <button type="submit" class="button" name="apply_coupon" value="<?php esc_attr_e( 'Apply coupon', 'woocommerce' ); ?>"><?php esc_attr_e( 'Apply', 'woocommerce' ); ?></button>
                     <?php do_action( 'woocommerce_cart_coupon' ); ?>
                 </div>
+
+                    <div class="checkout-ad-item">
+                        <img src="<?php echo get_theme_file_uri('assets/images/cash_back-512.png')?>">
+                        <div class="checkout-ad-content">
+                            <h6>100% Money Back Guarantee </h6>
+                            <p>All units come with a Money back guarantee for peace of mind.<br> We guarantee a 32x signal increase or your money back. <br> Please see our policy.</p>
+                        </div>
+                    </div>
+
             <?php } ?>
 
             <?php do_action( 'woocommerce_cart_actions' ); ?>
@@ -177,29 +186,21 @@ do_action( 'woocommerce_before_cart' ); ?>
 	<?php do_action( 'woocommerce_after_cart_table' ); ?>
 </form>
 
-<div class="checkout-ads">
-    <div class="row">
-        <div class="col-md-6">
-            <div class="checkout-ad-item">
-                <img src="<?php echo get_theme_file_uri('assets/images/cash_back-512.png')?>">
-                <div class="checkout-ad-content">
-                    <h6>100% Money Back Guarantee </h6>
-                    <p>All units come with a Money back guarantee for peace of mind.<br> We guarantee a 32x signal increase or your money back. <br> Please see our policy.</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-6">
-            <div class="checkout-ad-item">
-                <img src="<?php echo get_theme_file_uri('assets/images/satisfied.jpeg')?>">
-                <div class="checkout-ad-content">
-                    <h6>28,893 Satisfied Customers</h6>
-                    <p>We have worldwide customers who love our Mobile boosters. <br>
-                        Price Match Guarantee. <br>
-                        Fast Free Shipping
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+<!--<div class="checkout-ads">-->
+<!--    <div class="row">-->
+<!---->
+<!--        <div class="col-md-6">-->
+<!--            <div class="checkout-ad-item">-->
+<!--                <img src="--><?php //echo get_theme_file_uri('assets/images/satisfied.jpeg')?><!--">-->
+<!--                <div class="checkout-ad-content">-->
+<!--                    <h6>28,893 Satisfied Customers</h6>-->
+<!--                    <p>We have worldwide customers who love our Mobile boosters. <br>-->
+<!--                        Price Match Guarantee. <br>-->
+<!--                        Fast Free Shipping-->
+<!--                    </p>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</div>-->
 <?php do_action( 'woocommerce_after_cart' ); ?>
