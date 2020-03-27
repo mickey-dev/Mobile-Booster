@@ -2450,3 +2450,17 @@ h3.checkout_page_content_steps_title{
 .woocommerce-checkout-review-order .cart-subtotal div.text-right{
     text-align: left !important;
 }
+.woocommerce-checkout-review-order .shipping {
+    font-size: 15px;
+}
+.woocommerce-checkout-review-order .shipping #shipping_method {
+    list-style: none;
+}
+.woocommerce-checkout-review-order .shipping #shipping_method label{
+    font-size: 15px;
+    font-weight: 400;
+}
+.woocommerce-checkout-review-order .order-total .text-right{
+    font-size: 15px;
+    text-align: left !important;
+}
