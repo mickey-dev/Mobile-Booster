@@ -57,42 +57,17 @@ if ( ! $product->is_purchasable() ) {
         <input type="hidden" step="1" min="1" max="" name="quantity" value="1" title="Qty" class="input-text qty text" size="4" pattern="[0-9]*" inputmode="numeric">
 
         <input type="hidden" name="add-to-cart" value="<?php echo esc_attr( $product->id ); ?>" />
-        <div class="tax-info-all">
-            <div class="tax-info-text">
-                Providers Available:
+        <div class="tex-home">
+            <div class="tex-home-right">
+                <img src="<?php echo get_template_directory_uri() ?>/assets/img/tax-home-icon.jpg" alt=""">
             </div>
-            <div class="tax-info">
-            <?php if ($providers):?>
-                <div class="providers tax">
-                    <div class="slug">
-                        <?php
-                        $xx = '';
-                        foreach ( $providers as $provider ) {
-                            $xx .= ucwords($provider->slug) .' / ';
-                        }
 
-                        echo rtrim($xx,' /');
-
-                        ?>
-                    </div>
-                </div>
-            <?php endif; ?>
-                <div class="tax-items">
-                    <?php
-
-                    if ($providers) {
-                        foreach ($providers as $provider){
-                            $icon_class = get_term_meta($provider->term_id, 'icon',true);
-                            if ($icon_class){
-                                echo '<i class="'.$icon_class.'" title="'. $provider->name .'"></i>';
-                            }
-                        }
-                    }
-
-                    ?>
-                </div>
+            <div class="tex-home-left">
+                <div class="tex-ideal">Ideal for:</div>
+                <span>Smaller offices, studios, and homes</span>
             </div>
         </div>
+
 <!--        <div itemprop="offers" itemscope="" itemtype="http://schema.org/Offer" class="price-container"> <p class="price"><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">$</span>630.00</span></p> <meta itemprop="price" content="595"> <meta itemprop="priceCurrency" content="NZD">-->
 <!--            <link itemprop="availability" href="http://schema.org/InStock"></div>-->
 

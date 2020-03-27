@@ -39,14 +39,40 @@ $frequencies = get_the_terms($product->id,'frequency');
     <?php endif; ?>
 </div>
 
-    <div class="tex-home">
-        <div class="tex-home-right">
-            <img src="<?php echo get_template_directory_uri() ?>/assets/img/tax-home-icon.jpg" alt=""">
+    <div class="tax-info-all">
+        <div class="tax-info-text">
+            This Will Boost:
         </div>
+        <div class="tax-info">
+            <?php if ($providers):?>
+                <div class="providers tax">
+                    <div class="slug">
+                        <?php
+                        $xx = '';
+                        foreach ( $providers as $provider ) {
+                            $xx .= ucwords($provider->slug) .' / ';
+                        }
 
-        <div class="tex-home-left">
-            <div class="tex-ideal">Ideal for:</div>
-            <span>Smaller offices, studios, and homes</span>
+                        echo rtrim($xx,' /');
+
+                        ?>
+                    </div>
+                </div>
+            <?php endif; ?>
+            <div class="tax-items">
+                <?php
+
+                if ($providers) {
+                    foreach ($providers as $provider){
+                        $icon_class = get_term_meta($provider->term_id, 'icon',true);
+                        if ($icon_class){
+                            echo '<i class="'.$icon_class.'" title="'. $provider->name .'"></i>';
+                        }
+                    }
+                }
+
+                ?>
+            </div>
         </div>
     </div>
 
